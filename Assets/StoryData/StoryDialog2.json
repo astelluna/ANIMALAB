@@ -1,0 +1,40 @@
+{
+	"nodes": [
+	{
+		"id": 1,
+		"speaker": "주인공",
+		"text": "지하실 문이 열렸다.",
+		"choices": [
+			{"choiceText":"좋아!", "goTo":2},
+			{"choiceText":"싫어!", "goTo":3}
+		],
+		"effects": [
+			{ "type": "item", "key": "낡은열쇠", "amount": 1 }
+			],
+		"OnEvent": "OPEN_BASEMENT"
+	},
+	{
+		"id": 2,
+		"speaker": "사람1",
+		"text": "지하실 문이 닫혔다.",
+		"choices": [
+			{"choiceText":"뭐야?!", "goTo":2},
+			{"choiceText":"사람이아니야ㅜㅜ", "goTo":3}
+			],
+		"effects": [
+				{ "type": "item", "key": "낡은열쇠", "amount": -1 }
+		],
+		"OnEvent": ""
+	},
+	{
+		"id": 3,
+		"speaker": "사람이야",
+		"text": "탈출.",
+		"choices": [
+			],
+		"effects": [
+		],
+		"OnEvent": ""
+	}
+	]
+}
