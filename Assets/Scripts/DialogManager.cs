@@ -30,8 +30,12 @@ public class DialogManager : MonoBehaviour
     {
         curId = id;
         DialogData node = System.Array.Find(allNodes, n => n.id == id);
+        //node의 string 정보를 캐릭터 정보로 바꿔야함.
+        CharacterDataSO characterData = GetPeopleSOData(node.speaker, node.Expression);
+
+
         dialogText.text = node.text;
-        characterText.text = node.speaker;
+        characterText.text = characterData.DisplayName;
         //버튼 표시
         foreach (var btn in choiceButtons)
         {
@@ -46,6 +50,19 @@ public class DialogManager : MonoBehaviour
             choiceButtons[i].onClick.AddListener(() => ShowData(goTo));
             choiceButtons[i].gameObject.SetActive(true);
         }
+        //TODO
+        //캐릭터의 초상화, Sprite 이미지 등 띄워야 한다
+    }
+    CharacterDataSO GetPeopleSOData(string name, eEmotion emotionType)
+    {
+        //TODO
+        CharacterDataSO characterData = ResourceManager.Instance.GetCharacterData(name);
+        if(characterData == null)
+        {
+            Debug.LogError($"{name}의 캐릭터SO 데이터가 없습니다. 에러");
+            return null;
+        }
+        return characterData;
     }
 
 }
