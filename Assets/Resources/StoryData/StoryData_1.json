@@ -1,0 +1,97 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "speaker": "주인공",
+            "text": "지하실 문이 열렸다",
+            "expression": "normal",
+            "cg": [
+                {
+                    "key": "basic01",
+                    "effect": "fadeIn"
+                }
+            ],
+            "choices": [
+                {
+                    "choiceText": "좋아!",
+                    "goTo": 2,
+                    "condition": {
+                        "logic": "AND",
+                        "conditions": [
+                            {
+                                "type": "Affinity",
+                                "key": "사람1",
+                                "min": 10,
+                                "max": 30
+                            },
+                            {
+                                "type": "Item",
+                                "key": "단서1",
+                                "min": 1,
+                                "max": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "choiceText": "싫어!",
+                    "goTo": 3,
+                    "condition": {
+                        "logic": "",
+                        "conditions": []
+                    }
+                }
+            ],
+            "reward": [
+                {
+                    "type": "Item",
+                    "key": "낡은열쇠",
+                    "amount": 1
+                },
+                {
+                    "type": "Affinity",
+                    "key": "사람1",
+                    "amount": 1
+                }
+            ],
+            "OnEvent": "OPEN_BASEMENT"
+        },
+        {
+            "id": 2,
+            "speaker": "사람?",
+            "text": "지하실 문이 닫혔다",
+            "expression": "happy",
+            "cg": [],
+            "choices": [
+                {
+                    "choiceText": "처음으로 갈래",
+                    "goTo": 1,
+                    "condition": {
+                        "logic": "",
+                        "conditions": []
+                    }
+                },
+                {
+                    "choiceText": "싫은데!!",
+                    "goTo": 3,
+                    "condition": {
+                        "logic": "",
+                        "conditions": []
+                    }
+                }
+            ],
+            "reward": [],
+            "OnEvent": ""
+        },
+        {
+            "id": 3,
+            "speaker": "사람이야",
+            "text": "탈출.",
+            "expression": "none",
+            "cg": [],
+            "choices": [],
+            "reward": [],
+            "OnEvent": ""
+        }
+    ]
+}

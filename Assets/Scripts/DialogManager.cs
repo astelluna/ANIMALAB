@@ -14,7 +14,7 @@ public class DialogManager : MonoBehaviour
 
     private void Start()
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>("StoryData/StoryDialog2");
+        TextAsset jsonFile = Resources.Load<TextAsset>("StoryData/StoryData_1");
 
         if (jsonFile == null)
         {
