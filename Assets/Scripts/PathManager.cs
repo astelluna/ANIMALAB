@@ -1,0 +1,12 @@
+public static class PathManager
+{
+    //Json
+    public const string jsonFilePath = "Assets/Resources/StoryData/StoryData_1.json";
+    //CSV
+    public const string csvPath = "Assets/Resources/StoryData/CSV/";
+    public const string nodeFileName = csvPath + "Node.csv";
+    public const string choiceFileName = csvPath + "Choice.csv";
+    public const string choiceConditionFileName = csvPath + "Choicecondition.csv";
+    public const string rewardFileName = csvPath + "Reward.csv";
+    public const string cgFileName = csvPath + "Cg.csv";
+}

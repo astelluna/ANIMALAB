@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using UnityEngine;
 
 public static class CSVToJsonWindow
@@ -22,10 +23,11 @@ public static class CSVToJsonWindow
         Init();
 
         //가장 먼저 맨 최상위 노드부터 만듬
-        string[] nodeLines = File.ReadAllLines(PathManager.nodeFileName);
-        for (int i = 1; i < nodeLines.Length; i++)
+        //string[] nodeLines = File.ReadAllLines(PathManager.nodeFileName);
+        List<string[]> nodeLines = ParseCsvFile(PathManager.nodeFileName);
+        for (int i = 1; i < nodeLines.Count; i++)
         {
-            string[] cols = nodeLines[i].Split(',');
+            string[] cols = nodeLines[i];
             DialogData node = new DialogData();
             node.id = int.Parse(cols[0]);
             node.speaker = cols[1];
@@ -35,10 +37,10 @@ public static class CSVToJsonWindow
             nodeMap.Add(node.id, node);
         }
         //2. choice
-        string[] choiceLines = File.ReadAllLines(PathManager.choiceFileName);
-        for (int i = 1; i < choiceLines.Length; i++)
+        List<string[]> choiceLines = ParseCsvFile(PathManager.choiceFileName);
+        for (int i = 1; i < choiceLines.Count; i++)
         {
-            string[] cols = choiceLines[i].Split(',');
+            string[] cols = choiceLines[i];
             int nodeId = int.Parse(cols[0]);
 
             DialogChoice choice = new DialogChoice();
@@ -55,10 +57,10 @@ public static class CSVToJsonWindow
             nodeMap[pair.Key].choices = pair.Value.ToArray();
         }
         //3. condition
-        string[] conditionLines = File.ReadAllLines(PathManager.choiceConditionFileName);
-        for (int i = 1; i < conditionLines.Length; i++)
+        List<string[]> conditionLines = ParseCsvFile(PathManager.choiceConditionFileName);
+        for (int i = 1; i < conditionLines.Count; i++)
         {
-            string[] cols = conditionLines[i].Split(',');
+            string[] cols = conditionLines[i];
             int nodeId = int.Parse(cols[0]);
             int choiceIndex = int.Parse(cols[1]);
 
@@ -82,10 +84,10 @@ public static class CSVToJsonWindow
             choice.condition.conditions = list.ToArray();
         }
         //4. Reward
-        string[] rewardLines = File.ReadAllLines(PathManager.rewardFileName);
-        for (int i = 1; i < rewardLines.Length; i++)
+        List<string[]> rewardLines = ParseCsvFile(PathManager.rewardFileName);
+        for (int i = 1; i < rewardLines.Count; i++)
         {
-            string[] cols = rewardLines[i].Split(',');
+            string[] cols = rewardLines[i];
             int nodeId = int.Parse(cols[0]);
             DialogReward reward = new DialogReward();
             reward.type = cols[1];
@@ -103,10 +105,10 @@ public static class CSVToJsonWindow
             nodeMap[pair.Key].reward = pair.Value.ToArray();
         }
         //5. CG
-        string[] cgLines = File.ReadAllLines(PathManager.cgFileName);
-        for (int i = 1; i < cgLines.Length; i++)
+        List<string[]> cgLines = ParseCsvFile(PathManager.cgFileName);
+        for (int i = 1; i < cgLines.Count; i++)
         {
-            string[] cols = cgLines[i].Split(',');
+            string[] cols = cgLines[i];
             int nodeId = int.Parse(cols[0]);
             DialogCG cg = new DialogCG();
             cg.key = cols[1];
@@ -126,5 +128,80 @@ public static class CSVToJsonWindow
         data.nodes = nodeMap.Values.OrderBy(x => x.id).ToArray();
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(PathManager.jsonFilePath, json);
+    }
+    // ── RFC4180 규격 CSV 파서 ──────────────────────────────
+    // 큰따옴표로 감싼 필드 안의 콤마, 줄바꿈, 이스케이프된 큰따옴표("")를
+    // 전부 올바르게 처리합니다. File.ReadAllLines + Split(',') 조합은
+    // 필드 안에 줄바꿈이 있으면 행이 깨지므로 반드시 이 방식을 써야 합니다.
+    private static List<string[]> ParseCsvFile(string path)
+    {
+        string content = File.ReadAllText(path, Encoding.UTF8);
+        List<string[]> rows = new List<string[]>();
+        List<string> currentRow = new List<string>();
+        StringBuilder field = new StringBuilder();
+        bool inQuotes = false;
+
+        if (content.Length > 0 && content[0] == '\uFEFF')
+            content = content.Substring(1);
+
+        for (int i = 0; i < content.Length; i++)
+        {
+            char c = content[i];
+
+            if (inQuotes)
+            {
+                if (c == '"')
+                {
+                    if (i + 1 < content.Length && content[i + 1] == '"')
+                    {
+                        field.Append('"'); // 이스케이프된 "" -> "
+                        i++;
+                    }
+                    else
+                    {
+                        inQuotes = false;
+                    }
+                }
+                else
+                {
+                    field.Append(c); // 따옴표 안의 줄바꿈/콤마도 그냥 필드에 포함
+                }
+            }
+            else
+            {
+                if (c == '"')
+                {
+                    inQuotes = true;
+                }
+                else if (c == ',')
+                {
+                    currentRow.Add(field.ToString());
+                    field.Clear();
+                }
+                else if (c == '\r')
+                {
+                    // 무시 (\n에서 처리)
+                }
+                else if (c == '\n')
+                {
+                    currentRow.Add(field.ToString());
+                    field.Clear();
+                    rows.Add(currentRow.ToArray());
+                    currentRow = new List<string>();
+                }
+                else
+                {
+                    field.Append(c);
+                }
+            }
+        }
+
+        if (field.Length > 0 || currentRow.Count > 0)
+        {
+            currentRow.Add(field.ToString());
+            rows.Add(currentRow.ToArray());
+        }
+
+        return rows;
     }
 }

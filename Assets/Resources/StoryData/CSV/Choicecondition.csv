@@ -1,3 +1,3 @@
 NodeId,ChoiceIndex,Logic,Type,Key,Min,Max
-1,0,AND,Affinity,사람1,10,30
-1,0,AND,Item,단서1,1,0
+30,1,AND,Affinity,사람1,10,30
+30,1,AND,Affinity,사람2,10,30

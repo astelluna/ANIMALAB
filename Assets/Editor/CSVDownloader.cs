@@ -2,19 +2,6 @@ using System.Net;
 using UnityEditor;
 using UnityEngine;
 
-public static class PathManager
-{
-    //Json
-    public const string jsonFilePath = "Assets/Resources/StoryData/StoryData_1.json";
-    //CSV
-    public const string csvPath = "Assets/Resources/StoryData/CSV/";
-    public const string nodeFileName = csvPath + "Node.csv";
-    public const string choiceFileName = csvPath + "Choice.csv";
-    public const string choiceConditionFileName = csvPath + "Choicecondition.csv";
-    public const string rewardFileName = csvPath + "Reward.csv";
-    public const string cgFileName = csvPath + "Cg.csv";
-}
-
 public class CSVDownloader : MonoBehaviour
 {
     const string nodeUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=0#gid=0";
