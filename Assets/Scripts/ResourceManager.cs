@@ -6,6 +6,7 @@ public class ResourceManager : MonoBehaviour
     public static ResourceManager Instance { get; private set; }
 
     [SerializeField] CharacterDataSO[] characterDataSOArray;
+    [SerializeField] CharacterDataSO basicCharacterData;
 
     private Dictionary<string, CharacterDataSO> characterDataDict = new Dictionary<string, CharacterDataSO>();
 
@@ -48,6 +49,10 @@ public class ResourceManager : MonoBehaviour
         if(characterDataDict.ContainsKey(id))
         {
             so = characterDataDict[id];
+        }
+        else
+        {
+            so = basicCharacterData;
         }
         return so;
     }

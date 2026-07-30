@@ -1,4 +1,0 @@
-ID,Speaker,Text,Expression,OnEvent
-1,주인공,지하실 문이 열렸다,normal,OPEN_BASEMENT
-2,사람?,지하실 문이 닫혔다,happy,
-3,사람이야,탈출.,none,

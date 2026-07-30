@@ -5,7 +5,7 @@ using UnityEngine;
 public class CharacterDataSO : ScriptableObject
 {
     [field: SerializeField] public string CharacterId { get; private set; }
-    [field: SerializeField] public string DisplayName { get; private set; }
+    //[field: SerializeField] public string DisplayName { get; private set; }
     [field: SerializeField] public Sprite Portrait { get; private set; }
     [field: SerializeField] public ExpressionEntry[] Expressions { get; private set; }
     [field: SerializeField] public Color NameColor { get; private set; }

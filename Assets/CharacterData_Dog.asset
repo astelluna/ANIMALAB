@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3f8de58cc9c41b4d949f58a088a361b, type: 3}
-  m_Name: CharacterData 1
+  m_Name: CharacterData_Dog
   m_EditorClassIdentifier: 
   <CharacterId>k__BackingField: "\uB9AC\uD2B8\uB9AC\uBC84"
   <DisplayName>k__BackingField: "\uB9AC\uD2B8\uB9AC\uBC84\uC785\uB2C8\uB2E4"

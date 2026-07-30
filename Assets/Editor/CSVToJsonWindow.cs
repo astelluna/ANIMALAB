@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public static class CSVToJsonWindow
@@ -33,7 +34,8 @@ public static class CSVToJsonWindow
             node.speaker = cols[1];
             node.text = cols[2];
             node.expression = cols[3];
-            node.OnEvent = cols[4];
+            node.nextnodeId = (cols[4] == "") ? 0 : int.Parse(cols[4]);
+            node.OnEvent = cols[5];
             nodeMap.Add(node.id, node);
         }
         //2. choice

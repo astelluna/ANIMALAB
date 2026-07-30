@@ -34,6 +34,7 @@ public class DialogData
     public DialogCG[] cg;
     public DialogChoice[] choices;
     public DialogReward[] reward;
+    public int nextnodeId;
     public string OnEvent; //어떤 이펙트 터져야 한다. 혹은 코드상으로 특별한 처리가 필요하다면 이거 사용
 
     public eEmotion Expression
