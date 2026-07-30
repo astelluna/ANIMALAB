@@ -1,9 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text.RegularExpressions;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -22,52 +19,49 @@ public class DialogManager : MonoBehaviour
     int curId = 0;
     DialogData curNode;
 
-    const string ellipsisToken = "\uE000"; // 텍스트에 안 쓰이는 특수 문자 하나
-    //어떤 문자열이 주어졌다고 가정하자. "안녕하세요. 오늘 날씨가 좋아요. 나가실건가요?";
-    //이런 문자열이 마우스 클릭을 하면?. 하나씩 실행된다고 가정하자. 일단 string으로 하자. SB쓰지말고 하기.
-    //추후에는 글자가 확 나타나는게 아닌 서서히 나타나도록. 클릭하면 바로 딱 출력되도록.
-    Queue<string> stringQue = new Queue<string>();
-
     PlayerInput playerInput; //컴포넌트를 가져오기 위해
     InputActionMap mainActionMap; //플레이어인풋 컴포넌트의 수많은 기능중 인풋액션맵
     InputAction clickAction;     //액션 하나하나
-    public void ShowStr(string str)
-    {
-        dialogText.text = "";
-        string temp = Regex.Replace(str, @"\.{2,}", ellipsisToken);
-        // 2. 마침표/느낌표/물음표 뒤에 공백이 올 때만 문장을 나눔
-        string[] raw = Regex.Split(temp, @"(?<=[.!?])\s+");
-        // 3. 치환했던 말줄임표 복원 + 빈 문자열 제거
-        string[] sentences = raw
-            .Select(s => s.Replace(ellipsisToken, "..."))
-            .Where(s => !string.IsNullOrWhiteSpace(s))
-            .ToArray();
 
-        foreach(var item in sentences)
-        {
-            stringQue.Enqueue(item);
-        }
-    }
+    bool isTyping = false;
+    Coroutine printSlowTextCor;
     private void Func()
     {
-        if (stringQue.Count == 0)
+        //예외처리. 만약 타이핑중이라면? 코루틴 멈추고 바로 표시되도록 하고 return 처리하자
+        if(isTyping)
         {
-            //여기서 체크. 만약에 nextNode가 0이라면?++, 아니라면 해당 노드로 이동
-            if(curNode.nextnodeId == 0)
-            {
-                curId++;
-            }
-            else
-            {
-                curId = curNode.nextnodeId;
-            }
-            ShowData(curId);
+            isTyping = false;
+            StopCoroutine(printSlowTextCor);
+            printSlowTextCor = null;
+            dialogText.text = curNode.text;
+            return;
+        }
+        //예외처리2. 선택지가 있다면? 하면안됨
+        if(curNode.choices.Length > 0)
+        {
+            return;
         }
 
-        string buf = stringQue.Dequeue();
-        dialogText.text = dialogText.text + " " + buf;
+        if (curNode.nextnodeId == 0) { curId++; }
+        else { curId = curNode.nextnodeId; }
+        ShowData(curId);
     }
-    public bool CanMoveNextDialog()
+
+    //해야할것. 어떤 메세지가 존재한다. 이거를 이제 표시를 해보자
+    IEnumerator PrintSlowText(string str)
+    {
+        dialogText.text = "";
+        isTyping = true;
+        int index = 0;
+        while (index < str.Length)
+        {
+            dialogText.text = dialogText.text + str[index];
+            index++;
+            yield return new WaitForSeconds(0.1f);
+        }
+        isTyping = false;
+    }
+    public bool HasChoices()
     {
         if(curNode.choices.Length > 0)
         {
@@ -99,11 +93,14 @@ public class DialogManager : MonoBehaviour
         return results.Count > 0;
     }
 
+
+
+
     void MouseLButtonClick(CallbackContext ctx)
     {
         // 마우스가 UI(버튼 등) 위에 있으면 전역 클릭 무시
         if (IsPointerOverUI()) { Debug.Log("버튼위에ㅓㅅ 클릭"); return; }
-        if (CanMoveNextDialog()) { return; }
+        if (HasChoices()) { return; }
         Func();
     }
     void JsonInit()
@@ -141,9 +138,6 @@ public class DialogManager : MonoBehaviour
         //node의 string 정보를 캐릭터 정보로 바꿔야함.
         CharacterDataSO characterData = GetPeopleSOData(curNode.speaker, curNode.Expression);
 
-
-        ShowStr(curNode.text); //테스트용
-        //dialogText.text = node.text;
         characterText.text = curNode.speaker;
         //버튼 표시
         foreach (var btn in choiceButtons)
@@ -159,6 +153,13 @@ public class DialogManager : MonoBehaviour
             choiceButtons[i].onClick.AddListener(() => ShowData(goTo));
             choiceButtons[i].gameObject.SetActive(true);
         }
+
+        //코루틴 다시 실행
+        if(printSlowTextCor != null)
+        {
+            StopCoroutine(printSlowTextCor);
+        }
+        printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
         //TODO
         //캐릭터의 초상화, Sprite 이미지 등 띄워야 한다
     }
