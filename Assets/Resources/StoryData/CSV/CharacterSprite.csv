@@ -1,0 +1,13 @@
+nodeId,command,characterId,expression,position,,,,,,,,,
+10,Show,리트리버,normal,Left,,,,,,Comman 종류,,,position 종류
+10,Show,사막여우,normal,CenterLeft,,,,,,Show,보이게,,Left
+11,Show,토끼,normal,CenterRight,,,,,,Hide,없앰,,Right
+11,Show,양,normal,Right,,,,,,ClearAll,전부 초기화.,,CenterLeft
+18,ClearAll,,,,,,,,,,,,CenterRight
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,LookDirection,
+,,,,,,,,,,,,Right,
+,,,,,,,,,,,,Left,
+,,,,,,,,,,,,Right,

@@ -9,4 +9,5 @@ public static class PathManager
     public const string choiceConditionFileName = csvPath + "Choicecondition.csv";
     public const string rewardFileName = csvPath + "Reward.csv";
     public const string cgFileName = csvPath + "Cg.csv";
+    public const string characterSpriteFileName = csvPath + "CharacterSprite.csv";
 }

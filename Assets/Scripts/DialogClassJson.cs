@@ -36,6 +36,7 @@ public class DialogData
     public DialogReward[] reward;
     public int nextnodeId;
     public string OnEvent; //어떤 이펙트 터져야 한다. 혹은 코드상으로 특별한 처리가 필요하다면 이거 사용
+    public CharacterSprite[] spriteDatas;
 
     public eEmotion Expression
     {
@@ -49,6 +50,61 @@ public class DialogData
         }
     }
 }
+[Serializable]
+public class CharacterSprite
+{
+    public int nodeId;
+    public string command;
+    public string characterId;
+    public string expression;
+    public string position;
+
+    public eCommandType Command
+    {
+        get
+        {
+            if (Enum.TryParse<eCommandType>(command, true, out var result))
+            {
+                return result;
+            }
+            return eCommandType.none;
+        }
+    }
+    public eEmotion Expression
+    {
+        get
+        {
+            if (Enum.TryParse<eEmotion>(expression, true, out var result))
+            {
+                return result;
+            }
+            return eEmotion.none;
+        }
+    }
+
+    public eSpritePosition Position
+    {
+        get
+        {
+            if (Enum.TryParse<eSpritePosition>(position, true, out var result))
+            {
+                return result;
+            }
+            return eSpritePosition.none;
+        }
+    }
+}
+
+public enum eCommandType
+{
+    none, Show, Hide, ClearAll
+}
+public enum eSpritePosition
+{
+    none, Left, Right, CenterLeft,CenterRight
+}
+
+
 [Serializable]
 public class DialogCG
 {

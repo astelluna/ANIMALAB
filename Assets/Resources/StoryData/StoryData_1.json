@@ -25,18 +25,20 @@
                 }
             ],
             "nextnodeId": 0,
-            "OnEvent": "OPEN_BASEMENT"
+            "OnEvent": "OPEN_BASEMENT",
+            "spriteDatas": []
         },
         {
             "id": 2,
             "speaker": "지문",
-            "text": "붉은 빛이 시야를 가득 채우고 있었다. 천장의 비상등. 규칙적으로 깜빡이는 붉은 불빛이 텅 빈 연구실 내부를 비추고 있었다. 낯선 기계음과 코를 찌르는 소독약 냄새. 그리고 차갑게 식어버린 바닥. ",
+            "text": "붉은 빛이 시야를 가득 채우고 있었다. 천장의 비상등... 규칙적으로 깜빡이는 붉은 불빛이 텅 빈 연구실 내부를 비추고 있었다. 낯선 기계음과 코를 찌르는 소독약 냄새 그리고 차갑게 식어버린 바닥. ",
             "expression": "happy",
             "cg": [],
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 3,
@@ -47,7 +49,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 4,
@@ -58,7 +61,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 5,
@@ -69,7 +73,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 6,
@@ -80,7 +85,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 7,
@@ -91,7 +97,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 8,
@@ -102,7 +109,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 9,
@@ -113,7 +121,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 10,
@@ -124,7 +133,23 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": [
+                {
+                    "nodeId": 10,
+                    "command": "Show",
+                    "characterId": "리트리버",
+                    "expression": "normal",
+                    "position": "Left"
+                },
+                {
+                    "nodeId": 10,
+                    "command": "Show",
+                    "characterId": "사막여우",
+                    "expression": "normal",
+                    "position": "CenterLeft"
+                }
+            ]
         },
         {
             "id": 11,
@@ -135,7 +160,23 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": [
+                {
+                    "nodeId": 11,
+                    "command": "Show",
+                    "characterId": "토끼",
+                    "expression": "normal",
+                    "position": "CenterRight"
+                },
+                {
+                    "nodeId": 11,
+                    "command": "Show",
+                    "characterId": "양",
+                    "expression": "normal",
+                    "position": "Right"
+                }
+            ]
         },
         {
             "id": 12,
@@ -146,7 +187,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": "Prolog_Start"
+            "OnEvent": "Prolog_Start",
+            "spriteDatas": []
         },
         {
             "id": 13,
@@ -157,7 +199,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 14,
@@ -168,7 +211,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 15,
@@ -179,7 +223,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 16,
@@ -190,7 +235,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 17,
@@ -201,7 +247,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 18,
@@ -212,7 +259,16 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": [
+                {
+                    "nodeId": 18,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": ""
+                }
+            ]
         },
         {
             "id": 19,
@@ -240,7 +296,8 @@
             ],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 20,
@@ -251,7 +308,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 21,
@@ -262,7 +320,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 22,
@@ -273,7 +332,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 23,
@@ -284,7 +344,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 28,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 24,
@@ -295,7 +356,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 25,
@@ -306,7 +368,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 26,
@@ -317,7 +380,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 27,
@@ -328,7 +392,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 28,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 28,
@@ -339,7 +404,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 29,
@@ -350,7 +416,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 30,
@@ -391,7 +458,8 @@
             ],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 31,
@@ -402,7 +470,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 32,
@@ -413,7 +482,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 33,
@@ -424,7 +494,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 34,
@@ -435,7 +506,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 35,
@@ -446,7 +518,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 36,
@@ -457,7 +530,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 37,
@@ -468,7 +542,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 38,
@@ -479,7 +554,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 39,
@@ -490,7 +566,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 53,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 40,
@@ -501,7 +578,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 41,
@@ -512,7 +590,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 42,
@@ -523,7 +602,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 43,
@@ -534,7 +614,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 44,
@@ -545,7 +626,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 45,
@@ -556,7 +638,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 46,
@@ -567,7 +650,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 47,
@@ -578,7 +662,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 48,
@@ -589,7 +674,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 49,
@@ -600,7 +686,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 50,
@@ -611,7 +698,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 51,
@@ -622,7 +710,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 52,
@@ -633,7 +722,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 53,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 53,
@@ -644,7 +734,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 54,
@@ -655,7 +746,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 55,
@@ -666,7 +758,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 56,
@@ -677,7 +770,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 57,
@@ -688,7 +782,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 58,
@@ -716,7 +811,8 @@
             ],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 59,
@@ -727,7 +823,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 60,
@@ -738,7 +835,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 61,
@@ -749,7 +847,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 62,
@@ -760,7 +859,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 63,
@@ -771,7 +871,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 72,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 64,
@@ -782,7 +883,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 65,
@@ -793,7 +895,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 66,
@@ -804,7 +907,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 67,
@@ -815,7 +919,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 68,
@@ -826,7 +931,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 69,
@@ -837,7 +943,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 70,
@@ -848,7 +955,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 71,
@@ -859,7 +967,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 72,
@@ -870,7 +979,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 73,
@@ -881,7 +991,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 74,
@@ -892,7 +1003,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 75,
@@ -903,7 +1015,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 76,
@@ -914,7 +1027,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         },
         {
             "id": 77,
@@ -925,7 +1039,8 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": ""
+            "OnEvent": "",
+            "spriteDatas": []
         }
     ]
 }

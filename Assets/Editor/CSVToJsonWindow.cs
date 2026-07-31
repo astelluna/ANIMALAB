@@ -11,6 +11,7 @@ public static class CSVToJsonWindow
     static Dictionary<int, List<DialogChoice>> choiceMap = new Dictionary<int, List<DialogChoice>>();
     static Dictionary<int, List<DialogReward>> rewardMap = new Dictionary<int, List<DialogReward>>();
     static Dictionary<int, List<DialogCG>> cgMap = new Dictionary<int, List<DialogCG>>();
+    static Dictionary<int, List<CharacterSprite>> characterSpriteMap = new Dictionary<int, List<CharacterSprite>>();
 
     private static void Init()
     {
@@ -18,6 +19,7 @@ public static class CSVToJsonWindow
         choiceMap.Clear();
         rewardMap.Clear();
         cgMap.Clear();
+        characterSpriteMap.Clear();
     }
     public static void ReadCSV()
     {
@@ -124,6 +126,30 @@ public static class CSVToJsonWindow
         foreach(var pair in cgMap)
         {
             nodeMap[pair.Key].cg = pair.Value.ToArray();
+        }
+        //6. CharacterSprite
+        List<string[]> characterSpriteLines = ParseCsvFile(PathManager.characterSpriteFileName);
+        for (int i = 1; i < characterSpriteLines.Count; i++)
+        {
+            string[] cols = characterSpriteLines[i];
+
+            if (cols[0] == "") continue;
+            int nodeId = int.Parse(cols[0]);
+            CharacterSprite characterSprite = new CharacterSprite();
+            characterSprite.nodeId = nodeId;
+            characterSprite.command = cols[1];
+            characterSprite.characterId = cols[2];
+            characterSprite.expression = cols[3];
+            characterSprite.position = cols[4];
+            if (!characterSpriteMap.ContainsKey(nodeId))
+            {
+                characterSpriteMap[nodeId] = new List<CharacterSprite>();
+            }
+            characterSpriteMap[nodeId].Add(characterSprite);
+        }
+        foreach (var pair in characterSpriteMap)
+        {
+            nodeMap[pair.Key].spriteDatas = pair.Value.ToArray();
         }
         //마지막 JSON 저장
         DialogDataArray data = new DialogDataArray();

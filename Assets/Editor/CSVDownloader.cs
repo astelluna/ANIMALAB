@@ -9,6 +9,7 @@ public class CSVDownloader : MonoBehaviour
     const string choiceConditionUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=831253886";
     const string rewardUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=681914727";
     const string cgUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=453507803";
+    const string characterSpriteUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=503407958";
 
     [MenuItem("Tools/Download CSV File & Make JSON")]
     public static void DownloadCSVAndMakeJSON()
@@ -20,6 +21,7 @@ public class CSVDownloader : MonoBehaviour
         client.DownloadFile(choiceConditionUrl,  PathManager.choiceConditionFileName);
         client.DownloadFile(rewardUrl, PathManager.rewardFileName);
         client.DownloadFile(cgUrl, PathManager.cgFileName);
+        client.DownloadFile(characterSpriteUrl, PathManager.characterSpriteFileName);
         AssetDatabase.Refresh();
         Debug.Log("CSV 다운로드 완료. " + PathManager.csvPath);
 

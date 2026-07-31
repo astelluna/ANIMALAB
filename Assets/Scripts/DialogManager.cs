@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,6 +26,8 @@ public class DialogManager : MonoBehaviour
 
     bool isTyping = false;
     Coroutine printSlowTextCor;
+
+    [SerializeField] CharacterUISlotManager characterPosManager;
     private void Func()
     {
         //예외처리. 만약 타이핑중이라면? 코루틴 멈추고 바로 표시되도록 하고 return 처리하자
@@ -162,6 +165,29 @@ public class DialogManager : MonoBehaviour
         printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
         //TODO
         //캐릭터의 초상화, Sprite 이미지 등 띄워야 한다
+        //만약 캐릭터 데이터 항목이 존재한다면? 캐릭터 초상화를 띄운다. -> 이미지 스프라이트와 매핑하자
+
+        string ss = "normal";
+        eSpritePosition asb;
+        if (Enum.TryParse<eSpritePosition>(ss, true, out var result))
+        {
+            
+        }
+
+
+        if (curNode.spriteDatas.Length > 0)
+        {
+            foreach(var spriteData in curNode.spriteDatas)
+            {
+                Image curimage = characterPosManager.GetImageToIndex(spriteData.Position);
+                //이제 해당 이미지에 표시를 해버리자.
+                CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
+                Sprite curSprite = charData.GetExpression(spriteData.Expression);
+                if (curSprite == null) continue;
+                curimage.sprite = curSprite;
+            }
+        }
+        
     }
     CharacterDataSO GetPeopleSOData(string name, eEmotion emotionType)
     {
