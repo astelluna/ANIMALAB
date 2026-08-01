@@ -93,7 +93,16 @@ public class DialogManager : MonoBehaviour
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerData, results);
 
-        return results.Count > 0;
+        foreach(var result in results)
+        {
+            if(result.gameObject.GetComponent<Button>() != null)
+            {
+                return true;
+            }
+        }
+        return false;
+
+        //return results.Count > 0;
     }
 
 
@@ -167,27 +176,52 @@ public class DialogManager : MonoBehaviour
         //캐릭터의 초상화, Sprite 이미지 등 띄워야 한다
         //만약 캐릭터 데이터 항목이 존재한다면? 캐릭터 초상화를 띄운다. -> 이미지 스프라이트와 매핑하자
 
-        string ss = "normal";
-        eSpritePosition asb;
-        if (Enum.TryParse<eSpritePosition>(ss, true, out var result))
-        {
-            
-        }
-
-
         if (curNode.spriteDatas.Length > 0)
         {
             foreach(var spriteData in curNode.spriteDatas)
             {
-                Image curimage = characterPosManager.GetImageToIndex(spriteData.Position);
-                //이제 해당 이미지에 표시를 해버리자.
-                CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
-                Sprite curSprite = charData.GetExpression(spriteData.Expression);
-                if (curSprite == null) continue;
-                curimage.sprite = curSprite;
+                
+                switch (spriteData.Command)
+                {
+                    case eCommandType.Show:
+                        //이제 해당 이미지에 표시를 해버리자.
+                        CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
+                        Sprite curSprite = charData.GetExpression(spriteData.Expression);
+                        if (curSprite == null) continue;
+                        //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
+                        float alpha = 1;
+                        if (spriteData.characterId != curNode.speaker)
+                        {
+                            alpha = 0.5f;
+                        }
+                        characterPosManager.ShowImage(charData.CharacterId,curSprite, spriteData.Position, alpha);
+                        break;
+                    case eCommandType.Hide:
+                        if(!characterPosManager.HideImage(spriteData.characterId))
+                        {
+                            Debug.LogError("Sprite Hide 실패. 아이디가 없었습니다");
+                        }
+                        break;
+                    case eCommandType.ClearAll:
+                        //현재 존재하는 화면의 스프라이트 들을 전부 지우자
+                        characterPosManager.HideImageAll();
+                        break;
+                    default:
+                        Debug.LogError("스프라이트 처리할때 이상한 커맨드가 들어옴. 확인 필요" + spriteData.nodeId);
+                        break;
+                }
+
+                
+                
             }
         }
         
+    }
+    private void SetImageAlpha(Image targetImage, float alpha)
+    {
+        Color c = targetImage.color;
+        c.a = alpha;
+        targetImage.color = c;
     }
     CharacterDataSO GetPeopleSOData(string name, eEmotion emotionType)
     {

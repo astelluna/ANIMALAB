@@ -188,7 +188,15 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "Prolog_Start",
-            "spriteDatas": []
+            "spriteDatas": [
+                {
+                    "nodeId": 12,
+                    "command": "Hide",
+                    "characterId": "양",
+                    "expression": "",
+                    "position": "Right"
+                }
+            ]
         },
         {
             "id": 13,
@@ -200,7 +208,15 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": []
+            "spriteDatas": [
+                {
+                    "nodeId": 13,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": ""
+                }
+            ]
         },
         {
             "id": 14,
@@ -260,15 +276,7 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [
-                {
-                    "nodeId": 18,
-                    "command": "ClearAll",
-                    "characterId": "",
-                    "expression": "",
-                    "position": ""
-                }
-            ]
+            "spriteDatas": []
         },
         {
             "id": 19,
