@@ -28,7 +28,18 @@ public class DialogManager : MonoBehaviour
     Coroutine printSlowTextCor;
 
     [SerializeField] CharacterUISlotManager characterPosManager;
-    private void Func()
+    [SerializeField] RewardCanvas rewardCanvas;
+    private void Start()
+    {
+        //입력과 json파일 초기화
+        InputInit();
+        JsonInit();
+
+        curId = 1;
+        ShowData(curId);
+    }
+
+    private void HandleNext()
     {
         //예외처리. 만약 타이핑중이라면? 코루틴 멈추고 바로 표시되도록 하고 return 처리하자
         if(isTyping)
@@ -101,19 +112,15 @@ public class DialogManager : MonoBehaviour
             }
         }
         return false;
-
-        //return results.Count > 0;
     }
-
-
-
 
     void MouseLButtonClick(CallbackContext ctx)
     {
         // 마우스가 UI(버튼 등) 위에 있으면 전역 클릭 무시
         if (IsPointerOverUI()) { Debug.Log("버튼위에ㅓㅅ 클릭"); return; }
         if (HasChoices()) { return; }
-        Func();
+        if (rewardCanvas.IsRewardPanelShow) { return; }
+        HandleNext();
     }
     void JsonInit()
     {
@@ -133,15 +140,7 @@ public class DialogManager : MonoBehaviour
         allNodes = JsonUtility.FromJson<DialogDataArray>(json).nodes;
     }
 
-    private void Start()
-    {
-        //입력과 json파일 초기화
-        InputInit();
-        JsonInit();
 
-        curId = 1;
-        ShowData(curId);
-    }
 
     void ShowData(int id)
     {
@@ -172,10 +171,8 @@ public class DialogManager : MonoBehaviour
             StopCoroutine(printSlowTextCor);
         }
         printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
-        //TODO
-        //캐릭터의 초상화, Sprite 이미지 등 띄워야 한다
-        //만약 캐릭터 데이터 항목이 존재한다면? 캐릭터 초상화를 띄운다. -> 이미지 스프라이트와 매핑하자
 
+        //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)
         {
             foreach(var spriteData in curNode.spriteDatas)
@@ -210,18 +207,16 @@ public class DialogManager : MonoBehaviour
                         Debug.LogError("스프라이트 처리할때 이상한 커맨드가 들어옴. 확인 필요" + spriteData.nodeId);
                         break;
                 }
-
-                
-                
             }
         }
-        
-    }
-    private void SetImageAlpha(Image targetImage, float alpha)
-    {
-        Color c = targetImage.color;
-        c.a = alpha;
-        targetImage.color = c;
+        //TODO
+        //보상이 있다면? 보상 이미지 띄우기
+
+        DialogReward[] dialogRewards = curNode.reward;
+        if(dialogRewards.Length > 0)
+        {
+            rewardCanvas.Show(dialogRewards);
+        }
     }
     CharacterDataSO GetPeopleSOData(string name, eEmotion emotionType)
     {

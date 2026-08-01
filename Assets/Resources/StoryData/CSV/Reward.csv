@@ -1,3 +1,5 @@
 NodeId,Type,Key,Amount
 1,Item,낡은열쇠,1
 1,Affinity,사람1,1
+2,Item,낡은열쇠,1
+2,Item,낡은열쇠2,1

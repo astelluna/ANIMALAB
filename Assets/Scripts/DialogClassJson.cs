@@ -177,7 +177,7 @@ public class DialogReward
     public string key;
     public int amount;
 
-    public eDialogItemType RewardType
+    public eDialogItemType Type
     {
         get
         {

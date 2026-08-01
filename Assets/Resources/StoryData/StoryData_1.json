@@ -35,7 +35,18 @@
             "expression": "happy",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Item",
+                    "key": "낡은열쇠",
+                    "amount": 1
+                },
+                {
+                    "type": "Item",
+                    "key": "낡은열쇠2",
+                    "amount": 1
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": []

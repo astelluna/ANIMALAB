@@ -311,8 +311,8 @@ public class DialogEditorWindow : EditorWindow
             var r = node.reward[i];
             EditorGUILayout.BeginVertical("box");
 
-            r.type = EditorGUILayout.EnumPopup("Type", r.RewardType).ToString();
-            DrawKeyField(r.RewardType, r);
+            r.type = EditorGUILayout.EnumPopup("Type", r.Type).ToString();
+            DrawKeyField(r.Type, r);
             r.amount = EditorGUILayout.IntField("Amount", r.amount);
 
             if (GUILayout.Button("보상 삭제"))
