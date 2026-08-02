@@ -11,6 +11,8 @@ public class CharacterDataSO : ScriptableObject
     [field: SerializeField] public Color NameColor { get; private set; }
     [field: SerializeField] public int InitialAffinity { get; private set; } = 0;
     [field: SerializeField] public int MaxAffinity { get; private set; } = 100;
+    [field:Header("캐릭터 키")]
+    [field: SerializeField] public int BodyHeight { get; private set; } = 800;
 
     public Sprite GetExpression(eEmotion emotion)
     {

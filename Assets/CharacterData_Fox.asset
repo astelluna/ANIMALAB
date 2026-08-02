@@ -16,7 +16,8 @@ MonoBehaviour:
   <Portrait>k__BackingField: {fileID: 0}
   <Expressions>k__BackingField:
   - emotion: 1
-    sprite: {fileID: 21300000, guid: 1442445c12753f34a8abf88870b17cfc, type: 3}
+    sprite: {fileID: 21300000, guid: fc7d4d95db7f2ce43bbc49c433e73a6e, type: 3}
   <NameColor>k__BackingField: {r: 1, g: 0.69167966, b: 0.2783019, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100
+  <BodyHeight>k__BackingField: 940

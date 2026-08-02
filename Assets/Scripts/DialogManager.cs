@@ -146,22 +146,6 @@ public class DialogManager : MonoBehaviour
     void JsonInit()
     {
         allNodes = GetJsonData();
-
-        return;
-        string path = PathManager.jsonFilePath;
-        string resourcePath = path
-    .Replace("Assets/Resources/", "")
-    .Replace(".json", "");
-        TextAsset jsonFile = Resources.Load<TextAsset>(resourcePath);
-
-        if (jsonFile == null)
-        {
-            Debug.LogError("StoryDialog2.json을 Resources 폴더에서 못 찾음. 경로 확인 필요.");
-            return;
-        }
-        string json = jsonFile.text;
-        Debug.Log(json);
-        allNodes = JsonUtility.FromJson<DialogDataArray>(json).nodes;
     }
 
 
@@ -215,7 +199,7 @@ public class DialogManager : MonoBehaviour
                         {
                             alpha = 0.5f;
                         }
-                        characterPosManager.ShowImage(charData.CharacterId,curSprite, spriteData.Position, alpha);
+                        characterPosManager.ShowImage(charData.CharacterId,curSprite, spriteData.Position, alpha, charData.BodyHeight);
                         break;
                     case eCommandType.Hide:
                         if(!characterPosManager.HideImage(spriteData.characterId))

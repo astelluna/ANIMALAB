@@ -46,7 +46,7 @@ public class CharacterUISlotManager : MonoBehaviour
         c.a = alpha;
         targetImage.color = c;
     }
-    public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, float alpha)
+    public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, float alpha, int height)
     {
         Image image = null;
         bool isLeft = false;
@@ -71,11 +71,14 @@ public class CharacterUISlotManager : MonoBehaviour
             Debug.LogError("image가 null로 반환중");
             return false;
         }
+        //이미지 컴포넌트의 height를 수정
+        image.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
 
         //반환하기 전에, 만약 Left 계열로 호출되었다면 반전, 아니라면 그대로 돌려주자
         FlipImage(image, isLeft);
         SetImageAlpha(image, alpha);
         image.sprite = spriteImg;
+        image.gameObject.SetActive(true);
         characterIdToPosDict.Add(id, (position, image));
 
         return true;
