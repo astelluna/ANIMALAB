@@ -1,3 +1,6 @@
+using NUnit.Framework;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using UnityEditor;
 using UnityEngine;
@@ -29,6 +32,47 @@ public class CSVDownloader : MonoBehaviour
         CSVToJsonWindow.ReadCSV();
         AssetDatabase.Refresh();
         Debug.Log("CSV -> JSON 변환 완료. " + PathManager.jsonFilePath);
+        //RewardSO도 자동화
+        AutoRegisterRewardSO();
+    }
+    private static void AutoRegisterRewardSO()
+    {
+        DialogData[] jsonData = DialogManager.GetJsonData();
+
+        List<(string, eDialogItemType)> allKeyUsed = new List<(string, eDialogItemType)>();
+        foreach (DialogData item in jsonData)
+        {
+            foreach (DialogReward rewardData in item.reward)
+            {
+                string key = rewardData.key;
+                if (!allKeyUsed.Any(x => x.Item1 == rewardData.key))
+                {
+                    allKeyUsed.Add((rewardData.key, rewardData.Type));
+                }
+            }
+        }
+        RewardIconSO table = AssetDatabase.LoadAssetAtPath<RewardIconSO>("Assets/RewardIconSO.asset");
+        if(table == null)
+        {
+            Debug.LogError("RewardIconSO가 null입니다. 경로를 확인해주세요");
+        }
+        foreach ((string, eDialogItemType) tuple in allKeyUsed)
+        {
+            bool exists = table.rewardDataList.Exists(e => e.key == tuple.Item1);
+            if (!exists)
+            {
+                table.rewardDataList.Add(new RewardIconEntry()
+                {
+                    key = tuple.Item1,
+                    type = tuple.Item2,
+                    icon = null
+                });
+                Debug.Log($"누락되 키와 타입 추가= {tuple.Item1}, {tuple.Item2}");
+            }
+        }
+        EditorUtility.SetDirty(table);
+        AssetDatabase.SaveAssets();
+        Debug.Log("RewardIconSo 동기화 완료");
     }
 
 

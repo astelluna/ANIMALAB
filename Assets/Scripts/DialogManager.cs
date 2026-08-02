@@ -122,8 +122,32 @@ public class DialogManager : MonoBehaviour
         if (rewardCanvas.IsRewardPanelShow) { return; }
         HandleNext();
     }
+
+    public static DialogData[] GetJsonData()
+    {
+
+        string path = PathManager.jsonFilePath;
+        string resourcePath = path
+    .Replace("Assets/Resources/", "")
+    .Replace(".json", "");
+        TextAsset jsonFile = Resources.Load<TextAsset>(resourcePath);
+
+        if (jsonFile == null)
+        {
+            Debug.LogError("StoryDialog2.json을 Resources 폴더에서 못 찾음. 경로 확인 필요.");
+            return null;
+        }
+        string json = jsonFile.text;
+        Debug.Log(json);
+        return JsonUtility.FromJson<DialogDataArray>(json).nodes;
+        //allNodes = JsonUtility.FromJson<DialogDataArray>(json).nodes;
+    }
+
     void JsonInit()
     {
+        allNodes = GetJsonData();
+
+        return;
         string path = PathManager.jsonFilePath;
         string resourcePath = path
     .Replace("Assets/Resources/", "")
