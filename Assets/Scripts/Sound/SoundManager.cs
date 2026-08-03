@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
         SoundData soundData = soundDatabase.Get(id);
         if (soundData == null) return;
 
-        AudioSource source = soundData.category == SoundCategory.BGM ? bgmSource : sfxGroup;
+        AudioSource source = soundData.category == SoundCategory.BGM ? bgmSource : bgmSource;
         source.outputAudioMixerGroup = GetMixerGroup(soundData.category);
 
         source.clip = soundData.clips[Random.Range(0, soundData.clips.Length)];
