@@ -151,14 +151,24 @@
                     "command": "Show",
                     "characterId": "리트리버",
                     "expression": "normal",
-                    "position": "Left"
+                    "position": "Left",
+                    "effect": ""
                 },
                 {
                     "nodeId": 10,
                     "command": "Show",
                     "characterId": "사막여우",
                     "expression": "normal",
-                    "position": "CenterLeft"
+                    "position": "CenterLeft",
+                    "effect": ""
+                },
+                {
+                    "nodeId": 10,
+                    "command": "Effect",
+                    "characterId": "리트리버",
+                    "expression": "",
+                    "position": "",
+                    "effect": "Exclamation"
                 }
             ]
         },
@@ -178,14 +188,32 @@
                     "command": "Show",
                     "characterId": "토끼",
                     "expression": "normal",
-                    "position": "CenterRight"
+                    "position": "CenterRight",
+                    "effect": ""
                 },
                 {
                     "nodeId": 11,
                     "command": "Show",
                     "characterId": "양",
                     "expression": "normal",
-                    "position": "Right"
+                    "position": "Right",
+                    "effect": ""
+                },
+                {
+                    "nodeId": 11,
+                    "command": "Effect",
+                    "characterId": "토끼",
+                    "expression": "",
+                    "position": "",
+                    "effect": "Question"
+                },
+                {
+                    "nodeId": 11,
+                    "command": "Effect",
+                    "characterId": "양",
+                    "expression": "",
+                    "position": "",
+                    "effect": "Cheer"
                 }
             ]
         },
@@ -205,7 +233,8 @@
                     "command": "Hide",
                     "characterId": "양",
                     "expression": "",
-                    "position": "Right"
+                    "position": "Right",
+                    "effect": ""
                 }
             ]
         },
@@ -225,7 +254,8 @@
                     "command": "ClearAll",
                     "characterId": "",
                     "expression": "",
-                    "position": ""
+                    "position": "",
+                    "effect": ""
                 }
             ]
         },
@@ -239,7 +269,16 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": []
+            "spriteDatas": [
+                {
+                    "nodeId": 14,
+                    "command": "Effect",
+                    "characterId": "리트리버",
+                    "expression": "",
+                    "position": "",
+                    "effect": "Exclamation"
+                }
+            ]
         },
         {
             "id": 15,

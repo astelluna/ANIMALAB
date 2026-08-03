@@ -4,19 +4,27 @@ using UnityEngine.UI;
 
 public class CharacterUISlotManager : MonoBehaviour
 {
-    [SerializeField] private Image slotLeft;
-    [SerializeField] private Image slotCenterLeft;
-    [SerializeField] private Image slotCenterRight;
-    [SerializeField] private Image slotRight;
+    [SerializeField] private ImageSlot slotLeft;
+    [SerializeField] private ImageSlot slotCenterLeft;
+    [SerializeField] private ImageSlot slotCenterRight;
+    [SerializeField] private ImageSlot slotRight;
 
-    Dictionary<string, (eSpritePosition,Image)> characterIdToPosDict = new Dictionary<string, (eSpritePosition, Image)>();
+    Dictionary<string, (eSpritePosition, ImageSlot)> characterIdToPosDict = new Dictionary<string, (eSpritePosition, ImageSlot)>();
+
+    ImageCharacterEffect imageCharacterEffect;
+
+
+    private void Awake()
+    {
+        imageCharacterEffect = GetComponent<ImageCharacterEffect>();
+    }
 
     private Image GetImageToCharacterId(string id)
     {
         Image img = null;
         if(characterIdToPosDict.ContainsKey(id))
         {
-            img = characterIdToPosDict[id].Item2;
+            img = characterIdToPosDict[id].Item2.CurImage;
         }
         return img;
     }
@@ -48,7 +56,7 @@ public class CharacterUISlotManager : MonoBehaviour
     }
     public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, float alpha, int height)
     {
-        Image image = null;
+        ImageSlot image = null;
         bool isLeft = false;
         switch(position)
         {
@@ -72,16 +80,38 @@ public class CharacterUISlotManager : MonoBehaviour
             return false;
         }
         //이미지 컴포넌트의 height를 수정
-        image.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
+        image.gameObject.SetActive(true);
+        image.CurImage.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, height);
 
         //반환하기 전에, 만약 Left 계열로 호출되었다면 반전, 아니라면 그대로 돌려주자
-        FlipImage(image, isLeft);
-        SetImageAlpha(image, alpha);
-        image.sprite = spriteImg;
-        image.gameObject.SetActive(true);
+        FlipImage(image.CurImage, isLeft);
+        SetImageAlpha(image.CurImage, alpha);
+        image.CurImage.sprite = spriteImg;
         characterIdToPosDict.Add(id, (position, image));
 
         return true;
+    }
+    public void ShowEffect(string id, eSpriteEffect spriteEffect)
+    {
+        if (!characterIdToPosDict.ContainsKey(id)) { return; }
+
+        (eSpritePosition, ImageSlot) tuple = characterIdToPosDict[id];
+        Image curImage = tuple.Item2.EffectImage;
+
+        switch(spriteEffect)
+        {
+            case eSpriteEffect.Exclamation:
+                imageCharacterEffect.ShowExclamationEffect(curImage);
+                break;
+            case eSpriteEffect.Question:
+                imageCharacterEffect.ShowQuestionEffect(curImage);
+                break;
+            case eSpriteEffect.Cheer:
+                imageCharacterEffect.ShowCheerEffect(curImage);
+                break;
+        }
+
+
     }
     private void FlipImage(Image img, bool flipLeft)
     {
@@ -89,6 +119,7 @@ public class CharacterUISlotManager : MonoBehaviour
         scale.x = flipLeft ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
         img.rectTransform.localScale = scale;
     }
+
 
 
 }

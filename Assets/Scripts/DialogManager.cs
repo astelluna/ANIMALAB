@@ -155,7 +155,7 @@ public class DialogManager : MonoBehaviour
         curId = id;
         curNode = System.Array.Find(allNodes, n => n.id == id);
         //node의 string 정보를 캐릭터 정보로 바꿔야함.
-        CharacterDataSO characterData = GetPeopleSOData(curNode.speaker, curNode.Expression);
+        //CharacterDataSO characterData = GetPeopleSOData(curNode.speaker, curNode.Expression);
 
         characterText.text = curNode.speaker;
         //버튼 표시
@@ -185,12 +185,11 @@ public class DialogManager : MonoBehaviour
         {
             foreach(var spriteData in curNode.spriteDatas)
             {
-                
+                CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
                 switch (spriteData.Command)
                 {
                     case eCommandType.Show:
                         //이제 해당 이미지에 표시를 해버리자.
-                        CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
                         Sprite curSprite = charData.GetExpression(spriteData.Expression);
                         if (curSprite == null) continue;
                         //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
@@ -210,6 +209,9 @@ public class DialogManager : MonoBehaviour
                     case eCommandType.ClearAll:
                         //현재 존재하는 화면의 스프라이트 들을 전부 지우자
                         characterPosManager.HideImageAll();
+                        break;
+                    case eCommandType.Effect:
+                        characterPosManager.ShowEffect(charData.CharacterId, spriteData.Effect);
                         break;
                     default:
                         Debug.LogError("스프라이트 처리할때 이상한 커맨드가 들어옴. 확인 필요" + spriteData.nodeId);

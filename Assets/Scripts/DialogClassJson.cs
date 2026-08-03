@@ -18,7 +18,18 @@ public enum eCGEffect
 {
     fadeIn,fadeOut,Instant
 }
-
+public enum eCommandType
+{
+    none, Show, Hide, ClearAll, Effect
+}
+public enum eSpriteEffect
+{
+    none, Exclamation, Question, Cheer
+}
+public enum eSpritePosition
+{
+    none, Left, Right, CenterLeft, CenterRight
+}
 [Serializable]
 public class DialogDataArray
 {
@@ -58,6 +69,7 @@ public class CharacterSprite
     public string characterId;
     public string expression;
     public string position;
+    public string effect;
 
     public eCommandType Command
     {
@@ -93,17 +105,18 @@ public class CharacterSprite
             return eSpritePosition.none;
         }
     }
+    public eSpriteEffect Effect
+    {
+        get
+        {
+            if (Enum.TryParse<eSpriteEffect>(effect, true, out var result))
+            {
+                return result;
+            }
+            return eSpriteEffect.none;
+        }
+    }
 }
-
-public enum eCommandType
-{
-    none, Show, Hide, ClearAll
-}
-public enum eSpritePosition
-{
-    none, Left, Right, CenterLeft,CenterRight
-}
-
 
 [Serializable]
 public class DialogCG
