@@ -1,2 +1,4 @@
-NodeId,Key,Effect
-1,basic01,fadeIn
+NodeId,type,Key,Effect
+1,Background,background_floor1,fadeIn
+2,Background,background_floor2,fadeIn
+3,CG,CG_1,fadeIn

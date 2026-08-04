@@ -176,6 +176,21 @@ public static class CSVToJsonWindow
         {
             nodeMap[pair.Key].dialogSounds = pair.Value.ToArray();
         }
+        //8. ChapterData
+        List<string[]> chapterDatas = ParseCsvFile(PathManager.chapterDataFileName);
+        for (int i = 1; i < chapterDatas.Count; i++)
+        {
+            string[] cols = chapterDatas[i];
+
+            if (cols[0] == "") continue;
+            int chapterId = int.Parse(cols[2]);
+            ChapterData chapterData = new ChapterData();
+            chapterData.chapterId = int.Parse(cols[0]);
+            chapterData.title = cols[1];
+            chapterData.startNodeId = int.Parse(cols[2]);
+            //클래스 넣어줌
+            nodeMap[chapterId].chapterDatas = chapterData;
+        }
         //마지막 JSON 저장
         DialogDataArray data = new DialogDataArray();
         data.nodes = nodeMap.Values.OrderBy(x => x.id).ToArray();

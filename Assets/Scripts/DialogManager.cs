@@ -29,6 +29,8 @@ public class DialogManager : MonoBehaviour
 
     [SerializeField] CharacterUISlotManager characterPosManager;
     [SerializeField] RewardCanvas rewardCanvas;
+
+    [SerializeField] ChapterShowPanel chapterShowPanel;
     private void Start()
     {
         //입력과 json파일 초기화
@@ -120,6 +122,7 @@ public class DialogManager : MonoBehaviour
         if (IsPointerOverUI()) { Debug.Log("버튼위에ㅓㅅ 클릭"); return; }
         if (HasChoices()) { return; }
         if (rewardCanvas.IsRewardPanelShow) { return; }
+        if (chapterShowPanel.IsChapterPanelShow) { return; }
         HandleNext();
     }
 
@@ -155,6 +158,28 @@ public class DialogManager : MonoBehaviour
         //node의 string 정보를 캐릭터 정보로 바꿔야함.
         //CharacterDataSO characterData = GetPeopleSOData(curNode.speaker, curNode.Expression);
 
+        
+        //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
+        if(curNode.chapterDatas != null && curNode.chapterDatas.chapterId > 0)
+        {
+            //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
+            ChapterData chapterData = curNode.chapterDatas;
+            chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () => 
+            {
+                ShowNodeContent();
+            });
+        }
+        else
+        {
+            ShowNodeContent();
+        }
+        
+        
+
+        //이벤트가 있다면 실행시키자
+    }
+    void ShowNodeContent()
+    {
         characterText.text = curNode.speaker;
         //버튼 표시
         foreach (var btn in choiceButtons)
@@ -172,7 +197,7 @@ public class DialogManager : MonoBehaviour
         }
 
         //코루틴 다시 실행
-        if(printSlowTextCor != null)
+        if (printSlowTextCor != null)
         {
             StopCoroutine(printSlowTextCor);
         }
@@ -181,7 +206,7 @@ public class DialogManager : MonoBehaviour
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)
         {
-            foreach(var spriteData in curNode.spriteDatas)
+            foreach (var spriteData in curNode.spriteDatas)
             {
                 CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
                 switch (spriteData.Command)
@@ -196,10 +221,10 @@ public class DialogManager : MonoBehaviour
                         {
                             alpha = 0.5f;
                         }
-                        characterPosManager.ShowImage(charData.CharacterId,curSprite, spriteData.Position, alpha, charData.BodyHeight);
+                        characterPosManager.ShowImage(charData.CharacterId, curSprite, spriteData.Position, alpha, charData.BodyHeight);
                         break;
                     case eCommandType.Hide:
-                        if(!characterPosManager.HideImage(spriteData.characterId))
+                        if (!characterPosManager.HideImage(spriteData.characterId))
                         {
                             Debug.LogError("Sprite Hide 실패. 아이디가 없었습니다");
                         }
@@ -225,7 +250,7 @@ public class DialogManager : MonoBehaviour
         }
         //TODO
         //소리가 있다면 재생시킨다.
-        foreach(DialogSound sound in curNode.dialogSounds)
+        foreach (DialogSound sound in curNode.dialogSounds)
         {
             if (sound.Key == eSoundID.none)
             {
