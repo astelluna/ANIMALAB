@@ -2,7 +2,7 @@ using UnityEngine;
 
 public enum SoundCategory { SFX, UI, BGM, Ambient }
 
-[CreateAssetMenu(menuName ="Audio/SoundData")]
+[CreateAssetMenu(menuName = "Sound/SoundData")]
 public class SoundData : ScriptableObject
 {
     public AudioClip[] clips;

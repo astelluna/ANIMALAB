@@ -6,9 +6,9 @@ public class SoundManager : MonoBehaviour
 {
     //오디오 소스
     [SerializeField] private AudioSource sfxSource;
-    //[SerializeField] private AudioSource uiSource;
+    [SerializeField] private AudioSource uiSource;
     [SerializeField] private AudioSource bgmSource;
-    //[SerializeField] private AudioSource ambientSource;
+    [SerializeField] private AudioSource ambientSource;
 
     //오디오믹서
     [SerializeField] private AudioMixerGroup sfxGroup;
@@ -55,9 +55,29 @@ public class SoundManager : MonoBehaviour
     public void Play(eSoundID id)
     {
         SoundData soundData = soundDatabase.Get(id);
-        if (soundData == null) return;
+        
+        if (soundData == null)
+        {
+            Debug.LogError("SoundData가 null");
+            return;
+        }
 
-        AudioSource source = soundData.category == SoundCategory.BGM ? bgmSource : bgmSource;
+        AudioSource source = null;
+        switch(soundData.category)
+        {
+            case SoundCategory.SFX:
+                source = sfxSource;
+                break;
+            case SoundCategory.UI:
+                source = uiSource;
+                break;
+            case SoundCategory.BGM:
+                source = bgmSource;
+                break;
+            case SoundCategory.Ambient:
+                source = ambientSource;
+                break;
+        }
         source.outputAudioMixerGroup = GetMixerGroup(soundData.category);
 
         source.clip = soundData.clips[Random.Range(0, soundData.clips.Length)];
@@ -65,6 +85,6 @@ public class SoundManager : MonoBehaviour
         source.pitch = Random.Range(soundData.pitchRange.x, soundData.pitchRange.y);
         source.loop = soundData.loop;
 
-        source.Play();
+        source.PlayOneShot(source.clip);
     }
 }

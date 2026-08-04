@@ -1,0 +1,6 @@
+nodeId,key,,,,,,,,,,,sound key 종류
+1,BackgroundSound,,,,,,,,,,,BackgroundSound
+1,ButtonClick,,,,,,,,,,,ButtonClick
+2,ButtonClick,,,,,,,,,,,FootStep
+3,FootStep,,,,,,,,,,,DoorOpenClose
+4,DoorOpenClose,,,,,,,,,,,

@@ -13,6 +13,7 @@ public class CSVDownloader : MonoBehaviour
     const string rewardUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=681914727";
     const string cgUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=453507803";
     const string characterSpriteUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=503407958";
+    const string dialogSoundUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=570984018";
 
     [MenuItem("Tools/Download CSV File & Make JSON")]
     public static void DownloadCSVAndMakeJSON()
@@ -25,6 +26,7 @@ public class CSVDownloader : MonoBehaviour
         client.DownloadFile(rewardUrl, PathManager.rewardFileName);
         client.DownloadFile(cgUrl, PathManager.cgFileName);
         client.DownloadFile(characterSpriteUrl, PathManager.characterSpriteFileName);
+        client.DownloadFile(dialogSoundUrl, PathManager.dialogSoundFileName);
         AssetDatabase.Refresh();
         Debug.Log("CSV 다운로드 완료. " + PathManager.csvPath);
 

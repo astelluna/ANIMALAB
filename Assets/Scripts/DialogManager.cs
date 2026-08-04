@@ -148,8 +148,6 @@ public class DialogManager : MonoBehaviour
         allNodes = GetJsonData();
     }
 
-
-
     void ShowData(int id)
     {
         curId = id;
@@ -219,24 +217,22 @@ public class DialogManager : MonoBehaviour
                 }
             }
         }
-        //TODO
         //보상이 있다면? 보상 이미지 띄우기
-
         DialogReward[] dialogRewards = curNode.reward;
-        if(dialogRewards.Length > 0)
+        if (dialogRewards.Length > 0)
         {
             rewardCanvas.Show(dialogRewards);
         }
-    }
-    CharacterDataSO GetPeopleSOData(string name, eEmotion emotionType)
-    {
-        CharacterDataSO characterData = ResourceManager.Instance.GetCharacterData(name);
-        if(characterData == null)
+        //TODO
+        //소리가 있다면 재생시킨다.
+        foreach(DialogSound sound in curNode.dialogSounds)
         {
-            Debug.LogError($"{name}의 캐릭터SO 데이터가 없습니다. 에러");
-            return null;
+            if (sound.Key == eSoundID.none)
+            {
+                Debug.LogError($"SoundID가 none입니다. CSV 데이터를 확인해주세요 nodeId = {curNode.id}");
+            }
+            SoundManager.Instance.Play(sound.Key);
         }
-        return characterData;
     }
 
 }

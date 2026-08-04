@@ -35,6 +35,7 @@ public class DialogDataArray
 {
     public DialogData[] nodes; //nodes 로 해야함. JSON 최상위가 nodes라는 이름
 }
+
 [Serializable]
 public class DialogData
 {
@@ -48,6 +49,7 @@ public class DialogData
     public int nextnodeId;
     public string OnEvent; //어떤 이펙트 터져야 한다. 혹은 코드상으로 특별한 처리가 필요하다면 이거 사용
     public CharacterSprite[] spriteDatas;
+    public DialogSound[] dialogSounds;
 
     public eEmotion Expression
     {
@@ -199,6 +201,24 @@ public class DialogReward
                 return result;
             }
             return eDialogItemType.None;
+        }
+    }
+}
+[Serializable]
+public class DialogSound
+{
+    public int nodeId;
+    public string key;
+
+    public eSoundID Key
+    {
+        get
+        {
+            if (Enum.TryParse<eSoundID>(key, true, out var result))
+            {
+                return result;
+            }
+            return eSoundID.none;
         }
     }
 }

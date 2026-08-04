@@ -4,13 +4,15 @@ using UnityEngine;
 
 public enum eSoundID
 {
-    backgroundSound,
+    none,
+    BackgroundSound,
     ButtonClick,
-    PootStep,
+    FootStep,
     DoorOpenClose,
 }
 
-public class SoundDatabase : MonoBehaviour
+[CreateAssetMenu(menuName = "Sound/SoundDatabase")]
+public class SoundDatabase : ScriptableObject
 {
     [Serializable]
     public class Entry
@@ -24,11 +26,12 @@ public class SoundDatabase : MonoBehaviour
     {
         if(soundDataDict == null)
         {
+            soundDataDict = new Dictionary<eSoundID, SoundData>();
             foreach(var k in entries)
             {
                 if(!soundDataDict.ContainsKey(k.id))
                 {
-                    soundDataDict.Add(id, k.data);
+                    soundDataDict.Add(k.id, k.data);
                 }
             }
         }

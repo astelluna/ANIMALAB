@@ -12,6 +12,7 @@ public static class CSVToJsonWindow
     static Dictionary<int, List<DialogReward>> rewardMap = new Dictionary<int, List<DialogReward>>();
     static Dictionary<int, List<DialogCG>> cgMap = new Dictionary<int, List<DialogCG>>();
     static Dictionary<int, List<CharacterSprite>> characterSpriteMap = new Dictionary<int, List<CharacterSprite>>();
+    static Dictionary<int, List<DialogSound>> dialogSoundMap = new Dictionary<int, List<DialogSound>>();
 
     private static void Init()
     {
@@ -20,6 +21,7 @@ public static class CSVToJsonWindow
         rewardMap.Clear();
         cgMap.Clear();
         characterSpriteMap.Clear();
+        dialogSoundMap.Clear();
     }
     public static void ReadCSV()
     {
@@ -151,6 +153,28 @@ public static class CSVToJsonWindow
         foreach (var pair in characterSpriteMap)
         {
             nodeMap[pair.Key].spriteDatas = pair.Value.ToArray();
+        }
+        //7. DialogSound
+        List<string[]> dialogSounds = ParseCsvFile(PathManager.dialogSoundFileName);
+        for (int i = 1; i < dialogSounds.Count; i++)
+        {
+            string[] cols = dialogSounds[i];
+
+            if (cols[0] == "") continue;
+            int nodeId = int.Parse(cols[0]);
+            DialogSound dialogSound = new DialogSound();
+            dialogSound.nodeId = nodeId;
+            dialogSound.key = cols[1];
+
+            if (!dialogSoundMap.ContainsKey(nodeId))
+            {
+                dialogSoundMap[nodeId] = new List<DialogSound>();
+            }
+            dialogSoundMap[nodeId].Add(dialogSound);
+        }
+        foreach (var pair in dialogSoundMap)
+        {
+            nodeMap[pair.Key].dialogSounds = pair.Value.ToArray();
         }
         //마지막 JSON 저장
         DialogDataArray data = new DialogDataArray();
