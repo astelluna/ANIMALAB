@@ -12,4 +12,6 @@ public static class PathManager
     public const string characterSpriteFileName = csvPath + "CharacterSprite.csv";
     public const string dialogSoundFileName = csvPath + "DialogSound.csv";
     public const string chapterDataFileName = csvPath + "ChapterData.csv";
+    //Save
+    public const string saveFileName = "saveFile.json";
 }

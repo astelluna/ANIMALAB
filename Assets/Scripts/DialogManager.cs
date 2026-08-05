@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -12,9 +13,11 @@ using static UnityEngine.InputSystem.InputAction;
 [RequireComponent(typeof(PlayerInput))]
 public class DialogManager : MonoBehaviour
 {
-    public TMP_Text characterText;
-    public TMP_Text dialogText;
-    public Button[] choiceButtons;
+    [SerializeField] TMP_Text characterText;
+    [SerializeField] TMP_Text dialogText;
+    [SerializeField] Button[] choiceButtons;
+    [SerializeField] Button saveButton;
+    [SerializeField] Button loadTestButton;
 
     DialogData[] allNodes;
     int curId = 0;
@@ -35,6 +38,46 @@ public class DialogManager : MonoBehaviour
     //배경
     [SerializeField] BackgroundScript backgroundScript;
     [SerializeField] BackgroundDatabaseSO backgroundDataSO;
+
+    //저장
+    int curChapterNo = 0;
+
+    private void Awake()
+    {
+        saveButton.onClick.AddListener(SaveButtonClick);
+        loadTestButton.onClick.AddListener(LoadButtonClick);
+    }
+    private void SaveButtonClick()
+    {
+        SaveData data = CreateSaveData();
+        string json = JsonUtility.ToJson(data, true);
+        string path = Application.persistentDataPath + PathManager.saveFileName;
+        File.WriteAllText(path, json);
+    }
+    public void LoadButtonClick()
+    {
+        SaveData data = LoadSaveFile();
+        ShowData(data.nodeId);
+    }
+    public SaveData LoadSaveFile()
+    {
+        string path = Application.persistentDataPath + PathManager.saveFileName;
+        if (!File.Exists(path))
+        {
+            Debug.LogError("SaveFile이 없어서 못불러왔습니다");
+            return null;
+        }
+        string json = File.ReadAllText(path);
+        return JsonUtility.FromJson<SaveData>(json);
+    }
+    public SaveData CreateSaveData()
+    {
+        SaveData saveData = new SaveData();
+        saveData.curChapterId = curChapterNo;
+        saveData.nodeId = curNode.id;
+        //TODO,   호감도 및 아이템은 아직 모르겠다. 
+        return saveData;
+    }
 
     private void Start()
     {
@@ -167,6 +210,7 @@ public class DialogManager : MonoBehaviour
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
         if(curNode.chapterDatas != null && curNode.chapterDatas.chapterId > 0)
         {
+            curChapterNo = curNode.chapterDatas.chapterId;
             //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
             ChapterData chapterData = curNode.chapterDatas;
             chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () => 
