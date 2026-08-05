@@ -7,8 +7,10 @@
             "expression": "normal",
             "cg": [
                 {
-                    "key": "Background",
-                    "effect": "background_floor1"
+                    "nodeId": 1,
+                    "type": "Background",
+                    "key": "background_floor1",
+                    "effect": "fadeIn"
                 }
             ],
             "choices": [],
@@ -50,8 +52,10 @@
             "expression": "happy",
             "cg": [
                 {
-                    "key": "Background",
-                    "effect": "background_floor2"
+                    "nodeId": 2,
+                    "type": "Background",
+                    "key": "background_floor2",
+                    "effect": "fadeIn"
                 }
             ],
             "choices": [],
@@ -89,8 +93,10 @@
             "expression": "none",
             "cg": [
                 {
-                    "key": "CG",
-                    "effect": "CG_1"
+                    "nodeId": 3,
+                    "type": "CG",
+                    "key": "CG_1",
+                    "effect": "fadeIn"
                 }
             ],
             "choices": [],

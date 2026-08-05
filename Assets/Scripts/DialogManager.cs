@@ -31,6 +31,11 @@ public class DialogManager : MonoBehaviour
     [SerializeField] RewardCanvas rewardCanvas;
 
     [SerializeField] ChapterShowPanel chapterShowPanel;
+
+    //배경
+    [SerializeField] BackgroundScript backgroundScript;
+    [SerializeField] BackgroundDatabaseSO backgroundDataSO;
+
     private void Start()
     {
         //입력과 json파일 초기화
@@ -248,7 +253,6 @@ public class DialogManager : MonoBehaviour
         {
             rewardCanvas.Show(dialogRewards);
         }
-        //TODO
         //소리가 있다면 재생시킨다.
         foreach (DialogSound sound in curNode.dialogSounds)
         {
@@ -257,6 +261,15 @@ public class DialogManager : MonoBehaviour
                 Debug.LogError($"SoundID가 none입니다. CSV 데이터를 확인해주세요 nodeId = {curNode.id}");
             }
             SoundManager.Instance.Play(sound.Key);
+        }
+        //배경이 있다면? 표시시킨다
+        if(curNode.cg.Length > 0)
+        {
+            foreach(DialogCG cgData in curNode.cg)
+            {
+                Sprite sprite = backgroundDataSO.GetSprite(cgData.key);
+                backgroundScript.SetBackgroundImage(sprite);
+            }
         }
     }
 

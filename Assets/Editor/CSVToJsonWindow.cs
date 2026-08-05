@@ -117,8 +117,10 @@ public static class CSVToJsonWindow
             string[] cols = cgLines[i];
             int nodeId = int.Parse(cols[0]);
             DialogCG cg = new DialogCG();
-            cg.key = cols[1];
-            cg.effect = cols[2];
+            cg.nodeId = nodeId;
+            cg.type = cols[1];
+            cg.key = cols[2];
+            cg.effect = cols[3];
             if(!cgMap.ContainsKey(nodeId))
             {
                 cgMap[nodeId] = new List<DialogCG>();

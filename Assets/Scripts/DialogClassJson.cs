@@ -30,6 +30,10 @@ public enum eSpritePosition
 {
     none, Left, Right, CenterLeft, CenterRight
 }
+public enum eBackgroundType
+{
+    none,Background,CG
+}
 [Serializable]
 public class DialogDataArray
 {
@@ -132,8 +136,21 @@ public class CharacterSprite
 [Serializable]
 public class DialogCG
 {
+    public int nodeId;
+    public string type;
     public string key; //CG 리소스 키. JSON에 고유하게 넣음
     public string effect; //"fadeIn, fadeOut, instant" 등 연출 (서서히 나타남, 서서히 사라짐, 즉시 바뀜)
+    public eBackgroundType Type
+    {
+        get
+        {
+            if (Enum.TryParse<eBackgroundType>(type, true, out var result))
+            {
+                return result;
+            }
+            return eBackgroundType.none;
+        }
+    }
     public eCGEffect Expression
     {
         get
