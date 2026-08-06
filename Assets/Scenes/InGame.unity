@@ -2095,6 +2095,7 @@ MonoBehaviour:
   - {fileID: 1361403934}
   - {fileID: 1326545409}
   saveButton: {fileID: 517944943}
+  loadTestButton: {fileID: 780398159}
   characterPosManager: {fileID: 461747277}
   rewardCanvas: {fileID: 1764809817}
   chapterShowPanel: {fileID: 1865869289}
