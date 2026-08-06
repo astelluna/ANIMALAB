@@ -54,7 +54,7 @@ public class DialogData
     public string OnEvent; //어떤 이펙트 터져야 한다. 혹은 코드상으로 특별한 처리가 필요하다면 이거 사용
     public CharacterSprite[] spriteDatas;
     public DialogSound[] dialogSounds;
-    public ChapterData chapterDatas;
+    public ChapterData chapterData;
 
     public eEmotion Expression
     {
@@ -68,12 +68,14 @@ public class DialogData
         }
     }
 }
+
 [Serializable]
 public class ChapterData
 {
     public int chapterId;
     public string title;
     public int startNodeId;
+    public string thumbnailKey;
 }
 
 [Serializable]

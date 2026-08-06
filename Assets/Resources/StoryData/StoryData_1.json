@@ -39,10 +39,11 @@
                     "key": "ButtonClick"
                 }
             ],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 1,
                 "title": "새로운 시작",
-                "startNodeId": 1
+                "startNodeId": 1,
+                "thumbnailKey": "thumbnail_test1"
             }
         },
         {
@@ -80,10 +81,11 @@
                     "key": "ButtonClick"
                 }
             ],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -110,10 +112,11 @@
                     "key": "FootStep"
                 }
             ],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -133,10 +136,11 @@
                     "key": "DoorOpenClose"
                 }
             ],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -151,10 +155,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -169,10 +174,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -187,10 +193,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -205,10 +212,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -223,10 +231,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -266,10 +275,11 @@
                 }
             ],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 2,
                 "title": "폐쇄된 연구소",
-                "startNodeId": 10
+                "startNodeId": 10,
+                "thumbnailKey": "thumbnail_test2"
             }
         },
         {
@@ -317,10 +327,11 @@
                 }
             ],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -344,10 +355,11 @@
                 }
             ],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -371,10 +383,11 @@
                 }
             ],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -398,10 +411,11 @@
                 }
             ],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -416,10 +430,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -434,10 +449,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -452,10 +468,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -470,10 +487,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -505,10 +523,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -523,10 +542,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 3,
                 "title": "Escape",
-                "startNodeId": 20
+                "startNodeId": 20,
+                "thumbnailKey": "thumbnail_test3"
             }
         },
         {
@@ -541,10 +561,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -559,10 +580,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -577,10 +599,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -595,10 +618,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -613,10 +637,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -631,10 +656,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -649,10 +675,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -667,10 +694,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -685,10 +713,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -733,10 +762,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -751,10 +781,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -769,10 +800,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -787,10 +819,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -805,10 +838,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -823,10 +857,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -841,10 +876,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -859,10 +895,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -877,10 +914,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -895,10 +933,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -913,10 +952,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -931,10 +971,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -949,10 +990,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -967,10 +1009,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -985,10 +1028,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1003,10 +1047,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1021,10 +1066,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1039,10 +1085,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1057,10 +1104,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1075,10 +1123,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1093,10 +1142,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1111,10 +1161,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1129,10 +1180,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1147,10 +1199,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1165,10 +1218,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1183,10 +1237,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1201,10 +1256,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1219,10 +1275,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1254,10 +1311,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1272,10 +1330,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1290,10 +1349,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1308,10 +1368,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1326,10 +1387,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1344,10 +1406,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1362,10 +1425,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1380,10 +1444,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1398,10 +1463,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1416,10 +1482,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1434,10 +1501,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1452,10 +1520,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1470,10 +1539,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1488,10 +1558,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1506,10 +1577,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1524,10 +1596,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1542,10 +1615,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1560,10 +1634,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1578,10 +1653,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -1596,10 +1672,11 @@
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
-            "chapterDatas": {
+            "chapterData": {
                 "chapterId": 0,
                 "title": "",
-                "startNodeId": 0
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         }
     ]

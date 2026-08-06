@@ -1,4 +1,4 @@
-chapterId,title,startNodeId
-1,새로운 시작,1
-2,폐쇄된 연구소,10
-3,Escape,20
+chapterId,title,startNodeId,thumbnailKey
+1,새로운 시작,1,thumbnail_test1
+2,폐쇄된 연구소,10,thumbnail_test2
+3,Escape,20,thumbnail_test3

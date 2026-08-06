@@ -190,8 +190,9 @@ public static class CSVToJsonWindow
             chapterData.chapterId = int.Parse(cols[0]);
             chapterData.title = cols[1];
             chapterData.startNodeId = int.Parse(cols[2]);
+            chapterData.thumbnailKey = cols[3];
             //클래스 넣어줌
-            nodeMap[chapterId].chapterDatas = chapterData;
+            nodeMap[chapterId].chapterData = chapterData;
         }
         //마지막 JSON 저장
         DialogDataArray data = new DialogDataArray();

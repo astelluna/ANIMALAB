@@ -82,8 +82,7 @@ public class DialogManager : MonoBehaviour
     private void Start()
     {
         //입력과 json파일 초기화
-        InputInit();
-        JsonInit();
+        Init();
 
         curId = 1;
         ShowData(curId);
@@ -134,12 +133,14 @@ public class DialogManager : MonoBehaviour
         return false;
     }
 
-    void InputInit()
+    void Init()
     {
         playerInput = GetComponent<PlayerInput>();
         mainActionMap = playerInput.actions.FindActionMap("Player");
         clickAction = mainActionMap.FindAction("Click");
         clickAction.performed += (ctx) => MouseLButtonClick(ctx);
+
+        allNodes = NodeManager.Instance.GetDialogData();
     }
 
     private bool IsPointerOverUI()
@@ -174,31 +175,6 @@ public class DialogManager : MonoBehaviour
         HandleNext();
     }
 
-    public static DialogData[] GetJsonData()
-    {
-
-        string path = PathManager.jsonFilePath;
-        string resourcePath = path
-    .Replace("Assets/Resources/", "")
-    .Replace(".json", "");
-        TextAsset jsonFile = Resources.Load<TextAsset>(resourcePath);
-
-        if (jsonFile == null)
-        {
-            Debug.LogError("StoryDialog2.json을 Resources 폴더에서 못 찾음. 경로 확인 필요.");
-            return null;
-        }
-        string json = jsonFile.text;
-        Debug.Log(json);
-        return JsonUtility.FromJson<DialogDataArray>(json).nodes;
-        //allNodes = JsonUtility.FromJson<DialogDataArray>(json).nodes;
-    }
-
-    void JsonInit()
-    {
-        allNodes = GetJsonData();
-    }
-
     void ShowData(int id)
     {
         curId = id;
@@ -208,11 +184,11 @@ public class DialogManager : MonoBehaviour
 
         
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
-        if(curNode.chapterDatas != null && curNode.chapterDatas.chapterId > 0)
+        if(curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
-            curChapterNo = curNode.chapterDatas.chapterId;
+            curChapterNo = curNode.chapterData.chapterId;
             //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
-            ChapterData chapterData = curNode.chapterDatas;
+            ChapterData chapterData = curNode.chapterData;
             chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () => 
             {
                 ShowNodeContent();
