@@ -1,5 +1,6 @@
 public static class PathManager
 {
+    #region FilePath
     //Json
     public const string jsonFilePath = "Assets/Resources/StoryData/StoryData_1.json";
     //CSV
@@ -14,4 +15,10 @@ public static class PathManager
     public const string chapterDataFileName = csvPath + "ChapterData.csv";
     //Save
     public const string saveFileName = "saveFile.json";
+    #endregion
+
+    #region SceneName
+    public const string TitleSceneName = "Title";
+    public const string InGameSceneName = "InGame";
+    #endregion
 }

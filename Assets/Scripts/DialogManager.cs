@@ -84,7 +84,8 @@ public class DialogManager : MonoBehaviour
         //입력과 json파일 초기화
         Init();
 
-        curId = 1;
+        curId = GameManager.Instance.startNodeId;
+        Debug.Log($"Ingame씬 -> 시작노드ID: {curId}");
         ShowData(curId);
     }
 
