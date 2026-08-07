@@ -19,14 +19,23 @@ public class WarningPanel : MonoBehaviour
         yesButton.onClick.RemoveAllListeners();
         noButton.onClick.RemoveAllListeners();
     }
+    public void ShowWarningPanel(Action action)
+    {
+        OnYesButtonClick = action;
+        this.gameObject.SetActive(true);
+    }
 
     private void YesButtonClick()
     {
-        OnYesButtonClick?.Invoke();
+        OnYesButtonClick?.Invoke(); 
+        OnYesButtonClick = null;
         this.gameObject.SetActive(false);
+        
     }
     private void NoButtonClick()
     {
+        OnYesButtonClick = null;
         this.gameObject.SetActive(false);
+
     }
 }

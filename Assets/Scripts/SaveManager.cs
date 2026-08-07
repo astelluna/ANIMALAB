@@ -13,13 +13,14 @@ public class SaveManager : Singleton<SaveManager>
         path = Application.persistentDataPath + PathManager.saveFileName;
     }
 
-    public void CreateNewSaveFile()
+    public SaveData CreateNewSaveFile()
     {
         SaveData saveData = new SaveData();
         saveData.curChapterId = 1;
         saveData.nodeId = 1;
         string json = JsonUtility.ToJson(saveData, true);
         File.WriteAllText(path, json);
+        return saveData;
     }
 
     public void CreateSaveData(int chapterid, int nodeId)

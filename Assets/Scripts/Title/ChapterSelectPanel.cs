@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.EventSystems.PointerEventData;
 
 public class ChapterSelectPanel : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class ChapterSelectPanel : MonoBehaviour
     [SerializeField] Button leftArrowButton;
     [SerializeField] Button rightArrowButton;
     [SerializeField] Button selectButton;
+    [SerializeField] Button initButton;
 
     [SerializeField] ChapterSelectImage curChapterPreview;
     [SerializeField] ChapterSelectImage prevChapterPreview;
@@ -24,19 +27,35 @@ public class ChapterSelectPanel : MonoBehaviour
     {
         warningPanel = GetComponentInChildren<WarningPanel>(true);
     }
+    private void OnEnable()
+    {
+        //chapters = NodeManager.GetChapterDataClass();
+        SaveData saveData = SaveManager.Instance.LoadSaveFile();
+        chapters = NodeManager.GetChapterDataClass();
 
+        currentIndex = saveData.curChapterId - 1; //인덱스 0부터 시작이므로 -1
+        Move(0);
+    }
     private void Start()
     {
-        chapters = NodeManager.GetChapterDataClass();
+        //chapters = NodeManager.GetChapterDataClass();
         leftArrowButton.onClick.AddListener(() => Move(-1));
         rightArrowButton.onClick.AddListener(() => Move(1));
         selectButton.onClick.AddListener(OnSelected);
-
-        warningPanel.OnYesButtonClick += StartFromNewChapter;
+        initButton.onClick.AddListener(InitCurrentChapterData);
     }
     private void OnDestroy()
     {
-        if(warningPanel != null) warningPanel.OnYesButtonClick -= StartFromNewChapter;
+        leftArrowButton.onClick.RemoveAllListeners();
+        rightArrowButton.onClick.RemoveAllListeners();
+        selectButton.onClick.RemoveAllListeners();
+        initButton.onClick.RemoveAllListeners();
+    }
+
+    private void InitCurrentChapterData()
+    {
+        //현재 챕터의 데이터는 초기화할수있는 방법이 없어서 추가
+        warningPanel.ShowWarningPanel(StartFromNewChapter);
     }
     void OnSelected()
     {
@@ -48,8 +67,7 @@ public class ChapterSelectPanel : MonoBehaviour
         {
             if (data != null)
             {
-                GameManager.Instance.SetStartNodeID(data.nodeId);
-                SceneChangeManager.Instance.LoadSceneWithFade(PathManager.InGameSceneName);
+                GameManager.Instance.GameStart(data);
             }
         }
         else if(selChapterIndex < data.curChapterId)
@@ -57,7 +75,8 @@ public class ChapterSelectPanel : MonoBehaviour
             //2. 만약 이전 노드를 선택했다면? 확인하는 패널을 하나 띄움. 그리고 거기에서도 yes 버튼을 누른다면? 아래 코드를 실행한다
             if(true)
             {
-                warningPanel.gameObject.SetActive(true);
+                warningPanel.ShowWarningPanel(StartFromNewChapter);
+                //warningPanel.gameObject.SetActive(true);
             }
         }
     }
@@ -67,6 +86,8 @@ public class ChapterSelectPanel : MonoBehaviour
         //세이브데이터를 챕터 n정보로 설정하고, 
         ChapterData chapterData = chapters[currentIndex];
         SaveManager.Instance.CreateSaveData(chapterData.chapterId, chapterData.startNodeId);
+        //그리고 게임 시작
+        OnSelected();
     }
 
 
@@ -79,6 +100,7 @@ public class ChapterSelectPanel : MonoBehaviour
     }
     void UpdateDisplay()
     {
+        SaveData data = SaveManager.Instance.LoadSaveFile();
         ChapterData chapter = chapters[currentIndex];
         chapterTitleText.text = $"챕터 {chapter.chapterId}, {chapter.title}";
         curChapterPreview.SetImage(ResourceManager.Instance.GetChapterThumnail(chapter.thumbnailKey).thumbnail);
@@ -89,6 +111,14 @@ public class ChapterSelectPanel : MonoBehaviour
         leftArrowButton.interactable = currentIndex > 0;
         rightArrowButton.interactable = currentIndex < chapters.Count - 1;
 
+        if(currentIndex+1 == data.curChapterId)
+        {
+            initButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            initButton.gameObject.SetActive(false);
+        }
         //보여주기
         prevChapterPreview.gameObject.SetActive(currentIndex > 0);
         nextChapterPreview.gameObject.SetActive(currentIndex < chapters.Count - 1);

@@ -9,8 +9,18 @@ public class GameManager : Singleton<GameManager>
         if (Instance != this) return;
         //다음 원하는 코드 작성
     }
-    public void SetStartNodeID(int id)
+    private void SetStartNodeID(int id)
     {
         startNodeId = id;
+    }
+    public void GameStart(SaveData data)
+    {
+        if(data == null)
+        {
+            Debug.LogError("세이브 데이터가 null입니다.");
+            return;
+        }
+        SetStartNodeID(data.nodeId);
+        SceneChangeManager.Instance.LoadSceneWithFade(PathManager.InGameSceneName);
     }
 }
