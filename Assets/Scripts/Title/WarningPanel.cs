@@ -2,16 +2,17 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InitConfirmPanel : MonoBehaviour
+public class WarningPanel : MonoBehaviour
 {
     [SerializeField] Button yesButton;
     [SerializeField] Button noButton;
 
-    public event Action yesButtonClicked;
+    public event Action OnYesButtonClick;
+
     private void Awake()
     {
-        yesButton.onClick.AddListener(ClickYesButton);
-        noButton.onClick.AddListener(ClickNoButton);
+        yesButton.onClick.AddListener(YesButtonClick);
+        noButton.onClick.AddListener(NoButtonClick);
     }
     private void OnDestroy()
     {
@@ -19,12 +20,12 @@ public class InitConfirmPanel : MonoBehaviour
         noButton.onClick.RemoveAllListeners();
     }
 
-    private void ClickYesButton()
+    private void YesButtonClick()
     {
-        yesButtonClicked?.Invoke();
+        OnYesButtonClick?.Invoke();
         this.gameObject.SetActive(false);
     }
-    private void ClickNoButton()
+    private void NoButtonClick()
     {
         this.gameObject.SetActive(false);
     }

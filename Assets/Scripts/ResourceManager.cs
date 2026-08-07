@@ -1,33 +1,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ResourceManager : MonoBehaviour
+public class ResourceManager : Singleton<ResourceManager>
 {
-    public static ResourceManager Instance { get; private set; }
-
     [SerializeField] CharacterDataSO[] characterDataSOArray;
     [SerializeField] CharacterDataSO basicCharacterData;
 
+    [SerializeField] ChapterThumbnailDatabaseSO chapterThumbnailDatabaseSO;
+
     private Dictionary<string, CharacterDataSO> characterDataDict = new Dictionary<string, CharacterDataSO>();
+    private Dictionary<string, ChapterThumbnail> chapterThumbailDict = new Dictionary<string, ChapterThumbnail>();
 
-    private void Awake()
+    protected override void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-
+        base.Awake();
+        if (Instance != this) return;
+        //다음 원하는 코드 작성
         Init();
     }
 
-    private void OnDestroy()
-    {
-        if (Instance == this)
-            Instance = null;
-    }
     private void Init()
     {
         for(int i=0; i< characterDataSOArray.Length; i++)
@@ -40,6 +31,20 @@ public class ResourceManager : MonoBehaviour
             else
             {
                 Debug.LogError($"캐릭터 ID가 중복됩니다. 확인해주세요 {i+1}번째");
+            }
+        }
+        //챕터 데이터
+        List<ChapterThumbnail> thumbnailList = chapterThumbnailDatabaseSO.chapterThumbnails;
+        for(int i=0; i< thumbnailList.Count; i++)
+        {
+            string key = thumbnailList[i].key;
+            if(!chapterThumbailDict.ContainsKey(key))
+            {
+                chapterThumbailDict.Add(key, thumbnailList[i]);
+            }
+            else
+            {
+                Debug.LogError($"섬네일 KEY가 중복됩니다. 확인해주세요 {i + 1}번째");
             }
         }
     }
@@ -55,5 +60,14 @@ public class ResourceManager : MonoBehaviour
             so = basicCharacterData;
         }
         return so;
+    }
+    public ChapterThumbnail GetChapterThumnail(string key)
+    {
+        if(!chapterThumbailDict.ContainsKey(key))
+        {
+            Debug.LogError("썸네일 키를 못찾음. CSV와 SO를 확인해주세요");
+            return null;
+        }
+        return chapterThumbailDict[key];
     }
 }
