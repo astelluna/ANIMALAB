@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -18,6 +20,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Button[] choiceButtons;
     [SerializeField] Button saveButton;
     [SerializeField] Button loadTestButton;
+    [SerializeField] Button skipButton;
 
     DialogData[] allNodes;
     int curId = 0;
@@ -39,20 +42,79 @@ public class DialogManager : MonoBehaviour
     [SerializeField] BackgroundScript backgroundScript;
     [SerializeField] BackgroundDatabaseSO backgroundDataSO;
 
-    //저장
+    //챕터
     int curChapterNo = 0;
+
+    //저장
+    HashSet<int> readNodeHash = new HashSet<int>();
+
+    //스킵
+    float skipDelayTime = 0.2f;
+    WaitForSeconds skipDelay;
+    Coroutine skipCoroutine;
 
     private void Awake()
     {
+        skipDelay = new WaitForSeconds(skipDelayTime);
+
         saveButton.onClick.AddListener(SaveButtonClick);
         loadTestButton.onClick.AddListener(LoadButtonClick);
+        skipButton.onClick.AddListener(SkipButtonClick);
     }
+    private void OnDestroy()
+    {
+        saveButton.onClick.RemoveAllListeners();
+        loadTestButton.onClick.RemoveAllListeners();
+        skipButton.onClick.RemoveAllListeners();
+    }
+    private void OnEnable()
+    {
+        LoadGame();
+    }
+    private void SkipButtonClick()
+    {
+        //스킵 행동. 쭉쭉 일단 while로 진행한다.
+        if(skipCoroutine == null)
+        {
+            skipCoroutine = StartCoroutine(SkipCor());
+        }
+    }
+    IEnumerator SkipCor()
+    {
+        while(true)
+        {
+            yield return skipDelay;
+            if (!CanSkipAble())
+            {
+                skipCoroutine = null;
+                yield break;
+            }
+            HandleNext();
+        }
+    }
+    private bool CanSkipAble()
+    {
+        int nextNodeId = FindNextNodeId();
+        DialogData nextNode = System.Array.Find(allNodes, n => n.id == nextNodeId);
+        if (nextNode == null) return false;
+        if (nextNode.choices.Length > 0 || nextNode.reward.Length > 0 || nextNode.chapterData.haveData() || !readNodeHash.Contains(nextNodeId))
+        {
+            return false;
+        }
+        return true;
+    }
+    private void StopSkipCor()
+    {
+        if (skipCoroutine != null)
+        {
+            StopCoroutine(skipCoroutine);
+            skipCoroutine = null;
+        }
+    }
+
     private void SaveButtonClick()
     {
-        SaveData data = CreateSaveData();
-        string json = JsonUtility.ToJson(data, true);
-        string path = Application.persistentDataPath + PathManager.saveFileName;
-        File.WriteAllText(path, json);
+        CreateSaveData();
     }
     public void LoadButtonClick()
     {
@@ -61,22 +123,28 @@ public class DialogManager : MonoBehaviour
     }
     public SaveData LoadSaveFile()
     {
-        string path = Application.persistentDataPath + PathManager.saveFileName;
-        if (!File.Exists(path))
-        {
-            Debug.LogError("SaveFile이 없어서 못불러왔습니다");
-            return null;
-        }
-        string json = File.ReadAllText(path);
-        return JsonUtility.FromJson<SaveData>(json);
+        return SaveManager.Instance.LoadSaveFile();
     }
-    public SaveData CreateSaveData()
+
+    private void LoadGame()
     {
-        SaveData saveData = new SaveData();
+        SaveData saveData = LoadSaveFile();
+        if(saveData == null)
+        {
+            readNodeHash = new HashSet<int>();
+            return;
+        }
+        readNodeHash = new HashSet<int>(saveData.readNodeIds);
+    }
+    public void CreateSaveData()
+    {
+        SaveData saveData = SaveManager.Instance.LoadSaveFile() ?? new SaveData();
         saveData.curChapterId = curChapterNo;
         saveData.nodeId = curNode.id;
+        saveData.readNodeIds = readNodeHash.ToList();
+
         //TODO,   호감도 및 아이템은 아직 모르겠다. 
-        return saveData;
+        SaveManager.Instance.CreateSaveData(saveData);
     }
 
     private void Start()
@@ -106,9 +174,19 @@ public class DialogManager : MonoBehaviour
             return;
         }
 
-        if (curNode.nextnodeId == 0) { curId++; }
-        else { curId = curNode.nextnodeId; }
+        curId = FindNextNodeId();
         ShowData(curId);
+    }
+    private int FindNextNodeId()
+    {
+        if (curNode.nextnodeId == 0) 
+        {
+            return curId + 1;
+        }
+        else 
+        {
+            return curNode.nextnodeId; 
+        }
     }
 
     //해야할것. 어떤 메세지가 존재한다. 이거를 이제 표시를 해보자
@@ -173,6 +251,8 @@ public class DialogManager : MonoBehaviour
         if (HasChoices()) { return; }
         if (rewardCanvas.IsRewardPanelShow) { return; }
         if (chapterShowPanel.IsChapterPanelShow) { return; }
+
+        StopSkipCor();
         HandleNext();
     }
 
@@ -180,12 +260,10 @@ public class DialogManager : MonoBehaviour
     {
         curId = id;
         curNode = System.Array.Find(allNodes, n => n.id == id);
-        //node의 string 정보를 캐릭터 정보로 바꿔야함.
-        //CharacterDataSO characterData = GetPeopleSOData(curNode.speaker, curNode.Expression);
+        readNodeHash.Add(curId);
 
-        
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
-        if(curNode.chapterData != null && curNode.chapterData.chapterId > 0)
+        if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
             curChapterNo = curNode.chapterData.chapterId;
             //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
@@ -194,6 +272,9 @@ public class DialogManager : MonoBehaviour
             {
                 ShowNodeContent();
             });
+
+            //세이브를 시켜주자.
+            SaveButtonClick();
         }
         else
         {

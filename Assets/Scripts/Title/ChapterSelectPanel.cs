@@ -85,7 +85,10 @@ public class ChapterSelectPanel : MonoBehaviour
     {
         //세이브데이터를 챕터 n정보로 설정하고, 
         ChapterData chapterData = chapters[currentIndex];
-        SaveManager.Instance.CreateSaveData(chapterData.chapterId, chapterData.startNodeId);
+        SaveData saveData = SaveManager.Instance.LoadSaveFile() ?? new SaveData();
+        saveData.curChapterId = chapterData.chapterId;
+        saveData.nodeId = chapterData.startNodeId;
+        SaveManager.Instance.CreateSaveData(saveData);
         //그리고 게임 시작
         OnSelected();
     }

@@ -76,6 +76,15 @@ public class ChapterData
     public string title;
     public int startNodeId;
     public string thumbnailKey;
+
+    public bool haveData()
+    {
+        if(chapterId == 0)
+        {
+            return false;
+        }
+        return true;
+    }
 }
 
 [Serializable]
