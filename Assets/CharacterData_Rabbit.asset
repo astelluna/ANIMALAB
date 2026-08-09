@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CharacterData_Rabbit
   m_EditorClassIdentifier: 
   <CharacterId>k__BackingField: "\uD1A0\uB07C"
-  <Portrait>k__BackingField: {fileID: 0}
+  <Portrait>k__BackingField: {fileID: 21300000, guid: 8189214cfac4f6c4fa5e6846b40e8bc3, type: 3}
   <Expressions>k__BackingField:
   - emotion: 1
     sprite: {fileID: 21300000, guid: 6bffe5a38d1c6d64da632338e503ef02, type: 3}

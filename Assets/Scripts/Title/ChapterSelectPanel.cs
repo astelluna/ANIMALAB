@@ -13,6 +13,7 @@ public class ChapterSelectPanel : MonoBehaviour
     [SerializeField] Button rightArrowButton;
     [SerializeField] Button selectButton;
     [SerializeField] Button initButton;
+    [SerializeField] Button closeButton;
 
     [SerializeField] ChapterSelectImage curChapterPreview;
     [SerializeField] ChapterSelectImage prevChapterPreview;
@@ -43,6 +44,7 @@ public class ChapterSelectPanel : MonoBehaviour
         rightArrowButton.onClick.AddListener(() => Move(1));
         selectButton.onClick.AddListener(OnSelected);
         initButton.onClick.AddListener(InitCurrentChapterData);
+        closeButton.onClick.AddListener(CloseButtonClick);
     }
     private void OnDestroy()
     {
@@ -50,6 +52,11 @@ public class ChapterSelectPanel : MonoBehaviour
         rightArrowButton.onClick.RemoveAllListeners();
         selectButton.onClick.RemoveAllListeners();
         initButton.onClick.RemoveAllListeners();
+        closeButton.onClick.RemoveAllListeners();
+    }
+    private void CloseButtonClick()
+    {
+        this.gameObject.SetActive(false);
     }
 
     private void InitCurrentChapterData()

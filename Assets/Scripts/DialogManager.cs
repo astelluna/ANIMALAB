@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using static UnityEditor.U2D.ScriptablePacker;
 using static UnityEngine.InputSystem.InputAction;
 
 
@@ -21,6 +22,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Button saveButton;
     [SerializeField] Button loadTestButton;
     [SerializeField] Button skipButton;
+    [SerializeField] Button openDialogLogButton;
 
     DialogData[] allNodes;
     int curId = 0;
@@ -53,6 +55,9 @@ public class DialogManager : MonoBehaviour
     WaitForSeconds skipDelay;
     Coroutine skipCoroutine;
 
+    //다이럴로그 로그창 전용
+    [SerializeField] DialogLogCanvas dialogLogCanvas;
+
     private void Awake()
     {
         skipDelay = new WaitForSeconds(skipDelayTime);
@@ -60,13 +65,16 @@ public class DialogManager : MonoBehaviour
         saveButton.onClick.AddListener(SaveButtonClick);
         loadTestButton.onClick.AddListener(LoadButtonClick);
         skipButton.onClick.AddListener(SkipButtonClick);
+        openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
     }
     private void OnDestroy()
     {
         saveButton.onClick.RemoveAllListeners();
         loadTestButton.onClick.RemoveAllListeners();
         skipButton.onClick.RemoveAllListeners();
+        openDialogLogButton.onClick.RemoveAllListeners();
     }
+    
     private void OnEnable()
     {
         LoadGame();
@@ -111,7 +119,10 @@ public class DialogManager : MonoBehaviour
             skipCoroutine = null;
         }
     }
-
+    private void OpenDialogLogButtonClick()
+    {
+        dialogLogCanvas.OpenPanel();
+    }
     private void SaveButtonClick()
     {
         CreateSaveData();
@@ -251,6 +262,7 @@ public class DialogManager : MonoBehaviour
         if (HasChoices()) { return; }
         if (rewardCanvas.IsRewardPanelShow) { return; }
         if (chapterShowPanel.IsChapterPanelShow) { return; }
+        if (dialogLogCanvas.IsCanvasShow) { return; }
 
         StopSkipCor();
         HandleNext();
@@ -309,6 +321,9 @@ public class DialogManager : MonoBehaviour
             StopCoroutine(printSlowTextCor);
         }
         printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
+
+        //다이얼로그 로그창 띄우기
+        dialogLogCanvas.AddLog(curNode.speaker, curNode.text);
 
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)

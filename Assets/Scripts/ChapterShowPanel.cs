@@ -13,7 +13,8 @@ public class ChapterShowPanel : MonoBehaviour
 
     public event Action OnPanelEnd;
 
-    public bool IsChapterPanelShow { get; private set; }
+    //public bool IsChapterPanelShow { get; private set; }
+    public bool IsChapterPanelShow => gameObject.activeInHierarchy;
 
     private void Awake()
     {
@@ -26,7 +27,6 @@ public class ChapterShowPanel : MonoBehaviour
     public void SetChapterInfo(int chapterNo, string nameText, Action OnPanelShowEnd)
     {
         this.gameObject.SetActive(true);
-        IsChapterPanelShow = true;
         chapterText.text = "Chapter " + chapterNo;
         chapterNameText.text = nameText;
         Show(OnPanelShowEnd);
@@ -72,9 +72,7 @@ public class ChapterShowPanel : MonoBehaviour
 
         seq.OnComplete(() =>
         {
-            IsChapterPanelShow = false;
             gameObject.SetActive(false);
-            //OnPanelShowEnd?.Invoke();
         });
     }
 }
