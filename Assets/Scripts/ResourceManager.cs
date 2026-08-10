@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ResourceManager : Singleton<ResourceManager>
 {
-    [SerializeField] CharacterDataSO[] characterDataSOArray;
+    [SerializeField] public CharacterDataSO[] CharacterDataSOArray { get; private set; }
     [SerializeField] CharacterDataSO basicCharacterData;
 
     [SerializeField] ChapterThumbnailDatabaseSO chapterThumbnailDatabaseSO;
@@ -21,12 +21,12 @@ public class ResourceManager : Singleton<ResourceManager>
 
     private void Init()
     {
-        for(int i=0; i< characterDataSOArray.Length; i++)
+        for(int i=0; i< CharacterDataSOArray.Length; i++)
         {
-            string id = characterDataSOArray[i].CharacterId;
+            string id = CharacterDataSOArray[i].CharacterId;
             if (!characterDataDict.ContainsKey(id))
             {
-                characterDataDict.Add(id, characterDataSOArray[i]);
+                characterDataDict.Add(id, CharacterDataSOArray[i]);
             }
             else
             {

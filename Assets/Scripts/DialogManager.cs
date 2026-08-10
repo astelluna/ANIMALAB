@@ -368,7 +368,19 @@ public class DialogManager : MonoBehaviour
         DialogReward[] dialogRewards = curNode.reward;
         if (dialogRewards.Length > 0)
         {
+            //호감도 외 보상
             rewardCanvas.Show(dialogRewards);
+            //호감도 보상
+            foreach(DialogReward rewardData in dialogRewards)
+            {
+                if(rewardData.Type == eDialogItemType.Affinity)
+                {
+                    //호감도
+                    SaveManager.Instance.AddAffinityData(rewardData.key, rewardData.amount);
+                }
+            }
+
+
         }
         //소리가 있다면 재생시킨다.
         foreach (DialogSound sound in curNode.dialogSounds)
