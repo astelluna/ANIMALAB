@@ -7,12 +7,14 @@ public enum eCharacterForm
 {
     none, normal, beast1, beast2, beastFinal
 }
-[System.Serializable]
+[Serializable]
 public class ExpressionEntry
 {
+    public int minAffinity;
     public eExpression emotion;
     public Sprite sprite;
 }
+
 [Serializable]
 public class CharacterFormSprite
 {
@@ -40,7 +42,51 @@ public class CharacterDataSO : ScriptableObject
     //검색용 딕셔너리
     private Dictionary<eCharacterForm, CharacterFormSprite> characterFormDict;
 
+    //지문에서 사용하는 지문에 따른 표정을 그대로 표시하는 메서드
     public Sprite GetExpression(eCharacterForm characterForm, eExpression emotion)
+    {
+        InitDict();
+        if (characterFormDict.TryGetValue(characterForm, out CharacterFormSprite characterformData))
+        {
+            foreach(var e in characterformData.FullBodyExpressions)
+            {
+                if(e.emotion == emotion)
+                {
+                    return e.sprite;
+                }
+            }
+        }
+        //못찾았다면? null 보내자
+        Debug.LogError("스프라이트 못찾음");
+        return null;
+    }
+    //호감도 표시 창에서 사용하는 현재 호감도 수치에 따른 다른 얼굴 표정을 반환하는 메서드
+    public Sprite GetExpressionByAffinity(eCharacterForm characterForm, int amount)
+    {
+        InitDict();
+        Sprite affinitySprite = null;
+        if (characterFormDict.TryGetValue(characterForm, out CharacterFormSprite characterformData))
+        {
+            int curValue = -1;
+            foreach (var e in characterformData.FullBodyExpressions)
+            {
+                if (curValue <= e.minAffinity && amount >= e.minAffinity)
+                {
+                    curValue = e.minAffinity;
+                    affinitySprite = e.sprite;
+                }
+            }
+        }
+        if (affinitySprite != null) 
+        { 
+            return affinitySprite; 
+        }
+
+        //못찾았다면? null 보내자
+        Debug.LogError("스프라이트 못찾음");
+        return null;
+    }
+    private void InitDict()
     {
         if (characterFormDict == null)
         {
@@ -56,19 +102,6 @@ public class CharacterDataSO : ScriptableObject
 
             }
         }
-        if (characterFormDict.TryGetValue(characterForm, out CharacterFormSprite characterformData))
-        {
-            foreach(var e in characterformData.FullBodyExpressions)
-            {
-                if(e.emotion == emotion)
-                {
-                    return e.sprite;
-                }
-            }
-        }
-        //못찾았다면? null 보내자
-        Debug.LogError("스프라이트 못찾음");
-        return null;
     }
     public Sprite GetPortrait()
     {

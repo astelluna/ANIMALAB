@@ -21,7 +21,19 @@ public class AffinityData
     public string id;
     public int amount;
     public int maxAmount;
+    public string characterForm;
 
+    public eCharacterForm CharacterForm
+    {
+        get
+        {
+            if (Enum.TryParse<eCharacterForm>(characterForm, true, out var result))
+            {
+                return result;
+            }
+            return eCharacterForm.none;
+        }
+    }
     public void AddAmount(int value)
     {
         amount += value;
@@ -64,9 +76,18 @@ public class SaveData
             data.id = characterData.CharacterId;
             data.amount = characterData.InitialAffinity;
             data.maxAmount = characterData.MaxAffinity;
+            data.characterForm = eCharacterForm.beast1.ToString();
             affinityDict.Add(characterData.CharacterId, data);
             saveAffinities.Add(data);
         }
+    }
+    public AffinityData GetAffinityData(string key)
+    {
+        if (!affinityDict.ContainsKey(key))
+        {
+            return null;
+        }
+        return affinityDict[key];
     }
 }
 

@@ -23,6 +23,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Button loadTestButton;
     [SerializeField] Button skipButton;
     [SerializeField] Button openDialogLogButton;
+    [SerializeField] Button openAffinityButton;
 
     DialogData[] allNodes;
     int curId = 0;
@@ -57,8 +58,9 @@ public class DialogManager : MonoBehaviour
 
     //다이럴로그 로그창 전용
     [SerializeField] DialogLogCanvas dialogLogCanvas;
-    //캐릭터 상태 관리
-    Dictionary<string, CharacterStateData> characterFormDict = new Dictionary<string, CharacterStateData>();
+
+    //호감도 창 전용
+    [SerializeField] AffinityCanvas affinityCanvas;
 
     private void Awake()
     {
@@ -68,6 +70,7 @@ public class DialogManager : MonoBehaviour
         loadTestButton.onClick.AddListener(LoadButtonClick);
         skipButton.onClick.AddListener(SkipButtonClick);
         openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
+        openAffinityButton.onClick.AddListener(OpenAffinityButtonClick);
     }
     private void OnDestroy()
     {
@@ -75,7 +78,10 @@ public class DialogManager : MonoBehaviour
         loadTestButton.onClick.RemoveAllListeners();
         skipButton.onClick.RemoveAllListeners();
         openDialogLogButton.onClick.RemoveAllListeners();
+        openAffinityButton.onClick.RemoveAllListeners();
     }
+
+
     
     private void OnEnable()
     {
@@ -120,6 +126,10 @@ public class DialogManager : MonoBehaviour
             StopCoroutine(skipCoroutine);
             skipCoroutine = null;
         }
+    }
+    private void OpenAffinityButtonClick()
+    {
+        affinityCanvas.gameObject.SetActive(true);
     }
     private void OpenDialogLogButtonClick()
     {
@@ -223,23 +233,6 @@ public class DialogManager : MonoBehaviour
             return true;
         }
         return false;
-    }
-    public void SetCharacterForm(CharacterSprite sprteData)
-    {
-        CharacterStateData stateData = new CharacterStateData(sprteData.characterId, sprteData.Position, sprteData.Form, sprteData.Expression);
-
-        characterFormDict[sprteData.characterId] = stateData;
-    }
-    public CharacterStateData GetChacterForm(string id)
-    {
-        if(characterFormDict.ContainsKey(id))
-        {
-            return characterFormDict[id];
-        }
-        //없으면 없는대로 진행하면됨. 에러는 아니다.
-        //Debug.LogError($"{id}의 캐릭터 form이 없었습니다. 에러");
-        return null;
-        
     }
     void Init()
     {
@@ -352,7 +345,6 @@ public class DialogManager : MonoBehaviour
                         //이제 해당 이미지에 표시를 해버리자.
                         Sprite curSprite = charData.GetExpression(spriteData.Form, spriteData.Expression);
                         if (curSprite == null) continue;
-                        SetCharacterForm(spriteData);
                         //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
                         float alpha = 1;
                         if (spriteData.characterId != curNode.speaker)
