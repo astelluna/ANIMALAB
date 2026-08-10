@@ -7,14 +7,14 @@ using UnityEngine;
 
 public class CSVDownloader : MonoBehaviour
 {
-    const string nodeUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=0#gid=0";
-    const string choiceUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=905363447";
-    const string choiceConditionUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=831253886";
-    const string rewardUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=681914727";
-    const string cgUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=453507803";
-    const string characterSpriteUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=503407958";
-    const string dialogSoundUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=570984018";
-    const string chapterDataUrl = "https://docs.google.com/spreadsheets/d/1WUSMSFL5T_RXyi9YMNJrnxuez8Bjg5jkzr6KtXq8xQc/export?format=csv&gid=452500722";
+    const string nodeUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=0#gid=0";
+    const string choiceUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=905363447";
+    const string choiceConditionUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=831253886";
+    const string rewardUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=681914727";
+    const string cgUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=453507803";
+    const string characterSpriteUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=503407958";
+    const string dialogSoundUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=570984018";
+    const string chapterDataUrl = "https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/export?format=csv&gid=452500722";
 
     [MenuItem("Tools/Download CSV File & Make JSON")]
     public static void DownloadCSVAndMakeJSON()

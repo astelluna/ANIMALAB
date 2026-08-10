@@ -2502,11 +2502,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b1532327bc3d745a49fc771814d4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterDataSOArray:
+  <CharacterDataSOArray>k__BackingField:
   - {fileID: 11400000, guid: 82475d70da0090742a1c6d27f0dfb513, type: 2}
   - {fileID: 11400000, guid: 4f146bd2966c9ed4488220308377a07b, type: 2}
   - {fileID: 11400000, guid: 9070d04ac90c51c49b2fdb8cfcdef2d8, type: 2}
-  - {fileID: 11400000, guid: 71ffa1416991ffd45b7026b484cd6139, type: 2}
   - {fileID: 11400000, guid: 63170ef14bf821d43971ff67b83cc5c8, type: 2}
   basicCharacterData: {fileID: 11400000, guid: 6ec093baf746cab47b3e5b2de74ed8d3, type: 2}
   chapterThumbnailDatabaseSO: {fileID: 11400000, guid: 0523bab29cb781c4bb5db4ecd0d0bdba, type: 2}

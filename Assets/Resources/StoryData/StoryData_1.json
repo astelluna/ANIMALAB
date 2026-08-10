@@ -255,7 +255,8 @@
                     "characterId": "리트리버",
                     "expression": "normal",
                     "position": "Left",
-                    "effect": ""
+                    "effect": "",
+                    "form": "Beast1"
                 },
                 {
                     "nodeId": 10,
@@ -263,7 +264,8 @@
                     "characterId": "사막여우",
                     "expression": "normal",
                     "position": "CenterLeft",
-                    "effect": ""
+                    "effect": "",
+                    "form": "Beast1"
                 },
                 {
                     "nodeId": 10,
@@ -271,7 +273,8 @@
                     "characterId": "리트리버",
                     "expression": "",
                     "position": "",
-                    "effect": "Exclamation"
+                    "effect": "Exclamation",
+                    "form": ""
                 }
             ],
             "dialogSounds": [],
@@ -299,7 +302,8 @@
                     "characterId": "토끼",
                     "expression": "normal",
                     "position": "CenterRight",
-                    "effect": ""
+                    "effect": "",
+                    "form": "Beast1"
                 },
                 {
                     "nodeId": 11,
@@ -307,7 +311,8 @@
                     "characterId": "양",
                     "expression": "normal",
                     "position": "Right",
-                    "effect": ""
+                    "effect": "",
+                    "form": "Beast1"
                 },
                 {
                     "nodeId": 11,
@@ -315,7 +320,8 @@
                     "characterId": "토끼",
                     "expression": "",
                     "position": "",
-                    "effect": "Question"
+                    "effect": "Question",
+                    "form": ""
                 },
                 {
                     "nodeId": 11,
@@ -323,7 +329,8 @@
                     "characterId": "양",
                     "expression": "",
                     "position": "",
-                    "effect": "Cheer"
+                    "effect": "Cheer",
+                    "form": ""
                 }
             ],
             "dialogSounds": [],
@@ -351,7 +358,8 @@
                     "characterId": "양",
                     "expression": "",
                     "position": "Right",
-                    "effect": ""
+                    "effect": "",
+                    "form": ""
                 }
             ],
             "dialogSounds": [],
@@ -379,7 +387,8 @@
                     "characterId": "",
                     "expression": "",
                     "position": "",
-                    "effect": ""
+                    "effect": "",
+                    "form": ""
                 }
             ],
             "dialogSounds": [],
@@ -407,7 +416,8 @@
                     "characterId": "리트리버",
                     "expression": "",
                     "position": "",
-                    "effect": "Exclamation"
+                    "effect": "Exclamation",
+                    "form": ""
                 }
             ],
             "dialogSounds": [],

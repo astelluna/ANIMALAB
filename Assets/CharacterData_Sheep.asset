@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: CharacterData_Sheep
   m_EditorClassIdentifier: 
   <CharacterId>k__BackingField: "\uC591"
-  <Portrait>k__BackingField: {fileID: 21300000, guid: b3c7b1ec2c140be40b344d4bae88ef5e, type: 3}
-  <Expressions>k__BackingField:
-  - emotion: 1
-    sprite: {fileID: 21300000, guid: 112e34081e4d8724d9f2f40d473a953f, type: 3}
+  <characterFormSpriteList>k__BackingField:
+  - <Form>k__BackingField: 2
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: 112e34081e4d8724d9f2f40d473a953f, type: 3}
   <NameColor>k__BackingField: {r: 0.8113208, g: 0.8113208, b: 0.8113208, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100
   <BodyHeight>k__BackingField: 820
+  <Portrait>k__BackingField: {fileID: 21300000, guid: b3c7b1ec2c140be40b344d4bae88ef5e, type: 3}

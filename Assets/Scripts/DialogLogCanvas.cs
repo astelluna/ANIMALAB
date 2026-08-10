@@ -36,8 +36,7 @@ public class DialogLogCanvas : MonoBehaviour
     public void AddLog(string speaker , string text)
     {
         CharacterDataSO imageData = ResourceManager.Instance.GetCharacterData(speaker);
-        Sprite portrait = imageData != null ? imageData.Portrait : null;
-
+        Sprite portrait = imageData.Portrait;
         DialogLogUI log = DialogLogSpawner.Instance.GetPrefabByPool();
         log.SetLogImage(portrait, speaker, text);
         log.transform.SetParent(DialogSpawnPositon, false);

@@ -57,6 +57,8 @@ public class DialogManager : MonoBehaviour
 
     //다이럴로그 로그창 전용
     [SerializeField] DialogLogCanvas dialogLogCanvas;
+    //캐릭터 상태 관리
+    Dictionary<string, CharacterStateData> characterFormDict = new Dictionary<string, CharacterStateData>();
 
     private void Awake()
     {
@@ -222,7 +224,23 @@ public class DialogManager : MonoBehaviour
         }
         return false;
     }
+    public void SetCharacterForm(CharacterSprite sprteData)
+    {
+        CharacterStateData stateData = new CharacterStateData(sprteData.characterId, sprteData.Position, sprteData.Form, sprteData.Expression);
 
+        characterFormDict[sprteData.characterId] = stateData;
+    }
+    public CharacterStateData GetChacterForm(string id)
+    {
+        if(characterFormDict.ContainsKey(id))
+        {
+            return characterFormDict[id];
+        }
+        //없으면 없는대로 진행하면됨. 에러는 아니다.
+        //Debug.LogError($"{id}의 캐릭터 form이 없었습니다. 에러");
+        return null;
+        
+    }
     void Init()
     {
         playerInput = GetComponent<PlayerInput>();
@@ -322,9 +340,6 @@ public class DialogManager : MonoBehaviour
         }
         printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
 
-        //다이얼로그 로그창 띄우기
-        dialogLogCanvas.AddLog(curNode.speaker, curNode.text);
-
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)
         {
@@ -335,8 +350,9 @@ public class DialogManager : MonoBehaviour
                 {
                     case eCommandType.Show:
                         //이제 해당 이미지에 표시를 해버리자.
-                        Sprite curSprite = charData.GetExpression(spriteData.Expression);
+                        Sprite curSprite = charData.GetExpression(spriteData.Form, spriteData.Expression);
                         if (curSprite == null) continue;
+                        SetCharacterForm(spriteData);
                         //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
                         float alpha = 1;
                         if (spriteData.characterId != curNode.speaker)
@@ -364,6 +380,8 @@ public class DialogManager : MonoBehaviour
                 }
             }
         }
+        //다이얼로그 로그창 띄우기
+        dialogLogCanvas.AddLog(curNode.speaker, curNode.text);
         //보상이 있다면? 보상 이미지 띄우기
         DialogReward[] dialogRewards = curNode.reward;
         if (dialogRewards.Length > 0)

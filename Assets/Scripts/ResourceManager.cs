@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ResourceManager : Singleton<ResourceManager>
 {
-    [SerializeField] public CharacterDataSO[] CharacterDataSOArray { get; private set; }
+    [field:SerializeField] public CharacterDataSO[] CharacterDataSOArray { get; private set; }
     [SerializeField] CharacterDataSO basicCharacterData;
 
     [SerializeField] ChapterThumbnailDatabaseSO chapterThumbnailDatabaseSO;

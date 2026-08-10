@@ -9,7 +9,7 @@ public enum eDialogItemType
 {
     None, Affinity, Item
 }
-public enum eEmotion
+public enum eExpression
 {
     //기본, 행복, 분노, 슬픔, 놀람, 두려움, 혐오
     none, normal , happy, angry, sad, surprize, fear, aversion
@@ -56,15 +56,15 @@ public class DialogData
     public DialogSound[] dialogSounds;
     public ChapterData chapterData;
 
-    public eEmotion Expression
+    public eExpression Expression
     {
         get
         {
-            if (Enum.TryParse<eEmotion>(expression, true, out var result))
+            if (Enum.TryParse<eExpression>(expression, true, out var result))
             {
                 return result;
             }
-            return eEmotion.none;
+            return eExpression.none;
         }
     }
 }
@@ -96,6 +96,7 @@ public class CharacterSprite
     public string expression;
     public string position;
     public string effect;
+    public string form;
 
     public eCommandType Command
     {
@@ -108,15 +109,15 @@ public class CharacterSprite
             return eCommandType.none;
         }
     }
-    public eEmotion Expression
+    public eExpression Expression
     {
         get
         {
-            if (Enum.TryParse<eEmotion>(expression, true, out var result))
+            if (Enum.TryParse<eExpression>(expression, true, out var result))
             {
                 return result;
             }
-            return eEmotion.none;
+            return eExpression.none;
         }
     }
 
@@ -140,6 +141,17 @@ public class CharacterSprite
                 return result;
             }
             return eSpriteEffect.none;
+        }
+    }
+    public eCharacterForm Form
+    {
+        get
+        {
+            if (Enum.TryParse<eCharacterForm>(form, true, out var result))
+            {
+                return result;
+            }
+            return eCharacterForm.none;
         }
     }
 }

@@ -146,6 +146,7 @@ public static class CSVToJsonWindow
             characterSprite.expression = cols[3];
             characterSprite.position = cols[4];
             characterSprite.effect = cols[5];
+            characterSprite.form = cols[6];
             if (!characterSpriteMap.ContainsKey(nodeId))
             {
                 characterSpriteMap[nodeId] = new List<CharacterSprite>();

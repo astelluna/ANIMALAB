@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: CharacterData_Dog
   m_EditorClassIdentifier: 
   <CharacterId>k__BackingField: "\uB9AC\uD2B8\uB9AC\uBC84"
-  <Portrait>k__BackingField: {fileID: 21300000, guid: 3b233f15bc675f0449334597aca521a7, type: 3}
-  <Expressions>k__BackingField:
-  - emotion: 1
-    sprite: {fileID: 21300000, guid: 079e0cf85090750439e9b002e323effa, type: 3}
+  <characterFormSpriteList>k__BackingField:
+  - <Form>k__BackingField: 2
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: 079e0cf85090750439e9b002e323effa, type: 3}
   <NameColor>k__BackingField: {r: 0.745283, g: 0.6977709, b: 0.20038268, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100
   <BodyHeight>k__BackingField: 880
+  <Portrait>k__BackingField: {fileID: 21300000, guid: 3b233f15bc675f0449334597aca521a7, type: 3}

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: CharacterData_basic
   m_EditorClassIdentifier: 
   <CharacterId>k__BackingField: "-basic \uC774\uB77C\uC11C \uB9E4\uCE6D \uC548\uD574\uB3C4\uB428- "
-  <Portrait>k__BackingField: {fileID: 0}
-  <Expressions>k__BackingField: []
+  <characterFormSpriteList>k__BackingField: []
   <NameColor>k__BackingField: {r: 0.4245283, g: 0.22628158, b: 0.22628158, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100
+  <BodyHeight>k__BackingField: 800
+  <Portrait>k__BackingField: {fileID: 21300000, guid: 5a019b2683b568341884369d400eff01, type: 3}
