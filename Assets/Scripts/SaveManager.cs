@@ -53,7 +53,6 @@ public class SaveManager : Singleton<SaveManager>
         saveData.SetChpaterData();
     }
 
-    //public void CreateSaveData(int chapterid, int nodeId)
     public void CreateSaveData(SaveData data, bool isChapterEnd = false)
     {
         //TODO,   호감도 및 아이템은 아직 모르겠다. 
@@ -71,13 +70,12 @@ public class SaveManager : Singleton<SaveManager>
             }
         }
         //현재 가지고있는 아이템도 넣어줘야함
-        data.saveItemList = new List<SaveItem>(ItemManager.Instance.GetItemInfo());
+        data.saveItemList = new List<SaveItem>(data.saveItemList);
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(path, json);
         CurrentSaveData = data;
         CheckAndFixAffinityData(CurrentSaveData);
     }
-    //만약에 챕터가 종료된 상태이다. 그래서 챕터 데이터도 저장해줘야 한다면?
 
     public void LoadSaveDataToJsonFile()
     {
@@ -109,5 +107,9 @@ public class SaveManager : Singleton<SaveManager>
             AffinityData affinityData = CurrentSaveData.AffinityDict[id];
             affinityData.AddAmount(amount);
         }
+    }
+    public void AddItemData(SaveItem item)
+    {
+        CurrentSaveData.AddItemData(item);
     }
 }

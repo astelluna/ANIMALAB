@@ -18,14 +18,12 @@
                 {
                     "type": "Item",
                     "key": "낡은열쇠",
-                    "amount": 1,
-                    "explain": "1"
+                    "amount": 1
                 },
                 {
                     "type": "Affinity",
                     "key": "리트리버",
-                    "amount": 1,
-                    "explain": "1"
+                    "amount": 1
                 }
             ],
             "nextnodeId": 0,
@@ -66,14 +64,12 @@
                 {
                     "type": "Item",
                     "key": "낡은열쇠",
-                    "amount": 1,
-                    "explain": "1"
+                    "amount": 1
                 },
                 {
                     "type": "Item",
                     "key": "낡은열쇠2",
-                    "amount": 1,
-                    "explain": "1"
+                    "amount": 1
                 }
             ],
             "nextnodeId": 0,

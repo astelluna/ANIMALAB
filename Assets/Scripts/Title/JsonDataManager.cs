@@ -2,10 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class NodeManager : Singleton<NodeManager>
+public class JsonDataManager : Singleton<JsonDataManager>
 {
+    //다이얼로그 데이터들
     DialogData[] allNodes;
     static DialogData[] cashedNode;
+    //아이템 데이터들
+    ItemDataJson itemDataJson;
     protected override void Awake()
     {
         base.Awake();
@@ -18,7 +21,7 @@ public class NodeManager : Singleton<NodeManager>
     {
         if (cashedNode != null) return cashedNode;
 
-        string path = PathManager.jsonFilePath;
+        string path = PathManager.storyJsonFilePath;
         string resourcePath = path
     .Replace("Assets/Resources/", "")
     .Replace(".json", "");
@@ -35,13 +38,37 @@ public class NodeManager : Singleton<NodeManager>
         return cashedNode;
     }
 
+    private void GetItemDataToJson()
+    {
+        string path = PathManager.itemJsonFilePath;
+        string resourcePath = path
+    .Replace("Assets/Resources/", "")
+    .Replace(".json", "");
+        TextAsset jsonFile = Resources.Load<TextAsset>(resourcePath);
+
+        if (jsonFile == null)
+        {
+            Debug.LogError("ItemData_1.json을 Resources 폴더에서 못 찾음. 경로 확인 필요.");
+            return;
+        }
+        string json = jsonFile.text;
+        Debug.Log(json);
+        itemDataJson = JsonUtility.FromJson<ItemDataJson>(json);
+
+    }
+
     void JsonInit()
     {
         allNodes = GetJsonData();
+        GetItemDataToJson();
     }
     public DialogData[] GetDialogData()
     {
         return allNodes;
+    }
+    public ItemDataJson GetItemDataJson()
+    {
+        return itemDataJson;
     }
     public static List<ChapterData> GetChapterDataClass()
     {

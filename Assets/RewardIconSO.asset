@@ -22,3 +22,6 @@ MonoBehaviour:
   - type: 2
     key: "\uB0A1\uC740\uC5F4\uC1E02"
     icon: {fileID: 0}
+  - type: 1
+    key: "\uB9AC\uD2B8\uB9AC\uBC84"
+    icon: {fileID: 0}

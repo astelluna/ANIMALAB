@@ -9,7 +9,7 @@ using UnityEditor.Overlays;
 public class SaveItem
 {
     public string key;
-    public int value;
+    public int amount;
     public string explain;
 }
 [Serializable]
@@ -65,7 +65,6 @@ public class SaveData
 
     public List<AffinityData> saveAffinitieList = new List<AffinityData>();
     public List<SaveItem> saveItemList = new List<SaveItem>();
-    //public List<SaveData> saveDataList = new List<SaveData>();
 
     //챕터 데이터 (n번째 챕터에서부터 다시하기를 위해서 사용한다)
     public List<ChapterSaveData> ChapterSaveDataList = new List<ChapterSaveData>();
@@ -75,7 +74,9 @@ public class SaveData
     //호감도 수치(검색용. 직렬화 안함)
     [NonSerialized]
     private Dictionary<string, AffinityData> affinityDict = new Dictionary<string, AffinityData>(); 
-    public IReadOnlyDictionary<string, AffinityData> AffinityDict => affinityDict;
+    public IReadOnlyDictionary<string, AffinityData> AffinityDict => affinityDict; 
+    private Dictionary<string, SaveItem> saveItemDict = new Dictionary<string, SaveItem>();
+    public IReadOnlyDictionary<string, SaveItem> SaveItemDict => saveItemDict;
 
     //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
 
@@ -140,8 +141,6 @@ public class SaveData
             saveAffinitieList.Add(data);
         }
     }
-
-    //public void SetAffinityDict(List<AffinityData> affinityList)
     public void SetAffinityDict()
     {
         affinityDict.Clear();
@@ -153,6 +152,19 @@ public class SaveData
                 continue;
             }
             affinityDict.Add(item.id, item);
+        }
+    }
+    public void AddItemData(SaveItem item)
+    {
+        if (SaveItemDict.ContainsKey(item.key))
+        {
+            //넣어줄때 딕셔너리랑 리스트랑 같은 주소값으로 넣어주기때문에 딕셔너리만 수정하면 된다
+            saveItemDict[item.key].amount += item.amount;
+        }
+        else
+        {
+            saveItemDict.Add(item.key, item);
+            saveItemList.Add(item);
         }
     }
 }

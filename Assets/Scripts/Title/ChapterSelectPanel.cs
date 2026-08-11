@@ -32,7 +32,7 @@ public class ChapterSelectPanel : MonoBehaviour
     {
         //chapters = NodeManager.GetChapterDataClass();
         SaveData saveData = SaveManager.Instance.LoadSaveFile();
-        chapters = NodeManager.GetChapterDataClass();
+        chapters = JsonDataManager.GetChapterDataClass();
 
         currentIndex = saveData.curChapterId - 1; //인덱스 0부터 시작이므로 -1
         Move(0);

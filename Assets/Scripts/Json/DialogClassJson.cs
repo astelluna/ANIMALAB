@@ -240,7 +240,6 @@ public class DialogReward
     public string type;
     public string key;
     public int amount;
-    public string explain;
 
     public eDialogItemType Type
     {

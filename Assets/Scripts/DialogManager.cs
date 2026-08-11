@@ -28,6 +28,7 @@ public class DialogManager : MonoBehaviour
     DialogData[] allNodes;
     int curId = 0;
     DialogData curNode;
+    ItemDataJson itemDataJson;
 
     PlayerInput playerInput; //컴포넌트를 가져오기 위해
     InputActionMap mainActionMap; //플레이어인풋 컴포넌트의 수많은 기능중 인풋액션맵
@@ -242,7 +243,8 @@ public class DialogManager : MonoBehaviour
         clickAction = mainActionMap.FindAction("Click");
         clickAction.performed += (ctx) => MouseLButtonClick(ctx);
 
-        allNodes = NodeManager.Instance.GetDialogData();
+        allNodes = JsonDataManager.Instance.GetDialogData();
+        itemDataJson = JsonDataManager.Instance.GetItemDataJson();
     }
 
     private bool IsPointerOverUI()
@@ -388,6 +390,18 @@ public class DialogManager : MonoBehaviour
                 {
                     //호감도
                     SaveManager.Instance.AddAffinityData(rewardData.key, rewardData.amount);
+                }
+                else
+                {
+                    ItemClass itemClass = itemDataJson.GetItemInfo(rewardData.key);
+                    if(itemClass != null)
+                    {
+                        SaveItem saveItem = new SaveItem();
+                        saveItem.key = rewardData.key;
+                        saveItem.amount = rewardData.amount;
+                        saveItem.explain = itemClass.explain;
+                        SaveManager.Instance.AddItemData(saveItem);
+                    }
                 }
             }
 

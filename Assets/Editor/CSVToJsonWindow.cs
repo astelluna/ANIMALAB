@@ -23,10 +23,9 @@ public static class CSVToJsonWindow
         characterSpriteMap.Clear();
         dialogSoundMap.Clear();
     }
-    public static void ReadCSV()
+    private static void MakeStroyDataJson()
     {
         Init();
-
         //가장 먼저 맨 최상위 노드부터 만듬
         //string[] nodeLines = File.ReadAllLines(PathManager.nodeFileName);
         List<string[]> nodeLines = ParseCsvFile(PathManager.nodeFileName);
@@ -99,7 +98,6 @@ public static class CSVToJsonWindow
             reward.type = cols[1];
             reward.key = cols[2];
             reward.amount = int.Parse(cols[3]);
-            reward.explain = cols[3];
             if (!rewardMap.ContainsKey(nodeId))
             {
                 rewardMap[nodeId] = new List<DialogReward>();
@@ -122,13 +120,13 @@ public static class CSVToJsonWindow
             cg.type = cols[1];
             cg.key = cols[2];
             cg.effect = cols[3];
-            if(!cgMap.ContainsKey(nodeId))
+            if (!cgMap.ContainsKey(nodeId))
             {
                 cgMap[nodeId] = new List<DialogCG>();
             }
             cgMap[nodeId].Add(cg);
         }
-        foreach(var pair in cgMap)
+        foreach (var pair in cgMap)
         {
             nodeMap[pair.Key].cg = pair.Value.ToArray();
         }
@@ -200,7 +198,34 @@ public static class CSVToJsonWindow
         DialogDataArray data = new DialogDataArray();
         data.nodes = nodeMap.Values.OrderBy(x => x.id).ToArray();
         string json = JsonUtility.ToJson(data, true);
-        File.WriteAllText(PathManager.jsonFilePath, json);
+        File.WriteAllText(PathManager.storyJsonFilePath, json);
+    }
+    private static void MakeItemDataJson()
+    {
+        //아이템 정보만 따로 json파일로 저장한다 (스토리 노드와 관련이 없어서 따로 저장)
+        List<string[]> itemDataList = ParseCsvFile(PathManager.itemDataFileName);
+        List<ItemClass> itemClassList = new List<ItemClass>();
+        for (int i = 1; i < itemDataList.Count; i++)
+        {
+            string[] cols = itemDataList[i];
+
+            if (cols[0] == "") continue;
+            ItemClass itemClass = new ItemClass();
+            itemClass.key = cols[0];
+            itemClass.explain = cols[1];
+            itemClassList.Add(itemClass);
+        }
+
+        ItemDataJson data = new ItemDataJson();
+        data.itemClassList = new List<ItemClass>(itemClassList);
+        string json = JsonUtility.ToJson(data, true);
+        File.WriteAllText(PathManager.itemJsonFilePath, json);
+    }
+
+    public static void ReadCSV()
+    {
+        MakeStroyDataJson();
+        MakeItemDataJson();
     }
     // ── RFC4180 규격 CSV 파서 ──────────────────────────────
     // 큰따옴표로 감싼 필드 안의 콤마, 줄바꿈, 이스케이프된 큰따옴표("")를
