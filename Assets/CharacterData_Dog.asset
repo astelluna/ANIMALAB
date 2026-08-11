@@ -16,8 +16,15 @@ MonoBehaviour:
   <characterFormSpriteList>k__BackingField:
   - <Form>k__BackingField: 2
     <FullBodyExpressions>k__BackingField:
-    - emotion: 1
+    - minAffinity: 0
+      emotion: 1
       sprite: {fileID: 21300000, guid: 079e0cf85090750439e9b002e323effa, type: 3}
+    - minAffinity: 20
+      emotion: 2
+      sprite: {fileID: 21300000, guid: 3b233f15bc675f0449334597aca521a7, type: 3}
+    - minAffinity: 40
+      emotion: 3
+      sprite: {fileID: 21300000, guid: 746e9170b74614045bef0b8059cc74f4, type: 3}
   <NameColor>k__BackingField: {r: 0.745283, g: 0.6977709, b: 0.20038268, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100

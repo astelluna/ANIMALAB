@@ -141,8 +141,9 @@ public class DialogManager : MonoBehaviour
     }
     public void LoadButtonClick()
     {
-        SaveData data = LoadSaveFile();
-        ShowData(data.nodeId);
+        //이거 하면 안됨 이제. 굳이 중간에 로드하는게 아니라. 메인화면가서 이어하기로 불러와야함
+        //SaveData data = LoadSaveFile();
+        //ShowData(data.nodeId);
     }
     public SaveData LoadSaveFile()
     {
@@ -159,7 +160,7 @@ public class DialogManager : MonoBehaviour
         }
         readNodeHash = new HashSet<int>(saveData.readNodeIds);
     }
-    public void CreateSaveData()
+    public void CreateSaveData(bool isChapterEnd = false)
     {
         SaveData saveData = SaveManager.Instance.LoadSaveFile() ?? new SaveData();
         saveData.curChapterId = curChapterNo;
@@ -167,7 +168,7 @@ public class DialogManager : MonoBehaviour
         saveData.readNodeIds = readNodeHash.ToList();
 
         //TODO,   호감도 및 아이템은 아직 모르겠다. 
-        SaveManager.Instance.CreateSaveData(saveData);
+        SaveManager.Instance.CreateSaveData(saveData, isChapterEnd);
     }
 
     private void Start()
@@ -297,7 +298,7 @@ public class DialogManager : MonoBehaviour
             });
 
             //세이브를 시켜주자.
-            SaveButtonClick();
+            CreateSaveData(true);
         }
         else
         {

@@ -12,7 +12,7 @@ public class AffinityImage : MonoBehaviour
     {
         characterImage.sprite = sprite;
         affinityText.text = "호감도: " + amount.ToString();
-        affinityBarImage.fillAmount = (float)max / amount;
+        affinityBarImage.fillAmount = (float)amount / max;
     }
 
 }

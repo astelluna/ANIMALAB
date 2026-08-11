@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using System;
 using System.Diagnostics;
+using static UnityEditor.Progress;
+using UnityEditor.Overlays;
 
 
 [Serializable]
@@ -8,6 +10,7 @@ public class SaveItem
 {
     public string key;
     public int value;
+    public string explain;
 }
 [Serializable]
 public class SaveFlag
@@ -42,6 +45,16 @@ public class AffinityData
     }
 }
 [Serializable]
+public class ChapterSaveData
+{
+    //챕터 아이디, 호감도, 아이템, 이벤트 목록
+    public int chapterId;
+    public List<AffinityData> saveAffinities;
+    public List<SaveItem> saveItemList;
+
+}
+
+[Serializable]
 public class SaveData
 {
     public int curChapterId;
@@ -50,22 +63,68 @@ public class SaveData
     //스킵기능을 위해 읽었던 노드id 기록
     public List<int> readNodeIds;
 
-    public List<AffinityData> saveAffinities = new List<AffinityData>();
-    public List<SaveItem> saveItems = new List<SaveItem>();
-    public List<SaveData> saveDatas = new List<SaveData>();
+    public List<AffinityData> saveAffinitieList = new List<AffinityData>();
+    public List<SaveItem> saveItemList = new List<SaveItem>();
+    //public List<SaveData> saveDataList = new List<SaveData>();
+
+    //챕터 데이터 (n번째 챕터에서부터 다시하기를 위해서 사용한다)
+    public List<ChapterSaveData> ChapterSaveDataList = new List<ChapterSaveData>();
+    private Dictionary<int, ChapterSaveData> chapterSaveDataDict = new Dictionary<int, ChapterSaveData>();
+    public IReadOnlyDictionary<int, ChapterSaveData> ChapterSaveDataDict => chapterSaveDataDict;
 
     //호감도 수치(검색용. 직렬화 안함)
     [NonSerialized]
     private Dictionary<string, AffinityData> affinityDict = new Dictionary<string, AffinityData>(); 
     public IReadOnlyDictionary<string, AffinityData> AffinityDict => affinityDict;
 
-    //Dictionary<string, int> affinityDict = new Dictionary<string, int>(); //캐릭터id, 호감도수치
-    //Dictionary<string, int> itemDict = new Dictionary<string, int>(); //아이템id, 갯수
     //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
+
+    public void ChapterDataSave(ChapterSaveData data)
+    {
+        //챕터 시작 시에 저장기능이 활성화되므로 딕셔너리로 중복 체크를 해야함. (그냥 계속 저장되게 하자 상관없게 만들면됨)
+        if(chapterSaveDataDict.ContainsKey(data.chapterId))
+        {
+            //UnityEngine.Debug.Log($"{data.chapterId}가 이미 있었습니다. 덮어쓰기함");
+            chapterSaveDataDict[data.chapterId] = data;
+            ChapterSaveData savedata = ChapterSaveDataList.Find(x => x.chapterId == data.chapterId);
+            if (savedata != null) { ChapterSaveDataList.Remove(savedata); }
+            ChapterSaveDataList.Add(data);
+        }
+        else
+        {
+            chapterSaveDataDict.Add(data.chapterId, data);
+            ChapterSaveDataList.Add(data);
+        }
+            
+    }
+    public void ChapterDataDelete(ChapterSaveData data)
+    {
+        if (chapterSaveDataDict.ContainsKey(data.chapterId))
+        {
+            chapterSaveDataDict.Remove(data.chapterId);
+            return;
+        }
+        UnityEngine.Debug.LogError($"{data.chapterId}가 없어서 못지움. ");
+    }
+
+    public void SetChpaterData()
+    {
+        chapterSaveDataDict.Clear();
+        foreach (ChapterSaveData item in ChapterSaveDataList)
+        {
+            if (chapterSaveDataDict.ContainsKey(item.chapterId))
+            {
+                UnityEngine.Debug.LogError($"{item.chapterId}가 중복된 키값이 있음. ");
+                continue;
+            }
+            chapterSaveDataDict.Add(item.chapterId, item);
+        }
+    }
+
     public void SetAffinityData(CharacterDataSO[] dataSOArray)
     {
         affinityDict.Clear();
-        saveAffinities.Clear();
+        saveAffinitieList.Clear();
         foreach (CharacterDataSO characterData in dataSOArray)
         {
             if(affinityDict.ContainsKey(characterData.CharacterId))
@@ -78,16 +137,23 @@ public class SaveData
             data.maxAmount = characterData.MaxAffinity;
             data.characterForm = eCharacterForm.beast1.ToString();
             affinityDict.Add(characterData.CharacterId, data);
-            saveAffinities.Add(data);
+            saveAffinitieList.Add(data);
         }
     }
-    public AffinityData GetAffinityData(string key)
+
+    //public void SetAffinityDict(List<AffinityData> affinityList)
+    public void SetAffinityDict()
     {
-        if (!affinityDict.ContainsKey(key))
+        affinityDict.Clear();
+        foreach(AffinityData item in saveAffinitieList)
         {
-            return null;
+            if(affinityDict.ContainsKey(item.id))
+            {
+                UnityEngine.Debug.LogError($"{item.id}가 중복된 키값이 있음. ");
+                continue;
+            }
+            affinityDict.Add(item.id, item);
         }
-        return affinityDict[key];
     }
 }
 

@@ -99,6 +99,7 @@ public static class CSVToJsonWindow
             reward.type = cols[1];
             reward.key = cols[2];
             reward.amount = int.Parse(cols[3]);
+            reward.explain = cols[3];
             if (!rewardMap.ContainsKey(nodeId))
             {
                 rewardMap[nodeId] = new List<DialogReward>();

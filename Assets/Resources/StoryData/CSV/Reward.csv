@@ -1,5 +1,5 @@
-NodeId,Type,Key,Amount
-1,Item,낡은열쇠,1
-1,Affinity,사람1,1
-2,Item,낡은열쇠,1
-2,Item,낡은열쇠2,1
+NodeId,Type,Key,Amount,Explain,,,,,,Type이 Item인 경우 아이템 설명이 필요하다
+1,Item,낡은열쇠,1,낡은 열쇠다,,,,,,
+1,Affinity,리트리버,1,,,,,,,
+2,Item,낡은열쇠,1,낡은 열쇠다(중복),,,,,,
+2,Item,낡은열쇠2,1,낡은 열쇠지만 빛이난다,,,,,,

@@ -14,6 +14,9 @@ public class SaveManager : Singleton<SaveManager>
         if (Instance != this) return;
         //다음 원하는 코드 작성
         path = Application.persistentDataPath + PathManager.saveFileName;
+
+        LoadSaveDataToJsonFile();
+
     }
 
     public SaveData CreateNewSaveFile()
@@ -22,7 +25,7 @@ public class SaveManager : Singleton<SaveManager>
         saveData.curChapterId = 1;
         saveData.nodeId = 1;
         //예외: 스킵을 위해 읽었던 노드목록은 초기화하면 안됨
-        SaveData prevData = LoadSaveFile();
+        SaveData prevData = LoadSaveFile(); //기존 세이브파일 읽어서 반환해야함.
         saveData.readNodeIds = (prevData != null) ? prevData.readNodeIds : new List<int>();
 
         ////
@@ -37,33 +40,65 @@ public class SaveManager : Singleton<SaveManager>
     }
     public void CheckAndFixAffinityData(SaveData saveData)
     {
-        //Affinity가 null이면 정보를 넣어준다. 초기정보로
-        if(saveData.AffinityDict.Count == 0)
+        //Affinity가 save파일에 정보가 있으면 딕셔너리를 채워줌. 없다면 리소스 매니저에서 리스트와 딕셔너리 채운다
+        if(saveData.saveAffinitieList.Count != 0 && saveData.AffinityDict.Count == 0)
+        {
+            saveData.SetAffinityDict();
+        }
+        else if(saveData.AffinityDict.Count == 0)
         {
             saveData.SetAffinityData(ResourceManager.Instance.CharacterDataSOArray);
         }
+        //item
+        saveData.SetChpaterData();
     }
 
     //public void CreateSaveData(int chapterid, int nodeId)
-    public void CreateSaveData(SaveData data)
+    public void CreateSaveData(SaveData data, bool isChapterEnd = false)
     {
         //TODO,   호감도 및 아이템은 아직 모르겠다. 
-        //return saveData;
+        //챕터가 끝났을때 해당 챕터에 대해서 어떤 정보들을 가지고있었는지 저장
+        if(isChapterEnd)
+        {
+            int chapterNo = data.curChapterId - 1; //챕터정보 저장하는 시점은 다음챕터로 넘어갔을때 기준이므로 -1해줌
+            if(chapterNo > 0)
+            {
+                ChapterSaveData chapterSaveData = new ChapterSaveData();
+                chapterSaveData.chapterId = chapterNo; //챕터정보 저장하는 시점은 다음챕터로 넘어갔을때 기준이므로 -1해줌
+                chapterSaveData.saveItemList = new List<SaveItem>(data.saveItemList);
+                chapterSaveData.saveAffinities = new List<AffinityData>(data.saveAffinitieList);
+                data.ChapterDataSave(chapterSaveData);
+            }
+        }
+        //현재 가지고있는 아이템도 넣어줘야함
+        data.saveItemList = new List<SaveItem>(ItemManager.Instance.GetItemInfo());
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(path, json);
         CurrentSaveData = data;
         CheckAndFixAffinityData(CurrentSaveData);
     }
-    public SaveData LoadSaveFile()
+    //만약에 챕터가 종료된 상태이다. 그래서 챕터 데이터도 저장해줘야 한다면?
+
+    public void LoadSaveDataToJsonFile()
     {
         if (!File.Exists(path))
         {
-            Debug.LogError("SaveFile이 없어서 못불러왔습니다");
-            return null;
+            Debug.LogWarning("SaveFile이 없어서 저장정보 설정은 안합니다");
+            return;
         }
         string json = File.ReadAllText(path);
         CurrentSaveData = JsonUtility.FromJson<SaveData>(json);
         CheckAndFixAffinityData(CurrentSaveData);
+        //return CurrentSaveData;
+    }
+
+    public SaveData LoadSaveFile()
+    {
+        if(CurrentSaveData ==null)
+        {
+            Debug.LogError("뭔가 이상. 여기 null이면 안됨");
+        }
+
         return CurrentSaveData;
     }
 
