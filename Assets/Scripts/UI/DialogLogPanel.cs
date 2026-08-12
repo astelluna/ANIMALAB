@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogLogCanvas : MonoBehaviour
+public class DialogLogPanel : MonoBehaviour
 {
     [SerializeField] Button closeButton;
     [SerializeField] ScrollRect scrollRect;

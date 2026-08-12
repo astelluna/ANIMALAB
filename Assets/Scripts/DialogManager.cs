@@ -61,7 +61,7 @@ public class DialogManager : MonoBehaviour
     Coroutine skipCoroutine;
 
     //다이럴로그 로그창 전용
-    [SerializeField] DialogLogCanvas dialogLogCanvas;
+    [SerializeField] DialogLogPanel dialogLogCanvas;
 
     //호감도 창 전용
     [SerializeField] AffinityPanel affinityPanel;
