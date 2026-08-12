@@ -24,10 +24,9 @@ public class RewardCanvas : MonoBehaviour
         rewardPanel.gameObject.SetActive(true);
         foreach(DialogReward item in dialogRewards)
         {
-            
             if (item.Type == eDialogItemType.Item)
             {
-                Sprite itemSprite =  rewardIconSO.GetIcon(item.Type, item.key);
+                Sprite itemSprite = ResourceManager.Instance.GetItemData(item.key).Icon;
                 rewardPanel.AddDataArray(itemSprite, item.key);
             }
         }

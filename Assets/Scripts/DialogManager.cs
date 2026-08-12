@@ -24,6 +24,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Button skipButton;
     [SerializeField] Button openDialogLogButton;
     [SerializeField] Button openAffinityButton;
+    [SerializeField] Button openItemSlotButton;
+
+    
 
     DialogData[] allNodes;
     int curId = 0;
@@ -61,8 +64,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] DialogLogCanvas dialogLogCanvas;
 
     //호감도 창 전용
-    [SerializeField] AffinityCanvas affinityCanvas;
-
+    [SerializeField] AffinityPanel affinityPanel;
+    //아이템 창
+    [SerializeField] ItemSlotPanel itemSlotPanel;
     private void Awake()
     {
         skipDelay = new WaitForSeconds(skipDelayTime);
@@ -72,6 +76,7 @@ public class DialogManager : MonoBehaviour
         skipButton.onClick.AddListener(SkipButtonClick);
         openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
         openAffinityButton.onClick.AddListener(OpenAffinityButtonClick);
+        openItemSlotButton.onClick.AddListener(OpenItemSlotButtonClick);
     }
     private void OnDestroy()
     {
@@ -80,8 +85,12 @@ public class DialogManager : MonoBehaviour
         skipButton.onClick.RemoveAllListeners();
         openDialogLogButton.onClick.RemoveAllListeners();
         openAffinityButton.onClick.RemoveAllListeners();
+        openItemSlotButton.onClick.RemoveAllListeners();
     }
-
+    private void OpenItemSlotButtonClick()
+    {
+        itemSlotPanel.ActiveItemSlotCanvas(SaveManager.Instance.GetSaveItemList());
+    }
 
     
     private void OnEnable()
@@ -130,7 +139,7 @@ public class DialogManager : MonoBehaviour
     }
     private void OpenAffinityButtonClick()
     {
-        affinityCanvas.gameObject.SetActive(true);
+        affinityPanel.gameObject.SetActive(true);
     }
     private void OpenDialogLogButtonClick()
     {
@@ -277,6 +286,8 @@ public class DialogManager : MonoBehaviour
         if (rewardCanvas.IsRewardPanelShow) { return; }
         if (chapterShowPanel.IsChapterPanelShow) { return; }
         if (dialogLogCanvas.IsCanvasShow) { return; }
+        if (affinityPanel.IsPanelShow) { return; }
+        if (itemSlotPanel.IsPanelShow) { return; }
 
         StopSkipCor();
         HandleNext();
@@ -382,9 +393,11 @@ public class DialogManager : MonoBehaviour
         if (dialogRewards.Length > 0)
         {
             //호감도 외 보상
+            //아이템 이미지를 찾자.
+
             rewardCanvas.Show(dialogRewards);
             //호감도 보상
-            foreach(DialogReward rewardData in dialogRewards)
+            foreach (DialogReward rewardData in dialogRewards)
             {
                 if(rewardData.Type == eDialogItemType.Affinity)
                 {
@@ -393,13 +406,13 @@ public class DialogManager : MonoBehaviour
                 }
                 else
                 {
-                    ItemClass itemClass = itemDataJson.GetItemInfo(rewardData.key);
+                    ItemClassJson itemClass = itemDataJson.GetItemInfo(rewardData.key);
                     if(itemClass != null)
                     {
                         SaveItem saveItem = new SaveItem();
                         saveItem.key = rewardData.key;
                         saveItem.amount = rewardData.amount;
-                        saveItem.explain = itemClass.explain;
+                        //saveItem.explain = itemClass.explain;
                         SaveManager.Instance.AddItemData(saveItem);
                     }
                 }

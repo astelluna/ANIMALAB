@@ -2,11 +2,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AffinityCanvas : MonoBehaviour
+public class AffinityPanel : MonoBehaviour
 {
     [SerializeField] Button closeButton;
     [SerializeField] List<AffinityImage> affinityImageList = new List<AffinityImage>();
-    
+    public bool IsPanelShow => gameObject.activeInHierarchy;
 
     private void Awake()
     {
@@ -20,6 +20,7 @@ public class AffinityCanvas : MonoBehaviour
     {
         SetAffinityImageList();
     }
+    
 
     public void SetAffinityImageList()
     {

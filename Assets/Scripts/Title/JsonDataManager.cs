@@ -38,7 +38,7 @@ public class JsonDataManager : Singleton<JsonDataManager>
         return cashedNode;
     }
 
-    private void GetItemDataToJson()
+    public static ItemDataJson GetItemDataToJson()
     {
         string path = PathManager.itemJsonFilePath;
         string resourcePath = path
@@ -49,18 +49,18 @@ public class JsonDataManager : Singleton<JsonDataManager>
         if (jsonFile == null)
         {
             Debug.LogError("ItemData_1.json을 Resources 폴더에서 못 찾음. 경로 확인 필요.");
-            return;
+            return null;
         }
         string json = jsonFile.text;
         Debug.Log(json);
-        itemDataJson = JsonUtility.FromJson<ItemDataJson>(json);
+        return JsonUtility.FromJson<ItemDataJson>(json);
 
     }
 
     void JsonInit()
     {
         allNodes = GetJsonData();
-        GetItemDataToJson();
+        itemDataJson = GetItemDataToJson();
     }
     public DialogData[] GetDialogData()
     {

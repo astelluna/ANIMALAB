@@ -8,6 +8,9 @@ public class ResourceManager : Singleton<ResourceManager>
 
     [SerializeField] ChapterThumbnailDatabaseSO chapterThumbnailDatabaseSO;
 
+    [SerializeField] ItemDataSO itemDataSO;
+
+
     private Dictionary<string, CharacterDataSO> characterDataDict = new Dictionary<string, CharacterDataSO>();
     private Dictionary<string, ChapterThumbnail> chapterThumbailDict = new Dictionary<string, ChapterThumbnail>();
 
@@ -69,5 +72,10 @@ public class ResourceManager : Singleton<ResourceManager>
             return null;
         }
         return chapterThumbailDict[key];
+    }
+
+    public ItemDataClass GetItemData(string id)
+    {
+        return itemDataSO.GetItemData(id);
     }
 }

@@ -28,10 +28,7 @@ public class SaveManager : Singleton<SaveManager>
         SaveData prevData = LoadSaveFile(); //기존 세이브파일 읽어서 반환해야함.
         saveData.readNodeIds = (prevData != null) ? prevData.readNodeIds : new List<int>();
 
-        ////
         CheckAndFixAffinityData(saveData);
-        //saveData.SetAffinityData(ResourceManager.Instance.CharacterDataSOArray);
-        ////
 
         string json = JsonUtility.ToJson(saveData, true);
         File.WriteAllText(path, json);
@@ -111,5 +108,9 @@ public class SaveManager : Singleton<SaveManager>
     public void AddItemData(SaveItem item)
     {
         CurrentSaveData.AddItemData(item);
+    }
+    public List<SaveItem> GetSaveItemList()
+    {
+        return CurrentSaveData.saveItemList;
     }
 }

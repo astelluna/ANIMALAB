@@ -2553,6 +2553,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63170ef14bf821d43971ff67b83cc5c8, type: 2}
   basicCharacterData: {fileID: 11400000, guid: 6ec093baf746cab47b3e5b2de74ed8d3, type: 2}
   chapterThumbnailDatabaseSO: {fileID: 11400000, guid: 0523bab29cb781c4bb5db4ecd0d0bdba, type: 2}
+  itemDataSO: {fileID: 11400000, guid: 324481b1b189c8a4e960b336db7aaf36, type: 2}
 --- !u!4 &1242938897
 Transform:
   m_ObjectHideFlags: 0

@@ -204,20 +204,20 @@ public static class CSVToJsonWindow
     {
         //아이템 정보만 따로 json파일로 저장한다 (스토리 노드와 관련이 없어서 따로 저장)
         List<string[]> itemDataList = ParseCsvFile(PathManager.itemDataFileName);
-        List<ItemClass> itemClassList = new List<ItemClass>();
+        List<ItemClassJson> itemClassList = new List<ItemClassJson>();
         for (int i = 1; i < itemDataList.Count; i++)
         {
             string[] cols = itemDataList[i];
 
             if (cols[0] == "") continue;
-            ItemClass itemClass = new ItemClass();
+            ItemClassJson itemClass = new ItemClassJson();
             itemClass.key = cols[0];
             itemClass.explain = cols[1];
             itemClassList.Add(itemClass);
         }
 
         ItemDataJson data = new ItemDataJson();
-        data.itemClassList = new List<ItemClass>(itemClassList);
+        data.itemClassList = new List<ItemClassJson>(itemClassList);
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(PathManager.itemJsonFilePath, json);
     }

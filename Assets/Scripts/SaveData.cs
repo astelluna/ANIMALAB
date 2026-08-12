@@ -10,7 +10,7 @@ public class SaveItem
 {
     public string key;
     public int amount;
-    public string explain;
+    //public string explain;
 }
 [Serializable]
 public class SaveFlag

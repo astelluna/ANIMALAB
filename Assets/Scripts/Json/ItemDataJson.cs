@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 [Serializable]
-public class ItemClass
+public class ItemClassJson
 {
     public string key;
     public string explain;
@@ -11,17 +11,17 @@ public class ItemClass
 [Serializable]
 public class ItemDataJson 
 {
-    public List<ItemClass> itemClassList;
+    public List<ItemClassJson> itemClassList;
 
-    private Dictionary<string, ItemClass> itemClassDict = new Dictionary<string, ItemClass>();
+    private Dictionary<string, ItemClassJson> itemClassDict = new Dictionary<string, ItemClassJson>();
     //public IReadOnlyDictionary<string, ItemClass> ItemClassDict => itemClassDict;
 
-    public ItemClass GetItemInfo(string id)
+    public ItemClassJson GetItemInfo(string id)
     {
         //초기 1회 캐싱
         if(itemClassList != null && itemClassList.Count > 0 && itemClassDict.Count == 0)
         {
-            foreach(ItemClass item in itemClassList)
+            foreach(ItemClassJson item in itemClassList)
             {
                 if(itemClassDict.ContainsKey(item.key))
                 {
