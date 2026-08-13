@@ -47,7 +47,7 @@ public class DialogManager : MonoBehaviour
 
     //배경
     [SerializeField] BackgroundScript backgroundScript;
-    [SerializeField] BackgroundDatabaseSO backgroundDataSO;
+    //SerializeField] CGDatabaseSO backgroundDataSO; //리소스 매니저에서 가져와야한다.
 
     //챕터
     int curChapterNo = 0;
@@ -434,8 +434,11 @@ public class DialogManager : MonoBehaviour
         {
             foreach(DialogCG cgData in curNode.cg)
             {
-                Sprite sprite = backgroundDataSO.GetSprite(cgData.key);
+                Sprite sprite = ResourceManager.Instance.GetCGData(cgData.key).image;
                 backgroundScript.SetBackgroundImage(sprite);
+                //런타임 세이브 데이터에 하나씩 추가를 한다
+                SaveManager.Instance.LoadSaveFile().SetReadCGData(cgData.key);
+
             }
         }
     }

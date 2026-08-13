@@ -15,13 +15,9 @@ MonoBehaviour:
   rewardDataList:
   - type: 2
     key: "\uB0A1\uC740\uC5F4\uC1E0"
-    icon: {fileID: 21300000, guid: bcdfdca0483343a4681574a35d6e2ab6, type: 3}
   - type: 1
     key: "\uC0AC\uB78C1"
-    icon: {fileID: 0}
   - type: 2
     key: "\uB0A1\uC740\uC5F4\uC1E02"
-    icon: {fileID: 0}
   - type: 1
     key: "\uB9AC\uD2B8\uB9AC\uBC84"
-    icon: {fileID: 0}

@@ -119,7 +119,7 @@ public static class CSVToJsonWindow
             cg.nodeId = nodeId;
             cg.type = cols[1];
             cg.key = cols[2];
-            cg.effect = cols[3];
+            cg.category = cols[3];
             if (!cgMap.ContainsKey(nodeId))
             {
                 cgMap[nodeId] = new List<DialogCG>();

@@ -10,6 +10,8 @@ public class ResourceManager : Singleton<ResourceManager>
 
     [SerializeField] ItemDataSO itemDataSO;
 
+    [SerializeField] CGDatabaseSO cgDatabaseSO;
+
 
     private Dictionary<string, CharacterDataSO> characterDataDict = new Dictionary<string, CharacterDataSO>();
     private Dictionary<string, ChapterThumbnail> chapterThumbailDict = new Dictionary<string, ChapterThumbnail>();
@@ -77,5 +79,13 @@ public class ResourceManager : Singleton<ResourceManager>
     public ItemDataClass GetItemData(string id)
     {
         return itemDataSO.GetItemData(id);
+    }
+    public CGData GetCGData(string id)
+    {
+        return cgDatabaseSO.GetCGData(id);
+    }
+    public List<CGData> GetCGDataList(eCgCategory type)
+    {
+        return cgDatabaseSO.GetCGDataByCategory(type);
     }
 }

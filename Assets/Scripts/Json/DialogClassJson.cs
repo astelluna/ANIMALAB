@@ -14,10 +14,6 @@ public enum eExpression
     //기본, 행복, 분노, 슬픔, 놀람, 두려움, 혐오
     none, normal , happy, angry, sad, surprize, fear, aversion
 }
-public enum eCGEffect
-{
-    fadeIn,fadeOut,Instant
-}
 public enum eCommandType
 {
     none, Show, Hide, ClearAll, Effect
@@ -33,6 +29,10 @@ public enum eSpritePosition
 public enum eBackgroundType
 {
     none,Background,CG
+}
+public enum eCgCategory
+{
+    none, cg, Ending
 }
 [Serializable]
 public class DialogDataArray
@@ -162,7 +162,7 @@ public class DialogCG
     public int nodeId;
     public string type;
     public string key; //CG 리소스 키. JSON에 고유하게 넣음
-    public string effect; //"fadeIn, fadeOut, instant" 등 연출 (서서히 나타남, 서서히 사라짐, 즉시 바뀜)
+    public string category;
     public eBackgroundType Type
     {
         get
@@ -174,15 +174,15 @@ public class DialogCG
             return eBackgroundType.none;
         }
     }
-    public eCGEffect Expression
+    public eCgCategory Category
     {
         get
         {
-            if (Enum.TryParse<eCGEffect>(effect, true, out var result))
+            if (Enum.TryParse<eCgCategory>(category, true, out var result))
             {
                 return result;
             }
-            return eCGEffect.fadeIn;
+            return eCgCategory.none;
         }
     }
 }

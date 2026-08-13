@@ -51,6 +51,13 @@ public class ChapterSaveData
     public int chapterId;
     public List<AffinityData> saveAffinities;
     public List<SaveItem> saveItemList;
+}
+[Serializable]
+public class CGSaveData
+{
+    public string id;
+
+    
 
 }
 
@@ -78,7 +85,32 @@ public class SaveData
     private Dictionary<string, SaveItem> saveItemDict = new Dictionary<string, SaveItem>();
     public IReadOnlyDictionary<string, SaveItem> SaveItemDict => saveItemDict;
 
+    //본 CG목록에 대해 추가해준다
+    public List<string> readCGList = new List<string>();
+    HashSet<string> readCGHash;
+
     //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
+    //public void SetInitCGData
+    public void SetReadCGData(string key)
+    {
+        if(readCGHash == null)
+        {
+            readCGHash = new HashSet<string>();
+            foreach(string cgId in readCGList)
+            {
+                readCGHash.Add(cgId);
+            }
+        }
+
+        if (!readCGHash.Contains(key))
+        {
+            readCGList.Add(key);
+        }
+    }
+    public HashSet<string> GetReadCGData()
+    {
+        return readCGHash;
+    }
 
     public void ChapterDataSave(ChapterSaveData data)
     {

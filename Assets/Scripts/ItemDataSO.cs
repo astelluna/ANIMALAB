@@ -10,7 +10,7 @@ public class ItemDataClass
     [field: SerializeField] public Sprite Icon { get; private set; }
     [field: SerializeField, TextArea] public string Description { get; private set; }
 
-    public ItemDataClass(string id, string msg)
+    public void SetItemData(string id, string msg)
     {
         ItemId = id;
         Description = msg;

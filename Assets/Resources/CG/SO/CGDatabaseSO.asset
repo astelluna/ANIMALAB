@@ -9,13 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e370c9db8496c44a488a31c1b005b4, type: 3}
-  m_Name: BackgroundDatabaseSO
+  m_Script: {fileID: 11500000, guid: 324b2a6aa4c92784fb8c1634b1dfba28, type: 3}
+  m_Name: CGDatabaseSO
   m_EditorClassIdentifier: 
   backgroundDatas:
   - key: background_floor1
-    image: {fileID: 21300000, guid: 5f29b405eec3aa141b823a52b721d411, type: 3}
+    image: {fileID: 0}
+    category: 0
   - key: background_floor2
     image: {fileID: 0}
+    category: 0
   - key: CG_1
     image: {fileID: 0}
+    category: 1
+  - key: CG_Ending1
+    image: {fileID: 0}
+    category: 2
