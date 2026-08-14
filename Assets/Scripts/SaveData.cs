@@ -90,25 +90,30 @@ public class SaveData
     HashSet<string> readCGHash;
 
     //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
-    //public void SetInitCGData
-    public void SetReadCGData(string key)
+    private void InitCGHash()
     {
-        if(readCGHash == null)
+        if (readCGHash == null)
         {
             readCGHash = new HashSet<string>();
-            foreach(string cgId in readCGList)
+            foreach (string cgId in readCGList)
             {
                 readCGHash.Add(cgId);
             }
         }
+    }
+    public void SetReadCGData(string key)
+    {
+        InitCGHash();
 
         if (!readCGHash.Contains(key))
         {
             readCGList.Add(key);
+            readCGHash.Add(key);
         }
     }
     public HashSet<string> GetReadCGData()
     {
+        InitCGHash();
         return readCGHash;
     }
 

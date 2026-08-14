@@ -1,5 +1,9 @@
 NodeId,type,Key,Category,,,,,,,Category 종류
-1,Background,background_floor1,,,,,,,,Normal
+1,Background,background_floor1,,,,,,,,Cg
 2,Background,background_floor2,,,,,,,,Ending
-3,CG,CG_1,Normal,,,,,,,
+3,CG,CG_1,Cg,,,,,,,
 4,CG,CG_Ending1,Ending,,,,,,,
+10,CG,CG_2,Cg,,,,,,,
+10,CG,CG_3,Cg,,,,,,,
+10,CG,CG_4,Cg,,,,,,,
+10,CG,CG_Ending2,Ending,,,,,,,

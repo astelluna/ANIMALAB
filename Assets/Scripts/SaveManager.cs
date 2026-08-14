@@ -91,7 +91,7 @@ public class SaveManager : Singleton<SaveManager>
     {
         if(CurrentSaveData ==null)
         {
-            Debug.LogError("뭔가 이상. 여기 null이면 안됨");
+            Debug.LogError("SaveData null 반환될거임 처리 필요합니다");
         }
 
         return CurrentSaveData;

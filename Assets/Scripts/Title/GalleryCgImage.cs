@@ -22,13 +22,13 @@ public class GalleryCgImage : MonoBehaviour, IPointerClickHandler
     public void ActiveAndSet(bool isRead, CGData data )
     {
         this.gameObject.SetActive(true);
-        ShowLockImage(isRead);
+        ShowLockImage(!isRead);
         //데이터 설정
         image.sprite = data.image;
     }
 
-    private void ShowLockImage(bool isShow)
+    private void ShowLockImage(bool isLock)
     {
-        lockImage.gameObject.SetActive(isShow);
+        lockImage.gameObject.SetActive(isLock);
     }
 }

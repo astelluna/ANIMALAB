@@ -98,7 +98,7 @@
                     "nodeId": 3,
                     "type": "CG",
                     "key": "CG_1",
-                    "category": "Normal"
+                    "category": "Cg"
                 }
             ],
             "choices": [],
@@ -250,7 +250,32 @@
             "speaker": "지문",
             "text": "한 명은 머리 위에 강아지 같은 귀가 돋아나 있었다. \n한 명은 날카로운 여우 같은 눈매와 귀를 가지고 있었다. ",
             "expression": "none",
-            "cg": [],
+            "cg": [
+                {
+                    "nodeId": 10,
+                    "type": "CG",
+                    "key": "CG_2",
+                    "category": "Cg"
+                },
+                {
+                    "nodeId": 10,
+                    "type": "CG",
+                    "key": "CG_3",
+                    "category": "Cg"
+                },
+                {
+                    "nodeId": 10,
+                    "type": "CG",
+                    "key": "CG_4",
+                    "category": "Cg"
+                },
+                {
+                    "nodeId": 10,
+                    "type": "CG",
+                    "key": "CG_Ending2",
+                    "category": "Ending"
+                }
+            ],
             "choices": [],
             "reward": [],
             "nextnodeId": 0,

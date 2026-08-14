@@ -13,6 +13,8 @@ public class GalleryShowImagePanel : MonoBehaviour, IPointerClickHandler
     }
     public void SetImageAndShow(Sprite sprite)
     {
+        if (panelImage == null) { panelImage = GetComponent<Image>(); }
+
         panelImage.sprite = sprite;
         this.gameObject.SetActive(true);
     }
