@@ -12,7 +12,7 @@ public enum eDialogItemType
 public enum eExpression
 {
     //기본, 행복, 분노, 슬픔, 놀람, 두려움, 혐오
-    none, normal , happy, angry, sad, surprize, fear, aversion
+    none, normal , happy, angry, sad, surprize, fear, aversion, care
 }
 public enum eCommandType
 {
@@ -46,7 +46,6 @@ public class DialogData
     public int id; //대사 id. 점점 증가할거임.
     public string speaker; //추후에 SO로 바꿀거임. 누가? 말을 하는지
     public string text; //텍스트 대사
-    public string expression; //표정
     public DialogCG[] cg;
     public DialogChoice[] choices;
     public DialogReward[] reward;
@@ -55,18 +54,6 @@ public class DialogData
     public CharacterSprite[] spriteDatas;
     public DialogSound[] dialogSounds;
     public ChapterData chapterData;
-
-    public eExpression Expression
-    {
-        get
-        {
-            if (Enum.TryParse<eExpression>(expression, true, out var result))
-            {
-                return result;
-            }
-            return eExpression.none;
-        }
-    }
 }
 
 [Serializable]

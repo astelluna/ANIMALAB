@@ -36,7 +36,6 @@ public static class CSVToJsonWindow
             node.id = int.Parse(cols[0]);
             node.speaker = cols[1];
             node.text = cols[2];
-            node.expression = cols[3];
             node.nextnodeId = (cols[4] == "") ? 0 : int.Parse(cols[4]);
             node.OnEvent = cols[5];
             nodeMap.Add(node.id, node);
