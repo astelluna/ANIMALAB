@@ -26,7 +26,7 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Button openAffinityButton;
     [SerializeField] Button openItemSlotButton;
 
-    
+    private TMP_Text[] choiceButtonTextArray;
 
     DialogData[] allNodes;
     int curId = 0;
@@ -77,6 +77,17 @@ public class DialogManager : MonoBehaviour
         openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
         openAffinityButton.onClick.AddListener(OpenAffinityButtonClick);
         openItemSlotButton.onClick.AddListener(OpenItemSlotButtonClick);
+
+
+        choiceButtonTextArray = new TMP_Text[choiceButtons.Length];
+        for (int i=0; i< choiceButtons.Length; i++)
+        {
+            choiceButtonTextArray[i] = choiceButtons[i].GetComponentInChildren<TMP_Text>();
+            if (choiceButtonTextArray[i] == null)
+            {
+                Debug.LogError($"choiceButtons[{i}]에 TMP_Text가 없습니다.");
+            }
+        }
     }
     private void OnDestroy()
     {
@@ -199,7 +210,7 @@ public class DialogManager : MonoBehaviour
             isTyping = false;
             StopCoroutine(printSlowTextCor);
             printSlowTextCor = null;
-            dialogText.text = curNode.text;
+            dialogText.text = curNode.textKey;
             return;
         }
         //예외처리2. 선택지가 있다면? 하면안됨
@@ -333,11 +344,21 @@ public class DialogManager : MonoBehaviour
         //선택지 표시
         for (int i = 0; i < curNode.choices.Length; i++)
         {
-            int goTo = curNode.choices[i].goTo;
-            choiceButtons[i].gameObject.GetComponentInChildren<TMP_Text>().text = curNode.choices[i].choiceText;
+            DialogChoice dialogChoice = curNode.choices[i];
+            //choiceButtons[i].gameObject.GetComponentInChildren<TMP_Text>().text = dialogChoice.choiceText;
+            choiceButtonTextArray[i].text = dialogChoice.choiceText;
             choiceButtons[i].onClick.RemoveAllListeners();
-            choiceButtons[i].onClick.AddListener(() => ShowData(goTo));
             choiceButtons[i].gameObject.SetActive(true);
+            //하기전에 먼저 버튼에 조건이 있어서 비활성화 해야하는지 체크
+            if (!NodeConditionChecker.CheckButtonInteractable(dialogChoice))
+            {
+                choiceButtons[i].interactable = false;
+                continue;
+            }
+            int goTo = NodeConditionChecker.CheckChoiceCondition(dialogChoice);
+            choiceButtons[i].onClick.AddListener(() => ShowData(goTo));
+            choiceButtons[i].interactable = true;
+            
         }
 
         //코루틴 다시 실행
@@ -345,7 +366,7 @@ public class DialogManager : MonoBehaviour
         {
             StopCoroutine(printSlowTextCor);
         }
-        printSlowTextCor = StartCoroutine(PrintSlowText(curNode.text));
+        printSlowTextCor = StartCoroutine(PrintSlowText(curNode.textKey));
 
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)
@@ -387,7 +408,7 @@ public class DialogManager : MonoBehaviour
             }
         }
         //다이얼로그 로그창 띄우기
-        dialogLogCanvas.AddLog(curNode.speaker, curNode.text);
+        dialogLogCanvas.AddLog(curNode.speaker, curNode.textKey);
         //보상이 있다면? 보상 이미지 띄우기
         DialogReward[] dialogRewards = curNode.reward;
         if (dialogRewards.Length > 0)

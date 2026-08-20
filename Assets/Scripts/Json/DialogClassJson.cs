@@ -45,7 +45,7 @@ public class DialogData
 {
     public int id; //대사 id. 점점 증가할거임.
     public string speaker; //추후에 SO로 바꿀거임. 누가? 말을 하는지
-    public string text; //텍스트 대사
+    public string textKey; //텍스트 키값 (로컬라이제이션과 매칭) 
     public DialogCG[] cg;
     public DialogChoice[] choices;
     public DialogReward[] reward;
@@ -176,38 +176,39 @@ public class DialogCG
 [Serializable]
 public class DialogChoice
 {
+    public int nodeId;
+    public int choiceIndex;
+
     public string choiceText;
     public int goTo;
-    public DialogCondition condition;
+    public int goToFail;
+    public DialogCondition[] condition; //버튼 클릭 후 안에서 따로 성공/실패 여부를 처리할때 사용
+    public DialogCondition[] interActableCondition;  //버튼 클릭 가능 여부 판정
 }
 [Serializable]
 public class DialogCondition
 {
-    public string logic;
-    public ConditionItem[] conditions;
+    //선택지에서 조건 체크가 필요하다면 이 항목이 있다.
+    //public int nodeId;
+    //public int choiceIndex;
 
+    public string logic;
+    public string type; //어떤 타입인지
+    public string key; //
+    public int min; 
+    public int max;
+    //public bool IsInteractable; //DialogChoice에 interActableCondition로 따로 들어가기 때문에 필요없음
     public eLogicType Logic
     {
         get
         {
-            if(Enum.TryParse<eLogicType>(logic,true,out var result))
+            if (Enum.TryParse<eLogicType>(logic, true, out var result))
             {
                 return result;
             }
             return eLogicType.None;
         }
     }
-
-}
-[Serializable]
-public class ConditionItem
-{
-    //선택지에서 조건 체크가 필요하다면 이 항목이 있다.
-    public string type; //어떤 타입인지
-    public string key; //
-    public int min; 
-    public int max;
-
     public eDialogItemType ConditionType
     {
         get
@@ -219,8 +220,40 @@ public class ConditionItem
             return eDialogItemType.None;
         }
     }
-
 }
+//[Serializable]
+//public class ConditionItem
+//{
+//    //선택지에서 조건 체크가 필요하다면 이 항목이 있다.
+//    public string logic;
+//    public string type; //어떤 타입인지
+//    public string key; //
+//    public int min; 
+//    public int max;
+//    public eLogicType Logic
+//    {
+//        get
+//        {
+//            if (Enum.TryParse<eLogicType>(logic, true, out var result))
+//            {
+//                return result;
+//            }
+//            return eLogicType.None;
+//        }
+//    }
+//    public eDialogItemType ConditionType
+//    {
+//        get
+//        {
+//            if (Enum.TryParse<eDialogItemType>(type, true,out var result))
+//            {
+//                return result;
+//            }
+//            return eDialogItemType.None;
+//        }
+//    }
+//
+//}
 [Serializable]
 public class DialogReward
 {

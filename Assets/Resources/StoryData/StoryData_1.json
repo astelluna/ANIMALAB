@@ -3,8 +3,7 @@
         {
             "id": 1,
             "speaker": "지문",
-            "text": "어둠 속에서 의식이 떠올랐다. 가장 먼저 느껴진 것은 통증이었다. 머리가 깨질 듯 아팠다. 숨을 쉬는 것조차 힘들 정도의 두통 속에서 나는 천천히 눈을 떴다. ",
-            "expression": "normal",
+            "textKey": "CH01_001",
             "cg": [
                 {
                     "nodeId": 1,
@@ -49,8 +48,7 @@
         {
             "id": 2,
             "speaker": "지문",
-            "text": "붉은 빛이 시야를 가득 채우고 있었다. 천장의 비상등... 규칙적으로 깜빡이는 붉은 불빛이 텅 빈 연구실 내부를 비추고 있었다. 낯선 기계음과 코를 찌르는 소독약 냄새 그리고 차갑게 식어버린 바닥. ",
-            "expression": "happy",
+            "textKey": "CH01_002",
             "cg": [
                 {
                     "nodeId": 2,
@@ -91,8 +89,7 @@
         {
             "id": 3,
             "speaker": "지문",
-            "text": "나는 천천히 몸을 일으켰다. 머릿속을 뒤져봤지만 아무것도 떠오르지 않았다. 하지만 한 가지 기억만은 선명하게 남아 있었다. ",
-            "expression": "none",
+            "textKey": "CH01_003",
             "cg": [
                 {
                     "nodeId": 3,
@@ -122,8 +119,7 @@
         {
             "id": 4,
             "speaker": "지문",
-            "text": "누군가와 싸우고 있었다. 그리고… 손에 들고 있던 치료제 앰플이 깨졌다. 그 순간 무언가가 터졌다. 그 이후의 기억은 존재하지 않았다.",
-            "expression": "none",
+            "textKey": "CH01_004",
             "cg": [
                 {
                     "nodeId": 4,
@@ -153,8 +149,7 @@
         {
             "id": 5,
             "speaker": "지문",
-            "text": "그 순간. 컴퓨터 화면이 켜지며 메세지가 출력되었다.",
-            "expression": "none",
+            "textKey": "CH01_005",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -172,8 +167,7 @@
         {
             "id": 6,
             "speaker": "지문",
-            "text": "`===== 비상 생물재해 시스템 가동 =====\n시설 폐쇄 완료. 외부 통신 차단.\n\n감염자 : 5명\n백신 보관 위치 : [암호화됨]\n백신 보관 수량 : 2\n\n시설 해제 코드 입력 대기 중...`",
-            "expression": "none",
+            "textKey": "CH01_006",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -191,8 +185,7 @@
         {
             "id": 7,
             "speaker": "주인공",
-            "text": "……감염자 5명? 감염자? 백신? 도대체 무슨 일이 일어난 거지?",
-            "expression": "none",
+            "textKey": "CH01_007",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -210,8 +203,7 @@
         {
             "id": 8,
             "speaker": "???",
-            "text": "움직이지 마.",
-            "expression": "none",
+            "textKey": "CH01_008",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -229,8 +221,7 @@
         {
             "id": 9,
             "speaker": "지문",
-            "text": "나는 천천히 뒤를 돌아봤다. 연구실 한쪽에 네 명의 여성이 나를 바라보고 있었다. 하지만... 그들의 모습은 평범한 인간과 달랐다.",
-            "expression": "none",
+            "textKey": "CH01_009",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -248,8 +239,7 @@
         {
             "id": 10,
             "speaker": "지문",
-            "text": "한 명은 머리 위에 강아지 같은 귀가 돋아나 있었다. \n한 명은 날카로운 여우 같은 눈매와 귀를 가지고 있었다. ",
-            "expression": "none",
+            "textKey": "CH01_010",
             "cg": [
                 {
                     "nodeId": 10,
@@ -320,8 +310,7 @@
         {
             "id": 11,
             "speaker": "지문",
-            "text": "한 명은 토끼처럼 긴 귀가 떨리고 있었다. \n그리고 마지막 한 명은 머리 위에 양처럼 생긴 뿔이 보였다",
-            "expression": "none",
+            "textKey": "CH01_011",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -376,8 +365,7 @@
         {
             "id": 12,
             "speaker": "지문",
-            "text": "나도 모르게 손을 바라봤다. 손끝이 저릿했다. 불안한 마음으로 근처 깨진 거울을 바라보았다. 그리고. 내 머리 위에도. 무언가가 자라나 있었다.",
-            "expression": "",
+            "textKey": "CH01_012",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -405,8 +393,7 @@
         {
             "id": 13,
             "speaker": "리트리버",
-            "text": "당신… 깨어났구나. 다행이야. 당신은 연구원이잖아? 이게 어떻게 된 건지 알고 있지?",
-            "expression": "",
+            "textKey": "CH01_013",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -434,8 +421,7 @@
         {
             "id": 14,
             "speaker": "사막여우",
-            "text": "분명 기억나는 건 있어. 우리가 실험 때문에 이 방에 모였다는 것. 그런데 눈을 떠보니 시설은 폐쇄되어 있고... 몸은 이렇게 변해있어. 설명해봐. 연구원.",
-            "expression": "",
+            "textKey": "CH01_014",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -463,8 +449,7 @@
         {
             "id": 15,
             "speaker": "토끼",
-            "text": "흐윽…… 왜…… 왜 다들 이상하게 변한 거야? 무서워……",
-            "expression": "",
+            "textKey": "CH01_015",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -482,8 +467,7 @@
         {
             "id": 16,
             "speaker": "양",
-            "text": "이건…… 원래 없었는데. 왜 이런 게 생긴 거죠?",
-            "expression": "",
+            "textKey": "CH01_016",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -501,8 +485,7 @@
         {
             "id": 17,
             "speaker": "지문",
-            "text": "나는 그들을 바라봤다. 분명. 나는 이들과 관련이 있었다. 하지만 아무리 기억하려 해도 떠오르지 않았다. 모두의 목소리가 낯설지 않았다. ",
-            "expression": "",
+            "textKey": "CH01_017",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -520,8 +503,7 @@
         {
             "id": 18,
             "speaker": "지문",
-            "text": "이 중 누군가와 싸우다가 바이러스 앰플이 깨진 걸까? 하지만 누구인지. 왜 다들 낯설지 않은지 기억나지 않았다. 내 머릿속은 여전히 혼란스러웠다.",
-            "expression": "",
+            "textKey": "CH01_018",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -539,25 +521,26 @@
         {
             "id": 19,
             "speaker": "None",
-            "text": "당신의 첫 반응은?",
-            "expression": "",
+            "textKey": "CH01_019",
             "cg": [],
             "choices": [
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "기억 상실을 솔직하게 밝히고 상황 설명을 요구한다.",
                     "goTo": 20,
-                    "condition": {
-                        "logic": "",
-                        "conditions": []
-                    }
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
                 },
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "침묵하며 상황을 파악한다.",
                     "goTo": 24,
-                    "condition": {
-                        "logic": "",
-                        "conditions": []
-                    }
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
                 }
             ],
             "reward": [],
@@ -575,8 +558,7 @@
         {
             "id": 20,
             "speaker": "주인공",
-            "text": "……기억이 없습니다. 마지막 기억은 치료제 앰플이 깨진 순간뿐입니다. 이 시설에서 무슨 일이 있었는지 나도 모릅니다.",
-            "expression": "",
+            "textKey": "CH01_020",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -594,8 +576,7 @@
         {
             "id": 21,
             "speaker": "사막여우",
-            "text": "기억 상실? 흥... 편리한 변명이군. 앰플이 깨졌다는 것도 의심스러워. 연구원인 당신이 모른다고?",
-            "expression": "",
+            "textKey": "CH01_021",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -613,8 +594,7 @@
         {
             "id": 22,
             "speaker": "리트리버",
-            "text": "그래도…… 거짓말하는 표정은 아닌 것 같아요. 여기에 남아있는 이유가 분명 있을 거예요.",
-            "expression": "",
+            "textKey": "CH01_022",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -632,8 +612,7 @@
         {
             "id": 23,
             "speaker": "지문",
-            "text": "사막여우는 여전히 의심의 눈초리를 거두지 않았지만 리트리버는 조금 누그러진 표정으로 나를 바라봤다. 양과 토끼는 불안한 시선으로 우리를 번갈아 보았다.\n(모든 캐릭터 신뢰도 +10)",
-            "expression": "",
+            "textKey": "CH01_023",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -651,8 +630,7 @@
         {
             "id": 24,
             "speaker": "주인공",
-            "text": "...",
-            "expression": "",
+            "textKey": "CH01_024",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -670,8 +648,7 @@
         {
             "id": 25,
             "speaker": "사막여우",
-            "text": "말할 생각이 없는 건가? 아니면 정말 모르는 건가? 어느 쪽이든 신뢰하기 어렵군.",
-            "expression": "",
+            "textKey": "CH01_025",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -689,8 +666,7 @@
         {
             "id": 26,
             "speaker": "리트리버",
-            "text": "……말해줄 수 없나요? 당신이 이곳의 연구원이라면... 우리에게 알려줘야 할 의무가 있잖아요.",
-            "expression": "",
+            "textKey": "CH01_026",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -708,8 +684,7 @@
         {
             "id": 27,
             "speaker": "지문",
-            "text": "나의 침묵에 사막여우의 눈매는 더욱 날카로워졌고 리트리버의 표정에는 실망감이 스쳤다. 토끼는 더욱 움츠러들었고 양은 알 수 없는 미소를 지었다.\n(모든 캐릭터 신뢰도 -10)",
-            "expression": "",
+            "textKey": "CH01_027",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -727,8 +702,7 @@
         {
             "id": 28,
             "speaker": "지문",
-            "text": "나는 컴퓨터 화면을 다시 바라봤다. 비상 시스템. 생존자. 감염자. 그리고 백신. 조금씩 기억의 조각이 맞춰지고 있었다.",
-            "expression": "",
+            "textKey": "CH01_028",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -746,8 +720,7 @@
         {
             "id": 29,
             "speaker": "지문",
-            "text": "이곳은 단순한 연구시설이 아니었다. 불치병 치료를 위한 연구시설. 하지만 치료 과정에서 예상하지 못한 부작용이 발견됐다.\n인간의 신체가 변화하여 동물의 특징이 나타나는 변이. 수인화.  아마 치료제 앰플이 깨지면서… 이 변화가 시작된 것이다.",
-            "expression": "",
+            "textKey": "CH01_029",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -765,38 +738,49 @@
         {
             "id": 30,
             "speaker": "None",
-            "text": "수인화에 대해 설명할까?",
-            "expression": "",
+            "textKey": "CH01_030",
             "cg": [],
             "choices": [
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "모두에게 설명한다.",
                     "goTo": 31,
-                    "condition": {
-                        "logic": "",
-                        "conditions": []
-                    }
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
                 },
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "설명하지 않는다.",
                     "goTo": 40,
-                    "condition": {
-                        "logic": "AND",
-                        "conditions": [
-                            {
-                                "type": "Affinity",
-                                "key": "사람1",
-                                "min": 10,
-                                "max": 30
-                            },
-                            {
-                                "type": "Affinity",
-                                "key": "사람2",
-                                "min": 10,
-                                "max": 30
-                            }
-                        ]
-                    }
+                    "goToFail": 0,
+                    "condition": [
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "사람1",
+                            "min": 10,
+                            "max": 30
+                        },
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "사람2",
+                            "min": 10,
+                            "max": 30
+                        }
+                    ],
+                    "interActableCondition": [
+                        {
+                            "logic": "AND",
+                            "type": "Item",
+                            "key": "낡은열쇠",
+                            "min": 1,
+                            "max": 2147483647
+                        }
+                    ]
                 }
             ],
             "reward": [],
@@ -814,8 +798,7 @@
         {
             "id": 31,
             "speaker": "지문",
-            "text": "나는 숨겨왔던 사실을 말했다.",
-            "expression": "",
+            "textKey": "CH01_031",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -833,8 +816,7 @@
         {
             "id": 32,
             "speaker": "주인공",
-            "text": "당신들의 변화는 치료제의 부작용일 가능성이 높습니다.",
-            "expression": "",
+            "textKey": "CH01_032",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -852,8 +834,7 @@
         {
             "id": 33,
             "speaker": "토끼",
-            "text": "부작용……? 그게 무슨 말이에요?",
-            "expression": "",
+            "textKey": "CH01_033",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -871,8 +852,7 @@
         {
             "id": 34,
             "speaker": "지문",
-            "text": "토끼는 고개를 갸우뚱하며 모르겠다는 표정을 지었다",
-            "expression": "",
+            "textKey": "CH01_034",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -890,8 +870,7 @@
         {
             "id": 35,
             "speaker": "사막여우",
-            "text": "하... 그럼 이 모습이 치료 실패의 결과라는 거야?",
-            "expression": "",
+            "textKey": "CH01_035",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -909,8 +888,7 @@
         {
             "id": 36,
             "speaker": "리트리버",
-            "text": "하지만…… 몸 상태는 좋아졌어요. 전보다 움직이기 편해졌어요",
-            "expression": "",
+            "textKey": "CH01_036",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -928,8 +906,7 @@
         {
             "id": 37,
             "speaker": "양",
-            "text": "그럼…… 병은 치료된 건가요?",
-            "expression": "",
+            "textKey": "CH01_037",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -947,8 +924,7 @@
         {
             "id": 38,
             "speaker": "지문",
-            "text": "나는 고개를 저었다.",
-            "expression": "",
+            "textKey": "CH01_038",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -966,8 +942,7 @@
         {
             "id": 39,
             "speaker": "주인공",
-            "text": "치료는 성공했을 가능성이 있습니다. 하지만 이 변화를 되돌리려면…… 다른 치료제가 필요합니다.\n(모든 캐릭터 신뢰도 +10)",
-            "expression": "",
+            "textKey": "CH01_039",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -985,8 +960,7 @@
         {
             "id": 40,
             "speaker": "지문",
-            "text": "나는 아무 말도 하지 않았다.",
-            "expression": "",
+            "textKey": "CH01_040",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1004,8 +978,7 @@
         {
             "id": 41,
             "speaker": "지문",
-            "text": "순간 네 명의 시선이 조금씩 변했다.의심 불안 그리고 불편한 침묵.\n내가 아무것도 말하지 않는 것이 오히려 그들에게는 무언가를 숨기는 것처럼 보이는 듯했다.",
-            "expression": "",
+            "textKey": "CH01_041",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1023,8 +996,7 @@
         {
             "id": 42,
             "speaker": "양",
-            "text": "저... 혹시...",
-            "expression": "",
+            "textKey": "CH01_042",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1042,8 +1014,7 @@
         {
             "id": 43,
             "speaker": "지문",
-            "text": "양은 조심스럽게 자신의 머리 위에 돋아난 뿔을 만졌다.",
-            "expression": "",
+            "textKey": "CH01_043",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1061,8 +1032,7 @@
         {
             "id": 44,
             "speaker": "양",
-            "text": "이건... 저희가 받았던 불치병 치료제의 부작용 아닐까요?",
-            "expression": "",
+            "textKey": "CH01_044",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1080,8 +1050,7 @@
         {
             "id": 45,
             "speaker": "지문",
-            "text": "그 말에 모두의 시선이 잠시 멈췄다.",
-            "expression": "",
+            "textKey": "CH01_045",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1099,8 +1068,7 @@
         {
             "id": 46,
             "speaker": "리트리버",
-            "text": "부작용...? 확실히 이상해요. 그런데... 이상할 정도로 몸 상태가 좋아졌어요.",
-            "expression": "",
+            "textKey": "CH01_046",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1118,8 +1086,7 @@
         {
             "id": 47,
             "speaker": "토끼",
-            "text": "부작...용? 그게... 뭔가요?",
-            "expression": "",
+            "textKey": "CH01_047",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1137,8 +1104,7 @@
         {
             "id": 48,
             "speaker": "지문",
-            "text": "토끼는 고개를 갸웃거렸다.",
-            "expression": "",
+            "textKey": "CH01_048",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1156,8 +1122,7 @@
         {
             "id": 49,
             "speaker": "사막여우",
-            "text": "...잠깐. 그게 사실이라면 너는 알고 있었던 거 아니야?\n우리가 왜 이렇게 변했는지... 왜 몸이 좋아졌는지... 너라면 알았을 텐데.",
-            "expression": "",
+            "textKey": "CH01_049",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1175,8 +1140,7 @@
         {
             "id": 50,
             "speaker": "지문",
-            "text": "나는 아무 말도 하지 못했다. \n(모든 캐릭터 신뢰도 -10)",
-            "expression": "",
+            "textKey": "CH01_050",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1194,8 +1158,7 @@
         {
             "id": 51,
             "speaker": "지문",
-            "text": "양의 추측으로 인해 모두는 수인화가 치료제의 부작용일 가능성을 깨달았다.",
-            "expression": "",
+            "textKey": "CH01_051",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1213,8 +1176,7 @@
         {
             "id": 52,
             "speaker": "지문",
-            "text": "하지만 동시에 그 사실을 알고 있었을지도 모르는 유일한 사람. 연구원이었던 나를 향한 의심도 커지고 있었다.",
-            "expression": "",
+            "textKey": "CH01_052",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1232,8 +1194,7 @@
         {
             "id": 53,
             "speaker": "사막여우",
-            "text": "결국 치료제를 찾아야 한다는 거잖아? 그런데 있는 거야?",
-            "expression": "",
+            "textKey": "CH01_053",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1251,8 +1212,7 @@
         {
             "id": 54,
             "speaker": "리트리버",
-            "text": "컴퓨터에 표시되어 있을지도 몰라요.",
-            "expression": "",
+            "textKey": "CH01_054",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1270,8 +1230,7 @@
         {
             "id": 55,
             "speaker": "지문",
-            "text": "리트리버가 손으로 가르킨 방향에는 컴퓨터가 있었다. 나는 천천히 화면을 확인했다. 그리고... 숫자를 발견했다.",
-            "expression": "",
+            "textKey": "CH01_055",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1289,8 +1248,7 @@
         {
             "id": 56,
             "speaker": "지문",
-            "text": "ㅡㅡㅡ\n백신 코드 : VX-01\n보관 수량 : 2\n보관 상태 : 정상\nㅡㅡㅡ",
-            "expression": "",
+            "textKey": "CH01_056",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1308,8 +1266,7 @@
         {
             "id": 57,
             "speaker": "지문",
-            "text": "치료제는 2개. 누군가는 원래 모습으로 돌아갈 수 있다. 하지만. 누군가는 평생 이 모습으로 살아가야 한다.",
-            "expression": "",
+            "textKey": "CH01_057",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1327,25 +1284,26 @@
         {
             "id": 58,
             "speaker": "None",
-            "text": "치료제가 2개뿐이라는 것을 밝힐까?",
-            "expression": "",
+            "textKey": "CH01_058",
             "cg": [],
             "choices": [
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "사실대로 말한다.",
                     "goTo": 59,
-                    "condition": {
-                        "logic": "",
-                        "conditions": []
-                    }
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
                 },
                 {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
                     "choiceText": "치료제가 없다고 거짓말한다.",
                     "goTo": 64,
-                    "condition": {
-                        "logic": "",
-                        "conditions": []
-                    }
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
                 }
             ],
             "reward": [],
@@ -1363,8 +1321,7 @@
         {
             "id": 59,
             "speaker": "주인공",
-            "text": "치료제는…… 두 개뿐입니다.",
-            "expression": "",
+            "textKey": "CH01_059",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1382,8 +1339,7 @@
         {
             "id": 60,
             "speaker": "지문",
-            "text": "잠시 침묵이 흘렀다.",
-            "expression": "",
+            "textKey": "CH01_060",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1401,8 +1357,7 @@
         {
             "id": 61,
             "speaker": "사막여우",
-            "text": "나는 이런 모습으로 살 생각 없어. 절대",
-            "expression": "",
+            "textKey": "CH01_061",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1420,8 +1375,7 @@
         {
             "id": 62,
             "speaker": "토끼",
-            "text": "화내지 마요…… \"사탕 먹을래요?",
-            "expression": "",
+            "textKey": "CH01_062",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1439,8 +1393,7 @@
         {
             "id": 63,
             "speaker": "지문",
-            "text": "사막여우는 황당한 표정으로 그녀를 바라봤다. (모든 캐릭터 신뢰도 +10)",
-            "expression": "",
+            "textKey": "CH01_063",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1458,8 +1411,7 @@
         {
             "id": 64,
             "speaker": "주인공",
-            "text": "……없습니다.",
-            "expression": "",
+            "textKey": "CH01_064",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1477,8 +1429,7 @@
         {
             "id": 65,
             "speaker": "사막여우",
-            "text": "비켜.",
-            "expression": "",
+            "textKey": "CH01_065",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1496,8 +1447,7 @@
         {
             "id": 66,
             "speaker": "지문",
-            "text": "그녀가 나를 밀쳤다. 엄청난 힘이었다. 분명 며칠 전까지만 해도 약했던 몸이었다.",
-            "expression": "",
+            "textKey": "CH01_066",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1515,8 +1465,7 @@
         {
             "id": 67,
             "speaker": "사막여우",
-            "text": "뭐지……? \"내가 이렇게 힘이 셌나?\"……미안.",
-            "expression": "",
+            "textKey": "CH01_067",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1534,8 +1483,7 @@
         {
             "id": 68,
             "speaker": "리트리버",
-            "text": "잠깐. 여기 봐.",
-            "expression": "",
+            "textKey": "CH01_068",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1553,8 +1501,7 @@
         {
             "id": 69,
             "speaker": "지문",
-            "text": "화면에는 분명하게 표시되어 있었다. '백신 보관 수량 : 2'",
-            "expression": "",
+            "textKey": "CH01_069",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1572,8 +1519,7 @@
         {
             "id": 70,
             "speaker": "양",
-            "text": "……속인 거군요. 자신이 치료제를 차지하려고.",
-            "expression": "",
+            "textKey": "CH01_070",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1591,8 +1537,7 @@
         {
             "id": 71,
             "speaker": "사막여우",
-            "text": "너. 처음부터 자기만 살 생각이었어?.\n(모든 캐릭터 신뢰도 -10)",
-            "expression": "",
+            "textKey": "CH01_071",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1610,8 +1555,7 @@
         {
             "id": 72,
             "speaker": "양",
-            "text": "3명은 동물의 모습으로 살아야한다니.. 이건...",
-            "expression": "",
+            "textKey": "CH01_072",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1629,8 +1573,7 @@
         {
             "id": 73,
             "speaker": "지문",
-            "text": "양은 말을 하던 도중에 어떤 생각을 하는 듯 했다",
-            "expression": "",
+            "textKey": "CH01_073",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1648,8 +1591,7 @@
         {
             "id": 74,
             "speaker": "사막여우",
-            "text": "좋게 생각하면 2명은 다시 인간이 될수 있다는거잖아? 서로 싸울수밖에 없을것같은데",
-            "expression": "",
+            "textKey": "CH01_074",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1667,8 +1609,7 @@
         {
             "id": 75,
             "speaker": "리트리버",
-            "text": "잠깐... 일단 치료제를 찾는게 중요하다고 생각해요... 실제로 있는지도 아직 모르니",
-            "expression": "",
+            "textKey": "CH01_075",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1686,8 +1627,7 @@
         {
             "id": 76,
             "speaker": "지문",
-            "text": "그 순간. 나는 알았다. 이곳에서 가장 위험한 것은 바이러스가 아닐지도 모른다.",
-            "expression": "",
+            "textKey": "CH01_076",
             "cg": [],
             "choices": [],
             "reward": [],
@@ -1705,8 +1645,7 @@
         {
             "id": 77,
             "speaker": "지문",
-            "text": "사람의 마음을 갈라놓는 것은. 언제나 절망이었다.\n그리고 우리 앞에는. 단 두 개의 치료제가 놓여 있었다.",
-            "expression": "",
+            "textKey": "CH01_077",
             "cg": [],
             "choices": [],
             "reward": [],

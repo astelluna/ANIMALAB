@@ -35,9 +35,9 @@ public static class CSVToJsonWindow
             DialogData node = new DialogData();
             node.id = int.Parse(cols[0]);
             node.speaker = cols[1];
-            node.text = cols[2];
-            node.nextnodeId = (cols[4] == "") ? 0 : int.Parse(cols[4]);
-            node.OnEvent = cols[5];
+            node.textKey = cols[2];
+            node.nextnodeId = (cols[3] == "") ? 0 : int.Parse(cols[3]);
+            node.OnEvent = cols[4];
             nodeMap.Add(node.id, node);
         }
         //2. choice
@@ -65,27 +65,31 @@ public static class CSVToJsonWindow
         for (int i = 1; i < conditionLines.Count; i++)
         {
             string[] cols = conditionLines[i];
+            DialogCondition dialogCondition = new DialogCondition();
             int nodeId = int.Parse(cols[0]);
             int choiceIndex = int.Parse(cols[1]);
+            bool isInteractable = bool.Parse(cols[7]);
+            dialogCondition.logic = cols[2];
+            dialogCondition.type = cols[3];
+            dialogCondition.key = cols[4];
+            dialogCondition.min = int.Parse(cols[5]);
+            dialogCondition.max = cols[6] == "" ? int.MaxValue : int.Parse(cols[6]);
 
             DialogChoice choice = nodeMap[nodeId].choices[choiceIndex];
-
-            if (choice.condition == null)
+            if(isInteractable)
             {
-                choice.condition = new DialogCondition();
-                choice.condition.logic = cols[2];
-                choice.condition.conditions = new ConditionItem[0];
+                if (choice.interActableCondition == null) { choice.interActableCondition = new DialogCondition[0];}
+                List<DialogCondition> list = choice.interActableCondition.ToList();
+                list.Add(dialogCondition);
+                choice.interActableCondition = list.ToArray();
             }
-            ConditionItem item = new ConditionItem();
-            item.type = cols[3];
-            item.key = cols[4];
-            item.min = int.Parse(cols[5]);
-            item.max = int.Parse(cols[6]);
-
-            // 배열이라 Add가 안되므로 List 사용
-            List<ConditionItem> list = choice.condition.conditions.ToList();
-            list.Add(item);
-            choice.condition.conditions = list.ToArray();
+            else
+            {
+                if (choice.condition == null) { choice.condition = new DialogCondition[0]; }
+                List<DialogCondition> list = choice.condition.ToList();
+                list.Add(dialogCondition);
+                choice.condition = list.ToArray();
+            }
         }
         //4. Reward
         List<string[]> rewardLines = ParseCsvFile(PathManager.rewardFileName);

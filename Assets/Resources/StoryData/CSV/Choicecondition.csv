@@ -1,3 +1,4 @@
-NodeId,ChoiceIndex,Logic,Type,Key,Min,Max
-30,1,AND,Affinity,사람1,10,30
-30,1,AND,Affinity,사람2,10,30
+NodeId,ChoiceIndex,Logic,Type,Key,Min,Max,IsInteractable,,,,IsEnabled은 버튼클릭 비활성화 조건 체크. 
+30,1,AND,Affinity,사람1,10,30,FALSE,,,,IsEnabled이 No이면 해당 조건에 따라 전부 조건이 맞는지 아닌지 체크를 하게된다
+30,1,AND,Affinity,사람2,10,30,FALSE,,,,
+30,1,AND,Item,낡은열쇠,1,,TRUE,,,,
