@@ -220,7 +220,8 @@ public class DialogManager : MonoBehaviour
         {
             //엔딩 패널을 열어서 정보 표시할거임
             endingPanel.SetAndShowEndingPanel(curEndingData);
-            SaveManager.Instance.UnlockEnding(curEndingData.key);
+            SaveManager.Instance.UnlockGalleryData(curEndingData.key,eCgCategory.Ending);
+            return;
         }
 
         curId = FindNextNodeId();
@@ -475,7 +476,8 @@ public class DialogManager : MonoBehaviour
                 Sprite sprite = ResourceManager.Instance.GetCGData(cgData.key).image;
                 backgroundScript.SetBackgroundImage(sprite);
                 //런타임 세이브 데이터에 하나씩 추가를 한다
-                SaveManager.Instance.LoadSaveFile().SetReadCGData(cgData.key);
+                SaveManager.Instance.UnlockGalleryData(cgData.key, eCgCategory.cg);
+                //SaveManager.Instance.LoadSaveFile().SetReadCGData(cgData.key);
 
             }
         }

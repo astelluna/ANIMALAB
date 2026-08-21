@@ -4,6 +4,7 @@ using System.Diagnostics;
 using static UnityEditor.Progress;
 using UnityEditor.Overlays;
 using UnityEngine;
+using System.ComponentModel;
 
 
 [Serializable]
@@ -59,46 +60,68 @@ public class CGSaveData
     public string id;
 
 }
+
 [Serializable]
-public class EndingSaveData
+public class ReadDataSet
 {
-    [SerializeField] List<string> endingList = new List<string>();
-    HashSet<string> endingHash;
-    public bool FindEndingExist(string key)
+    [SerializeField] List<string> readList = new List<string>();
+    HashSet<string> readHash;
+
+    public HashSet<string> GetReadData()
     {
         Init();
-        if (endingHash.Contains(key))
+        return readHash;
+    }
+    public bool FindExist(string key)
+    {
+        Init();
+        if (readHash.Contains(key))
         {
             return true;
         }
         return false;
 
     }
-    public void AddEnding(string key)
+    public void Add(string key)
     {
         Init();
-        if (endingHash.Contains(key))
+        if (readHash.Contains(key))
         {
             return; // 이미 있으면 중복 추가 안 함
         }
 
-        endingList.Add(key);
-        endingHash.Add(key);
+        readList.Add(key);
+        readHash.Add(key);
     }
     private void Init()
     {
-        if (endingHash == null)
+        if (readHash == null)
         {
-            endingHash = new HashSet<string>();
-            foreach (var item in endingList)
+            readHash = new HashSet<string>();
+            foreach (var item in readList)
             {
-                if (!endingHash.Contains(item))
+                if (!readHash.Contains(item))
                 {
-                    endingHash.Add(item);
+                    readHash.Add(item);
                 }
             }
         }
     }
+}
+[Serializable]
+public class GallerySaveData
+{
+    [SerializeField] ReadDataSet cg = new ReadDataSet();
+    [SerializeField] ReadDataSet ending = new ReadDataSet();
+
+    public HashSet<string> GetReadEndingData() => ending.GetReadData();
+    public bool FindEndingExist(string key) => ending.FindExist(key);
+    public void AddEnding(string key) => ending.Add(key);
+
+    public HashSet<string> GetReadCgData() => cg.GetReadData();
+    public bool FindCgExist(string key) => cg.FindExist(key);
+    public void AddCg(string key) => cg.Add(key);
+
 }
 
 [Serializable]
@@ -126,36 +149,36 @@ public class SaveData
     public IReadOnlyDictionary<string, SaveItem> SaveItemDict => saveItemDict;
 
     //본 CG목록에 대해 추가해준다
-    public List<string> readCGList = new List<string>();
-    HashSet<string> readCGHash;
+    //public List<string> readCGList = new List<string>();
+    //HashSet<string> readCGHash;
 
     //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
-    private void InitCGHash()
-    {
-        if (readCGHash == null)
-        {
-            readCGHash = new HashSet<string>();
-            foreach (string cgId in readCGList)
-            {
-                readCGHash.Add(cgId);
-            }
-        }
-    }
-    public void SetReadCGData(string key)
-    {
-        InitCGHash();
-
-        if (!readCGHash.Contains(key))
-        {
-            readCGList.Add(key);
-            readCGHash.Add(key);
-        }
-    }
-    public HashSet<string> GetReadCGData()
-    {
-        InitCGHash();
-        return readCGHash;
-    }
+    //private void InitCGHash()
+    //{
+    //    if (readCGHash == null)
+    //    {
+    //        readCGHash = new HashSet<string>();
+    //        foreach (string cgId in readCGList)
+    //        {
+    //            readCGHash.Add(cgId);
+    //        }
+    //    }
+    //}
+    //public void SetReadCGData(string key)
+    //{
+    //    InitCGHash();
+    //
+    //    if (!readCGHash.Contains(key))
+    //    {
+    //        readCGList.Add(key);
+    //        readCGHash.Add(key);
+    //    }
+    //}
+    //public HashSet<string> GetReadCGData()
+    //{
+    //    InitCGHash();
+    //    return readCGHash;
+    //}
 
     public void ChapterDataSave(ChapterSaveData data)
     {

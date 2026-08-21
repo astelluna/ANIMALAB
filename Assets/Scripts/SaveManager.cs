@@ -9,7 +9,7 @@ public class SaveManager : Singleton<SaveManager>
     string endingSavePath;
 
     public SaveData CurrentSaveData { get; private set; }
-    public EndingSaveData CurrentEndingSaveData { get; private set; }
+    public GallerySaveData CurrentGallerySaveData { get; private set; }
     protected override void Awake()
     {
         base.Awake();
@@ -19,7 +19,7 @@ public class SaveManager : Singleton<SaveManager>
         endingSavePath = Application.persistentDataPath + PathManager.endingSaveFileName;
 
         LoadSaveDataToJsonFile();
-        LoadEndingSaveDataToJsonFile();
+        LoadGallerySaveDataToJsonFile();
 
     }
     #region saveData전용
@@ -29,8 +29,8 @@ public class SaveManager : Singleton<SaveManager>
         saveData.curChapterId = 1;
         saveData.nodeId = 1;
         //예외: 스킵을 위해 읽었던 노드목록은 초기화하면 안됨
-        SaveData prevData = LoadSaveFile(); //기존 세이브파일 읽어서 반환해야함.
-        saveData.readNodeIds = (prevData != null) ? prevData.readNodeIds : new List<int>();
+        //SaveData prevData = LoadSaveFile(); //기존 세이브파일 읽어서 반환해야함.
+        saveData.readNodeIds = (CurrentSaveData != null) ? CurrentSaveData.readNodeIds : new List<int>();
 
         CheckAndFixAffinityData(saveData);
 
@@ -82,7 +82,8 @@ public class SaveManager : Singleton<SaveManager>
     {
         if (!File.Exists(savePath))
         {
-            Debug.LogWarning("SaveFile이 없어서 저장정보 설정은 안합니다");
+            Debug.LogWarning("SaveFile이 없어서 새로 생성합니다");
+            CreateNewSaveFile();
             return;
         }
         string json = File.ReadAllText(savePath);
@@ -95,7 +96,8 @@ public class SaveManager : Singleton<SaveManager>
     {
         if(CurrentSaveData ==null)
         {
-            Debug.LogError("SaveData null 반환될거임 처리 필요합니다");
+            Debug.LogWarning("CurrentSaveData가 null이라 새로 생성합니다");
+            CreateNewSaveFile();
         }
 
         return CurrentSaveData;
@@ -118,37 +120,65 @@ public class SaveManager : Singleton<SaveManager>
         return CurrentSaveData.saveItemList;
     }
     #endregion
-    #region EndingSave전용
-    public void LoadEndingSaveDataToJsonFile()
+    #region GallerySave전용
+    public void LoadGallerySaveDataToJsonFile()
     {
         if(!File.Exists(endingSavePath))
         {
             Debug.LogWarning("EndingSaveFile이 없어서 새로 생성합니다");
-            CurrentEndingSaveData = new EndingSaveData();
+            CurrentGallerySaveData = new GallerySaveData();
             return;
         }
         string json = File.ReadAllText(endingSavePath);
-        CurrentEndingSaveData = JsonUtility.FromJson<EndingSaveData>(json);
+        CurrentGallerySaveData = JsonUtility.FromJson<GallerySaveData>(json);
 
-        if (CurrentEndingSaveData == null) // 혹시 파싱 실패 대비
+        if (CurrentGallerySaveData == null) // 혹시 파싱 실패 대비
         {
-            CurrentEndingSaveData = new EndingSaveData();
+            CurrentGallerySaveData = new GallerySaveData();
         }
     }
-    public void UnlockEnding(string endingKey)
+    public GallerySaveData LoadGallerySaveFile()
     {
-        if(CurrentEndingSaveData == null)
+        if (CurrentGallerySaveData == null)
         {
-            CurrentEndingSaveData = new EndingSaveData();
+            Debug.LogError("GallerySaveData null 반환될거임 처리 필요합니다");
         }
-        CurrentEndingSaveData.AddEnding(endingKey);
-        string json = JsonUtility.ToJson(CurrentEndingSaveData, true);
+
+        return CurrentGallerySaveData;
+    }
+    public void UnlockGalleryData(string key, eCgCategory category)
+    {
+        if(CurrentGallerySaveData == null)
+        {
+            CurrentGallerySaveData = new GallerySaveData();
+        }
+
+        if(category == eCgCategory.cg)
+        {
+            CurrentGallerySaveData.AddCg(key);
+        }
+        else if(category == eCgCategory.Ending)
+        {
+            CurrentGallerySaveData.AddEnding(key);
+        }
+        string json = JsonUtility.ToJson(CurrentGallerySaveData, true);
         File.WriteAllText(endingSavePath, json);
     }
-    public bool HasSeenEnding(string endingKey)
+    public bool HasSeenEnding(string key, eCgCategory category)
     {
-        if (CurrentEndingSaveData == null) return false;
-        return CurrentEndingSaveData.FindEndingExist(endingKey);
+        if (CurrentGallerySaveData == null) return false;
+        bool hasSeen = false;
+
+        if(category == eCgCategory.cg)
+        {
+            hasSeen= CurrentGallerySaveData.FindCgExist(key);
+        }
+        else if(category == eCgCategory.Ending)
+        {
+            hasSeen = CurrentGallerySaveData.FindEndingExist(key);
+        }
+
+        return hasSeen;
     }
     #endregion
 }

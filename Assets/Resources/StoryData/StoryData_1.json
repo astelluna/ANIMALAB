@@ -109,7 +109,7 @@
             "id": 4,
             "speaker": "지문",
             "textKey": "CH01_004",
-            "EndingKey": "Ending_True",
+            "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
