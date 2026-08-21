@@ -4,6 +4,7 @@ public static class PathManager
     //Json
     public const string storyJsonFilePath = "Assets/Resources/StoryData/StoryData_1.json";
     public const string itemJsonFilePath = "Assets/Resources/StoryData/ItemData_1.json";
+    
     //CSV
     public const string csvPath = "Assets/Resources/StoryData/CSV/";
     public const string nodeFileName = csvPath + "Node.csv";
@@ -17,10 +18,14 @@ public static class PathManager
     public const string itemDataFileName = csvPath + "ItemData.csv";
     //Save
     public const string saveFileName = "saveFile.json";
+    public const string endingSaveFileName = "endingSaveFile.json";
     #endregion
 
     #region SceneName
     public const string TitleSceneName = "Title";
     public const string InGameSceneName = "InGame";
+    #endregion
+    #region Localization
+    public const string dialogTableName = "DialogLocalizationTable";
     #endregion
 }

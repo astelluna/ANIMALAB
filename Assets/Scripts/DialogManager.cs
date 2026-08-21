@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 using static UnityEditor.U2D.ScriptablePacker;
 using static UnityEngine.InputSystem.InputAction;
@@ -20,7 +21,6 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TMP_Text dialogText;
     [SerializeField] Button[] choiceButtons;
     [SerializeField] Button saveButton;
-    [SerializeField] Button loadTestButton;
     [SerializeField] Button skipButton;
     [SerializeField] Button openDialogLogButton;
     [SerializeField] Button openAffinityButton;
@@ -67,12 +67,16 @@ public class DialogManager : MonoBehaviour
     [SerializeField] AffinityPanel affinityPanel;
     //아이템 창
     [SerializeField] ItemSlotPanel itemSlotPanel;
+
+    //다국어(로컬라이제이션)
+    private string curLocalizedText = ""; // 가져온 실제 텍스트를 저장
+    private EndingData curEndingData = null; // 엔딩 데이터 존재하면 넣고, 게임 끝냄
+    [SerializeField] EndingPanel endingPanel;
     private void Awake()
     {
         skipDelay = new WaitForSeconds(skipDelayTime);
 
         saveButton.onClick.AddListener(SaveButtonClick);
-        loadTestButton.onClick.AddListener(LoadButtonClick);
         skipButton.onClick.AddListener(SkipButtonClick);
         openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
         openAffinityButton.onClick.AddListener(OpenAffinityButtonClick);
@@ -92,7 +96,6 @@ public class DialogManager : MonoBehaviour
     private void OnDestroy()
     {
         saveButton.onClick.RemoveAllListeners();
-        loadTestButton.onClick.RemoveAllListeners();
         skipButton.onClick.RemoveAllListeners();
         openDialogLogButton.onClick.RemoveAllListeners();
         openAffinityButton.onClick.RemoveAllListeners();
@@ -160,12 +163,6 @@ public class DialogManager : MonoBehaviour
     {
         CreateSaveData();
     }
-    public void LoadButtonClick()
-    {
-        //이거 하면 안됨 이제. 굳이 중간에 로드하는게 아니라. 메인화면가서 이어하기로 불러와야함
-        //SaveData data = LoadSaveFile();
-        //ShowData(data.nodeId);
-    }
     public SaveData LoadSaveFile()
     {
         return SaveManager.Instance.LoadSaveFile();
@@ -210,7 +207,7 @@ public class DialogManager : MonoBehaviour
             isTyping = false;
             StopCoroutine(printSlowTextCor);
             printSlowTextCor = null;
-            dialogText.text = curNode.textKey;
+            dialogText.text = curLocalizedText;
             return;
         }
         //예외처리2. 선택지가 있다면? 하면안됨
@@ -218,10 +215,19 @@ public class DialogManager : MonoBehaviour
         {
             return;
         }
+        //만약 엔딩 정보가 존재한다면? 엔딩 패널을 표시하고. 끝낼 준비를 하자.
+        if (curEndingData != null)
+        {
+            //엔딩 패널을 열어서 정보 표시할거임
+            endingPanel.SetAndShowEndingPanel(curEndingData);
+            SaveManager.Instance.UnlockEnding(curEndingData.key);
+        }
 
         curId = FindNextNodeId();
         ShowData(curId);
     }
+
+
     private int FindNextNodeId()
     {
         if (curNode.nextnodeId == 0) 
@@ -247,6 +253,12 @@ public class DialogManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         isTyping = false;
+    }
+
+    IEnumerator LoadAndPrintText(string key)
+    {
+        curLocalizedText = ResourceManager.Instance.GetLocalizationText(key);
+        yield return PrintSlowText(curLocalizedText);
     }
     public bool HasChoices()
     {
@@ -310,6 +322,11 @@ public class DialogManager : MonoBehaviour
         curNode = System.Array.Find(allNodes, n => n.id == id);
         readNodeHash.Add(curId);
 
+        //만약 엔딩 정보가 있다면? 엔딩 정보를 설정해주자.
+        if(curNode.EndingKey != "")
+        {
+            curEndingData = ResourceManager.Instance.GetEndingData(curNode.EndingKey);
+        }
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
         if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
@@ -366,7 +383,7 @@ public class DialogManager : MonoBehaviour
         {
             StopCoroutine(printSlowTextCor);
         }
-        printSlowTextCor = StartCoroutine(PrintSlowText(curNode.textKey));
+        printSlowTextCor = StartCoroutine(LoadAndPrintText(curNode.textKey));
 
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)

@@ -5,20 +5,24 @@ using UnityEngine;
 
 public class SaveManager : Singleton<SaveManager>
 {
-    string path;
+    string savePath;
+    string endingSavePath;
 
     public SaveData CurrentSaveData { get; private set; }
+    public EndingSaveData CurrentEndingSaveData { get; private set; }
     protected override void Awake()
     {
         base.Awake();
         if (Instance != this) return;
         //다음 원하는 코드 작성
-        path = Application.persistentDataPath + PathManager.saveFileName;
+        savePath = Application.persistentDataPath + PathManager.saveFileName;
+        endingSavePath = Application.persistentDataPath + PathManager.endingSaveFileName;
 
         LoadSaveDataToJsonFile();
+        LoadEndingSaveDataToJsonFile();
 
     }
-
+    #region saveData전용
     public SaveData CreateNewSaveFile()
     {
         SaveData saveData = new SaveData();
@@ -31,7 +35,7 @@ public class SaveManager : Singleton<SaveManager>
         CheckAndFixAffinityData(saveData);
 
         string json = JsonUtility.ToJson(saveData, true);
-        File.WriteAllText(path, json);
+        File.WriteAllText(savePath, json);
         CurrentSaveData = saveData;
         return saveData;
     }
@@ -69,19 +73,19 @@ public class SaveManager : Singleton<SaveManager>
         //현재 가지고있는 아이템도 넣어줘야함
         data.saveItemList = new List<SaveItem>(data.saveItemList);
         string json = JsonUtility.ToJson(data, true);
-        File.WriteAllText(path, json);
+        File.WriteAllText(savePath, json);
         CurrentSaveData = data;
         CheckAndFixAffinityData(CurrentSaveData);
     }
 
     public void LoadSaveDataToJsonFile()
     {
-        if (!File.Exists(path))
+        if (!File.Exists(savePath))
         {
             Debug.LogWarning("SaveFile이 없어서 저장정보 설정은 안합니다");
             return;
         }
-        string json = File.ReadAllText(path);
+        string json = File.ReadAllText(savePath);
         CurrentSaveData = JsonUtility.FromJson<SaveData>(json);
         CheckAndFixAffinityData(CurrentSaveData);
         //return CurrentSaveData;
@@ -113,4 +117,38 @@ public class SaveManager : Singleton<SaveManager>
     {
         return CurrentSaveData.saveItemList;
     }
+    #endregion
+    #region EndingSave전용
+    public void LoadEndingSaveDataToJsonFile()
+    {
+        if(!File.Exists(endingSavePath))
+        {
+            Debug.LogWarning("EndingSaveFile이 없어서 새로 생성합니다");
+            CurrentEndingSaveData = new EndingSaveData();
+            return;
+        }
+        string json = File.ReadAllText(endingSavePath);
+        CurrentEndingSaveData = JsonUtility.FromJson<EndingSaveData>(json);
+
+        if (CurrentEndingSaveData == null) // 혹시 파싱 실패 대비
+        {
+            CurrentEndingSaveData = new EndingSaveData();
+        }
+    }
+    public void UnlockEnding(string endingKey)
+    {
+        if(CurrentEndingSaveData == null)
+        {
+            CurrentEndingSaveData = new EndingSaveData();
+        }
+        CurrentEndingSaveData.AddEnding(endingKey);
+        string json = JsonUtility.ToJson(CurrentEndingSaveData, true);
+        File.WriteAllText(endingSavePath, json);
+    }
+    public bool HasSeenEnding(string endingKey)
+    {
+        if (CurrentEndingSaveData == null) return false;
+        return CurrentEndingSaveData.FindEndingExist(endingKey);
+    }
+    #endregion
 }

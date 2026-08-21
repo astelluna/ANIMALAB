@@ -4319,6 +4319,7 @@ MonoBehaviour:
   chapterThumbnailDatabaseSO: {fileID: 11400000, guid: 0523bab29cb781c4bb5db4ecd0d0bdba, type: 2}
   itemDataSO: {fileID: 11400000, guid: 324481b1b189c8a4e960b336db7aaf36, type: 2}
   cgDatabaseSO: {fileID: 11400000, guid: 0820d17eb77f2bd4fbb67a40a05424b1, type: 2}
+  endingDatabaseSO: {fileID: 11400000, guid: d8477eb54971ca24dbd1bd9212fd5a9f, type: 2}
 --- !u!4 &1242938897
 Transform:
   m_ObjectHideFlags: 0

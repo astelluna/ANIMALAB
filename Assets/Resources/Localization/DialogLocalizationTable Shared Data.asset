@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: New Table Shared Data
+  m_Name: DialogLocalizationTable Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: New Table
+  m_TableCollectionName: DialogLocalizationTable
   m_TableCollectionNameGuidString: 555e031b6ab57ea47a26da4db4a1ebac
   m_Entries:
   - m_Id: 147044159660032
@@ -2189,6 +2189,62 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 147044218380600
     m_Key: CH04_147
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421147475968
+    m_Key: ED_TITLE_BAD_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419008
+    m_Key: ED_TITLE_BAD_002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419009
+    m_Key: ED_TITLE_TRUE_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419010
+    m_Key: ED_TITLE_NORMAL_RETR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419011
+    m_Key: ED_TITLE_NORMAL_FOX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419012
+    m_Key: ED_TITLE_NORMAL_RABBIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419013
+    m_Key: ED_TITLE_NORMAL_HIDDEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419014
+    m_Key: ED_DESC_BAD_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419015
+    m_Key: ED_DESC_BAD_002
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419016
+    m_Key: ED_DESC_TRUE_001
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419017
+    m_Key: ED_DESC_NORMAL_RETR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419018
+    m_Key: ED_DESC_NORMAL_FOX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419019
+    m_Key: ED_DESC_NORMAL_RABBIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419020
+    m_Key: ED_DESC_NORMAL_HIDDEN
     m_Metadata:
       m_Items: []
   m_Metadata:

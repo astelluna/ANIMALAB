@@ -38,6 +38,7 @@ public static class CSVToJsonWindow
             node.textKey = cols[2];
             node.nextnodeId = (cols[3] == "") ? 0 : int.Parse(cols[3]);
             node.OnEvent = cols[4];
+            node.EndingKey = cols[5];
             nodeMap.Add(node.id, node);
         }
         //2. choice

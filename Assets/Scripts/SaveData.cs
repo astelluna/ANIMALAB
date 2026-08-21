@@ -3,6 +3,7 @@ using System;
 using System.Diagnostics;
 using static UnityEditor.Progress;
 using UnityEditor.Overlays;
+using UnityEngine;
 
 
 [Serializable]
@@ -57,8 +58,47 @@ public class CGSaveData
 {
     public string id;
 
-    
+}
+[Serializable]
+public class EndingSaveData
+{
+    [SerializeField] List<string> endingList = new List<string>();
+    HashSet<string> endingHash;
+    public bool FindEndingExist(string key)
+    {
+        Init();
+        if (endingHash.Contains(key))
+        {
+            return true;
+        }
+        return false;
 
+    }
+    public void AddEnding(string key)
+    {
+        Init();
+        if (endingHash.Contains(key))
+        {
+            return; // 이미 있으면 중복 추가 안 함
+        }
+
+        endingList.Add(key);
+        endingHash.Add(key);
+    }
+    private void Init()
+    {
+        if (endingHash == null)
+        {
+            endingHash = new HashSet<string>();
+            foreach (var item in endingList)
+            {
+                if (!endingHash.Contains(item))
+                {
+                    endingHash.Add(item);
+                }
+            }
+        }
+    }
 }
 
 [Serializable]

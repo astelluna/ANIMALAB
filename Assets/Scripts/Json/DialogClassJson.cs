@@ -46,6 +46,7 @@ public class DialogData
     public int id; //대사 id. 점점 증가할거임.
     public string speaker; //추후에 SO로 바꿀거임. 누가? 말을 하는지
     public string textKey; //텍스트 키값 (로컬라이제이션과 매칭) 
+    public string EndingKey;
     public DialogCG[] cg;
     public DialogChoice[] choices;
     public DialogReward[] reward;
