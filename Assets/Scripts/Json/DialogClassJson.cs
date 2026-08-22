@@ -180,7 +180,7 @@ public class DialogChoice
     public int nodeId;
     public int choiceIndex;
 
-    public string choiceText;
+    public string choiceTextId;
     public int goTo;
     public int goToFail;
     public DialogCondition[] condition; //버튼 클릭 후 안에서 따로 성공/실패 여부를 처리할때 사용

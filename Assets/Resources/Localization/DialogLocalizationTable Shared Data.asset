@@ -2247,6 +2247,226 @@ MonoBehaviour:
     m_Key: ED_DESC_NORMAL_HIDDEN
     m_Metadata:
       m_Items: []
+  - m_Id: 860170857422848
+    m_Key: CHOICE_FIRSTREACTION_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171584
+    m_Key: CHOICE_FIRSTREACTION_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171585
+    m_Key: CHOICE_EXPLAINANIMAL_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171586
+    m_Key: CHOICE_EXPLAINANIMAL_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171587
+    m_Key: CHOICE_CURELEFTTWO_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171588
+    m_Key: CHOICE_CURELEFTTWO_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171589
+    m_Key: CHOICE_VISITFLOOR1_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171590
+    m_Key: CHOICE_VISITFLOOR1_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171591
+    m_Key: CHOICE_LABREACTION_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171592
+    m_Key: CHOICE_LABREACTION_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171593
+    m_Key: CHOICE_FOYERREACTION_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171594
+    m_Key: CHOICE_FOYERREACTION_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171595
+    m_Key: CHOICE_AVIDENCE_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171596
+    m_Key: CHOICE_AVIDENCE_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171597
+    m_Key: CHOICE_CHOOSEROOM_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171598
+    m_Key: CHOICE_CHOOSEROOM_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171599
+    m_Key: CHOICE_CHOOSEROOM_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171600
+    m_Key: CHOICE_CHOOSEROOM_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171601
+    m_Key: CHOICE_TALKRETRIEVER_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171602
+    m_Key: CHOICE_TALKRETRIEVER_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171603
+    m_Key: CHOICE_TALKRABBIT_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171604
+    m_Key: CHOICE_TALKRABBIT_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171605
+    m_Key: CHOICE_TALKFOX_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171606
+    m_Key: CHOICE_TALKFOX_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171607
+    m_Key: CHOICE_TALKSHEEP_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171608
+    m_Key: CHOICE_TALKSHEEP_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171609
+    m_Key: CHOICE_VISITFLOOR3_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171610
+    m_Key: CHOICE_VISITFLOOR3_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171611
+    m_Key: CHOICE_LIKEANIMAL_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171612
+    m_Key: CHOICE_LIKEANIMAL_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171613
+    m_Key: CHOICE_RABBITCURE_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171614
+    m_Key: CHOICE_RABBITCURE_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171615
+    m_Key: CHOICE_MONOPOLYCURE_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171616
+    m_Key: CHOICE_MONOPOLYCURE_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171617
+    m_Key: CHOICE_SHEEPSUGGESTION_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171618
+    m_Key: CHOICE_SHEEPSUGGESTION_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171619
+    m_Key: CHOICE_SHEEPSUGGESTION_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171620
+    m_Key: CHOICE_FINAL_01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171621
+    m_Key: CHOICE_FINAL_02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171622
+    m_Key: CHOICE_FINAL_03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171623
+    m_Key: CHOICE_FINAL_04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193938079744
+    m_Key: ITEM_NAME_CLOTHFRAGMENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022784
+    m_Key: ITEM_NAME_TABLET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022785
+    m_Key: ITEM_NAME_ACCESSCODE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022786
+    m_Key: ITEM_EXPLAIN_CLOTHFRAGMENT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022787
+    m_Key: ITEM_EXPLAIN_TABLET
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022788
+    m_Key: ITEM_EXPLAIN_ACCESSCODE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171627
+    m_Key: TEXT_AFFINITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505767739392
+    m_Key: CHAR_RETRIEVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128000
+    m_Key: CHAR_FOX
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128001
+    m_Key: CHAR_RABBIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128002
+    m_Key: CHAR_SHEEP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128003
+    m_Key: CHAR_DIALOG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864038278340608
+    m_Key: CHAR_YOU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864850291400704
+    m_Key: CHAR_UNKNOWN
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

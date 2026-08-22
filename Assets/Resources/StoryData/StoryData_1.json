@@ -2,7 +2,7 @@
     "nodes": [
         {
             "id": 1,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_001",
             "EndingKey": "",
             "cg": [
@@ -14,18 +14,7 @@
                 }
             ],
             "choices": [],
-            "reward": [
-                {
-                    "type": "Item",
-                    "key": "낡은열쇠",
-                    "amount": 1
-                },
-                {
-                    "type": "Affinity",
-                    "key": "리트리버",
-                    "amount": 1
-                }
-            ],
+            "reward": [],
             "nextnodeId": 0,
             "OnEvent": "OPEN_BASEMENT",
             "spriteDatas": [],
@@ -43,28 +32,17 @@
                 "chapterId": 1,
                 "title": "A Strange Beginning",
                 "startNodeId": 1,
-                "thumbnailKey": "thumbnail_test1"
+                "thumbnailKey": "thumbnail_Chapter1"
             }
         },
         {
             "id": 2,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_002",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [
-                {
-                    "type": "Item",
-                    "key": "낡은열쇠",
-                    "amount": 1
-                },
-                {
-                    "type": "Item",
-                    "key": "낡은열쇠2",
-                    "amount": 1
-                }
-            ],
+            "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -83,12 +61,18 @@
         },
         {
             "id": 3,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_003",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Item",
+                    "key": "ITEM_NAME_CLOTHFRAGMENT",
+                    "amount": 1
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -107,12 +91,18 @@
         },
         {
             "id": 4,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_004",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Item",
+                    "key": "ITEM_NAME_TABLET",
+                    "amount": 1
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -131,7 +121,7 @@
         },
         {
             "id": 5,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_005",
             "EndingKey": "",
             "cg": [],
@@ -150,7 +140,7 @@
         },
         {
             "id": 6,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_006",
             "EndingKey": "",
             "cg": [],
@@ -169,7 +159,7 @@
         },
         {
             "id": 7,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_007",
             "EndingKey": "",
             "cg": [],
@@ -188,7 +178,7 @@
         },
         {
             "id": 8,
-            "speaker": "???",
+            "speaker": "CHAR_UNKNOWN",
             "textKey": "CH01_008",
             "EndingKey": "",
             "cg": [],
@@ -207,7 +197,7 @@
         },
         {
             "id": 9,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_009",
             "EndingKey": "",
             "cg": [],
@@ -226,7 +216,7 @@
         },
         {
             "id": 10,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_010",
             "EndingKey": "",
             "cg": [],
@@ -264,7 +254,7 @@
         },
         {
             "id": 11,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_011",
             "EndingKey": "",
             "cg": [],
@@ -311,7 +301,7 @@
         },
         {
             "id": 12,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_012",
             "EndingKey": "",
             "cg": [],
@@ -330,7 +320,7 @@
         },
         {
             "id": 13,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_013",
             "EndingKey": "",
             "cg": [],
@@ -359,7 +349,7 @@
         },
         {
             "id": 14,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_014",
             "EndingKey": "",
             "cg": [],
@@ -378,7 +368,7 @@
         },
         {
             "id": 15,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH01_015",
             "EndingKey": "",
             "cg": [],
@@ -397,7 +387,7 @@
         },
         {
             "id": 16,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_016",
             "EndingKey": "",
             "cg": [],
@@ -416,7 +406,7 @@
         },
         {
             "id": 17,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_017",
             "EndingKey": "",
             "cg": [],
@@ -435,7 +425,7 @@
         },
         {
             "id": 18,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_018",
             "EndingKey": "",
             "cg": [],
@@ -454,30 +444,11 @@
         },
         {
             "id": 19,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_019",
             "EndingKey": "",
             "cg": [],
-            "choices": [
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "기억 상실을 솔직하게 밝히고 상황 설명을 요구한다.",
-                    "goTo": 20,
-                    "goToFail": 0,
-                    "condition": [],
-                    "interActableCondition": []
-                },
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "침묵하며 상황을 파악한다.",
-                    "goTo": 24,
-                    "goToFail": 0,
-                    "condition": [],
-                    "interActableCondition": []
-                }
-            ],
+            "choices": [],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -492,7 +463,7 @@
         },
         {
             "id": 20,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_020",
             "EndingKey": "",
             "cg": [],
@@ -511,7 +482,7 @@
         },
         {
             "id": 21,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_021",
             "EndingKey": "",
             "cg": [],
@@ -530,7 +501,7 @@
         },
         {
             "id": 22,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH01_022",
             "EndingKey": "",
             "cg": [],
@@ -549,7 +520,7 @@
         },
         {
             "id": 23,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_023",
             "EndingKey": "",
             "cg": [],
@@ -568,7 +539,7 @@
         },
         {
             "id": 24,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_024",
             "EndingKey": "",
             "cg": [],
@@ -587,11 +558,30 @@
         },
         {
             "id": 25,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_025",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FIRSTREACTION_01",
+                    "goTo": 26,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FIRSTREACTION_02",
+                    "goTo": 30,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -606,7 +596,7 @@
         },
         {
             "id": 26,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_026",
             "EndingKey": "",
             "cg": [],
@@ -625,7 +615,7 @@
         },
         {
             "id": 27,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_027",
             "EndingKey": "",
             "cg": [],
@@ -644,7 +634,7 @@
         },
         {
             "id": 28,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_028",
             "EndingKey": "",
             "cg": [],
@@ -663,13 +653,34 @@
         },
         {
             "id": 29,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_029",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 28,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 20
+                }
+            ],
+            "nextnodeId": 34,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -682,53 +693,11 @@
         },
         {
             "id": 30,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_030",
             "EndingKey": "",
             "cg": [],
-            "choices": [
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "모두에게 설명한다.",
-                    "goTo": 31,
-                    "goToFail": 0,
-                    "condition": [],
-                    "interActableCondition": []
-                },
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "설명하지 않는다.",
-                    "goTo": 40,
-                    "goToFail": 0,
-                    "condition": [
-                        {
-                            "logic": "AND",
-                            "type": "Affinity",
-                            "key": "사람1",
-                            "min": 10,
-                            "max": 30
-                        },
-                        {
-                            "logic": "AND",
-                            "type": "Affinity",
-                            "key": "사람2",
-                            "min": 10,
-                            "max": 30
-                        }
-                    ],
-                    "interActableCondition": [
-                        {
-                            "logic": "AND",
-                            "type": "Item",
-                            "key": "낡은열쇠",
-                            "min": 1,
-                            "max": 2147483647
-                        }
-                    ]
-                }
-            ],
+            "choices": [],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -743,7 +712,7 @@
         },
         {
             "id": 31,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_031",
             "EndingKey": "",
             "cg": [],
@@ -762,7 +731,7 @@
         },
         {
             "id": 32,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_032",
             "EndingKey": "",
             "cg": [],
@@ -781,13 +750,34 @@
         },
         {
             "id": 33,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_033",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 28,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": -20
+                }
+            ],
+            "nextnodeId": 34,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -800,7 +790,7 @@
         },
         {
             "id": 34,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_034",
             "EndingKey": "",
             "cg": [],
@@ -819,7 +809,7 @@
         },
         {
             "id": 35,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_035",
             "EndingKey": "",
             "cg": [],
@@ -838,11 +828,30 @@
         },
         {
             "id": 36,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_036",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_EXPLAINANIMAL_01",
+                    "goTo": 37,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_EXPLAINANIMAL_02",
+                    "goTo": 46,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -857,7 +866,7 @@
         },
         {
             "id": 37,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_037",
             "EndingKey": "",
             "cg": [],
@@ -876,7 +885,7 @@
         },
         {
             "id": 38,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_038",
             "EndingKey": "",
             "cg": [],
@@ -895,7 +904,7 @@
         },
         {
             "id": 39,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH01_039",
             "EndingKey": "",
             "cg": [],
@@ -924,7 +933,7 @@
         },
         {
             "id": 40,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_040",
             "EndingKey": "",
             "cg": [],
@@ -943,7 +952,7 @@
         },
         {
             "id": 41,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_041",
             "EndingKey": "",
             "cg": [],
@@ -972,7 +981,7 @@
         },
         {
             "id": 42,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_042",
             "EndingKey": "",
             "cg": [],
@@ -991,7 +1000,7 @@
         },
         {
             "id": 43,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_043",
             "EndingKey": "",
             "cg": [],
@@ -1020,7 +1029,7 @@
         },
         {
             "id": 44,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_044",
             "EndingKey": "",
             "cg": [],
@@ -1039,13 +1048,34 @@
         },
         {
             "id": 45,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_045",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 53,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 20
+                }
+            ],
+            "nextnodeId": 59,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -1058,7 +1088,7 @@
         },
         {
             "id": 46,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_046",
             "EndingKey": "",
             "cg": [],
@@ -1077,7 +1107,7 @@
         },
         {
             "id": 47,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_047",
             "EndingKey": "",
             "cg": [],
@@ -1096,7 +1126,7 @@
         },
         {
             "id": 48,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_048",
             "EndingKey": "",
             "cg": [],
@@ -1115,7 +1145,7 @@
         },
         {
             "id": 49,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_049",
             "EndingKey": "",
             "cg": [],
@@ -1134,7 +1164,7 @@
         },
         {
             "id": 50,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_050",
             "EndingKey": "",
             "cg": [],
@@ -1153,7 +1183,7 @@
         },
         {
             "id": 51,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_051",
             "EndingKey": "",
             "cg": [],
@@ -1172,7 +1202,7 @@
         },
         {
             "id": 52,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_052",
             "EndingKey": "",
             "cg": [],
@@ -1201,7 +1231,7 @@
         },
         {
             "id": 53,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH01_053",
             "EndingKey": "",
             "cg": [],
@@ -1230,7 +1260,7 @@
         },
         {
             "id": 54,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_054",
             "EndingKey": "",
             "cg": [],
@@ -1249,7 +1279,7 @@
         },
         {
             "id": 55,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_055",
             "EndingKey": "",
             "cg": [],
@@ -1278,12 +1308,33 @@
         },
         {
             "id": 56,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_056",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": -20
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -1297,7 +1348,7 @@
         },
         {
             "id": 57,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_057",
             "EndingKey": "",
             "cg": [],
@@ -1316,32 +1367,13 @@
         },
         {
             "id": 58,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_058",
             "EndingKey": "",
             "cg": [],
-            "choices": [
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "사실대로 말한다.",
-                    "goTo": 59,
-                    "goToFail": 0,
-                    "condition": [],
-                    "interActableCondition": []
-                },
-                {
-                    "nodeId": 0,
-                    "choiceIndex": 0,
-                    "choiceText": "치료제가 없다고 거짓말한다.",
-                    "goTo": 64,
-                    "goToFail": 0,
-                    "condition": [],
-                    "interActableCondition": []
-                }
-            ],
+            "choices": [],
             "reward": [],
-            "nextnodeId": 53,
+            "nextnodeId": 59,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -1354,7 +1386,7 @@
         },
         {
             "id": 59,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_059",
             "EndingKey": "",
             "cg": [],
@@ -1373,7 +1405,7 @@
         },
         {
             "id": 60,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_060",
             "EndingKey": "",
             "cg": [],
@@ -1392,7 +1424,7 @@
         },
         {
             "id": 61,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_061",
             "EndingKey": "",
             "cg": [],
@@ -1411,7 +1443,7 @@
         },
         {
             "id": 62,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_062",
             "EndingKey": "",
             "cg": [],
@@ -1430,7 +1462,7 @@
         },
         {
             "id": 63,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_063",
             "EndingKey": "",
             "cg": [],
@@ -1449,11 +1481,30 @@
         },
         {
             "id": 64,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_064",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CURELEFTTWO_01",
+                    "goTo": 65,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CURELEFTTWO_02",
+                    "goTo": 70,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -1468,7 +1519,7 @@
         },
         {
             "id": 65,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_065",
             "EndingKey": "",
             "cg": [],
@@ -1487,7 +1538,7 @@
         },
         {
             "id": 66,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_066",
             "EndingKey": "",
             "cg": [],
@@ -1506,7 +1557,7 @@
         },
         {
             "id": 67,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_067",
             "EndingKey": "",
             "cg": [],
@@ -1525,7 +1576,7 @@
         },
         {
             "id": 68,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH01_068",
             "EndingKey": "",
             "cg": [],
@@ -1554,13 +1605,34 @@
         },
         {
             "id": 69,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_069",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 72,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 20
+                }
+            ],
+            "nextnodeId": 78,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -1573,7 +1645,7 @@
         },
         {
             "id": 70,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH01_070",
             "EndingKey": "",
             "cg": [],
@@ -1592,7 +1664,7 @@
         },
         {
             "id": 71,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_071",
             "EndingKey": "",
             "cg": [],
@@ -1611,7 +1683,7 @@
         },
         {
             "id": 72,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_072",
             "EndingKey": "",
             "cg": [],
@@ -1630,7 +1702,7 @@
         },
         {
             "id": 73,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_073",
             "EndingKey": "",
             "cg": [],
@@ -1649,7 +1721,7 @@
         },
         {
             "id": 74,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_074",
             "EndingKey": "",
             "cg": [],
@@ -1668,7 +1740,7 @@
         },
         {
             "id": 75,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_075",
             "EndingKey": "",
             "cg": [],
@@ -1687,7 +1759,7 @@
         },
         {
             "id": 76,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_076",
             "EndingKey": "",
             "cg": [],
@@ -1706,13 +1778,34 @@
         },
         {
             "id": 77,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_077",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": -20
+                }
+            ],
+            "nextnodeId": 78,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -1725,7 +1818,7 @@
         },
         {
             "id": 78,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH01_078",
             "EndingKey": "",
             "cg": [],
@@ -1744,7 +1837,7 @@
         },
         {
             "id": 79,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_079",
             "EndingKey": "",
             "cg": [],
@@ -1763,7 +1856,7 @@
         },
         {
             "id": 80,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH01_080",
             "EndingKey": "",
             "cg": [],
@@ -1782,7 +1875,7 @@
         },
         {
             "id": 81,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH01_081",
             "EndingKey": "",
             "cg": [],
@@ -1801,7 +1894,7 @@
         },
         {
             "id": 82,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_082",
             "EndingKey": "",
             "cg": [],
@@ -1820,7 +1913,7 @@
         },
         {
             "id": 83,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH01_083",
             "EndingKey": "",
             "cg": [],
@@ -1839,7 +1932,7 @@
         },
         {
             "id": 84,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_001",
             "EndingKey": "",
             "cg": [],
@@ -1858,7 +1951,7 @@
         },
         {
             "id": 85,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_002",
             "EndingKey": "",
             "cg": [],
@@ -1877,7 +1970,7 @@
         },
         {
             "id": 86,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_003",
             "EndingKey": "",
             "cg": [],
@@ -1896,7 +1989,7 @@
         },
         {
             "id": 87,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_004",
             "EndingKey": "",
             "cg": [],
@@ -1915,7 +2008,7 @@
         },
         {
             "id": 88,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_005",
             "EndingKey": "",
             "cg": [],
@@ -1944,7 +2037,7 @@
         },
         {
             "id": 89,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_006",
             "EndingKey": "",
             "cg": [],
@@ -1963,7 +2056,7 @@
         },
         {
             "id": 90,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_007",
             "EndingKey": "",
             "cg": [],
@@ -1982,7 +2075,7 @@
         },
         {
             "id": 91,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_008",
             "EndingKey": "",
             "cg": [],
@@ -2001,7 +2094,7 @@
         },
         {
             "id": 92,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_009",
             "EndingKey": "",
             "cg": [],
@@ -2020,7 +2113,7 @@
         },
         {
             "id": 93,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH02_010",
             "EndingKey": "",
             "cg": [],
@@ -2039,7 +2132,7 @@
         },
         {
             "id": 94,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_011",
             "EndingKey": "",
             "cg": [],
@@ -2058,7 +2151,7 @@
         },
         {
             "id": 95,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_012",
             "EndingKey": "",
             "cg": [],
@@ -2077,7 +2170,7 @@
         },
         {
             "id": 96,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_013",
             "EndingKey": "",
             "cg": [],
@@ -2096,7 +2189,7 @@
         },
         {
             "id": 97,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_014",
             "EndingKey": "",
             "cg": [],
@@ -2115,7 +2208,7 @@
         },
         {
             "id": 98,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_015",
             "EndingKey": "",
             "cg": [],
@@ -2134,7 +2227,7 @@
         },
         {
             "id": 99,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_016",
             "EndingKey": "",
             "cg": [],
@@ -2153,7 +2246,7 @@
         },
         {
             "id": 100,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_017",
             "EndingKey": "",
             "cg": [],
@@ -2172,11 +2265,30 @@
         },
         {
             "id": 101,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_018",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_VISITFLOOR1_01",
+                    "goTo": 102,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_VISITFLOOR1_02",
+                    "goTo": 130,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -2191,7 +2303,7 @@
         },
         {
             "id": 102,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_019",
             "EndingKey": "",
             "cg": [
@@ -2217,7 +2329,7 @@
         },
         {
             "id": 103,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_020",
             "EndingKey": "",
             "cg": [],
@@ -2236,7 +2348,7 @@
         },
         {
             "id": 104,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_021",
             "EndingKey": "",
             "cg": [],
@@ -2255,7 +2367,7 @@
         },
         {
             "id": 105,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_022",
             "EndingKey": "",
             "cg": [],
@@ -2274,7 +2386,7 @@
         },
         {
             "id": 106,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_023",
             "EndingKey": "",
             "cg": [],
@@ -2293,7 +2405,7 @@
         },
         {
             "id": 107,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_024",
             "EndingKey": "",
             "cg": [],
@@ -2312,7 +2424,7 @@
         },
         {
             "id": 108,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_025",
             "EndingKey": "",
             "cg": [],
@@ -2331,7 +2443,7 @@
         },
         {
             "id": 109,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_026",
             "EndingKey": "",
             "cg": [],
@@ -2350,7 +2462,7 @@
         },
         {
             "id": 110,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_027",
             "EndingKey": "",
             "cg": [],
@@ -2369,7 +2481,7 @@
         },
         {
             "id": 111,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_028",
             "EndingKey": "",
             "cg": [],
@@ -2388,7 +2500,7 @@
         },
         {
             "id": 112,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_029",
             "EndingKey": "",
             "cg": [],
@@ -2407,7 +2519,7 @@
         },
         {
             "id": 113,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_030",
             "EndingKey": "",
             "cg": [],
@@ -2426,7 +2538,7 @@
         },
         {
             "id": 114,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_031",
             "EndingKey": "",
             "cg": [],
@@ -2445,7 +2557,7 @@
         },
         {
             "id": 115,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_032",
             "EndingKey": "",
             "cg": [],
@@ -2464,11 +2576,30 @@
         },
         {
             "id": 116,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_033",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_LABREACTION_01",
+                    "goTo": 117,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_LABREACTION_02",
+                    "goTo": 120,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -2483,7 +2614,7 @@
         },
         {
             "id": 117,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_034",
             "EndingKey": "",
             "cg": [],
@@ -2502,7 +2633,7 @@
         },
         {
             "id": 118,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_035",
             "EndingKey": "",
             "cg": [
@@ -2514,7 +2645,13 @@
                 }
             ],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 10
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -2528,13 +2665,13 @@
         },
         {
             "id": 119,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_036",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 128,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -2547,7 +2684,7 @@
         },
         {
             "id": 120,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_037",
             "EndingKey": "",
             "cg": [],
@@ -2566,7 +2703,7 @@
         },
         {
             "id": 121,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_038",
             "EndingKey": "",
             "cg": [],
@@ -2585,7 +2722,7 @@
         },
         {
             "id": 122,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_039",
             "EndingKey": "",
             "cg": [],
@@ -2604,7 +2741,7 @@
         },
         {
             "id": 123,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_040",
             "EndingKey": "",
             "cg": [
@@ -2630,7 +2767,7 @@
         },
         {
             "id": 124,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_041",
             "EndingKey": "",
             "cg": [],
@@ -2649,7 +2786,7 @@
         },
         {
             "id": 125,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_042",
             "EndingKey": "",
             "cg": [],
@@ -2668,7 +2805,7 @@
         },
         {
             "id": 126,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_043",
             "EndingKey": "",
             "cg": [],
@@ -2687,13 +2824,19 @@
         },
         {
             "id": 127,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_044",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 128,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -2706,7 +2849,7 @@
         },
         {
             "id": 128,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_045",
             "EndingKey": "",
             "cg": [
@@ -2732,13 +2875,13 @@
         },
         {
             "id": 129,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_046",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 169,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -2751,7 +2894,7 @@
         },
         {
             "id": 130,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_047",
             "EndingKey": "",
             "cg": [
@@ -2777,7 +2920,7 @@
         },
         {
             "id": 131,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_048",
             "EndingKey": "",
             "cg": [],
@@ -2796,7 +2939,7 @@
         },
         {
             "id": 132,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_049",
             "EndingKey": "",
             "cg": [],
@@ -2815,7 +2958,7 @@
         },
         {
             "id": 133,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_050",
             "EndingKey": "",
             "cg": [],
@@ -2834,7 +2977,7 @@
         },
         {
             "id": 134,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_051",
             "EndingKey": "",
             "cg": [],
@@ -2853,7 +2996,7 @@
         },
         {
             "id": 135,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_052",
             "EndingKey": "",
             "cg": [],
@@ -2872,7 +3015,7 @@
         },
         {
             "id": 136,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_053",
             "EndingKey": "",
             "cg": [],
@@ -2891,7 +3034,7 @@
         },
         {
             "id": 137,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_054",
             "EndingKey": "",
             "cg": [],
@@ -2910,7 +3053,7 @@
         },
         {
             "id": 138,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_055",
             "EndingKey": "",
             "cg": [],
@@ -2929,7 +3072,7 @@
         },
         {
             "id": 139,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_056",
             "EndingKey": "",
             "cg": [],
@@ -2948,7 +3091,7 @@
         },
         {
             "id": 140,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_057",
             "EndingKey": "",
             "cg": [],
@@ -2967,7 +3110,7 @@
         },
         {
             "id": 141,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_058",
             "EndingKey": "",
             "cg": [],
@@ -2986,7 +3129,7 @@
         },
         {
             "id": 142,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_059",
             "EndingKey": "",
             "cg": [],
@@ -3005,7 +3148,7 @@
         },
         {
             "id": 143,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_060",
             "EndingKey": "",
             "cg": [],
@@ -3024,7 +3167,7 @@
         },
         {
             "id": 144,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_061",
             "EndingKey": "",
             "cg": [],
@@ -3043,7 +3186,7 @@
         },
         {
             "id": 145,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_062",
             "EndingKey": "",
             "cg": [],
@@ -3062,7 +3205,7 @@
         },
         {
             "id": 146,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_063",
             "EndingKey": "",
             "cg": [],
@@ -3081,7 +3224,7 @@
         },
         {
             "id": 147,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_064",
             "EndingKey": "",
             "cg": [],
@@ -3100,7 +3243,7 @@
         },
         {
             "id": 148,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_065",
             "EndingKey": "",
             "cg": [],
@@ -3119,7 +3262,7 @@
         },
         {
             "id": 149,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_066",
             "EndingKey": "",
             "cg": [],
@@ -3138,7 +3281,7 @@
         },
         {
             "id": 150,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_067",
             "EndingKey": "",
             "cg": [],
@@ -3157,7 +3300,7 @@
         },
         {
             "id": 151,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_068",
             "EndingKey": "",
             "cg": [],
@@ -3176,7 +3319,7 @@
         },
         {
             "id": 152,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_069",
             "EndingKey": "",
             "cg": [],
@@ -3195,7 +3338,7 @@
         },
         {
             "id": 153,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_070",
             "EndingKey": "",
             "cg": [],
@@ -3214,7 +3357,7 @@
         },
         {
             "id": 154,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_071",
             "EndingKey": "",
             "cg": [],
@@ -3233,7 +3376,7 @@
         },
         {
             "id": 155,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_072",
             "EndingKey": "",
             "cg": [],
@@ -3252,11 +3395,30 @@
         },
         {
             "id": 156,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_073",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FOYERREACTION_01",
+                    "goTo": 157,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FOYERREACTION_02",
+                    "goTo": 162,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -3271,7 +3433,7 @@
         },
         {
             "id": 157,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_074",
             "EndingKey": "",
             "cg": [],
@@ -3290,7 +3452,7 @@
         },
         {
             "id": 158,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_075",
             "EndingKey": "",
             "cg": [],
@@ -3309,7 +3471,7 @@
         },
         {
             "id": 159,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_076",
             "EndingKey": "",
             "cg": [
@@ -3335,7 +3497,7 @@
         },
         {
             "id": 160,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_077",
             "EndingKey": "",
             "cg": [],
@@ -3354,13 +3516,19 @@
         },
         {
             "id": 161,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_078",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 169,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -3373,7 +3541,7 @@
         },
         {
             "id": 162,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_079",
             "EndingKey": "",
             "cg": [],
@@ -3392,7 +3560,7 @@
         },
         {
             "id": 163,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_080",
             "EndingKey": "",
             "cg": [],
@@ -3411,7 +3579,7 @@
         },
         {
             "id": 164,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_081",
             "EndingKey": "",
             "cg": [],
@@ -3430,7 +3598,7 @@
         },
         {
             "id": 165,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_082",
             "EndingKey": "",
             "cg": [
@@ -3456,7 +3624,7 @@
         },
         {
             "id": 166,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_083",
             "EndingKey": "",
             "cg": [],
@@ -3475,7 +3643,7 @@
         },
         {
             "id": 167,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_084",
             "EndingKey": "",
             "cg": [],
@@ -3494,13 +3662,19 @@
         },
         {
             "id": 168,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_085",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 169,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -3513,7 +3687,7 @@
         },
         {
             "id": 169,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_086",
             "EndingKey": "",
             "cg": [
@@ -3539,7 +3713,7 @@
         },
         {
             "id": 170,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_087",
             "EndingKey": "",
             "cg": [],
@@ -3558,7 +3732,7 @@
         },
         {
             "id": 171,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_088",
             "EndingKey": "",
             "cg": [],
@@ -3577,7 +3751,7 @@
         },
         {
             "id": 172,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_089",
             "EndingKey": "",
             "cg": [],
@@ -3596,7 +3770,7 @@
         },
         {
             "id": 173,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_090",
             "EndingKey": "",
             "cg": [],
@@ -3615,7 +3789,7 @@
         },
         {
             "id": 174,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_091",
             "EndingKey": "",
             "cg": [],
@@ -3634,7 +3808,7 @@
         },
         {
             "id": 175,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_092",
             "EndingKey": "",
             "cg": [],
@@ -3653,7 +3827,7 @@
         },
         {
             "id": 176,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_093",
             "EndingKey": "",
             "cg": [],
@@ -3672,7 +3846,7 @@
         },
         {
             "id": 177,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_094",
             "EndingKey": "",
             "cg": [],
@@ -3691,7 +3865,7 @@
         },
         {
             "id": 178,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_095",
             "EndingKey": "",
             "cg": [],
@@ -3710,11 +3884,30 @@
         },
         {
             "id": 179,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_096",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_AVIDENCE_01",
+                    "goTo": 180,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_AVIDENCE_02",
+                    "goTo": 184,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -3729,7 +3922,7 @@
         },
         {
             "id": 180,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_097",
             "EndingKey": "",
             "cg": [],
@@ -3748,7 +3941,7 @@
         },
         {
             "id": 181,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_098",
             "EndingKey": "",
             "cg": [],
@@ -3767,7 +3960,7 @@
         },
         {
             "id": 182,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_099",
             "EndingKey": "",
             "cg": [],
@@ -3786,13 +3979,34 @@
         },
         {
             "id": 183,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_100",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 20
+                }
+            ],
+            "nextnodeId": 190,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -3805,7 +4019,7 @@
         },
         {
             "id": 184,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_101",
             "EndingKey": "",
             "cg": [],
@@ -3824,7 +4038,7 @@
         },
         {
             "id": 185,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_102",
             "EndingKey": "",
             "cg": [],
@@ -3843,7 +4057,7 @@
         },
         {
             "id": 186,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_103",
             "EndingKey": "",
             "cg": [],
@@ -3862,7 +4076,7 @@
         },
         {
             "id": 187,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_104",
             "EndingKey": "",
             "cg": [],
@@ -3881,12 +4095,33 @@
         },
         {
             "id": 188,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_105",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -20
+                },
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": -20
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -3900,13 +4135,13 @@
         },
         {
             "id": 189,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_106",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 190,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -3919,7 +4154,7 @@
         },
         {
             "id": 190,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_107",
             "EndingKey": "",
             "cg": [],
@@ -3938,7 +4173,7 @@
         },
         {
             "id": 191,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_108",
             "EndingKey": "",
             "cg": [],
@@ -3957,7 +4192,7 @@
         },
         {
             "id": 192,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_109",
             "EndingKey": "",
             "cg": [],
@@ -3976,7 +4211,7 @@
         },
         {
             "id": 193,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_110",
             "EndingKey": "",
             "cg": [
@@ -4002,7 +4237,7 @@
         },
         {
             "id": 194,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_111",
             "EndingKey": "",
             "cg": [],
@@ -4021,7 +4256,7 @@
         },
         {
             "id": 195,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_112",
             "EndingKey": "",
             "cg": [],
@@ -4040,7 +4275,7 @@
         },
         {
             "id": 196,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_113",
             "EndingKey": "",
             "cg": [],
@@ -4059,7 +4294,7 @@
         },
         {
             "id": 197,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_114",
             "EndingKey": "",
             "cg": [
@@ -4080,12 +4315,12 @@
                 "chapterId": 2,
                 "title": "A Moment of Peace",
                 "startNodeId": 197,
-                "thumbnailKey": "thumbnail_test2"
+                "thumbnailKey": "thumbnail_Chapter2"
             }
         },
         {
             "id": 198,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH02_115",
             "EndingKey": "",
             "cg": [],
@@ -4104,7 +4339,7 @@
         },
         {
             "id": 199,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_116",
             "EndingKey": "",
             "cg": [],
@@ -4123,7 +4358,7 @@
         },
         {
             "id": 200,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_117",
             "EndingKey": "",
             "cg": [],
@@ -4142,7 +4377,7 @@
         },
         {
             "id": 201,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_118",
             "EndingKey": "",
             "cg": [],
@@ -4161,7 +4396,7 @@
         },
         {
             "id": 202,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_119",
             "EndingKey": "",
             "cg": [],
@@ -4180,7 +4415,7 @@
         },
         {
             "id": 203,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_120",
             "EndingKey": "",
             "cg": [],
@@ -4199,7 +4434,7 @@
         },
         {
             "id": 204,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_121",
             "EndingKey": "",
             "cg": [],
@@ -4218,11 +4453,48 @@
         },
         {
             "id": 205,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_122",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CHOOSEROOM_01",
+                    "goTo": 206,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CHOOSEROOM_02",
+                    "goTo": 223,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CHOOSEROOM_03",
+                    "goTo": 238,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_CHOOSEROOM_04",
+                    "goTo": 256,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -4237,7 +4509,7 @@
         },
         {
             "id": 206,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_123",
             "EndingKey": "",
             "cg": [
@@ -4263,7 +4535,7 @@
         },
         {
             "id": 207,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_124",
             "EndingKey": "",
             "cg": [],
@@ -4282,7 +4554,7 @@
         },
         {
             "id": 208,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_125",
             "EndingKey": "",
             "cg": [],
@@ -4301,7 +4573,7 @@
         },
         {
             "id": 209,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_126",
             "EndingKey": "",
             "cg": [],
@@ -4320,11 +4592,30 @@
         },
         {
             "id": 210,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_127",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKRETRIEVER_01",
+                    "goTo": 211,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKRETRIEVER_02",
+                    "goTo": 219,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -4339,7 +4630,7 @@
         },
         {
             "id": 211,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_128",
             "EndingKey": "",
             "cg": [],
@@ -4358,7 +4649,7 @@
         },
         {
             "id": 212,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_129",
             "EndingKey": "",
             "cg": [],
@@ -4377,7 +4668,7 @@
         },
         {
             "id": 213,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_130",
             "EndingKey": "",
             "cg": [],
@@ -4396,7 +4687,7 @@
         },
         {
             "id": 214,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_131",
             "EndingKey": "",
             "cg": [
@@ -4422,7 +4713,7 @@
         },
         {
             "id": 215,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_132",
             "EndingKey": "",
             "cg": [],
@@ -4441,7 +4732,7 @@
         },
         {
             "id": 216,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_133",
             "EndingKey": "",
             "cg": [],
@@ -4460,7 +4751,7 @@
         },
         {
             "id": 217,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_134",
             "EndingKey": "",
             "cg": [],
@@ -4479,13 +4770,19 @@
         },
         {
             "id": 218,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_135",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -4498,7 +4795,7 @@
         },
         {
             "id": 219,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_136",
             "EndingKey": "",
             "cg": [],
@@ -4517,7 +4814,7 @@
         },
         {
             "id": 220,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_137",
             "EndingKey": "",
             "cg": [],
@@ -4536,7 +4833,7 @@
         },
         {
             "id": 221,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH02_138",
             "EndingKey": "",
             "cg": [],
@@ -4555,13 +4852,19 @@
         },
         {
             "id": 222,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_139",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "리트리버",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -4574,7 +4877,7 @@
         },
         {
             "id": 223,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_140",
             "EndingKey": "",
             "cg": [
@@ -4600,7 +4903,7 @@
         },
         {
             "id": 224,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_141",
             "EndingKey": "",
             "cg": [],
@@ -4619,11 +4922,30 @@
         },
         {
             "id": 225,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_142",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKRABBIT_01",
+                    "goTo": 226,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKRABBIT_02",
+                    "goTo": 234,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -4638,7 +4960,7 @@
         },
         {
             "id": 226,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_143",
             "EndingKey": "",
             "cg": [],
@@ -4657,7 +4979,7 @@
         },
         {
             "id": 227,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_144",
             "EndingKey": "",
             "cg": [],
@@ -4676,7 +4998,7 @@
         },
         {
             "id": 228,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_145",
             "EndingKey": "",
             "cg": [],
@@ -4695,7 +5017,7 @@
         },
         {
             "id": 229,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_146",
             "EndingKey": "",
             "cg": [],
@@ -4714,7 +5036,7 @@
         },
         {
             "id": 230,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_147",
             "EndingKey": "",
             "cg": [
@@ -4740,7 +5062,7 @@
         },
         {
             "id": 231,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_148",
             "EndingKey": "",
             "cg": [],
@@ -4759,7 +5081,7 @@
         },
         {
             "id": 232,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_149",
             "EndingKey": "",
             "cg": [],
@@ -4778,13 +5100,19 @@
         },
         {
             "id": 233,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_150",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -4797,7 +5125,7 @@
         },
         {
             "id": 234,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_151",
             "EndingKey": "",
             "cg": [],
@@ -4816,7 +5144,7 @@
         },
         {
             "id": 235,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH02_152",
             "EndingKey": "",
             "cg": [],
@@ -4835,7 +5163,7 @@
         },
         {
             "id": 236,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_153",
             "EndingKey": "",
             "cg": [],
@@ -4854,13 +5182,19 @@
         },
         {
             "id": 237,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_154",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -4873,7 +5207,7 @@
         },
         {
             "id": 238,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_155",
             "EndingKey": "",
             "cg": [
@@ -4899,7 +5233,7 @@
         },
         {
             "id": 239,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_156",
             "EndingKey": "",
             "cg": [],
@@ -4918,7 +5252,7 @@
         },
         {
             "id": 240,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_157",
             "EndingKey": "",
             "cg": [],
@@ -4937,7 +5271,7 @@
         },
         {
             "id": 241,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_158",
             "EndingKey": "",
             "cg": [],
@@ -4956,7 +5290,7 @@
         },
         {
             "id": 242,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_159",
             "EndingKey": "",
             "cg": [],
@@ -4975,11 +5309,30 @@
         },
         {
             "id": 243,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_160",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKFOX_01",
+                    "goTo": 244,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKFOX_02",
+                    "goTo": 251,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -4994,7 +5347,7 @@
         },
         {
             "id": 244,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_161",
             "EndingKey": "",
             "cg": [],
@@ -5013,7 +5366,7 @@
         },
         {
             "id": 245,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_162",
             "EndingKey": "",
             "cg": [],
@@ -5032,7 +5385,7 @@
         },
         {
             "id": 246,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_163",
             "EndingKey": "",
             "cg": [],
@@ -5051,7 +5404,7 @@
         },
         {
             "id": 247,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_164",
             "EndingKey": "",
             "cg": [],
@@ -5070,7 +5423,7 @@
         },
         {
             "id": 248,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_165",
             "EndingKey": "",
             "cg": [
@@ -5096,7 +5449,7 @@
         },
         {
             "id": 249,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_166",
             "EndingKey": "",
             "cg": [],
@@ -5115,13 +5468,19 @@
         },
         {
             "id": 250,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_167",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -5134,7 +5493,7 @@
         },
         {
             "id": 251,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_168",
             "EndingKey": "",
             "cg": [],
@@ -5153,7 +5512,7 @@
         },
         {
             "id": 252,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_169",
             "EndingKey": "",
             "cg": [],
@@ -5172,7 +5531,7 @@
         },
         {
             "id": 253,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_170",
             "EndingKey": "",
             "cg": [],
@@ -5191,7 +5550,7 @@
         },
         {
             "id": 254,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_171",
             "EndingKey": "",
             "cg": [],
@@ -5210,13 +5569,19 @@
         },
         {
             "id": 255,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_172",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "여우",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -5229,7 +5594,7 @@
         },
         {
             "id": 256,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_173",
             "EndingKey": "",
             "cg": [
@@ -5255,7 +5620,7 @@
         },
         {
             "id": 257,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_174",
             "EndingKey": "",
             "cg": [],
@@ -5274,7 +5639,7 @@
         },
         {
             "id": 258,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_175",
             "EndingKey": "",
             "cg": [],
@@ -5293,7 +5658,7 @@
         },
         {
             "id": 259,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_176",
             "EndingKey": "",
             "cg": [],
@@ -5312,7 +5677,7 @@
         },
         {
             "id": 260,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_177",
             "EndingKey": "",
             "cg": [],
@@ -5331,7 +5696,7 @@
         },
         {
             "id": 261,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_178",
             "EndingKey": "",
             "cg": [],
@@ -5350,7 +5715,7 @@
         },
         {
             "id": 262,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_179",
             "EndingKey": "",
             "cg": [],
@@ -5369,11 +5734,30 @@
         },
         {
             "id": 263,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_180",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKSHEEP_01",
+                    "goTo": 264,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_TALKSHEEP_02",
+                    "goTo": 275,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -5388,7 +5772,7 @@
         },
         {
             "id": 264,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_181",
             "EndingKey": "",
             "cg": [],
@@ -5407,7 +5791,7 @@
         },
         {
             "id": 265,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_182",
             "EndingKey": "",
             "cg": [],
@@ -5426,7 +5810,7 @@
         },
         {
             "id": 266,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_183",
             "EndingKey": "",
             "cg": [],
@@ -5445,7 +5829,7 @@
         },
         {
             "id": 267,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_184",
             "EndingKey": "",
             "cg": [],
@@ -5464,7 +5848,7 @@
         },
         {
             "id": 268,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_185",
             "EndingKey": "",
             "cg": [],
@@ -5483,7 +5867,7 @@
         },
         {
             "id": 269,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_186",
             "EndingKey": "",
             "cg": [
@@ -5509,7 +5893,7 @@
         },
         {
             "id": 270,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_187",
             "EndingKey": "",
             "cg": [],
@@ -5528,7 +5912,7 @@
         },
         {
             "id": 271,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_188",
             "EndingKey": "",
             "cg": [],
@@ -5547,7 +5931,7 @@
         },
         {
             "id": 272,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_189",
             "EndingKey": "",
             "cg": [],
@@ -5566,12 +5950,18 @@
         },
         {
             "id": 273,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_190",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 10
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -5585,13 +5975,13 @@
         },
         {
             "id": 274,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_191",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -5604,7 +5994,7 @@
         },
         {
             "id": 275,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_192",
             "EndingKey": "",
             "cg": [],
@@ -5623,12 +6013,18 @@
         },
         {
             "id": 276,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH02_193",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 10
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -5642,7 +6038,7 @@
         },
         {
             "id": 277,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_194",
             "EndingKey": "",
             "cg": [],
@@ -5661,13 +6057,13 @@
         },
         {
             "id": 278,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_195",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 279,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -5680,7 +6076,7 @@
         },
         {
             "id": 279,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_196",
             "EndingKey": "",
             "cg": [
@@ -5706,7 +6102,7 @@
         },
         {
             "id": 280,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH02_197",
             "EndingKey": "",
             "cg": [],
@@ -5725,7 +6121,7 @@
         },
         {
             "id": 281,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH02_198",
             "EndingKey": "",
             "cg": [
@@ -5751,7 +6147,7 @@
         },
         {
             "id": 282,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_001",
             "EndingKey": "",
             "cg": [],
@@ -5765,12 +6161,12 @@
                 "chapterId": 3,
                 "title": "Hidden Truths",
                 "startNodeId": 282,
-                "thumbnailKey": "thumbnail_test3"
+                "thumbnailKey": "thumbnail_Chapter3"
             }
         },
         {
             "id": 283,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_002",
             "EndingKey": "",
             "cg": [
@@ -5796,7 +6192,7 @@
         },
         {
             "id": 284,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_003",
             "EndingKey": "",
             "cg": [],
@@ -5815,7 +6211,7 @@
         },
         {
             "id": 285,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH03_004",
             "EndingKey": "",
             "cg": [],
@@ -5834,7 +6230,7 @@
         },
         {
             "id": 286,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH03_005",
             "EndingKey": "",
             "cg": [],
@@ -5853,7 +6249,7 @@
         },
         {
             "id": 287,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_006",
             "EndingKey": "",
             "cg": [],
@@ -5872,7 +6268,7 @@
         },
         {
             "id": 288,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_007",
             "EndingKey": "",
             "cg": [],
@@ -5891,7 +6287,7 @@
         },
         {
             "id": 289,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_008",
             "EndingKey": "",
             "cg": [],
@@ -5910,7 +6306,7 @@
         },
         {
             "id": 290,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_009",
             "EndingKey": "",
             "cg": [],
@@ -5929,7 +6325,7 @@
         },
         {
             "id": 291,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_010",
             "EndingKey": "",
             "cg": [],
@@ -5948,7 +6344,7 @@
         },
         {
             "id": 292,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_011",
             "EndingKey": "",
             "cg": [],
@@ -5967,7 +6363,7 @@
         },
         {
             "id": 293,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH03_012",
             "EndingKey": "",
             "cg": [],
@@ -5986,7 +6382,7 @@
         },
         {
             "id": 294,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_013",
             "EndingKey": "",
             "cg": [],
@@ -6005,7 +6401,7 @@
         },
         {
             "id": 295,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_014",
             "EndingKey": "",
             "cg": [],
@@ -6024,7 +6420,7 @@
         },
         {
             "id": 296,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_015",
             "EndingKey": "",
             "cg": [],
@@ -6043,7 +6439,7 @@
         },
         {
             "id": 297,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH03_016",
             "EndingKey": "",
             "cg": [],
@@ -6062,7 +6458,7 @@
         },
         {
             "id": 298,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_017",
             "EndingKey": "",
             "cg": [],
@@ -6081,7 +6477,7 @@
         },
         {
             "id": 299,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_018",
             "EndingKey": "",
             "cg": [],
@@ -6100,7 +6496,7 @@
         },
         {
             "id": 300,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH03_019",
             "EndingKey": "",
             "cg": [],
@@ -6119,7 +6515,7 @@
         },
         {
             "id": 301,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_020",
             "EndingKey": "",
             "cg": [],
@@ -6138,11 +6534,30 @@
         },
         {
             "id": 302,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_021",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_VISITFLOOR3_01",
+                    "goTo": 303,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_VISITFLOOR3_02",
+                    "goTo": 337,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -6157,7 +6572,7 @@
         },
         {
             "id": 303,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_022",
             "EndingKey": "",
             "cg": [
@@ -6183,7 +6598,7 @@
         },
         {
             "id": 304,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_023",
             "EndingKey": "",
             "cg": [],
@@ -6202,7 +6617,7 @@
         },
         {
             "id": 305,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_024",
             "EndingKey": "",
             "cg": [],
@@ -6221,7 +6636,7 @@
         },
         {
             "id": 306,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_025",
             "EndingKey": "",
             "cg": [],
@@ -6240,7 +6655,7 @@
         },
         {
             "id": 307,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_026",
             "EndingKey": "",
             "cg": [],
@@ -6259,7 +6674,7 @@
         },
         {
             "id": 308,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_027",
             "EndingKey": "",
             "cg": [],
@@ -6278,7 +6693,7 @@
         },
         {
             "id": 309,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_028",
             "EndingKey": "",
             "cg": [],
@@ -6297,7 +6712,7 @@
         },
         {
             "id": 310,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_029",
             "EndingKey": "",
             "cg": [],
@@ -6316,7 +6731,7 @@
         },
         {
             "id": 311,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_030",
             "EndingKey": "",
             "cg": [],
@@ -6335,7 +6750,7 @@
         },
         {
             "id": 312,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_031",
             "EndingKey": "",
             "cg": [],
@@ -6354,7 +6769,7 @@
         },
         {
             "id": 313,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_032",
             "EndingKey": "",
             "cg": [],
@@ -6373,11 +6788,30 @@
         },
         {
             "id": 314,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_033",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_LIKEANIMAL_01",
+                    "goTo": 315,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_LIKEANIMAL_02",
+                    "goTo": 323,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -6392,7 +6826,7 @@
         },
         {
             "id": 315,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_034",
             "EndingKey": "",
             "cg": [],
@@ -6411,7 +6845,7 @@
         },
         {
             "id": 316,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_035",
             "EndingKey": "",
             "cg": [],
@@ -6430,7 +6864,7 @@
         },
         {
             "id": 317,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_036",
             "EndingKey": "",
             "cg": [],
@@ -6449,7 +6883,7 @@
         },
         {
             "id": 318,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_037",
             "EndingKey": "",
             "cg": [],
@@ -6468,7 +6902,7 @@
         },
         {
             "id": 319,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_038",
             "EndingKey": "",
             "cg": [],
@@ -6487,7 +6921,7 @@
         },
         {
             "id": 320,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_039",
             "EndingKey": "",
             "cg": [],
@@ -6506,7 +6940,7 @@
         },
         {
             "id": 321,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_040",
             "EndingKey": "",
             "cg": [],
@@ -6525,13 +6959,13 @@
         },
         {
             "id": 322,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_041",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 330,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -6544,7 +6978,7 @@
         },
         {
             "id": 323,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_042",
             "EndingKey": "",
             "cg": [],
@@ -6563,7 +6997,7 @@
         },
         {
             "id": 324,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_043",
             "EndingKey": "",
             "cg": [],
@@ -6582,7 +7016,7 @@
         },
         {
             "id": 325,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_044",
             "EndingKey": "",
             "cg": [],
@@ -6601,7 +7035,7 @@
         },
         {
             "id": 326,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_045",
             "EndingKey": "",
             "cg": [],
@@ -6620,7 +7054,7 @@
         },
         {
             "id": 327,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_046",
             "EndingKey": "",
             "cg": [],
@@ -6639,7 +7073,7 @@
         },
         {
             "id": 328,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_047",
             "EndingKey": "",
             "cg": [],
@@ -6658,13 +7092,13 @@
         },
         {
             "id": 329,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_048",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 330,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -6677,7 +7111,7 @@
         },
         {
             "id": 330,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_049",
             "EndingKey": "",
             "cg": [],
@@ -6696,7 +7130,7 @@
         },
         {
             "id": 331,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_050",
             "EndingKey": "",
             "cg": [],
@@ -6715,7 +7149,7 @@
         },
         {
             "id": 332,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_051",
             "EndingKey": "",
             "cg": [
@@ -6741,7 +7175,7 @@
         },
         {
             "id": 333,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_052",
             "EndingKey": "",
             "cg": [],
@@ -6760,7 +7194,7 @@
         },
         {
             "id": 334,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_053",
             "EndingKey": "",
             "cg": [],
@@ -6779,7 +7213,7 @@
         },
         {
             "id": 335,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_054",
             "EndingKey": "",
             "cg": [],
@@ -6798,13 +7232,19 @@
         },
         {
             "id": 336,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_055",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "양",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 365,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -6817,7 +7257,7 @@
         },
         {
             "id": 337,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_056",
             "EndingKey": "",
             "cg": [
@@ -6843,7 +7283,7 @@
         },
         {
             "id": 338,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_057",
             "EndingKey": "",
             "cg": [],
@@ -6862,7 +7302,7 @@
         },
         {
             "id": 339,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_058",
             "EndingKey": "",
             "cg": [],
@@ -6881,7 +7321,7 @@
         },
         {
             "id": 340,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_059",
             "EndingKey": "",
             "cg": [],
@@ -6900,7 +7340,7 @@
         },
         {
             "id": 341,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_060",
             "EndingKey": "",
             "cg": [],
@@ -6919,7 +7359,7 @@
         },
         {
             "id": 342,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_061",
             "EndingKey": "",
             "cg": [
@@ -6945,7 +7385,7 @@
         },
         {
             "id": 343,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_062",
             "EndingKey": "",
             "cg": [],
@@ -6964,7 +7404,7 @@
         },
         {
             "id": 344,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_063",
             "EndingKey": "",
             "cg": [],
@@ -6983,7 +7423,7 @@
         },
         {
             "id": 345,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_064",
             "EndingKey": "",
             "cg": [],
@@ -7002,7 +7442,7 @@
         },
         {
             "id": 346,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_065",
             "EndingKey": "",
             "cg": [],
@@ -7021,7 +7461,7 @@
         },
         {
             "id": 347,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_066",
             "EndingKey": "",
             "cg": [
@@ -7047,7 +7487,7 @@
         },
         {
             "id": 348,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_067",
             "EndingKey": "",
             "cg": [],
@@ -7066,7 +7506,7 @@
         },
         {
             "id": 349,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_068",
             "EndingKey": "",
             "cg": [],
@@ -7085,11 +7525,30 @@
         },
         {
             "id": 350,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_069",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_RABBITCURE_01",
+                    "goTo": 351,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_RABBITCURE_02",
+                    "goTo": 356,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -7104,7 +7563,7 @@
         },
         {
             "id": 351,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_070",
             "EndingKey": "",
             "cg": [],
@@ -7123,7 +7582,7 @@
         },
         {
             "id": 352,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_071",
             "EndingKey": "",
             "cg": [],
@@ -7142,7 +7601,7 @@
         },
         {
             "id": 353,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_072",
             "EndingKey": "",
             "cg": [],
@@ -7161,7 +7620,7 @@
         },
         {
             "id": 354,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_073",
             "EndingKey": "",
             "cg": [],
@@ -7180,13 +7639,19 @@
         },
         {
             "id": 355,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_074",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": 10
+                }
+            ],
+            "nextnodeId": 363,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -7199,7 +7664,7 @@
         },
         {
             "id": 356,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_075",
             "EndingKey": "",
             "cg": [],
@@ -7218,7 +7683,7 @@
         },
         {
             "id": 357,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_076",
             "EndingKey": "",
             "cg": [],
@@ -7237,7 +7702,7 @@
         },
         {
             "id": 358,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_077",
             "EndingKey": "",
             "cg": [],
@@ -7256,7 +7721,7 @@
         },
         {
             "id": 359,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_078",
             "EndingKey": "",
             "cg": [],
@@ -7275,7 +7740,7 @@
         },
         {
             "id": 360,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_079",
             "EndingKey": "",
             "cg": [],
@@ -7294,7 +7759,7 @@
         },
         {
             "id": 361,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_080",
             "EndingKey": "",
             "cg": [],
@@ -7313,13 +7778,19 @@
         },
         {
             "id": 362,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_081",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
-            "nextnodeId": 0,
+            "reward": [
+                {
+                    "type": "Affinity",
+                    "key": "토끼",
+                    "amount": -10
+                }
+            ],
+            "nextnodeId": 363,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -7332,7 +7803,7 @@
         },
         {
             "id": 363,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_082",
             "EndingKey": "",
             "cg": [],
@@ -7351,13 +7822,13 @@
         },
         {
             "id": 364,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_083",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 365,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -7370,7 +7841,7 @@
         },
         {
             "id": 365,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_084",
             "EndingKey": "",
             "cg": [
@@ -7396,7 +7867,7 @@
         },
         {
             "id": 366,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_085",
             "EndingKey": "",
             "cg": [],
@@ -7415,7 +7886,7 @@
         },
         {
             "id": 367,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_086",
             "EndingKey": "",
             "cg": [],
@@ -7434,7 +7905,7 @@
         },
         {
             "id": 368,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_087",
             "EndingKey": "",
             "cg": [],
@@ -7453,7 +7924,7 @@
         },
         {
             "id": 369,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_088",
             "EndingKey": "",
             "cg": [],
@@ -7472,7 +7943,7 @@
         },
         {
             "id": 370,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH03_089",
             "EndingKey": "",
             "cg": [],
@@ -7491,7 +7962,7 @@
         },
         {
             "id": 371,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_090",
             "EndingKey": "",
             "cg": [],
@@ -7510,7 +7981,7 @@
         },
         {
             "id": 372,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_091",
             "EndingKey": "",
             "cg": [
@@ -7536,7 +8007,7 @@
         },
         {
             "id": 373,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_092",
             "EndingKey": "",
             "cg": [],
@@ -7555,7 +8026,7 @@
         },
         {
             "id": 374,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_093",
             "EndingKey": "",
             "cg": [],
@@ -7574,7 +8045,7 @@
         },
         {
             "id": 375,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_094",
             "EndingKey": "",
             "cg": [],
@@ -7593,7 +8064,7 @@
         },
         {
             "id": 376,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_095",
             "EndingKey": "",
             "cg": [],
@@ -7612,7 +8083,7 @@
         },
         {
             "id": 377,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_096",
             "EndingKey": "",
             "cg": [],
@@ -7631,7 +8102,7 @@
         },
         {
             "id": 378,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_097",
             "EndingKey": "",
             "cg": [],
@@ -7650,7 +8121,7 @@
         },
         {
             "id": 379,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH03_098",
             "EndingKey": "",
             "cg": [],
@@ -7669,7 +8140,7 @@
         },
         {
             "id": 380,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH03_099",
             "EndingKey": "",
             "cg": [],
@@ -7688,7 +8159,7 @@
         },
         {
             "id": 381,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_100",
             "EndingKey": "",
             "cg": [],
@@ -7707,7 +8178,7 @@
         },
         {
             "id": 382,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_101",
             "EndingKey": "",
             "cg": [],
@@ -7726,7 +8197,7 @@
         },
         {
             "id": 383,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_102",
             "EndingKey": "",
             "cg": [],
@@ -7745,11 +8216,30 @@
         },
         {
             "id": 384,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_103",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_MONOPOLYCURE_01",
+                    "goTo": 385,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_MONOPOLYCURE_02",
+                    "goTo": 390,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -7764,7 +8254,7 @@
         },
         {
             "id": 385,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH03_104",
             "EndingKey": "",
             "cg": [],
@@ -7783,7 +8273,7 @@
         },
         {
             "id": 386,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_105",
             "EndingKey": "",
             "cg": [],
@@ -7802,12 +8292,18 @@
         },
         {
             "id": 387,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_106",
             "EndingKey": "",
             "cg": [],
             "choices": [],
-            "reward": [],
+            "reward": [
+                {
+                    "type": "Item",
+                    "key": "ITEM_NAME_ACCESSCODE",
+                    "amount": 1
+                }
+            ],
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
@@ -7821,7 +8317,7 @@
         },
         {
             "id": 388,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_107",
             "EndingKey": "",
             "cg": [],
@@ -7840,13 +8336,13 @@
         },
         {
             "id": 389,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_108",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 393,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -7859,7 +8355,7 @@
         },
         {
             "id": 390,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_109",
             "EndingKey": "",
             "cg": [],
@@ -7878,7 +8374,7 @@
         },
         {
             "id": 391,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_110",
             "EndingKey": "",
             "cg": [],
@@ -7897,13 +8393,13 @@
         },
         {
             "id": 392,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH03_111",
             "EndingKey": "",
             "cg": [],
             "choices": [],
             "reward": [],
-            "nextnodeId": 0,
+            "nextnodeId": 393,
             "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
@@ -7916,7 +8412,7 @@
         },
         {
             "id": 393,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_112",
             "EndingKey": "",
             "cg": [],
@@ -7935,7 +8431,7 @@
         },
         {
             "id": 394,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_113",
             "EndingKey": "",
             "cg": [
@@ -7961,7 +8457,7 @@
         },
         {
             "id": 395,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_114",
             "EndingKey": "",
             "cg": [],
@@ -7980,7 +8476,7 @@
         },
         {
             "id": 396,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_115",
             "EndingKey": "",
             "cg": [],
@@ -7999,7 +8495,7 @@
         },
         {
             "id": 397,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH03_116",
             "EndingKey": "",
             "cg": [],
@@ -8018,7 +8514,7 @@
         },
         {
             "id": 398,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_001",
             "EndingKey": "",
             "cg": [],
@@ -8032,12 +8528,12 @@
                 "chapterId": 4,
                 "title": "The Final Choice",
                 "startNodeId": 398,
-                "thumbnailKey": "thumbnail_test3"
+                "thumbnailKey": "thumbnail_Chapter4"
             }
         },
         {
             "id": 399,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_002",
             "EndingKey": "",
             "cg": [],
@@ -8056,7 +8552,7 @@
         },
         {
             "id": 400,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_003",
             "EndingKey": "",
             "cg": [
@@ -8082,7 +8578,7 @@
         },
         {
             "id": 401,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_004",
             "EndingKey": "",
             "cg": [],
@@ -8101,7 +8597,7 @@
         },
         {
             "id": 402,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_005",
             "EndingKey": "",
             "cg": [],
@@ -8120,7 +8616,7 @@
         },
         {
             "id": 403,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_006",
             "EndingKey": "",
             "cg": [],
@@ -8139,7 +8635,7 @@
         },
         {
             "id": 404,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_007",
             "EndingKey": "",
             "cg": [],
@@ -8158,7 +8654,7 @@
         },
         {
             "id": 405,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_008",
             "EndingKey": "",
             "cg": [],
@@ -8177,7 +8673,7 @@
         },
         {
             "id": 406,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_009",
             "EndingKey": "",
             "cg": [],
@@ -8196,7 +8692,7 @@
         },
         {
             "id": 407,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_010",
             "EndingKey": "",
             "cg": [],
@@ -8215,7 +8711,7 @@
         },
         {
             "id": 408,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_011",
             "EndingKey": "",
             "cg": [],
@@ -8234,7 +8730,7 @@
         },
         {
             "id": 409,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_012",
             "EndingKey": "",
             "cg": [],
@@ -8253,7 +8749,7 @@
         },
         {
             "id": 410,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_013",
             "EndingKey": "",
             "cg": [],
@@ -8272,7 +8768,7 @@
         },
         {
             "id": 411,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_014",
             "EndingKey": "",
             "cg": [],
@@ -8291,7 +8787,7 @@
         },
         {
             "id": 412,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_015",
             "EndingKey": "",
             "cg": [],
@@ -8310,7 +8806,7 @@
         },
         {
             "id": 413,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_016",
             "EndingKey": "",
             "cg": [],
@@ -8329,7 +8825,7 @@
         },
         {
             "id": 414,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_017",
             "EndingKey": "",
             "cg": [],
@@ -8348,7 +8844,7 @@
         },
         {
             "id": 415,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_018",
             "EndingKey": "",
             "cg": [],
@@ -8367,7 +8863,7 @@
         },
         {
             "id": 416,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_019",
             "EndingKey": "",
             "cg": [],
@@ -8386,7 +8882,7 @@
         },
         {
             "id": 417,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_020",
             "EndingKey": "",
             "cg": [],
@@ -8405,7 +8901,7 @@
         },
         {
             "id": 418,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_021",
             "EndingKey": "",
             "cg": [],
@@ -8424,7 +8920,7 @@
         },
         {
             "id": 419,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_022",
             "EndingKey": "",
             "cg": [],
@@ -8443,7 +8939,7 @@
         },
         {
             "id": 420,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_023",
             "EndingKey": "",
             "cg": [],
@@ -8462,7 +8958,7 @@
         },
         {
             "id": 421,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_024",
             "EndingKey": "",
             "cg": [],
@@ -8481,7 +8977,7 @@
         },
         {
             "id": 422,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_025",
             "EndingKey": "",
             "cg": [],
@@ -8500,7 +8996,7 @@
         },
         {
             "id": 423,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_026",
             "EndingKey": "",
             "cg": [],
@@ -8519,7 +9015,7 @@
         },
         {
             "id": 424,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_027",
             "EndingKey": "",
             "cg": [],
@@ -8538,7 +9034,7 @@
         },
         {
             "id": 425,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_028",
             "EndingKey": "",
             "cg": [],
@@ -8557,7 +9053,7 @@
         },
         {
             "id": 426,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_029",
             "EndingKey": "",
             "cg": [],
@@ -8576,7 +9072,7 @@
         },
         {
             "id": 427,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_030",
             "EndingKey": "",
             "cg": [],
@@ -8595,7 +9091,7 @@
         },
         {
             "id": 428,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_031",
             "EndingKey": "",
             "cg": [],
@@ -8614,7 +9110,7 @@
         },
         {
             "id": 429,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_032",
             "EndingKey": "",
             "cg": [],
@@ -8633,7 +9129,7 @@
         },
         {
             "id": 430,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_033",
             "EndingKey": "",
             "cg": [],
@@ -8652,7 +9148,7 @@
         },
         {
             "id": 431,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_034",
             "EndingKey": "",
             "cg": [],
@@ -8671,7 +9167,7 @@
         },
         {
             "id": 432,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_035",
             "EndingKey": "",
             "cg": [],
@@ -8690,7 +9186,7 @@
         },
         {
             "id": 433,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_036",
             "EndingKey": "",
             "cg": [],
@@ -8709,7 +9205,7 @@
         },
         {
             "id": 434,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_037",
             "EndingKey": "",
             "cg": [],
@@ -8728,11 +9224,69 @@
         },
         {
             "id": 435,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_038",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_SHEEPSUGGESTION_01",
+                    "goTo": 457,
+                    "goToFail": 0,
+                    "condition": [
+                        {
+                            "logic": "OR",
+                            "type": "Item",
+                            "key": "ITEM_AccessCode",
+                            "min": 1,
+                            "max": 30
+                        }
+                    ],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_SHEEPSUGGESTION_02",
+                    "goTo": 436,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_SHEEPSUGGESTION_03",
+                    "goTo": 532,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": [
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "리트리버",
+                            "min": 0,
+                            "max": 40
+                        },
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "여우",
+                            "min": 0,
+                            "max": 40
+                        },
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "토끼",
+                            "min": 0,
+                            "max": 40
+                        }
+                    ]
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -8747,7 +9301,7 @@
         },
         {
             "id": 436,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_039",
             "EndingKey": "",
             "cg": [],
@@ -8766,7 +9320,7 @@
         },
         {
             "id": 437,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_040",
             "EndingKey": "",
             "cg": [
@@ -8792,7 +9346,7 @@
         },
         {
             "id": 438,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_041",
             "EndingKey": "",
             "cg": [],
@@ -8811,7 +9365,7 @@
         },
         {
             "id": 439,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_042",
             "EndingKey": "",
             "cg": [],
@@ -8830,7 +9384,7 @@
         },
         {
             "id": 440,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_043",
             "EndingKey": "",
             "cg": [],
@@ -8849,7 +9403,7 @@
         },
         {
             "id": 441,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_044",
             "EndingKey": "",
             "cg": [],
@@ -8868,7 +9422,7 @@
         },
         {
             "id": 442,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_045",
             "EndingKey": "",
             "cg": [],
@@ -8887,7 +9441,7 @@
         },
         {
             "id": 443,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_046",
             "EndingKey": "Ending_Bad1",
             "cg": [],
@@ -8906,7 +9460,7 @@
         },
         {
             "id": 444,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_047",
             "EndingKey": "",
             "cg": [],
@@ -8925,7 +9479,7 @@
         },
         {
             "id": 445,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_048",
             "EndingKey": "",
             "cg": [],
@@ -8944,7 +9498,7 @@
         },
         {
             "id": 446,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_049",
             "EndingKey": "",
             "cg": [],
@@ -8963,7 +9517,7 @@
         },
         {
             "id": 447,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_050",
             "EndingKey": "",
             "cg": [],
@@ -8982,7 +9536,7 @@
         },
         {
             "id": 448,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_051",
             "EndingKey": "",
             "cg": [
@@ -9008,7 +9562,7 @@
         },
         {
             "id": 449,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_052",
             "EndingKey": "",
             "cg": [],
@@ -9027,7 +9581,7 @@
         },
         {
             "id": 450,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_053",
             "EndingKey": "",
             "cg": [],
@@ -9046,7 +9600,7 @@
         },
         {
             "id": 451,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_054",
             "EndingKey": "",
             "cg": [],
@@ -9065,7 +9619,7 @@
         },
         {
             "id": 452,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_055",
             "EndingKey": "",
             "cg": [
@@ -9091,7 +9645,7 @@
         },
         {
             "id": 453,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_056",
             "EndingKey": "",
             "cg": [],
@@ -9110,7 +9664,7 @@
         },
         {
             "id": 454,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_057",
             "EndingKey": "",
             "cg": [],
@@ -9129,7 +9683,7 @@
         },
         {
             "id": 455,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_058",
             "EndingKey": "",
             "cg": [],
@@ -9148,7 +9702,7 @@
         },
         {
             "id": 456,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_059",
             "EndingKey": "Ending_Bad2",
             "cg": [],
@@ -9167,7 +9721,7 @@
         },
         {
             "id": 457,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_060",
             "EndingKey": "",
             "cg": [],
@@ -9186,7 +9740,7 @@
         },
         {
             "id": 458,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_061",
             "EndingKey": "",
             "cg": [],
@@ -9205,7 +9759,7 @@
         },
         {
             "id": 459,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_062",
             "EndingKey": "",
             "cg": [],
@@ -9224,7 +9778,7 @@
         },
         {
             "id": 460,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_063",
             "EndingKey": "",
             "cg": [],
@@ -9243,11 +9797,70 @@
         },
         {
             "id": 461,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_064",
             "EndingKey": "",
             "cg": [],
-            "choices": [],
+            "choices": [
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FINAL_01",
+                    "goTo": 462,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": [
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "리트리버",
+                            "min": 50,
+                            "max": 100
+                        },
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "여우",
+                            "min": 50,
+                            "max": 100
+                        },
+                        {
+                            "logic": "AND",
+                            "type": "Affinity",
+                            "key": "토끼",
+                            "min": 50,
+                            "max": 100
+                        }
+                    ]
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FINAL_02",
+                    "goTo": 477,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FINAL_03",
+                    "goTo": 495,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                },
+                {
+                    "nodeId": 0,
+                    "choiceIndex": 0,
+                    "choiceTextId": "CHOICE_FINAL_04",
+                    "goTo": 513,
+                    "goToFail": 0,
+                    "condition": [],
+                    "interActableCondition": []
+                }
+            ],
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
@@ -9262,7 +9875,7 @@
         },
         {
             "id": 462,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_065",
             "EndingKey": "",
             "cg": [],
@@ -9281,7 +9894,7 @@
         },
         {
             "id": 463,
-            "speaker": "사막여우",
+            "speaker": "사막CHAR_FOX",
             "textKey": "CH04_066",
             "EndingKey": "",
             "cg": [],
@@ -9300,7 +9913,7 @@
         },
         {
             "id": 464,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_067",
             "EndingKey": "",
             "cg": [],
@@ -9319,7 +9932,7 @@
         },
         {
             "id": 465,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_068",
             "EndingKey": "",
             "cg": [],
@@ -9338,7 +9951,7 @@
         },
         {
             "id": 466,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_069",
             "EndingKey": "",
             "cg": [],
@@ -9357,7 +9970,7 @@
         },
         {
             "id": 467,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_070",
             "EndingKey": "",
             "cg": [],
@@ -9376,7 +9989,7 @@
         },
         {
             "id": 468,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_071",
             "EndingKey": "",
             "cg": [],
@@ -9395,7 +10008,7 @@
         },
         {
             "id": 469,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_072",
             "EndingKey": "",
             "cg": [],
@@ -9414,7 +10027,7 @@
         },
         {
             "id": 470,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_073",
             "EndingKey": "",
             "cg": [],
@@ -9433,7 +10046,7 @@
         },
         {
             "id": 471,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_074",
             "EndingKey": "",
             "cg": [],
@@ -9452,7 +10065,7 @@
         },
         {
             "id": 472,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_075",
             "EndingKey": "",
             "cg": [],
@@ -9471,7 +10084,7 @@
         },
         {
             "id": 473,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_076",
             "EndingKey": "",
             "cg": [],
@@ -9490,7 +10103,7 @@
         },
         {
             "id": 474,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_077",
             "EndingKey": "",
             "cg": [],
@@ -9509,7 +10122,7 @@
         },
         {
             "id": 475,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_078",
             "EndingKey": "",
             "cg": [],
@@ -9528,7 +10141,7 @@
         },
         {
             "id": 476,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_079",
             "EndingKey": "Ending_True",
             "cg": [
@@ -9554,7 +10167,7 @@
         },
         {
             "id": 477,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_080",
             "EndingKey": "",
             "cg": [],
@@ -9573,7 +10186,7 @@
         },
         {
             "id": 478,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_081",
             "EndingKey": "",
             "cg": [],
@@ -9592,7 +10205,7 @@
         },
         {
             "id": 479,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_082",
             "EndingKey": "",
             "cg": [],
@@ -9611,7 +10224,7 @@
         },
         {
             "id": 480,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_083",
             "EndingKey": "",
             "cg": [],
@@ -9630,7 +10243,7 @@
         },
         {
             "id": 481,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_084",
             "EndingKey": "",
             "cg": [],
@@ -9649,7 +10262,7 @@
         },
         {
             "id": 482,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_085",
             "EndingKey": "",
             "cg": [],
@@ -9668,7 +10281,7 @@
         },
         {
             "id": 483,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_086",
             "EndingKey": "",
             "cg": [],
@@ -9687,7 +10300,7 @@
         },
         {
             "id": 484,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_087",
             "EndingKey": "",
             "cg": [],
@@ -9706,7 +10319,7 @@
         },
         {
             "id": 485,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_088",
             "EndingKey": "",
             "cg": [],
@@ -9725,7 +10338,7 @@
         },
         {
             "id": 486,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_089",
             "EndingKey": "",
             "cg": [],
@@ -9744,7 +10357,7 @@
         },
         {
             "id": 487,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_090",
             "EndingKey": "",
             "cg": [],
@@ -9763,7 +10376,7 @@
         },
         {
             "id": 488,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_091",
             "EndingKey": "",
             "cg": [],
@@ -9782,7 +10395,7 @@
         },
         {
             "id": 489,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_092",
             "EndingKey": "",
             "cg": [],
@@ -9801,7 +10414,7 @@
         },
         {
             "id": 490,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_093",
             "EndingKey": "",
             "cg": [],
@@ -9820,7 +10433,7 @@
         },
         {
             "id": 491,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_094",
             "EndingKey": "",
             "cg": [
@@ -9846,7 +10459,7 @@
         },
         {
             "id": 492,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_095",
             "EndingKey": "",
             "cg": [],
@@ -9865,7 +10478,7 @@
         },
         {
             "id": 493,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_096",
             "EndingKey": "",
             "cg": [],
@@ -9884,7 +10497,7 @@
         },
         {
             "id": 494,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_097",
             "EndingKey": "Ending_retriever",
             "cg": [],
@@ -9903,7 +10516,7 @@
         },
         {
             "id": 495,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_098",
             "EndingKey": "",
             "cg": [],
@@ -9922,7 +10535,7 @@
         },
         {
             "id": 496,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_099",
             "EndingKey": "",
             "cg": [],
@@ -9941,7 +10554,7 @@
         },
         {
             "id": 497,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_100",
             "EndingKey": "",
             "cg": [],
@@ -9960,7 +10573,7 @@
         },
         {
             "id": 498,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_101",
             "EndingKey": "",
             "cg": [],
@@ -9979,7 +10592,7 @@
         },
         {
             "id": 499,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_102",
             "EndingKey": "",
             "cg": [],
@@ -9998,7 +10611,7 @@
         },
         {
             "id": 500,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_103",
             "EndingKey": "",
             "cg": [],
@@ -10017,7 +10630,7 @@
         },
         {
             "id": 501,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_104",
             "EndingKey": "",
             "cg": [
@@ -10043,7 +10656,7 @@
         },
         {
             "id": 502,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_105",
             "EndingKey": "",
             "cg": [],
@@ -10062,7 +10675,7 @@
         },
         {
             "id": 503,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_106",
             "EndingKey": "",
             "cg": [],
@@ -10081,7 +10694,7 @@
         },
         {
             "id": 504,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_107",
             "EndingKey": "",
             "cg": [],
@@ -10100,7 +10713,7 @@
         },
         {
             "id": 505,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_108",
             "EndingKey": "",
             "cg": [],
@@ -10119,7 +10732,7 @@
         },
         {
             "id": 506,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_109",
             "EndingKey": "",
             "cg": [],
@@ -10138,7 +10751,7 @@
         },
         {
             "id": 507,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_110",
             "EndingKey": "",
             "cg": [
@@ -10164,7 +10777,7 @@
         },
         {
             "id": 508,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_111",
             "EndingKey": "",
             "cg": [],
@@ -10183,7 +10796,7 @@
         },
         {
             "id": 509,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_112",
             "EndingKey": "",
             "cg": [
@@ -10209,7 +10822,7 @@
         },
         {
             "id": 510,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_113",
             "EndingKey": "",
             "cg": [],
@@ -10228,7 +10841,7 @@
         },
         {
             "id": 511,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_114",
             "EndingKey": "",
             "cg": [],
@@ -10247,7 +10860,7 @@
         },
         {
             "id": 512,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_115",
             "EndingKey": "Ending_Fox",
             "cg": [],
@@ -10266,7 +10879,7 @@
         },
         {
             "id": 513,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_116",
             "EndingKey": "",
             "cg": [],
@@ -10285,7 +10898,7 @@
         },
         {
             "id": 514,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_117",
             "EndingKey": "",
             "cg": [],
@@ -10304,7 +10917,7 @@
         },
         {
             "id": 515,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_118",
             "EndingKey": "",
             "cg": [],
@@ -10323,7 +10936,7 @@
         },
         {
             "id": 516,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_119",
             "EndingKey": "",
             "cg": [],
@@ -10342,7 +10955,7 @@
         },
         {
             "id": 517,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_120",
             "EndingKey": "",
             "cg": [],
@@ -10361,7 +10974,7 @@
         },
         {
             "id": 518,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_121",
             "EndingKey": "",
             "cg": [],
@@ -10380,7 +10993,7 @@
         },
         {
             "id": 519,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_122",
             "EndingKey": "",
             "cg": [],
@@ -10399,7 +11012,7 @@
         },
         {
             "id": 520,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_123",
             "EndingKey": "",
             "cg": [],
@@ -10418,7 +11031,7 @@
         },
         {
             "id": 521,
-            "speaker": "주인공",
+            "speaker": "CHAR_YOU",
             "textKey": "CH04_124",
             "EndingKey": "",
             "cg": [],
@@ -10437,7 +11050,7 @@
         },
         {
             "id": 522,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_125",
             "EndingKey": "",
             "cg": [],
@@ -10456,7 +11069,7 @@
         },
         {
             "id": 523,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_126",
             "EndingKey": "",
             "cg": [],
@@ -10475,7 +11088,7 @@
         },
         {
             "id": 524,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_127",
             "EndingKey": "",
             "cg": [],
@@ -10494,7 +11107,7 @@
         },
         {
             "id": 525,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_128",
             "EndingKey": "",
             "cg": [],
@@ -10513,7 +11126,7 @@
         },
         {
             "id": 526,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_129",
             "EndingKey": "",
             "cg": [
@@ -10539,7 +11152,7 @@
         },
         {
             "id": 527,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_130",
             "EndingKey": "",
             "cg": [],
@@ -10558,7 +11171,7 @@
         },
         {
             "id": 528,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_131",
             "EndingKey": "",
             "cg": [],
@@ -10577,7 +11190,7 @@
         },
         {
             "id": 529,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_132",
             "EndingKey": "",
             "cg": [],
@@ -10596,7 +11209,7 @@
         },
         {
             "id": 530,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_133",
             "EndingKey": "Ending_Rabbit",
             "cg": [],
@@ -10615,7 +11228,7 @@
         },
         {
             "id": 531,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_134",
             "EndingKey": "",
             "cg": [],
@@ -10634,7 +11247,7 @@
         },
         {
             "id": 532,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_135",
             "EndingKey": "",
             "cg": [],
@@ -10653,7 +11266,7 @@
         },
         {
             "id": 533,
-            "speaker": "리트리버",
+            "speaker": "CHAR_RETRIEVER",
             "textKey": "CH04_136",
             "EndingKey": "",
             "cg": [],
@@ -10672,7 +11285,7 @@
         },
         {
             "id": 534,
-            "speaker": "토끼",
+            "speaker": "CHAR_RABBIT",
             "textKey": "CH04_137",
             "EndingKey": "",
             "cg": [],
@@ -10691,7 +11304,7 @@
         },
         {
             "id": 535,
-            "speaker": "여우",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_138",
             "EndingKey": "",
             "cg": [],
@@ -10710,7 +11323,7 @@
         },
         {
             "id": 536,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_139",
             "EndingKey": "",
             "cg": [
@@ -10736,7 +11349,7 @@
         },
         {
             "id": 537,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_140",
             "EndingKey": "",
             "cg": [],
@@ -10755,7 +11368,7 @@
         },
         {
             "id": 538,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_141",
             "EndingKey": "",
             "cg": [],
@@ -10774,7 +11387,7 @@
         },
         {
             "id": 539,
-            "speaker": "양",
+            "speaker": "CHAR_SHEEP",
             "textKey": "CH04_142",
             "EndingKey": "",
             "cg": [],
@@ -10793,7 +11406,7 @@
         },
         {
             "id": 540,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_143",
             "EndingKey": "",
             "cg": [],
@@ -10812,7 +11425,7 @@
         },
         {
             "id": 541,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_144",
             "EndingKey": "",
             "cg": [],
@@ -10831,7 +11444,7 @@
         },
         {
             "id": 542,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_145",
             "EndingKey": "",
             "cg": [
@@ -10857,7 +11470,7 @@
         },
         {
             "id": 543,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_146",
             "EndingKey": "",
             "cg": [],
@@ -10876,7 +11489,7 @@
         },
         {
             "id": 544,
-            "speaker": "지문",
+            "speaker": "CHAR_DIALOG",
             "textKey": "CH04_147",
             "EndingKey": "Ending_Hidden",
             "cg": [],

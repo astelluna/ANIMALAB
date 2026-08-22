@@ -5,15 +5,15 @@ using UnityEngine;
 [Serializable]
 public class ItemDataClass
 {
-    [field: SerializeField] public string ItemId { get; private set; }
+    [field: SerializeField] public string ItemKey { get; private set; }
     //[field: SerializeField] public string DisplayName { get; private set; }
     [field: SerializeField] public Sprite Icon { get; private set; }
-    [field: SerializeField, TextArea] public string Description { get; private set; }
+    [field: SerializeField, TextArea] public string DescriptionKey { get; private set; }
 
-    public void SetItemData(string id, string msg)
+    public void SetItemData(string id, string msgId)
     {
-        ItemId = id;
-        Description = msg;
+        ItemKey = id;
+        DescriptionKey = msgId;
     }
 }
 [CreateAssetMenu(menuName = "Item/Item Data", fileName = "ItemData")]
@@ -31,12 +31,12 @@ public class ItemDataSO : ScriptableObject
             itemDataclassDict = new Dictionary<string, ItemDataClass>();
             foreach(var item in ItemDataClassList)
             {
-                if(itemDataclassDict.ContainsKey(item.ItemId))
+                if(itemDataclassDict.ContainsKey(item.ItemKey))
                 {
-                    UnityEngine.Debug.LogError($"{item.ItemId}의 아이템이 중복되었습니다 확인해주세요");
+                    UnityEngine.Debug.LogError($"{item.ItemKey}의 아이템이 중복되었습니다 확인해주세요");
                     continue;
                 }
-                itemDataclassDict.Add(item.ItemId, item);
+                itemDataclassDict.Add(item.ItemKey, item);
             }
         }
         //데이터를 반환해주자.

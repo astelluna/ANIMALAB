@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AffinityPanel : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI text;
+
     [SerializeField] Button closeButton;
     [SerializeField] List<AffinityImage> affinityImageList = new List<AffinityImage>();
     public bool IsPanelShow => gameObject.activeInHierarchy;
@@ -36,7 +39,9 @@ public class AffinityPanel : MonoBehaviour
             if (index < affinityImageList.Count)
             {
                 CharacterDataSO characterData = ResourceManager.Instance.GetCharacterData(item.id);
-                Sprite characterSprite = characterData.GetExpressionByAffinity(item.CharacterForm, item.amount);
+                //Sprite characterSprite = characterData.GetExpressionByAffinity(item.CharacterForm, item.amount);
+                Sprite characterSprite = characterData.GetExpression(item.CharacterForm, eExpression.normal);
+
                 affinityImageList[index].SetAffinityImage(characterSprite, item.amount, item.maxAmount);
                 index++;
             }

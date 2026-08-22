@@ -27,7 +27,8 @@ public class RewardCanvas : MonoBehaviour
             if (item.Type == eDialogItemType.Item)
             {
                 Sprite itemSprite = ResourceManager.Instance.GetItemData(item.key).Icon;
-                rewardPanel.AddDataArray(itemSprite, item.key);
+                string itemDesc = ResourceManager.Instance.GetLocalizationText(item.key);
+                rewardPanel.AddDataArray(itemSprite, itemDesc);
             }
         }
         rewardPanel.ShowPanel();

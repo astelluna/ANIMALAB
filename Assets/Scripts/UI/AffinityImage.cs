@@ -10,8 +10,10 @@ public class AffinityImage : MonoBehaviour
 
     public void SetAffinityImage(Sprite sprite, int amount, int max)
     {
+        string text = ResourceManager.Instance.GetLocalizationText(PathManager.affinityTextName);
+
         characterImage.sprite = sprite;
-        affinityText.text = "호감도: " + amount.ToString();
+        affinityText.text = text + ":" + amount.ToString();
         affinityBarImage.fillAmount = (float)amount / max;
     }
 

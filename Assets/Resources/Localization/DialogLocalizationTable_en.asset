@@ -326,6 +326,34 @@ MonoBehaviour:
     m_Localized: 77
     m_Metadata:
       m_Items: []
+  - m_Id: 862505767739392
+    m_Localized: Retriever
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128000
+    m_Localized: Fox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128001
+    m_Localized: Rabbit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128002
+    m_Localized: Sheep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 862505776128003
+    m_Localized: Dialog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864038278340608
+    m_Localized: YOU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 864850291400704
+    m_Localized: ???
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

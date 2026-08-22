@@ -1,16 +1,16 @@
 {
     "itemClassList": [
         {
-            "key": "ITEM_ClothFragment",
-            "explain": "연구복 조각이다"
+            "key": "ITEM_NAME_CLOTHFRAGMENT",
+            "explain": "ITEM_EXPLAIN_CLOTHFRAGMENT"
         },
         {
-            "key": "ITEM_TABLET",
-            "explain": "아직 전원이 들어오는 태블릿이다. 파일 안에는 책임자로 내 이름이 적혀있다"
+            "key": "ITEM_NAME_TABLET",
+            "explain": "ITEM_EXPLAIN_TABLET"
         },
         {
-            "key": "ITEM_AccessCode",
-            "explain": "무언가의 코드로 보이는 문자들이 적힌 종이. 보안 장치에 사용할 수 있을 것 같다"
+            "key": "ITEM_NAME_ACCESSCODE",
+            "explain": "ITEM_EXPLAIN_ACCESSCODE"
         }
     ]
 }

@@ -27,5 +27,6 @@ public static class PathManager
     #endregion
     #region Localization
     public const string dialogTableName = "DialogLocalizationTable";
+    public const string affinityTextName = "TEXT_AFFINITY";
     #endregion
 }

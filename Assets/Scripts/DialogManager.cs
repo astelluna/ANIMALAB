@@ -159,6 +159,10 @@ public class DialogManager : MonoBehaviour
     {
         dialogLogCanvas.OpenPanel();
     }
+    private void ClearDialogLog()
+    {
+        dialogLogCanvas.ClearLog();
+    }
     private void SaveButtonClick()
     {
         CreateSaveData();
@@ -338,9 +342,10 @@ public class DialogManager : MonoBehaviour
             {
                 ShowNodeContent();
             });
-
+            
             //세이브를 시켜주자.
             CreateSaveData(true);
+            ClearDialogLog();
         }
         else
         {
@@ -353,7 +358,7 @@ public class DialogManager : MonoBehaviour
     }
     void ShowNodeContent()
     {
-        characterText.text = curNode.speaker;
+        characterText.text = ResourceManager.Instance.GetLocalizationText(curNode.speaker);
         //버튼 표시
         foreach (var btn in choiceButtons)
         {
@@ -364,7 +369,11 @@ public class DialogManager : MonoBehaviour
         {
             DialogChoice dialogChoice = curNode.choices[i];
             //choiceButtons[i].gameObject.GetComponentInChildren<TMP_Text>().text = dialogChoice.choiceText;
-            choiceButtonTextArray[i].text = dialogChoice.choiceText;
+            //choiceButtonTextArray[i].text = dialogChoice.choiceText;
+
+            //텍스트는 로컬라이제이션에서 불러와야함
+            choiceButtonTextArray[i].text = ResourceManager.Instance.GetLocalizationText(dialogChoice.choiceTextId);
+
             choiceButtons[i].onClick.RemoveAllListeners();
             choiceButtons[i].gameObject.SetActive(true);
             //하기전에 먼저 버튼에 조건이 있어서 비활성화 해야하는지 체크
@@ -426,7 +435,9 @@ public class DialogManager : MonoBehaviour
             }
         }
         //다이얼로그 로그창 띄우기
-        dialogLogCanvas.AddLog(curNode.speaker, curNode.textKey);
+        string speakerText = ResourceManager.Instance.GetLocalizationText(curNode.speaker);
+        string textKeyText = ResourceManager.Instance.GetLocalizationText(curNode.textKey);
+        dialogLogCanvas.AddLog(speakerText, textKeyText);
         //보상이 있다면? 보상 이미지 띄우기
         DialogReward[] dialogRewards = curNode.reward;
         if (dialogRewards.Length > 0)

@@ -59,7 +59,9 @@ public class ItemSlotPanel : MonoBehaviour
 
     public void ItemDataShow(ItemDataClass itemData, int amount)
     {
-        itemSlotText.SetItemSlotText(itemData.ItemId, amount.ToString(), itemData.Description);
+        string itemId = ResourceManager.Instance.GetLocalizationText(itemData.ItemKey);
+        string itemDescription = ResourceManager.Instance.GetLocalizationText(itemData.DescriptionKey);
+        itemSlotText.SetItemSlotText(itemId, amount.ToString(), itemDescription);
     }
 
 

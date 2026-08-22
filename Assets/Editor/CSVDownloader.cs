@@ -60,7 +60,7 @@ public class CSVDownloader : MonoBehaviour
                 }
             }
         }
-        RewardIconSO table = AssetDatabase.LoadAssetAtPath<RewardIconSO>("Assets/RewardIconSO.asset");
+        RewardIconSO table = AssetDatabase.LoadAssetAtPath<RewardIconSO>("Assets/Resources/SOData/RewardIconSO.asset");
         if(table == null)
         {
             Debug.LogError("RewardIconSO가 null입니다. 경로를 확인해주세요");
@@ -103,7 +103,7 @@ public class CSVDownloader : MonoBehaviour
                 }
             }
         }
-        CGDatabaseSO table = AssetDatabase.LoadAssetAtPath<CGDatabaseSO>("Assets/Resources/CG/SO/CGDatabaseSO.asset");
+        CGDatabaseSO table = AssetDatabase.LoadAssetAtPath<CGDatabaseSO>("Assets/Resources/SOData/CGDatabaseSO.asset");
         if (table == null)
         {
             Debug.LogError("BackgroundDatabaseSO가 null입니다. 경로를 확인해주세요");
@@ -146,7 +146,7 @@ public class CSVDownloader : MonoBehaviour
                 allKeyUsed.Add(key);
             }
         }
-        ChapterThumbnailDatabaseSO table = AssetDatabase.LoadAssetAtPath<ChapterThumbnailDatabaseSO>("Assets/Resources/ChapterThumbnail/SO/ChapterThumbnailDatabaseSO.asset");
+        ChapterThumbnailDatabaseSO table = AssetDatabase.LoadAssetAtPath<ChapterThumbnailDatabaseSO>("Assets/Resources/SOData/ChapterThumbnailDatabaseSO.asset");
         if (table == null)
         {
             Debug.LogError("ChapterThumbnailDatabaseSO가 null입니다. 경로를 확인해주세요");
@@ -185,7 +185,7 @@ public class CSVDownloader : MonoBehaviour
                 allKeyUsed.Add(key,data);
             }
         }
-        ItemDataSO table = AssetDatabase.LoadAssetAtPath<ItemDataSO>("Assets/Resources/Item/SO/ItemData.asset");
+        ItemDataSO table = AssetDatabase.LoadAssetAtPath<ItemDataSO>("Assets/Resources/SOData/ItemData.asset");
         if (table == null)
         {
             Debug.LogError("ItemDataSO가 null입니다. 경로를 확인해주세요");
@@ -193,7 +193,7 @@ public class CSVDownloader : MonoBehaviour
         }
         foreach (ItemClassJson item in allKeyUsed.Values)
         {
-            ItemDataClass data = table.ItemDataClassList.Find(e => e.ItemId == item.key);
+            ItemDataClass data = table.ItemDataClassList.Find(e => e.ItemKey == item.key);
             if (data == null)
             {
                 ItemDataClass itemDataClass = new ItemDataClass();
@@ -227,7 +227,7 @@ public class CSVDownloader : MonoBehaviour
             }
             hash.Add(item.EndingKey);
         }
-        EndingDatabaseSO table = AssetDatabase.LoadAssetAtPath<EndingDatabaseSO>("Assets/Resources/Ending/EndingDatabaseSO.asset");
+        EndingDatabaseSO table = AssetDatabase.LoadAssetAtPath<EndingDatabaseSO>("Assets/Resources/SOData/EndingDatabaseSO.asset");
         if (table == null)
         {
             Debug.LogError("EndingDatabaseSO가 null입니다. 경로를 확인해주세요");

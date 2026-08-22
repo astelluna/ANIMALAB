@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ public class DialogLogPanel : MonoBehaviour
     [field: SerializeField] public Transform DialogSpawnPositon { get; private set; }
 
     public bool IsCanvasShow => this.gameObject.activeInHierarchy;
+
+    List<DialogLogUI> dialogList = new List<DialogLogUI>();
 
     private void Awake()
     {
@@ -38,7 +41,15 @@ public class DialogLogPanel : MonoBehaviour
         CharacterDataSO imageData = ResourceManager.Instance.GetCharacterData(speaker);
         Sprite portrait = imageData.Portrait;
         DialogLogUI log = DialogLogSpawner.Instance.GetPrefabByPool();
+        dialogList.Add(log);
         log.SetLogImage(portrait, speaker, text);
         log.transform.SetParent(DialogSpawnPositon, false);
+    }
+    public void ClearLog()
+    {
+        foreach(var item in dialogList)
+        {
+            DialogLogSpawner.Instance.ReturnPrefabToPool(item);
+        }
     }
 }

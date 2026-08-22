@@ -49,7 +49,7 @@ public static class CSVToJsonWindow
             int nodeId = int.Parse(cols[0]);
 
             DialogChoice choice = new DialogChoice();
-            choice.choiceText = cols[2];
+            choice.choiceTextId = cols[2];
             choice.goTo = int.Parse(cols[3]);
             if (!choiceMap.ContainsKey(nodeId))
             {

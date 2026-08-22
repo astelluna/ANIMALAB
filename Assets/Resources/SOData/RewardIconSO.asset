@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8026f389dbd93b74f87de728b5e523e9, type: 3}
+  m_Name: RewardIconSO
+  m_EditorClassIdentifier: 
+  rewardDataList:
+  - type: 2
+    key: "\uB0A1\uC740\uC5F4\uC1E0"
+  - type: 1
+    key: "\uC0AC\uB78C1"
+  - type: 2
+    key: "\uB0A1\uC740\uC5F4\uC1E02"
+  - type: 1
+    key: "\uB9AC\uD2B8\uB9AC\uBC84"
+  - type: 1
+    key: "\uC5EC\uC6B0"
+  - type: 1
+    key: "\uD1A0\uB07C"
+  - type: 1
+    key: "\uC591"
+  - type: 2
+    key: ITEM_ClothFragment
+  - type: 2
+    key: ITEM_TABLET
+  - type: 2
+    key: ITEM_AccessCode
+  - type: 2
+    key: ITEM_NAME_CLOTHFRAGMENT
+  - type: 2
+    key: ITEM_NAME_TABLET
+  - type: 2
+    key: ITEM_NAME_ACCESSCODE
