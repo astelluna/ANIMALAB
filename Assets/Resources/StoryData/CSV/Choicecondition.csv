@@ -1,8 +1,8 @@
 NodeId,ChoiceIndex,Logic,Type,Key,Min,Max,IsInteractable,,,,IsEnabled은 버튼클릭 비활성화 조건 체크. 
-435,0,OR,Item,ITEM_AccessCode,1,30,FALSE,,,,IsEnabled이 No이면 해당 조건에 따라 전부 조건이 맞는지 아닌지 체크를 하게된다
-435,2,AND,Affinity,리트리버,0,40,TRUE,,,,
-435,2,AND,Affinity,여우,0,40,TRUE,,,,
-435,2,AND,Affinity,토끼,0,40,TRUE,,,,
-461,0,AND,Affinity,리트리버,50,100,TRUE,,,,
-461,0,AND,Affinity,여우,50,100,TRUE,,,,
-461,0,AND,Affinity,토끼,50,100,TRUE,,,,
+435,0,OR,Item,ITEM_EXPLAIN_ACCESSCODE,1,30,FALSE,,,,IsEnabled이 No이면 해당 조건에 따라 전부 조건이 맞는지 아닌지 체크를 하게된다
+435,2,AND,Affinity,CHAR_RETRIEVER,0,40,TRUE,,,,
+435,2,AND,Affinity,CHAR_FOX,0,40,TRUE,,,,
+435,2,AND,Affinity,CHAR_RABBIT,0,40,TRUE,,,,
+461,0,AND,Affinity,CHAR_RETRIEVER,50,100,TRUE,,,,
+461,0,AND,Affinity,CHAR_FOX,50,100,TRUE,,,,
+461,0,AND,Affinity,CHAR_RABBIT,50,100,TRUE,,,,

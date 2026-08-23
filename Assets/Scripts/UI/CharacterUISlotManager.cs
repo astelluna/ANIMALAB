@@ -13,6 +13,9 @@ public class CharacterUISlotManager : MonoBehaviour
 
     ImageCharacterEffect imageCharacterEffect;
 
+    float brightAlpha = 1f;
+    float darkAlpha = 0.5f;
+
 
     private void Awake()
     {
@@ -54,7 +57,23 @@ public class CharacterUISlotManager : MonoBehaviour
         c.a = alpha;
         targetImage.color = c;
     }
-    public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, float alpha, int height)
+    public void UpdateAllSpeakerAlpha(string characterId)
+    {
+        //현재 존재하는 모든 캐릭터들을 확인하면서, 존재하면 밝게, 아니면 어둡게 처리해야한다
+        foreach(var item in characterIdToPosDict.Keys)
+        {
+            Image image = characterIdToPosDict[item].Item2.CurImage;
+            if (item == characterId)
+            {
+                SetImageAlpha(image,brightAlpha);
+            }
+            else
+            {
+                SetImageAlpha(image, darkAlpha);
+            }
+        }
+    }
+    public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, int height)
     {
         ImageSlot image = null;
         bool isLeft = false;
@@ -85,7 +104,6 @@ public class CharacterUISlotManager : MonoBehaviour
 
         //반환하기 전에, 만약 Left 계열로 호출되었다면 반전, 아니라면 그대로 돌려주자
         FlipImage(image.CurImage, isLeft);
-        SetImageAlpha(image.CurImage, alpha);
         image.CurImage.sprite = spriteImg;
         characterIdToPosDict.Add(id, (position, image));
 

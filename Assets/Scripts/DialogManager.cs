@@ -8,6 +8,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using static UnityEditor.U2D.ScriptablePacker;
 using static UnityEngine.InputSystem.InputAction;
 
 
@@ -416,12 +417,12 @@ public class DialogManager : MonoBehaviour
                         Sprite curSprite = charData.GetExpression(spriteData.Form, spriteData.Expression);
                         if (curSprite == null) continue;
                         //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
-                        float alpha = 1;
-                        if (spriteData.characterId != curNode.speaker)
-                        {
-                            alpha = 0.5f;
-                        }
-                        characterPosManager.ShowImage(charData.CharacterId, curSprite, spriteData.Position, alpha, charData.BodyHeight);
+                        //float alpha = 1;
+                        //if (spriteData.characterId != curNode.speaker)
+                        //{
+                        //    alpha = 0.5f;
+                        //}
+                        characterPosManager.ShowImage(charData.CharacterId, curSprite, spriteData.Position, charData.BodyHeight);
                         break;
                     case eCommandType.Hide:
                         if (!characterPosManager.HideImage(spriteData.characterId))
@@ -442,6 +443,9 @@ public class DialogManager : MonoBehaviour
                 }
             }
         }
+        //만약 말하고있는 사람의 이미지가 현재 화면에 존재한다면 투명도 조절 하기
+        characterPosManager.UpdateAllSpeakerAlpha(curNode.speaker);
+
         //다이얼로그 로그창 띄우기
         string speakerText = ResourceManager.Instance.GetLocalizationText(curNode.speaker);
         string textKeyText = ResourceManager.Instance.GetLocalizationText(curNode.textKey);

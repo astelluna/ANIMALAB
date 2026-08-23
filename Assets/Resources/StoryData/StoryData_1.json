@@ -228,7 +228,7 @@
                 {
                     "nodeId": 10,
                     "command": "Show",
-                    "characterId": "리트리버",
+                    "characterId": "CHAR_RETRIEVER",
                     "expression": "normal",
                     "position": "Left",
                     "effect": "",
@@ -237,7 +237,7 @@
                 {
                     "nodeId": 10,
                     "command": "Show",
-                    "characterId": "여우",
+                    "characterId": "CHAR_FOX",
                     "expression": "normal",
                     "position": "CenterLeft",
                     "effect": "",
@@ -266,7 +266,7 @@
                 {
                     "nodeId": 11,
                     "command": "Show",
-                    "characterId": "토끼",
+                    "characterId": "CHAR_RABBIT",
                     "expression": "normal",
                     "position": "CenterRight",
                     "effect": "",
@@ -275,7 +275,7 @@
                 {
                     "nodeId": 11,
                     "command": "Show",
-                    "characterId": "양",
+                    "characterId": "CHAR_SHEEP",
                     "expression": "normal",
                     "position": "Right",
                     "effect": "",
@@ -284,7 +284,7 @@
                 {
                     "nodeId": 11,
                     "command": "Effect",
-                    "characterId": "토끼",
+                    "characterId": "CHAR_RABBIT",
                     "expression": "",
                     "position": "",
                     "effect": "Cheer",
@@ -332,7 +332,7 @@
                 {
                     "nodeId": 13,
                     "command": "Effect",
-                    "characterId": "리트리버",
+                    "characterId": "CHAR_RETRIEVER",
                     "expression": "",
                     "position": "",
                     "effect": "Cheer",
@@ -661,22 +661,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 20
                 }
             ],
@@ -758,22 +758,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": -20
                 }
             ],
@@ -916,7 +916,7 @@
                 {
                     "nodeId": 39,
                     "command": "Effect",
-                    "characterId": "토끼",
+                    "characterId": "CHAR_RABBIT",
                     "expression": "",
                     "position": "",
                     "effect": "Question",
@@ -964,7 +964,7 @@
                 {
                     "nodeId": 41,
                     "command": "Effect",
-                    "characterId": "여우",
+                    "characterId": "CHAR_FOX",
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
@@ -1012,7 +1012,7 @@
                 {
                     "nodeId": 43,
                     "command": "Effect",
-                    "characterId": "양",
+                    "characterId": "CHAR_SHEEP",
                     "expression": "",
                     "position": "",
                     "effect": "Question",
@@ -1056,22 +1056,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 20
                 }
             ],
@@ -1214,7 +1214,7 @@
                 {
                     "nodeId": 52,
                     "command": "Effect",
-                    "characterId": "리트리버",
+                    "characterId": "CHAR_RETRIEVER",
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
@@ -1243,7 +1243,7 @@
                 {
                     "nodeId": 53,
                     "command": "Effect",
-                    "characterId": "토끼",
+                    "characterId": "CHAR_RABBIT",
                     "expression": "",
                     "position": "",
                     "effect": "Question",
@@ -1291,7 +1291,7 @@
                 {
                     "nodeId": 55,
                     "command": "Effect",
-                    "characterId": "여우",
+                    "characterId": "CHAR_FOX",
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
@@ -1316,22 +1316,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": -20
                 }
             ],
@@ -1588,7 +1588,7 @@
                 {
                     "nodeId": 68,
                     "command": "Effect",
-                    "characterId": "토끼",
+                    "characterId": "CHAR_RABBIT",
                     "expression": "",
                     "position": "",
                     "effect": "Cheer",
@@ -1613,22 +1613,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 20
                 }
             ],
@@ -1786,22 +1786,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": -20
                 }
             ],
@@ -2020,7 +2020,7 @@
                 {
                     "nodeId": 88,
                     "command": "Effect",
-                    "characterId": "리트리버",
+                    "characterId": "CHAR_RETRIEVER",
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
@@ -2648,7 +2648,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 10
                 }
             ],
@@ -2832,7 +2832,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -10
                 }
             ],
@@ -3524,7 +3524,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 10
                 }
             ],
@@ -3670,7 +3670,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -10
                 }
             ],
@@ -3987,22 +3987,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 20
                 }
             ],
@@ -4103,22 +4103,22 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -20
                 },
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": -20
                 }
             ],
@@ -4778,7 +4778,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": 10
                 }
             ],
@@ -4860,7 +4860,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "리트리버",
+                    "key": "CHAR_RETRIEVER",
                     "amount": -10
                 }
             ],
@@ -5108,7 +5108,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 10
                 }
             ],
@@ -5190,7 +5190,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -10
                 }
             ],
@@ -5476,7 +5476,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": 10
                 }
             ],
@@ -5577,7 +5577,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "여우",
+                    "key": "CHAR_FOX",
                     "amount": -10
                 }
             ],
@@ -5958,7 +5958,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 10
                 }
             ],
@@ -6021,7 +6021,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 10
                 }
             ],
@@ -7240,7 +7240,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "양",
+                    "key": "CHAR_SHEEP",
                     "amount": 10
                 }
             ],
@@ -7647,7 +7647,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": 10
                 }
             ],
@@ -7786,7 +7786,7 @@
             "reward": [
                 {
                     "type": "Affinity",
-                    "key": "토끼",
+                    "key": "CHAR_RABBIT",
                     "amount": -10
                 }
             ],
@@ -9239,7 +9239,7 @@
                         {
                             "logic": "OR",
                             "type": "Item",
-                            "key": "ITEM_AccessCode",
+                            "key": "ITEM_EXPLAIN_ACCESSCODE",
                             "min": 1,
                             "max": 30
                         }
@@ -9266,21 +9266,21 @@
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "리트리버",
+                            "key": "CHAR_RETRIEVER",
                             "min": 0,
                             "max": 40
                         },
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "여우",
+                            "key": "CHAR_FOX",
                             "min": 0,
                             "max": 40
                         },
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "토끼",
+                            "key": "CHAR_RABBIT",
                             "min": 0,
                             "max": 40
                         }
@@ -9813,21 +9813,21 @@
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "리트리버",
+                            "key": "CHAR_RETRIEVER",
                             "min": 50,
                             "max": 100
                         },
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "여우",
+                            "key": "CHAR_FOX",
                             "min": 50,
                             "max": 100
                         },
                         {
                             "logic": "AND",
                             "type": "Affinity",
-                            "key": "토끼",
+                            "key": "CHAR_RABBIT",
                             "min": 50,
                             "max": 100
                         }
