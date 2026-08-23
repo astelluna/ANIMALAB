@@ -39,3 +39,11 @@ MonoBehaviour:
     key: ITEM_NAME_TABLET
   - type: 2
     key: ITEM_NAME_ACCESSCODE
+  - type: 1
+    key: CHAR_RETRIEVER
+  - type: 1
+    key: CHAR_FOX
+  - type: 1
+    key: CHAR_RABBIT
+  - type: 1
+    key: CHAR_SHEEP

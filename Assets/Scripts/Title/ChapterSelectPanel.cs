@@ -1,10 +1,7 @@
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.Experimental.GraphView;
-using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEngine.EventSystems.PointerEventData;
 
 public class ChapterSelectPanel : MonoBehaviour
 {

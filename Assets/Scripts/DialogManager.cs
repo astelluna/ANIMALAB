@@ -8,7 +8,6 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
-using static UnityEditor.U2D.ScriptablePacker;
 using static UnityEngine.InputSystem.InputAction;
 
 
@@ -344,27 +343,28 @@ public class DialogManager : MonoBehaviour
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
         if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
-            curChapterNo = curNode.chapterData.chapterId;
-            //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
-            ChapterData chapterData = curNode.chapterData;
-            chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () =>
-            {
-                ShowNodeContent();
-            });
-
-            //세이브를 시켜주자.
-            CreateSaveData(true);
-            ClearDialogLog();
+            AdsManager.Instance.ShowInterstitial(StartNewChapter);
         }
         else
         {
             ShowNodeContent();
         }
-        
-        
-
-        //이벤트가 있다면 실행시키자
     }
+    void StartNewChapter()
+    {
+        curChapterNo = curNode.chapterData.chapterId;
+        //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
+        ChapterData chapterData = curNode.chapterData;
+        chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () =>
+        {
+            ShowNodeContent();
+        });
+
+        //세이브를 시켜주자.
+        CreateSaveData(true);
+        ClearDialogLog();
+    }
+
     void ShowNodeContent()
     {
         characterText.text = ResourceManager.Instance.GetLocalizationText(curNode.speaker);

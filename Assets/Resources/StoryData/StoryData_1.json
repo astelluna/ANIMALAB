@@ -132,10 +132,10 @@
             "spriteDatas": [],
             "dialogSounds": [],
             "chapterData": {
-                "chapterId": 0,
-                "title": "",
-                "startNodeId": 0,
-                "thumbnailKey": ""
+                "chapterId": 2,
+                "title": "A Moment of Peace",
+                "startNodeId": 5,
+                "thumbnailKey": "thumbnail_Chapter2"
             }
         },
         {
@@ -4312,10 +4312,10 @@
             "spriteDatas": [],
             "dialogSounds": [],
             "chapterData": {
-                "chapterId": 2,
-                "title": "A Moment of Peace",
-                "startNodeId": 197,
-                "thumbnailKey": "thumbnail_Chapter2"
+                "chapterId": 0,
+                "title": "",
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
