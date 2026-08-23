@@ -1,10 +1,6 @@
 using System.Collections.Generic;
 using System;
-using System.Diagnostics;
-using static UnityEditor.Progress;
-using UnityEditor.Overlays;
 using UnityEngine;
-using System.ComponentModel;
 
 
 [Serializable]
@@ -130,55 +126,93 @@ public class SaveData
     public int curChapterId;
     public int nodeId;
 
+    [field: SerializeField] public string curBackgroundKey { get; private set; }
+
     //스킵기능을 위해 읽었던 노드id 기록
     public List<int> readNodeIds;
 
-    public List<AffinityData> saveAffinitieList = new List<AffinityData>();
-    public List<SaveItem> saveItemList = new List<SaveItem>();
+    
+    
 
     //챕터 데이터 (n번째 챕터에서부터 다시하기를 위해서 사용한다)
     public List<ChapterSaveData> ChapterSaveDataList = new List<ChapterSaveData>();
     private Dictionary<int, ChapterSaveData> chapterSaveDataDict = new Dictionary<int, ChapterSaveData>();
     public IReadOnlyDictionary<int, ChapterSaveData> ChapterSaveDataDict => chapterSaveDataDict;
 
-    //호감도 수치(검색용. 직렬화 안함)
+    //호감도 수치
+    public List<AffinityData> saveAffinitieList = new List<AffinityData>();
     [NonSerialized]
     private Dictionary<string, AffinityData> affinityDict = new Dictionary<string, AffinityData>(); 
-    public IReadOnlyDictionary<string, AffinityData> AffinityDict => affinityDict; 
+    public IReadOnlyDictionary<string, AffinityData> AffinityDict => affinityDict;
+    //얻은 아이템 리스트
+    public List<SaveItem> saveItemList = new List<SaveItem>();
     private Dictionary<string, SaveItem> saveItemDict = new Dictionary<string, SaveItem>();
     public IReadOnlyDictionary<string, SaveItem> SaveItemDict => saveItemDict;
 
-    //본 CG목록에 대해 추가해준다
-    //public List<string> readCGList = new List<string>();
-    //HashSet<string> readCGHash;
+    //보상을 받으면 보상을 받은 노드에 대해 중복 받지 않도록 해당 노드 ID 기록한다.
+    public List<int> getRewardNodeList = new List<int>();
+    private HashSet<int> getRewardNodeHash = new HashSet<int>();
 
-    //Dictionary<string, int> flagDict = new Dictionary<string, int>(); //뭔가 특별한 이벤트가 진행해야할때? 아직안쓸듯
-    //private void InitCGHash()
-    //{
-    //    if (readCGHash == null)
-    //    {
-    //        readCGHash = new HashSet<string>();
-    //        foreach (string cgId in readCGList)
-    //        {
-    //            readCGHash.Add(cgId);
-    //        }
-    //    }
-    //}
-    //public void SetReadCGData(string key)
-    //{
-    //    InitCGHash();
-    //
-    //    if (!readCGHash.Contains(key))
-    //    {
-    //        readCGList.Add(key);
-    //        readCGHash.Add(key);
-    //    }
-    //}
-    //public HashSet<string> GetReadCGData()
-    //{
-    //    InitCGHash();
-    //    return readCGHash;
-    //}
+    public void Init()
+    {
+        if (chapterSaveDataDict.Count == 0 && ChapterSaveDataList.Count != 0)
+        {
+            chapterSaveDataDict = new Dictionary<int, ChapterSaveData>();
+            foreach(var item in ChapterSaveDataList)
+            {
+                if(!chapterSaveDataDict.ContainsKey(item.chapterId))
+                {
+                    chapterSaveDataDict.Add(item.chapterId, item);
+                }
+            }
+        }
+        if (affinityDict.Count == 0 && saveAffinitieList.Count != 0)
+        {
+            affinityDict = new Dictionary<string, AffinityData>();
+            foreach (var item in saveAffinitieList)
+            {
+                if (!affinityDict.ContainsKey(item.id))
+                {
+                    affinityDict.Add(item.id, item);
+                }
+            }
+        }
+        if (saveItemDict.Count == 0 && saveItemList.Count != 0)
+        {
+            saveItemDict = new Dictionary<string, SaveItem>();
+            foreach (var item in saveItemList)
+            {
+                if (!saveItemDict.ContainsKey(item.key))
+                {
+                    saveItemDict.Add(item.key, item);
+                }
+            }
+        }
+        if(getRewardNodeHash.Count == 0 && getRewardNodeList.Count != 0)
+        {
+            getRewardNodeHash = new HashSet<int>();
+            foreach (var item in getRewardNodeList)
+            {
+                if (!getRewardNodeHash.Contains(item))
+                {
+                    getRewardNodeHash.Add(item);
+                }
+            }
+        }
+    }
+
+    public bool TryAddRewardNode(int node)
+    {
+        //만약에 이미 노드가 있으면? 추가를 안함.
+        //if(getRewardNodeList.Contains(node))
+        if(getRewardNodeHash.Contains(node))
+        {
+            return false;
+        }
+        getRewardNodeList.Add(node);
+        getRewardNodeHash.Add(node);
+        return true;
+    }
 
     public void ChapterDataSave(ChapterSaveData data)
     {
@@ -197,29 +231,6 @@ public class SaveData
             ChapterSaveDataList.Add(data);
         }
             
-    }
-    public void ChapterDataDelete(ChapterSaveData data)
-    {
-        if (chapterSaveDataDict.ContainsKey(data.chapterId))
-        {
-            chapterSaveDataDict.Remove(data.chapterId);
-            return;
-        }
-        UnityEngine.Debug.LogError($"{data.chapterId}가 없어서 못지움. ");
-    }
-
-    public void SetChpaterData()
-    {
-        chapterSaveDataDict.Clear();
-        foreach (ChapterSaveData item in ChapterSaveDataList)
-        {
-            if (chapterSaveDataDict.ContainsKey(item.chapterId))
-            {
-                UnityEngine.Debug.LogError($"{item.chapterId}가 중복된 키값이 있음. ");
-                continue;
-            }
-            chapterSaveDataDict.Add(item.chapterId, item);
-        }
     }
 
     public void SetAffinityData(CharacterDataSO[] dataSOArray)
@@ -241,19 +252,19 @@ public class SaveData
             saveAffinitieList.Add(data);
         }
     }
-    public void SetAffinityDict()
-    {
-        affinityDict.Clear();
-        foreach(AffinityData item in saveAffinitieList)
-        {
-            if(affinityDict.ContainsKey(item.id))
-            {
-                UnityEngine.Debug.LogError($"{item.id}가 중복된 키값이 있음. ");
-                continue;
-            }
-            affinityDict.Add(item.id, item);
-        }
-    }
+    //public void SetAffinityDict()
+    //{
+    //    affinityDict.Clear();
+    //    foreach(AffinityData item in saveAffinitieList)
+    //    {
+    //        if(affinityDict.ContainsKey(item.id))
+    //        {
+    //            UnityEngine.Debug.LogError($"{item.id}가 중복된 키값이 있음. ");
+    //            continue;
+    //        }
+    //        affinityDict.Add(item.id, item);
+    //    }
+    //}
     public void AddItemData(SaveItem item)
     {
         if (SaveItemDict.ContainsKey(item.key))
@@ -266,6 +277,21 @@ public class SaveData
             saveItemDict.Add(item.key, item);
             saveItemList.Add(item);
         }
+    }
+
+    public void SetCurBackgroundKey(string key)
+    {
+        curBackgroundKey = key;
+    }
+
+    public Sprite GetBackground()
+    {
+        //키값으로 마지막 상태의 백그라운드 아이디를 넣는다.
+        if(string.IsNullOrEmpty(curBackgroundKey))
+        {
+            return null;
+        }
+        return ResourceManager.Instance.GetCGOrBackgroundData(curBackgroundKey).image;
     }
 }
 

@@ -107,7 +107,7 @@ public class ResourceManager : Singleton<ResourceManager>
     {
         return itemDataSO.GetItemData(id);
     }
-    public CGData GetCGData(string id)
+    public CGData GetCGOrBackgroundData(string id)
     {
         return cgDatabaseSO.GetCGData(id);
     }

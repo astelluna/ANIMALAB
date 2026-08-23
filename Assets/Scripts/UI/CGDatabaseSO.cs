@@ -40,6 +40,11 @@ public class CGDatabaseSO : ScriptableObject
     }
     public CGData GetCGData(string key)
     {
+        if (string.IsNullOrEmpty(key))
+        {
+            Debug.LogError("GetCGData: key가 null이거나 비어있습니다");
+            return null;
+        }
         if (backgroundDataDict.Count == 0 && backgroundDatas.Count != 0)
         {
             foreach (var k in backgroundDatas)

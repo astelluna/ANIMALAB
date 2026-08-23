@@ -4,13 +4,10 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
-using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
-using static UnityEditor.U2D.ScriptablePacker;
 using static UnityEngine.InputSystem.InputAction;
 
 
@@ -181,6 +178,13 @@ public class DialogManager : MonoBehaviour
             return;
         }
         readNodeHash = new HashSet<int>(saveData.readNodeIds);
+        //현재 배경 불러오기 (null이라면 처음 게임 시작할때이므로 아닐떄만 넣자)
+        Sprite backgroundSprite = SaveManager.Instance.GetCurBackgroundSprite();
+        if(backgroundSprite != null)
+        {
+            backgroundScript.SetBackgroundImage(SaveManager.Instance.GetCurBackgroundSprite());
+        }
+        
     }
     public void CreateSaveData(bool isChapterEnd = false)
     {
@@ -316,7 +320,7 @@ public class DialogManager : MonoBehaviour
         if (dialogLogCanvas.IsCanvasShow) { return; }
         if (affinityPanel.IsPanelShow) { return; }
         if (itemSlotPanel.IsPanelShow) { return; }
-
+        if (endingPanel.IsPanelShow) { return; }
         StopSkipCor();
         HandleNext();
     }
@@ -328,9 +332,13 @@ public class DialogManager : MonoBehaviour
         readNodeHash.Add(curId);
 
         //만약 엔딩 정보가 있다면? 엔딩 정보를 설정해주자.
-        if(curNode.EndingKey != "")
+        if(!string.IsNullOrEmpty(curNode.EndingKey))
         {
             curEndingData = ResourceManager.Instance.GetEndingData(curNode.EndingKey);
+        }
+        else
+        {
+            curEndingData = null;
         }
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
         if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
@@ -338,11 +346,11 @@ public class DialogManager : MonoBehaviour
             curChapterNo = curNode.chapterData.chapterId;
             //콜백방식으로 패널 보여주기가 끝나면 대화 정보를 뿌려준다.
             ChapterData chapterData = curNode.chapterData;
-            chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () => 
+            chapterShowPanel.SetChapterInfo(chapterData.chapterId, chapterData.title, () =>
             {
                 ShowNodeContent();
             });
-            
+
             //세이브를 시켜주자.
             CreateSaveData(true);
             ClearDialogLog();
@@ -388,7 +396,7 @@ public class DialogManager : MonoBehaviour
             
         }
 
-        //코루틴 다시 실행
+        //텍스트를 느리게 재생시키는 코루틴 다시 실행
         if (printSlowTextCor != null)
         {
             StopCoroutine(printSlowTextCor);
@@ -443,32 +451,32 @@ public class DialogManager : MonoBehaviour
         if (dialogRewards.Length > 0)
         {
             //호감도 외 보상
-            //아이템 이미지를 찾자.
-
-            rewardCanvas.Show(dialogRewards);
-            //호감도 보상
-            foreach (DialogReward rewardData in dialogRewards)
+            //중복 지급을 막기위해 세이브데이터에서 안받았을때만 받도록 처리
+            if (SaveManager.Instance.TryAddReward(curNode.id))
             {
-                if(rewardData.Type == eDialogItemType.Affinity)
+                rewardCanvas.Show(dialogRewards);
+                //호감도 보상
+                foreach (DialogReward rewardData in dialogRewards)
                 {
-                    //호감도
-                    SaveManager.Instance.AddAffinityData(rewardData.key, rewardData.amount);
-                }
-                else
-                {
-                    ItemClassJson itemClass = itemDataJson.GetItemInfo(rewardData.key);
-                    if(itemClass != null)
+                    if (rewardData.Type == eDialogItemType.Affinity)
                     {
-                        SaveItem saveItem = new SaveItem();
-                        saveItem.key = rewardData.key;
-                        saveItem.amount = rewardData.amount;
-                        //saveItem.explain = itemClass.explain;
-                        SaveManager.Instance.AddItemData(saveItem);
+                        //호감도
+                        SaveManager.Instance.AddAffinityData(rewardData.key, rewardData.amount);
+                    }
+                    else
+                    {
+                        ItemClassJson itemClass = itemDataJson.GetItemInfo(rewardData.key);
+                        if (itemClass != null)
+                        {
+                            SaveItem saveItem = new SaveItem();
+                            saveItem.key = rewardData.key;
+                            saveItem.amount = rewardData.amount;
+                            //saveItem.explain = itemClass.explain;
+                            SaveManager.Instance.AddItemData(saveItem);
+                        }
                     }
                 }
             }
-
-
         }
         //소리가 있다면 재생시킨다.
         foreach (DialogSound sound in curNode.dialogSounds)
@@ -484,9 +492,10 @@ public class DialogManager : MonoBehaviour
         {
             foreach(DialogCG cgData in curNode.cg)
             {
-                Sprite sprite = ResourceManager.Instance.GetCGData(cgData.key).image;
+                Sprite sprite = ResourceManager.Instance.GetCGOrBackgroundData(cgData.key).image;
                 backgroundScript.SetBackgroundImage(sprite);
                 //런타임 세이브 데이터에 하나씩 추가를 한다
+                SaveManager.Instance.SetCurBackgroundKey(cgData.key);
                 SaveManager.Instance.UnlockGalleryData(cgData.key, eCgCategory.cg);
                 //SaveManager.Instance.LoadSaveFile().SetReadCGData(cgData.key);
 

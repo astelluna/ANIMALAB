@@ -17,10 +17,11 @@ public class SaveManager : Singleton<SaveManager>
         //다음 원하는 코드 작성
         savePath = Application.persistentDataPath + PathManager.saveFileName;
         endingSavePath = Application.persistentDataPath + PathManager.endingSaveFileName;
-
+    }
+    private void Start()
+    {
         LoadSaveDataToJsonFile();
         LoadGallerySaveDataToJsonFile();
-
     }
     #region saveData전용
     public SaveData CreateNewSaveFile()
@@ -42,21 +43,19 @@ public class SaveManager : Singleton<SaveManager>
     public void CheckAndFixAffinityData(SaveData saveData)
     {
         //Affinity가 save파일에 정보가 있으면 딕셔너리를 채워줌. 없다면 리소스 매니저에서 리스트와 딕셔너리 채운다
-        if(saveData.saveAffinitieList.Count != 0 && saveData.AffinityDict.Count == 0)
-        {
-            saveData.SetAffinityDict();
-        }
-        else if(saveData.AffinityDict.Count == 0)
+        //if(saveData.saveAffinitieList.Count != 0 && saveData.AffinityDict.Count == 0)
+        //{
+        //    saveData.SetAffinityDict();
+        //}
+        saveData.Init();
+        if(saveData.AffinityDict.Count == 0)
         {
             saveData.SetAffinityData(ResourceManager.Instance.CharacterDataSOArray);
         }
-        //item
-        saveData.SetChpaterData();
     }
 
     public void CreateSaveData(SaveData data, bool isChapterEnd = false)
     {
-        //TODO,   호감도 및 아이템은 아직 모르겠다. 
         //챕터가 끝났을때 해당 챕터에 대해서 어떤 정보들을 가지고있었는지 저장
         if(isChapterEnd)
         {
@@ -118,6 +117,18 @@ public class SaveManager : Singleton<SaveManager>
     public List<SaveItem> GetSaveItemList()
     {
         return CurrentSaveData.saveItemList;
+    }
+    public void SetCurBackgroundKey(string key)
+    {
+        CurrentSaveData.SetCurBackgroundKey(key);
+    }
+    public Sprite GetCurBackgroundSprite()
+    {
+        return CurrentSaveData.GetBackground();
+    }
+    public bool TryAddReward(int node)
+    {
+        return CurrentSaveData.TryAddRewardNode(node);
     }
     #endregion
     #region GallerySave전용

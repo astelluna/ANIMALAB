@@ -9,7 +9,7 @@ public class EndingPanel : MonoBehaviour
     [SerializeField] TextMeshProUGUI titleText;
     [SerializeField] TextMeshProUGUI descriptionText;
     [SerializeField] Button exitButton;
-
+    public bool IsPanelShow => gameObject.activeInHierarchy;
     private void Awake()
     {
         exitButton.onClick.AddListener(ExitButtonClick);
