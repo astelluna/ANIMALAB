@@ -109,7 +109,7 @@ public class ChapterSelectPanel : MonoBehaviour
     {
         SaveData data = SaveManager.Instance.LoadSaveFile();
         ChapterData chapter = chapters[currentIndex];
-        chapterTitleText.text = $"챕터 {chapter.chapterId}, {chapter.title}";
+        chapterTitleText.text = $"Chapter {chapter.chapterId}, {chapter.title}";
         curChapterPreview.SetImage(ResourceManager.Instance.GetChapterThumnail(chapter.thumbnailKey).thumbnail);
         bool unlocked = IsChapterUnlocked(chapter.chapterId);
         selectButton.interactable = unlocked;

@@ -327,31 +327,55 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 862505767739392
-    m_Localized: Retriever
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128000
-    m_Localized: Fox
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128001
-    m_Localized: Rabbit
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128002
-    m_Localized: Sheep
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128003
-    m_Localized: Dialog
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 864038278340608
-    m_Localized: YOU
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 864850291400704
-    m_Localized: ???
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383740395520
+    m_Localized: New Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338560
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338561
+    m_Localized: Gallery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338562
+    m_Localized: EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1594374830366720
+    m_Localized: Select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1594374830366721
+    m_Localized: New Chapter
     m_Metadata:
       m_Items: []
   references:

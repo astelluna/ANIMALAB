@@ -2467,6 +2467,34 @@ MonoBehaviour:
     m_Key: CHAR_UNKNOWN
     m_Metadata:
       m_Items: []
+  - m_Id: 1590383740395520
+    m_Key: BUTTON_NEWGAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338560
+    m_Key: BUTTON_CONTINUE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338561
+    m_Key: BUTTON_GALLERY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1590383782338562
+    m_Key: BUTTON_EXIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1594374830366720
+    m_Key: BUTTON_SELECT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1594374830366721
+    m_Key: BUTTON_NEWCHAPTER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1591015842979840
+    m_Key: PANEL_WARNINGTEXT
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
