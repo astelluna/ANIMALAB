@@ -29,4 +29,14 @@ public static class PathManager
     public const string dialogTableName = "DialogLocalizationTable";
     public const string affinityTextName = "TEXT_AFFINITY";
     #endregion
+    #region Volume
+    public const string BGM_PARAM = "BGMVolume";
+    public const string SFX_PARAM = "SFXVolume";
+    public const string AMBIENT_PARAM = "AmbientVolume";
+    public const string UI_PARAM = "UIVolume";
+    public const string BGM_KEY = "Volume_BGM";
+    public const string SFX_KEY = "Volume_SFX";
+    public const string AMBIENT_KEY = "Volume_Ambient";
+    public const string UI_KEY = "Volume_UI";
+    #endregion
 }

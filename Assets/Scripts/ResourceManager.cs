@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Localization;
@@ -30,12 +31,27 @@ public class ResourceManager : Singleton<ResourceManager>
         if (Instance != this) return;
         //다음 원하는 코드 작성
         Init();
-        
+        LocalizationSettings.SelectedLocaleChanged += OnLocaleChanged;
+    }
+    private void OnDestroy()
+    {
+        LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged;
     }
 
     private void Init()
     {
-        for(int i=0; i< CharacterDataSOArray.Length; i++)
+        //로컬라이제이션
+        LocalizationSettings.InitializationOperation.WaitForCompletion();
+        string savedLocale = PlayerPrefs.GetString("SelectedLocale", "ko");
+        var locale = LocalizationSettings.AvailableLocales.GetLocale(savedLocale);
+        if (locale != null)
+        {
+            LocalizationSettings.SelectedLocale = locale;
+        }
+        dialogTable = LocalizationSettings.StringDatabase.GetTableAsync(PathManager.dialogTableName).WaitForCompletion();
+
+        //이후 데이터들 넣기
+        for (int i=0; i< CharacterDataSOArray.Length; i++)
         {
             string id = CharacterDataSOArray[i].CharacterId;
             if (!characterDataDict.ContainsKey(id))
@@ -61,7 +77,10 @@ public class ResourceManager : Singleton<ResourceManager>
                 Debug.LogError($"섬네일 KEY가 중복됩니다. 확인해주세요 {i + 1}번째");
             }
         }
-        //로컬라이제이션
+        
+    }
+    private void OnLocaleChanged(UnityEngine.Localization.Locale newLocale)
+    {
         dialogTable = LocalizationSettings.StringDatabase.GetTableAsync(PathManager.dialogTableName).WaitForCompletion();
     }
     public string GetLocalizationText(string key)

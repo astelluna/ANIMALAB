@@ -2,7 +2,7 @@ using DG.Tweening.Core.Easing;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : Singleton<SoundManager>
 {
     //오디오 소스
     [SerializeField] private AudioSource sfxSource;
@@ -17,23 +17,17 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioMixerGroup ambientGroup;
     //사운드 데이터베이스
     [SerializeField] private SoundDatabase soundDatabase;
-    public static SoundManager Instance { get; private set; }
-
-    private void Awake()
+    //오디오믹서
+    [SerializeField] private AudioMixer audioMixer;
+    protected override void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
+        base.Awake();
+        if (Instance != this) return;
+        //다음 원하는 코드 작성
     }
-
-    private void OnDestroy()
+    private void Start()
     {
-        if (Instance == this)
-            Instance = null;
+        LoadAndApplyAllVolumes();
     }
 
     private AudioMixerGroup GetMixerGroup(SoundCategory category)
@@ -52,6 +46,17 @@ public class SoundManager : MonoBehaviour
                 return null;
         }
     }
+    private AudioSource GetSource(SoundCategory category)
+    {
+        switch (category)
+        {
+            case SoundCategory.SFX: return sfxSource;
+            case SoundCategory.UI: return uiSource;
+            case SoundCategory.BGM: return bgmSource;
+            case SoundCategory.Ambient: return ambientSource;
+            default: return null;
+        }
+    }
     public void Play(eSoundID id)
     {
         SoundData soundData = soundDatabase.Get(id);
@@ -62,29 +67,45 @@ public class SoundManager : MonoBehaviour
             return;
         }
 
-        AudioSource source = null;
-        switch(soundData.category)
-        {
-            case SoundCategory.SFX:
-                source = sfxSource;
-                break;
-            case SoundCategory.UI:
-                source = uiSource;
-                break;
-            case SoundCategory.BGM:
-                source = bgmSource;
-                break;
-            case SoundCategory.Ambient:
-                source = ambientSource;
-                break;
-        }
+        AudioSource source = GetSource(soundData.category);
         source.outputAudioMixerGroup = GetMixerGroup(soundData.category);
-
         source.clip = soundData.clips[Random.Range(0, soundData.clips.Length)];
         source.volume = soundData.volume;
         source.pitch = Random.Range(soundData.pitchRange.x, soundData.pitchRange.y);
         source.loop = soundData.loop;
+        if(soundData.loop)
+        {
+            source.Play();
+        }
+        else
+        {
+            source.PlayOneShot(source.clip);
+        }
+    }
+    //볼륨 설정
+    public void SetBGMVolume(float value) => SetVolume(PathManager.BGM_KEY, PathManager.BGM_PARAM, value);
+    public void SetSFXVolume(float value) => SetVolume(PathManager.SFX_KEY, PathManager.SFX_PARAM, value);
+    public void SetAmbientVolume(float value) => SetVolume(PathManager.AMBIENT_KEY, PathManager.AMBIENT_PARAM, value);
+    public void SetUIVolume(float value) => SetVolume(PathManager.UI_KEY, PathManager.UI_PARAM, value);
 
-        source.PlayOneShot(source.clip);
+    public float GetBGMVolume() => PlayerPrefs.GetFloat(PathManager.BGM_KEY, 1f);
+    public float GetSFXVolume() => PlayerPrefs.GetFloat(PathManager.SFX_KEY, 1f);
+    public float GetAmbientVolume() => PlayerPrefs.GetFloat(PathManager.AMBIENT_KEY, 1f);
+    public float GetUIVolume() => PlayerPrefs.GetFloat(PathManager.UI_KEY, 1f);
+
+    private void SetVolume(string prefKey, string mixerParam, float value)
+    {
+        value = Mathf.Clamp01(value);
+        float dB = value > 0.0001f ? Mathf.Log10(value) * 20f : -80f;
+        audioMixer.SetFloat(mixerParam, dB);
+        PlayerPrefs.SetFloat(prefKey, value);
+    }
+
+    private void LoadAndApplyAllVolumes()
+    {
+        SetVolume(PathManager.BGM_KEY, PathManager.BGM_PARAM, GetBGMVolume());
+        SetVolume(PathManager.SFX_KEY, PathManager.SFX_PARAM, GetSFXVolume());
+        SetVolume(PathManager.AMBIENT_KEY, PathManager.AMBIENT_PARAM, GetAmbientVolume());
+        SetVolume(PathManager.UI_KEY, PathManager.UI_PARAM, GetUIVolume());
     }
 }

@@ -7,9 +7,12 @@ public class MainMenu : MonoBehaviour
     [SerializeField] Button newGameButton;
     [SerializeField] Button continueButton;
     [SerializeField] Button galleryButton;
+    [SerializeField] Button settingButton;
+    [SerializeField] Button exitButton;
     [SerializeField] WarningPanel warningPanel;
     [SerializeField] ChapterSelectPanel chapterSelectPanel;
     [SerializeField] GalleryCgPanel galleryCgPanel;
+    [SerializeField] SettingPanel settingPanel;
 
 
     private void Awake()
@@ -17,12 +20,17 @@ public class MainMenu : MonoBehaviour
         newGameButton.onClick.AddListener(ShowConfirmPanel);
         continueButton.onClick.AddListener(ShowChapterSelectPanel);
         galleryButton.onClick.AddListener(ShowGalleryPanel);
+        settingButton.onClick.AddListener(ShowSettingPanel);
+        exitButton.onClick.AddListener(()=> Application.Quit());
     }
     
     private void OnDestroy()
     {
         newGameButton.onClick.RemoveAllListeners();
         continueButton.onClick.RemoveAllListeners();
+        galleryButton.onClick.RemoveAllListeners(); ;
+        settingButton.onClick.RemoveAllListeners(); ;
+        exitButton.onClick.RemoveAllListeners(); ;
     }
     private void ShowConfirmPanel()
     {
@@ -35,6 +43,10 @@ public class MainMenu : MonoBehaviour
     private void ShowGalleryPanel()
     {
         galleryCgPanel.gameObject.SetActive(true);
+    }
+    private void ShowSettingPanel()
+    {
+        settingPanel.OpenPanel();
     }
     private void CreateNewSaveData()
     {
