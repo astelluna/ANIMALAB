@@ -2491,6 +2491,18 @@ MonoBehaviour:
     m_Key: BUTTON_NEWCHAPTER
     m_Metadata:
       m_Items: []
+  - m_Id: 1603877646835712
+    m_Key: BUTTON_AFFINITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603877655224320
+    m_Key: BUTTON_ITEMSLOT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603877655224321
+    m_Key: BUTTON_SETTING
+    m_Metadata:
+      m_Items: []
   - m_Id: 1591015842979840
     m_Key: PANEL_WARNINGTEXT
     m_Metadata:

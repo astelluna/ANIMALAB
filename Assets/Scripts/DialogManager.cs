@@ -17,11 +17,12 @@ public class DialogManager : MonoBehaviour
     [SerializeField] TMP_Text characterText;
     [SerializeField] TMP_Text dialogText;
     [SerializeField] Button[] choiceButtons;
+    [SerializeField] Button hideButton;
     [SerializeField] Button saveButton;
     [SerializeField] Button skipButton;
     [SerializeField] Button openDialogLogButton;
-    [SerializeField] Button openAffinityButton;
-    [SerializeField] Button openItemSlotButton;
+    [SerializeField] Button menuButton;
+    
 
     private TMP_Text[] choiceButtonTextArray;
 
@@ -57,13 +58,14 @@ public class DialogManager : MonoBehaviour
     WaitForSeconds skipDelay;
     Coroutine skipCoroutine;
 
+    //다이얼로그 캔버스
+    [SerializeField] Canvas dialogCanvas;
+
     //다이럴로그 로그창 전용
     [SerializeField] DialogLogPanel dialogLogCanvas;
 
-    //호감도 창 전용
-    [SerializeField] AffinityPanel affinityPanel;
-    //아이템 창
-    [SerializeField] ItemSlotPanel itemSlotPanel;
+    //메인메뉴 창
+    [SerializeField] MenuPanel menuPanel;
 
     //다국어(로컬라이제이션)
     private string curLocalizedText = ""; // 가져온 실제 텍스트를 저장
@@ -75,9 +77,9 @@ public class DialogManager : MonoBehaviour
 
         saveButton.onClick.AddListener(SaveButtonClick);
         skipButton.onClick.AddListener(SkipButtonClick);
+        menuButton.onClick.AddListener(MenuButtonClick);
+        hideButton.onClick.AddListener(HideButtonClick);
         openDialogLogButton.onClick.AddListener(OpenDialogLogButtonClick);
-        openAffinityButton.onClick.AddListener(OpenAffinityButtonClick);
-        openItemSlotButton.onClick.AddListener(OpenItemSlotButtonClick);
 
 
         choiceButtonTextArray = new TMP_Text[choiceButtons.Length];
@@ -95,18 +97,24 @@ public class DialogManager : MonoBehaviour
         saveButton.onClick.RemoveAllListeners();
         skipButton.onClick.RemoveAllListeners();
         openDialogLogButton.onClick.RemoveAllListeners();
-        openAffinityButton.onClick.RemoveAllListeners();
-        openItemSlotButton.onClick.RemoveAllListeners();
-    }
-    private void OpenItemSlotButtonClick()
-    {
-        itemSlotPanel.ActiveItemSlotCanvas(SaveManager.Instance.GetSaveItemList());
     }
 
     
     private void OnEnable()
     {
         LoadGame();
+    }
+    private void HideButtonClick()
+    {
+        if(dialogCanvas.gameObject.activeInHierarchy)
+        {
+            dialogCanvas.gameObject.SetActive(false);
+        }
+    }
+    
+    private void MenuButtonClick()
+    {
+        menuPanel.OpenPanel();
     }
     private void SkipButtonClick()
     {
@@ -147,10 +155,6 @@ public class DialogManager : MonoBehaviour
             StopCoroutine(skipCoroutine);
             skipCoroutine = null;
         }
-    }
-    private void OpenAffinityButtonClick()
-    {
-        affinityPanel.gameObject.SetActive(true);
     }
     private void OpenDialogLogButtonClick()
     {
@@ -287,7 +291,15 @@ public class DialogManager : MonoBehaviour
         allNodes = JsonDataManager.Instance.GetDialogData();
         itemDataJson = JsonDataManager.Instance.GetItemDataJson();
     }
-
+    private bool IsDialogCanvasDisable()
+    {
+        if (!dialogCanvas.gameObject.activeInHierarchy)
+        {
+            dialogCanvas.gameObject.SetActive(true);
+            return true;
+        }
+        return false;
+    }
     private bool IsPointerOverUI()
     {
         if (EventSystem.current == null) return false;
@@ -313,14 +325,14 @@ public class DialogManager : MonoBehaviour
     void MouseLButtonClick(CallbackContext ctx)
     {
         // 마우스가 UI(버튼 등) 위에 있으면 전역 클릭 무시
+        if (IsDialogCanvasDisable()) { return; }
         if (IsPointerOverUI()) { Debug.Log("버튼위에ㅓㅅ 클릭"); return; }
         if (HasChoices()) { return; }
         if (rewardCanvas.IsRewardPanelShow) { return; }
         if (chapterShowPanel.IsChapterPanelShow) { return; }
         if (dialogLogCanvas.IsCanvasShow) { return; }
-        if (affinityPanel.IsPanelShow) { return; }
-        if (itemSlotPanel.IsPanelShow) { return; }
         if (endingPanel.IsPanelShow) { return; }
+        if (menuPanel.IsPanelShow) { return; }
         StopSkipCor();
         HandleNext();
     }

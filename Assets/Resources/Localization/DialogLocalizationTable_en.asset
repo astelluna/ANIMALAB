@@ -378,6 +378,18 @@ MonoBehaviour:
     m_Localized: New Chapter
     m_Metadata:
       m_Items: []
+  - m_Id: 1603877646835712
+    m_Localized: AFFINITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603877655224320
+    m_Localized: ITEMSLOT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1603877655224321
+    m_Localized: SETTING
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
