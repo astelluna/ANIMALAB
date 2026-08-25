@@ -2435,6 +2435,10 @@ MonoBehaviour:
     m_Key: ITEM_EXPLAIN_ACCESSCODE
     m_Metadata:
       m_Items: []
+  - m_Id: 2146731674771456
+    m_Key: ITEM_EARNED_TEXT
+    m_Metadata:
+      m_Items: []
   - m_Id: 860170895171627
     m_Key: TEXT_AFFINITY
     m_Metadata:

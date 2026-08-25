@@ -42,7 +42,7 @@ public class AffinityPanel : MonoBehaviour
                 //Sprite characterSprite = characterData.GetExpressionByAffinity(item.CharacterForm, item.amount);
                 Sprite characterSprite = characterData.GetExpression(item.CharacterForm, eExpression.normal);
 
-                affinityImageList[index].SetAffinityImage(characterSprite, item.amount, item.maxAmount);
+                affinityImageList[index].SetAffinityImage(characterSprite, item.amount, item.maxAmount,characterData.BodyHeight);
                 index++;
             }
         }

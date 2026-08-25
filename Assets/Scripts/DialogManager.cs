@@ -461,7 +461,7 @@ public class DialogManager : MonoBehaviour
         //다이얼로그 로그창 띄우기
         string speakerText = ResourceManager.Instance.GetLocalizationText(curNode.speaker);
         string textKeyText = ResourceManager.Instance.GetLocalizationText(curNode.textKey);
-        dialogLogCanvas.AddLog(speakerText, textKeyText);
+        dialogLogCanvas.AddLog(curNode.speaker, speakerText, textKeyText);
         //보상이 있다면? 보상 이미지 띄우기
         DialogReward[] dialogRewards = curNode.reward;
         if (dialogRewards.Length > 0)

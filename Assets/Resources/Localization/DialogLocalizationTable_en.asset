@@ -19,339 +19,430 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 147044159660032
-    m_Localized: 1
+    m_Localized: Consciousness surfaced from the darkness. The first thing I felt
+      was pain. My head was throbbing as if it were about to split open. Through
+      a headache so intense it made even breathing difficult, I slowly opened my
+      eyes.
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408768
-    m_Localized: 2
+    m_Localized: A red light filled my field of vision. The emergency light on the
+      ceiling... Its rhythmically blinking red glow illuminated the empty laboratory.
+      The unfamiliar hum of machinery, the pungent smell of disinfectant, and the
+      cold, lifeless floor beneath me.
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408769
-    m_Localized: 3
+    m_Localized: I slowly pushed myself up. I searched my mind, but nothing came
+      to me. However, a single memory remained crystal clear.
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408770
-    m_Localized: 4
+    m_Localized: I was fighting someone. And... the cure ampoule in my hand shattered.
+      In that exact moment, something exploded. Beyond that point, no memories existed.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797376
-    m_Localized: 5
+    m_Localized: Right then, the computer screen flickered to life and a message
+      appeared on it.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797377
-    m_Localized: 6
+    m_Localized: "\"===== Emergency Biohazard System Activated ===== \nFacility containment
+      complete. External communications blocked. Infected: 5 \nVaccine storage location:
+      [Encrypted], Vaccine storage quantity: 2 \nAwaiting facility override code...\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797378
-    m_Localized: 7
+    m_Localized: '...Infected: 5? Infected? Vaccine? What on earth happened?'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797379
-    m_Localized: 8
+    m_Localized: Don't move.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797380
-    m_Localized: 9
+    m_Localized: I slowly turned around. On one side of the lab, four women were
+      staring at me. But... their appearance was different from ordinary humans.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797381
-    m_Localized: 10
+    m_Localized: 'One had dog-like ears sprouting from her head.
+
+      Another had
+      sharp, fox-like eyes and ears.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797382
-    m_Localized: 11
+    m_Localized: 'One''s long, rabbit-like ears were trembling.
+
+      And the last
+      one had sheep-like horns visible on their head.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797383
-    m_Localized: 12
+    m_Localized: Without realizing it, I looked down at my hands. My fingertips tingled.
+      Filled with anxiety, I looked into a nearby broken mirror. And... on top of
+      my head, too... something was growing.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797384
-    m_Localized: 13
+    m_Localized: You... you're awake. Thank goodness. You're a researcher, right?
+      You know what happened here, don't you?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797385
-    m_Localized: 14
+    m_Localized: There is something I definitely remember. That we gathered in this
+      room for an experiment. But when I opened my eyes, the facility was shut down...
+      and our bodies were changed like this. Explain it, researcher.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797386
-    m_Localized: 15
+    m_Localized: '*Sob*... why... why has everyone turned so strange? I''m scared...'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797387
-    m_Localized: 16
+    m_Localized: This... wasn't here before. Why did something like this appear?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797388
-    m_Localized: 17
+    m_Localized: I looked at them. Clearly, I was connected to them. But no matter
+      how hard I tried to remember, nothing came to mind. None of their voices felt
+      unfamiliar.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797389
-    m_Localized: 18
+    m_Localized: Did the virus ampoule shatter while fighting one of them? But I
+      couldn't remember who it was, or why none of them felt unfamiliar. My head
+      was still in confusion.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797396
-    m_Localized: 19
+    m_Localized: Your first response?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797397
-    m_Localized: 20
+    m_Localized: ...I have no memory. My last memory is the moment the cure ampoule
+      shattered. I don't know what happened in this facility either.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797398
-    m_Localized: 21
+    m_Localized: Amnesia? Hmph... convenient excuse. The shattered ampoule is suspicious
+      too. You're a researcher and you don't know?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797399
-    m_Localized: 22
+    m_Localized: Still... I don't think that's a lying expression. There must be
+      a reason why we were left here.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797400
-    m_Localized: 23
+    m_Localized: 'Fox still didn''t drop his suspicious gaze, but Retriever looked
+      at me with a slightly softened expression. Sheep and Rabbit looked back and
+      forth at us with anxious eyes.
+
+      (Affection for all characters +20)'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797401
-    m_Localized: 24
+    m_Localized: ...
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797402
-    m_Localized: 25
+    m_Localized: Do you have no intention to speak? Or do you really not know? Either
+      way, it's hard to trust you.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797403
-    m_Localized: 26
+    m_Localized: ...Can't you tell us? If you're a researcher here... you have a
+      duty to let us know.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797404
-    m_Localized: 27
+    m_Localized: 'At my silence, Fox''s eyes grew sharper, and a look of disappointment
+      crossed Retriever''s face. Rabbit shrank back even more, while Sheep wore an
+      unreadable smile.
+
+      (Affection for all characters -20)'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797405
-    m_Localized: 28
+    m_Localized: I looked back at the computer screen. Emergency system. Survivors.
+      Infected. And vaccine. The pieces of memory were slowly coming together.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797406
-    m_Localized: 29
+    m_Localized: 'This was no simple research facility. It was a facility for treating
+      incurable diseases. But an unexpected side effect was discovered during the
+      treatment process.
+
+      A mutation where the human body changes to manifest
+      animal traits. Beastification. Likely when the cure ampoule shattered... this
+      transformation began.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797407
-    m_Localized: 30
+    m_Localized: Should I explain beastification?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797408
-    m_Localized: 31
+    m_Localized: I revealed the truth I had been keeping hidden.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797409
-    m_Localized: 32
+    m_Localized: Your transformation is very likely a side effect of the cure.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797410
-    m_Localized: 33
+    m_Localized: Side effect...? What do you mean by that?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797411
-    m_Localized: 34
+    m_Localized: Rabbit tilted her head with a confused expression.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797412
-    m_Localized: 35
+    m_Localized: Ha... then you're saying this appearance is the result of a treatment
+      failure?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797413
-    m_Localized: 36
+    m_Localized: But... my physical condition has improved. It's easier to move than
+      before.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797414
-    m_Localized: 37
+    m_Localized: Then... is the disease cured?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797415
-    m_Localized: 38
+    m_Localized: I shook my head.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797416
-    m_Localized: 39
+    m_Localized: 'The treatment may have been successful. However, to reverse this
+      transformation... a different cure is needed.
+
+      (Affection for all characters
+      +20)'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797417
-    m_Localized: 40
+    m_Localized: I said nothing.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797418
-    m_Localized: 41
+    m_Localized: 'In an instant, the four pair of eyes shifted subtly. Suspicion,
+      anxiety, and uncomfortable silence.
+
+      My saying nothing seemed to make
+      them think I was hiding something instead.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797419
-    m_Localized: 42
+    m_Localized: Um... by any chance...
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797420
-    m_Localized: 43
+    m_Localized: Sheep carefully touched the horns growing on her head.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797421
-    m_Localized: 44
+    m_Localized: Couldn't this be... a side effect of the incurable disease cure
+      we received?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797422
-    m_Localized: 45
+    m_Localized: At those words, everyone's gaze froze for a moment.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797423
-    m_Localized: 46
+    m_Localized: Side effect...? That's definitely strange. But... my physical condition
+      has improved unnaturally well.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797424
-    m_Localized: 47
+    m_Localized: Side... effect? What's... that?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797425
-    m_Localized: 48
+    m_Localized: Rabbit tilted her head.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797426
-    m_Localized: 49
+    m_Localized: '...Wait. If that''s true, didn''t you know about it?
+
+      Why
+      we changed like this... why our bodies got better... you must have known.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797427
-    m_Localized: 50
+    m_Localized: 'I couldn''t say anything.
+
+      (Affection for all characters
+      -20)'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797428
-    m_Localized: 51
+    m_Localized: Everyone realized the possibility that beastification was a side
+      effect of the cure due to Sheep's guess.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797429
-    m_Localized: 52
+    m_Localized: "At the same time, however, suspicion was growing toward me\u2014the
+      researcher and the only person who might have known that fact."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797430
-    m_Localized: 53
+    m_Localized: So it means we need to find the cure, right? But is there any?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797431
-    m_Localized: 54
+    m_Localized: It might be displayed on the computer.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797432
-    m_Localized: 55
+    m_Localized: In the direction Retriever pointed, there was a computer. I slowly
+      checked the screen. And... I found numbers.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797433
-    m_Localized: 56
+    m_Localized: '---
+
+      Vaccine Code: VX-01
+
+      Storage Quantity: 2
+
+      Storage
+      Status: Normal
+
+      ---'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797434
-    m_Localized: 57
+    m_Localized: There are only 2 cures. Someone can return to their original form.
+      However... someone will have to live like this for the rest of their life.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797435
-    m_Localized: 58
+    m_Localized: Should I reveal that there are only 2 cures?
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797436
-    m_Localized: 59
+    m_Localized: There are only... two cures.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797437
-    m_Localized: 60
+    m_Localized: Silence fell for a moment.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797438
-    m_Localized: 61
+    m_Localized: I have no intention of living like this. Never.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797439
-    m_Localized: 62
+    m_Localized: Don't be mad... Here! Eating something sweet will make you feel
+      better.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797440
-    m_Localized: 63
+    m_Localized: Rabbit handed Fox a candy, and Fox looked at her with a dumbfounded
+      expression. (Affection for all characters +20)
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797441
-    m_Localized: 64
+    m_Localized: ...There are none.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797442
-    m_Localized: 65
+    m_Localized: Move.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797443
-    m_Localized: 66
+    m_Localized: She pushed me. It was immense strength. It was definitely a body
+      that was weak until just a few days ago.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797444
-    m_Localized: 67
+    m_Localized: What is this...? "Was I this strong?"... I'm sorry.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797445
-    m_Localized: 68
+    m_Localized: Wait. Look here.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797446
-    m_Localized: 69
+    m_Localized: 'It was clearly displayed on the screen: ''Vaccine Storage Quantity:
+      2''.'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797447
-    m_Localized: 70
+    m_Localized: ...So you lied. To take the cure for yourself.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797448
-    m_Localized: 71
+    m_Localized: 'You. Were you planning to save only yourself from the beginning?
+
+      (Affection
+      for all characters -20)'
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797449
-    m_Localized: 72
+    m_Localized: Three of us have to live as animals... This is...
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797450
-    m_Localized: 73
+    m_Localized: Sheep seemed to be thinking about something while speaking.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797451
-    m_Localized: 74
+    m_Localized: Looking at the bright side, it means two people can become human
+      again, right? Looks like we have no choice but to fight each other.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797452
-    m_Localized: 75
+    m_Localized: Wait... I think finding the cure is what's important for now...
+      We don't even know if it actually exists yet.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797453
-    m_Localized: 76
+    m_Localized: At that moment, I knew. The most dangerous thing in this place might
+      not be the virus.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797454
-    m_Localized: 77
+    m_Localized: 'What tore people''s hearts apart... was always despair.
+
+      And
+      in front of us... lay only two cures.'
     m_Metadata:
       m_Items: []
   - m_Id: 862505767739392
-    m_Localized: 
+    m_Localized: Retriever
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128000
-    m_Localized: 
+    m_Localized: Fox
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128001
-    m_Localized: 
+    m_Localized: Rabbit
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128002
-    m_Localized: 
+    m_Localized: Sheep
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128003
-    m_Localized: 
+    m_Localized: Narration
     m_Metadata:
       m_Items: []
   - m_Id: 864038278340608
-    m_Localized: 
+    m_Localized: Me
     m_Metadata:
       m_Items: []
   - m_Id: 864850291400704
-    m_Localized: 
+    m_Localized: ???
     m_Metadata:
       m_Items: []
   - m_Id: 1590383740395520
@@ -388,6 +479,2588 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 1603877655224321
     m_Localized: SETTING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797390
+    m_Localized: Well... seems like we're trapped here, so shall we introduce ourselves?
+      I'm Seojin Yoon. Well... no need to memorize my name, you can just call me
+      Fox.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797391
+    m_Localized: The person who introduced herself as Seojin Yoon touched the ears
+      on his head and introduced herself sheepishly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797392
+    m_Localized: I'm Yena Kang... Um, rather than just a dog... please call me Retriever.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797393
+    m_Localized: I'm Arin Do... Please call me Rabbit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797394
+    m_Localized: I'm the only one with horns... Well, I'm Seoyoon Baek. You can tell
+      I'm a sheep, right? Just call me Sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797395
+    m_Localized: "Yeah, so how about you? What's your name? You look like a researcher\u2014do
+      you know why the lab was shut down?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797455
+    m_Localized: To escape, we needed to find clues to the emergency system override
+      code hidden throughout the facility. But that wasn't the only problem.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797456
+    m_Localized: All of our bodies were slowly changing. It became clearer as time
+      passed. This was no simple change.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797457
+    m_Localized: Ha... my body is... getting stranger and stranger. It keeps itching.
+      It feels like fur is growing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797458
+    m_Localized: Me too... As time passes, I feel like I'm gradually turning into
+      an animal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797459
+    m_Localized: Then... does that mean we could completely turn into animals?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797460
+    m_Localized: No one could answer. Everyone's eyes turned to me. The researcher.
+      The only person who might know this facility. But I shook my head.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797461
+    m_Localized: I don't know. I don't remember anything.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797462
+    m_Localized: Silence fell for a moment at my answer. Expressions of disbelief.
+      Expressions of anxiety. And suspicion. Rabbit touched her changed ears and
+      trembled slightly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797463
+    m_Localized: Time was running out. If beastification continued, there was no
+      telling what changes would happen next. We decided to split up and investigate
+      the 1st floor of the lab first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797464
+    m_Localized: It's huge here. It'll be faster to move individually. Let's find
+      clues first and come back here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797465
+    m_Localized: 'There were various facilities on the 1st floor: research lab, testing
+      room, break room, storage, and archive. Retriever decided to investigate the
+      testing room. Fox headed to the break room.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797466
+    m_Localized: Rabbit, still finding it difficult to move alone, decided to go
+      with Sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797467
+    m_Localized: Rabbit, let's go together.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797468
+    m_Localized: Yes... I think I'll be fine if I'm with you, unnie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797469
+    m_Localized: I investigated the nearby storage room first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797470
+    m_Localized: Inside the storage room were only old equipment and unused items.
+      Broken chairs. Worn-out boxes. Research tools scheduled for disposal. Nothing
+      special.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797471
+    m_Localized: There was still time before everyone was supposed to gather. I had
+      to investigate another place.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797472
+    m_Localized: Where should I visit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797473
+    m_Localized: When I opened the door to the testing room, the interior was in
+      a terrible state. Broken culture vessels. Glass fragments scattered on the
+      floor. And unidentified liquid spilled everywhere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797474
+    m_Localized: Upon spotting me, Retriever stiffened her body slightly.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797475
+    m_Localized: Why... did you come here? Her voice was laced with vigilance, unlike
+      before."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797476
+    m_Localized: It was a natural reaction. We were in a situation where we couldn't
+      trust each other. Especially since I was a researcher here and had even lost
+      my memory. Retriever slowly circled around me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797477
+    m_Localized: Wait... don't move. Something is strange.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797478
+    m_Localized: She grimaced as if holding her nose. As beastification progressed,
+      human senses were changing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797479
+    m_Localized: In her case, with canine traits... her sense of smell would be abnormally
+      developed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797480
+    m_Localized: Here... it smells like blood. And... that same smell is coming from
+      you too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797481
+    m_Localized: I was flustered for a second. Checking my body, there were faint
+      wounds and hardened bloodstains left below my wrist. I couldn't remember when
+      the wound was made.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797482
+    m_Localized: You said you didn't remember, right? But isn't it strange? You were
+      at the site of the accident... and the smell of your blood remains in this
+      lab.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797483
+    m_Localized: She looked around the floor. And she found something beside the
+      broken lab bench. A piece of a torn lab coat. My name tag was attached to it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797484
+    m_Localized: ...This is yours. Why is it here torn apart?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797485
+    m_Localized: Her expression wavered. It was closer to confusion than anger. She
+      wanted to trust me, but the evidence in front of her kept making her suspect
+      me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797486
+    m_Localized: Please tell me honestly. You didn't cause this accident, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797487
+    m_Localized: How to react to Retriever?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797488
+    m_Localized: I don't know. But if I were lying, I wouldn't have tried to explain
+      like this to you. I also want to know what happened.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797489
+    m_Localized: Doesn't seem like you're lying... Then again, even if it were a
+      lie, there's no way to know. (Retriever Affection +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797490
+    m_Localized: Retriever still couldn't completely drop her suspicious gaze, but
+      she seemed to accept my sincerity to some extent. She held the piece of the
+      lab coat and fell into thought for a moment.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797491
+    m_Localized: I unconsciously hid the lab coat fragment behind my back. At that
+      moment, Retriever's ears twitched.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797492
+    m_Localized: ...Why did you hide it? You said you didn't remember until just
+      now. So why are you hiding something that could be evidence?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797493
+    m_Localized: The look in her eyes changed. My behavior was only increasing her
+      vigilance.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797494
+    m_Localized: That's important, isn't it? Hand it over.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797495
+    m_Localized: Retriever approached quickly and took the lab coat fragment from
+      my hand.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797496
+    m_Localized: ...It's just a scrap. I'm sorry. I guess I've become too sensitive.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797497
+    m_Localized: She smelled it and examined it closely, but couldn't find anything
+      special.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797498
+    m_Localized: However, a deeper distrust than before remained in her eyes. (Retriever
+      Affection -10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797499
+    m_Localized: Inside the lab coat she was holding, a faintly written serial number
+      caught my eye. And strangely... the moment I saw those numbers, something flashed
+      in my mind.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797500
+    m_Localized: The exit's... passcode?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797501
+    m_Localized: When I opened the door to the break room, I heard the sound of someone
+      rummaging through things inside. Someone was opening drawers, checking the
+      walls, and looking for something. It was Fox.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797502
+    m_Localized: When she noticed I had entered, she slowly turned her head. Her
+      ears moved first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797503
+    m_Localized: ...It's you. Looking at me, she slowly widened the distance."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797504
+    m_Localized: Why did you come here? To say you accidentally got lost... you're
+      a researcher.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797505
+    m_Localized: Are you looking for something?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797506
+    m_Localized: A way to escape. And the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797507
+    m_Localized: She looked at her arm. Faintly rising fur. A changing body. Beastification
+      that had progressed more clearly than at first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797508
+    m_Localized: It seems we don't have much time. Honestly... I have no intention
+      of living like this for the rest of my life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797509
+    m_Localized: She looked straight at me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797510
+    m_Localized: But strange. You say you have no memory either... so why are you
+      so composed?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797511
+    m_Localized: I couldn't answer. Fox looked at me for a moment and then let out
+      a sigh.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797512
+    m_Localized: Whatever. It's meaningless to fight now anyway. Instead, I'll be
+      watching you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797513
+    m_Localized: At that moment, Fox's ears twitched suddenly. She stopped talking
+      and looked toward the corner of the break room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797514
+    m_Localized: ...Strange. There's definitely something there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797515
+    m_Localized: What did you feel?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797516
+    m_Localized: A sound. It's very quiet, but I keep hearing it. Over there. It's
+      coming from that bag.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797517
+    m_Localized: In the corner of the break room sat an old research bag covered
+      in dust. It looked like an abandoned item on the outside, but as I got closer,
+      a faint alert sound came from inside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797518
+    m_Localized: Feels like someone hid this on purpose.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797519
+    m_Localized: When I opened the bag, inside was an old tablet and several research
+      documents. An encrypted file was displayed on the tablet screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797520
+    m_Localized: '```
+
+      Emergency Shutdown Code
+
+      Emergency System Override
+      Code
+
+      Person in Charge : [OOO]
+
+      ```'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797521
+    m_Localized: And below that, there was my name.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797522
+    m_Localized: ...There's an interesting name here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797523
+    m_Localized: My name?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797524
+    m_Localized: '"Yes. Your name. And the head of this facility."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797525
+    m_Localized: She looked back and forth between the tablet and me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797526
+    m_Localized: Saying you lost your memories. Should I believe it? Or... are you
+      pretending not to know?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797527
+    m_Localized: How to react to the fox?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797528
+    m_Localized: I also... want to know how this happened. But if I get my memory
+      back, I'm going to urgently fix this phenomenon of turning into animals first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797529
+    m_Localized: Because I don't know what kind of problems might occur to my health.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797530
+    m_Localized: I guess... if you knew, you would have sneaked out alone... Fine.
+      I'll believe you for now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797531
+    m_Localized: But if you keep hiding something... I won't just stand by then either.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797532
+    m_Localized: Holding the tablet, the fox left the break room while keeping her
+      guard up against me. (Fox Affinity +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797533
+    m_Localized: I momentarily read her movements and lunged to snatch the tablet.
+      My strength and reaction speed had increased due to beastification, but she,
+      not yet fully transformed, couldn't react.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797534
+    m_Localized: The tablet fell to the floor and the screen shattered.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797535
+    m_Localized: Wait... what are you doing...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797536
+    m_Localized: She fell to the floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797537
+    m_Localized: ...Hah... Now I know for sure. That you're hiding something.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797538
+    m_Localized: She stood up and immediately checked the condition of the broken
+      tablet. Fortunately, the tablet was not completely broken.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797539
+    m_Localized: Holding the shattered tablet, the fox glared at me and left the
+      break room. Her eyes were filled with deep distrust. (Fox Affinity -10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797540
+    m_Localized: Having finished our individual searches, we gathered back at the
+      central laboratory. However, the atmosphere had changed from when we first
+      assembled.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797541
+    m_Localized: At first, we were simply people gathered to survive, but increasingly,
+      we were doubting each other's actions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797542
+    m_Localized: I found this in the lab. It's a piece of a torn lab coat... there
+      was some sort of mark made with a pen on the inside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797543
+    m_Localized: I found this. It's a hidden tablet, and it had files related to
+      the emergency system deactivation code. The problem is that it's encrypted.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797544
+    m_Localized: I searched with the rabbit, but... we didn't find anything special.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797545
+    m_Localized: ...Sisters... can we really turn back into humans?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797546
+    m_Localized: At the rabbit's small voice, everyone fell silent for a moment.
+      No one could be certain. Whether there were definitely two doses of the cure...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797547
+    m_Localized: If they existed, who could use them. And... what would happen if
+      we couldn't use the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797548
+    m_Localized: Everyone's eyes turned to me. The piece of the lab coat. The encrypted
+      tablet file. The two clues were definitely connected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797549
+    m_Localized: But at the same time, these clues also proved that I was involved
+      in this incident.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797550
+    m_Localized: Should I tell them what I know about the clues?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797551
+    m_Localized: I checked the marks on the lab coat piece and the structure of the
+      tablet file. And I explained, forcing myself to recall even the parts I couldn't
+      remember.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797552
+    m_Localized: These numbers... they're the same as my birthday, and this... is
+      it some kind of initial?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797553
+    m_Localized: Recalling the combination of the code from the lab coat piece, I
+      entered several serial numbers, and the file inside the tablet was decrypted.
+      The following text appeared on the screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797554
+    m_Localized: (All Characters Affinity +20)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797555
+    m_Localized: I don't know. I'm just confused right now too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797556
+    m_Localized: Does this make sense? Your name is inside the tablet file?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797557
+    m_Localized: Could it be... that you know but are hiding it?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797558
+    m_Localized: I'm sorry, but... in this situation, we can't let you move around
+      alone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797559
+    m_Localized: If we keep changing like this... do I have to live like this for
+      the rest of my life? (All Characters Affinity -20)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797560
+    m_Localized: Under continuous interrogation, I eventually couldn't hide it any
+      longer. Excluding the parts I couldn't remember, I explained all the information
+      I knew.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797561
+    m_Localized: The tablet's password was unlocked. The following text appeared
+      on the screen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797562
+    m_Localized: '"--------
+
+      Emergency System Deactivation Requirements:
+
+      -
+      Research Director Authentication
+
+      - Final Security Key Verification
+
+      To
+      deactivate the system, please visit:
+
+      - 2nd Floor Research Archives
+
+      --------"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797563
+    m_Localized: Alright... so now we just have to find the last clue.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797564
+    m_Localized: We gathered all the information we could get from the 1st floor.
+      However, the exit remained firmly closed. And there were only two doses of
+      the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797565
+    m_Localized: Someone might not be able to return to being human.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797566
+    m_Localized: We slowly walked up the stairs heading to the 2nd floor. The red
+      emergency lights were still blinking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797567
+    m_Localized: And no one noticed. The changes in my fingertips... were progressing
+      faster than anyone else's.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797568
+    m_Localized: As soon as we reached the 2nd floor, everyone's pace noticeably
+      slowed. With every breath, my chest felt tight, and an unfamiliar instinct
+      writhed somewhere inside my body.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797569
+    m_Localized: ...Wait. Is everyone... okay? It's gotten a little hard to move
+      my body.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797570
+    m_Localized: ...Me too. I have no strength in my fingertips. Could this also
+      be a side effect?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797571
+    m_Localized: ...I'm hungry... Can we... just rest a bit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797572
+    m_Localized: ...There are sickrooms on the 2nd floor. We'd better rest for a
+      moment. We won't be able to hold out like this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797573
+    m_Localized: ...Alright. Let's grab some food first and take a short break.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797574
+    m_Localized: We grabbed the remaining canned food and water from the cafeteria,
+      then headed to our respective sickrooms. A brief rest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797575
+    m_Localized: But no one could rest comfortably. My mind was complicated. I wanted
+      to at least have a conversation with someone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797576
+    m_Localized: Who should I talk to?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797577
+    m_Localized: The door was slightly open. The inside was surprisingly tidy. On
+      the desk next to the bed, there was an old family photo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797578
+    m_Localized: When I turned the photo over, small letters were written on it.
+      '6 months to live'. At that moment, the door opened.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797579
+    m_Localized: ...What are you doing? ...That. Don't touch it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797580
+    m_Localized: The retriever took the photo from my hand, her eyes shaking and
+      wary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797581
+    m_Localized: How to react to the retriever?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797582
+    m_Localized: ...I'm sorry. ...It must have been a precious item.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797583
+    m_Localized: ...I'm sorry. ...It's hard to hold back my emotions these days.
+      ...This photo is of my parents. ...They both... passed away from the same illness
+      as me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797584
+    m_Localized: ...So... ...I came to this facility thinking it was my last hope.
+      ...I survived, but. ...I didn't expect to end up looking like this.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797585
+    m_Localized: The retriever wiped away her tears, took a deep breath, and then
+      put on a smiling face again.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797586
+    m_Localized: ...Still. Isn't it important that we're alive? Having hope is a
+      good thing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797587
+    m_Localized: Rather than despairing day by day... I'm going to live each day
+      joyfully and happily.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797588
+    m_Localized: Because there isn't even enough time to live joyfully.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797589
+    m_Localized: The retriever tried to smile, but her eyes were full of sadness.
+      I quietly patted her shoulder. (Retriever Affinity +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797590
+    m_Localized: ...Let go. ...Let go!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797591
+    m_Localized: When I tried to take the photo, the retriever resisted violently.
+      I ultimately couldn't take the photo and stepped back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797592
+    m_Localized: ...You came all the way to where I'm resting to do this? ...Please
+      leave. ...Right now... I don't want to see anyone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797593
+    m_Localized: The retriever glared at me and slammed the door shut. A low growl
+      could be heard from beyond the door. (Retriever Affinity -10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797594
+    m_Localized: I heard a sobbing sound from beyond the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797595
+    m_Localized: I want to go home...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797596
+    m_Localized: How to react to the rabbit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797597
+    m_Localized: Are you okay? If there's something bothering you, I'd like you to
+      tell me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797598
+    m_Localized: But... my body has fur on it and it's gotten weird...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797599
+    m_Localized: It's not weird. I have fur on me too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797600
+    m_Localized: ...Really? ...You won't laugh?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797601
+    m_Localized: A moment later, the door opened, and the rabbit's body was covered
+      in fur. Her large ears were trembling continuously.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044205797602
+    m_Localized: ...What if... Mom... can't recognize me? Will I... be able to go
+      back?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380288
+    m_Localized: The rabbit looked up at me with anxious eyes. I comforted the rabbit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380289
+    m_Localized: Thank you. I feel a little better. (Rabbit Affinity +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380290
+    m_Localized: I quietly tried to open the door. With a bang, the door shook.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380291
+    m_Localized: Kyaa!! Help me!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380292
+    m_Localized: The rabbit was startled, and her cry echoed through the hallway.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380293
+    m_Localized: .. I moved to another place before anyone came. (Rabbit Affinity
+      -10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380294
+    m_Localized: The fox's room was filled with documents and research materials.
+      A clinical trial consent form lay on the desk.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380295
+    m_Localized: And. A battered old voice recorder. When I pressed the play button,
+      a familiar voice flowed out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380296
+    m_Localized: '"(Recording): "" ...This is not a cure. ...It''s a virus that turns
+      humans into beastmen. ...The research must be stopped immediately. "" "'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380297
+    m_Localized: At that moment. The fox snatched the voice recorder from behind.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380298
+    m_Localized: Was it fun tricking others? Pretending not to know anything.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380299
+    m_Localized: How to react to the fox?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380300
+    m_Localized: ...I don't have my memories, but. ...That voice is definitely mine.
+      ...I will take responsibility.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380301
+    m_Localized: ...Responsibility? ...Is that it? ...If there were side effects.
+      ...You could just fix them. ...Why did you try to destroy everything?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380302
+    m_Localized: Without a cure... whether we turn into animals or not, we'll die
+      anyway. Does it not matter to you because you don't have an incurable disease?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380303
+    m_Localized: She glared at me sharply in excitement, then calmed down and said.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380304
+    m_Localized: Still... thanks for telling me honestly. I suppose... if you tried
+      to discard it when all you had to do was fix the side effects... there must
+      have been some kind of problem, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380305
+    m_Localized: Let's find the cure first. When your memory returns later, you have
+      to tell me why you did that.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380306
+    m_Localized: The fox hugged the voice recorder and left the room. Disbelief still
+      lingered in her eyes, but her desire for the cure seemed stronger. (Fox Affinity
+      +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380307
+    m_Localized: I momentarily snatched the voice recorder and smashed it on the
+      floor. The voice recorder was broken and could no longer be used.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380308
+    m_Localized: ...What are you doing. ...Do you think. ...destroying the evidence
+      makes it like it never happened?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380309
+    m_Localized: She glared at me with furious eyes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380310
+    m_Localized: ...If you do something like this one more time. ...I really won't
+      hold back then.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380311
+    m_Localized: The fox pushed me away and turned her back. The tail on her back
+      wagged violently. Her anger was palpable. (Fox Affinity -10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380312
+    m_Localized: Unlike the other rooms, the sheep's room was neatly organized. A
+      small diary was placed on the bed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380313
+    m_Localized: Opening the diary, sentences written in her delicate handwriting
+      caught my eye.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380314
+    m_Localized: It contained content where her despair about her incurable disease
+      and hope for the protagonist's research intertwined.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380315
+    m_Localized: However, on the last page, there was an unknown symbol and the phrase
+      'A New World' repeated.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380316
+    m_Localized: Just as I put down the diary and was thinking for a moment, the
+      door opened.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380317
+    m_Localized: Oh my? When did you arrive? ...What... were you doing in my room?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380318
+    m_Localized: The sheep hastily hid the diary and waited for my answer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380319
+    m_Localized: How to react to the sheep?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380320
+    m_Localized: I'm curious about the contents of the diary. What does 'A New World'
+      mean?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380321
+    m_Localized: ...You still don't remember? ...That drug... you tried to destroy
+      it, didn't you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380322
+    m_Localized: Suddenly, my most recent memory surfaced... fighting with someone...
+      and dropping the experimental cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380323
+    m_Localized: Is that why the lab was locked down... and we changed like this?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380324
+    m_Localized: Were you the one I was fighting with?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380325
+    m_Localized: ...Why did you try to discard it? ...We were dying. This was our
+      only hope left...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380326
+    m_Localized: ...Side effects... can just be fixed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380327
+    m_Localized: ...Still. ...I actually don't hate it right now... At least animals
+      don't lie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380328
+    m_Localized: For a moment, an eerie feeling emanated from the sheep as she said
+      that.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380329
+    m_Localized: ...Please don't... tell the others. (Sheep Affinity +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380330
+    m_Localized: I left her room. Through the crack in the door, the sheep was watching
+      me. I hurriedly went outside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380331
+    m_Localized: I didn't see anything. I was just resting.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380332
+    m_Localized: ...Hehe. That's a relief. ...I'm just... an ordinary patient, you
+      see. (Sheep Affinity +10)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380333
+    m_Localized: The sheep flashed an innocent smile again. But her eyes still held
+      an unfathomable light.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380334
+    m_Localized: I left her room. Through the crack in the door, the sheep was watching
+      me. Her dual nature confused me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380335
+    m_Localized: The short rest was over. My body had recovered a bit, but the beastification
+      was deepening, and sometimes animal cries mixed in while I was speaking.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380336
+    m_Localized: ...Let's go. ...Now. ...We must find the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380337
+    m_Localized: We climbed the stairs again. The 3rd floor. Hoping to find hope
+      there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380338
+    m_Localized: To escape, we needed clues to open the locked entrance on the 1st
+      floor, the keycard in the basement, and the safe's password. We headed to the
+      3rd floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380339
+    m_Localized: Strangely, the door to the 3rd floor was not locked. But the moment
+      we opened the door, cold air flowed out.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380340
+    m_Localized: While the 1st floor was a somewhat organized research space, the
+      3rd floor looked like a place someone had hastily abandoned.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380341
+    m_Localized: ...This looks like there was an evacuation here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380342
+    m_Localized: It seems they really left in a hurry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380343
+    m_Localized: An emergency message remained on the wall.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380344
+    m_Localized: '"===== Emergency Evacuation Notice =====
+
+      Biohazard occurrence
+      confirmed
+
+      All researchers and treatment subjects are to
+
+      move
+      to the designated safe zone.
+
+      Access to the 3rd floor research area
+      is prohibited
+
+      ========================"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380345
+    m_Localized: Did the rest of the people evacuate?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380346
+    m_Localized: No one could answer. But one thing became clear.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380347
+    m_Localized: If we don't find the cure, we will inevitably be isolated from the
+      outside and trapped here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380348
+    m_Localized: I felt my physical condition worsening. To save time, we decided
+      to scatter and search the 3rd floor individually as well.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380349
+    m_Localized: Will you be okay? A young kid like you searching alone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380350
+    m_Localized: I'm okay. I've gotten a lot stronger.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380351
+    m_Localized: The rabbit picked up a stone nearby and crushed it in her grip.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380352
+    m_Localized: Hmm... you're definitely strong, huh?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380353
+    m_Localized: Then, rabbit, could you search the patient waiting room since it's
+      easy to explore and there shouldn't be dangerous items?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380354
+    m_Localized: Yes. If anything happens, I'll run away. I'm a fast runner too.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380355
+    m_Localized: Then I'll search the security room. Looking at the map, it's close
+      to the patient waiting room, so I can help the rabbit if something happens.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380356
+    m_Localized: Alright. Looking at the map, the retriever and I will have to search
+      from a bit further away. We should also check if anyone else is left around.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380357
+    m_Localized: After everyone scattered and I finished searching the storage room,
+      I confirmed there was still time left. I think I could drop by somewhere nearby...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380358
+    m_Localized: Where should I visit?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380359
+    m_Localized: Upon arriving at the security room, a large monitor was repeatedly
+      playing CCTV footage and... records from the time of the incident.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380360
+    m_Localized: '"[Emergency Record]
+
+      Time of occurrence: ??:??
+
+      Hazardous
+      material leak detected
+
+      Cause: Needs verification
+
+      Response:
+      Facility lockdown"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380361
+    m_Localized: '"[Access Record]
+
+      3rd Floor Research Area
+
+      Accessed
+      by:
+
+      1 Manager-in-Charge
+
+      1 Treatment Subject"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380362
+    m_Localized: The record from the time of the incident documented the process
+      of a virus ampoule breaking on the floor while the sheep and I were conversing,
+      putting the facility into a state of emergency.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380363
+    m_Localized: ...How is it now? Have you started to remember?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380364
+    m_Localized: The sheep, who had approached from behind at some point, asked.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380365
+    m_Localized: I see... I have a memory of conversing with someone when the virus
+      leaked. Was it you?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380366
+    m_Localized: But the important parts still elude me. Like a fog in my head, everything
+      was distant and blurry.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380367
+    m_Localized: Hmm... I guess you don't remember... Is this a side effect too?
+      But I'm sure it'll get better eventually, right?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380368
+    m_Localized: By the way, I have something I want to ask. How do you think it
+      would be... if we keep living as animals like this from now on?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380369
+    m_Localized: The sheep looked at me with intrigued eyes, waiting for an answer.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380370
+    m_Localized: How to reply to the sheep's words?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380371
+    m_Localized: We are human. And... since the others became animals against their
+      will, I have a responsibility to turn everyone back into humans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380372
+    m_Localized: Hmm... is that so?""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380373
+    m_Localized: The sheep approached me with a smile.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380374
+    m_Localized: '"But what if... there is someone who doesn''t want to return to
+      being human? If there''s someone who says they are happier as they are now,
+      what will you do?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380375
+    m_Localized: '"That''s... not allowed. If they refuse treatment to the end, they
+      will be quarantined, if only for the safety of society."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380376
+    m_Localized: '"Quarantine... Hehe, as expected, humans are truly arrogant and
+      selfish."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380377
+    m_Localized: '"In the end, if we don''t conform to the ''normal'' you speak of,
+      you''re saying you''ll lock us up and control us again, right?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380378
+    m_Localized: '"Is that the ''human ethics'' you desperately want to protect?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380379
+    m_Localized: '"I did think that maybe, to some extent, having an animal form
+      might not be so bad."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380380
+    m_Localized: '"It''s definitely a side effect, but the incurable disease was
+      cured, and I can feel my senses and physical capabilities have gotten much
+      better."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380381
+    m_Localized: '"Hmm... is that so?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380382
+    m_Localized: The sheep approached me with a smile.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380383
+    m_Localized: '"That''s right, exactly that! You feel it too, don''t you? Our
+      bodies have become healthy, and wouldn''t it actually be better if everyone
+      turned into animals?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380384
+    m_Localized: "\"Looking for a way to cure it\u2014that's not adaptation, it's
+      'degeneration'. You've already evolved into a presence that is one step superior.\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380385
+    m_Localized: '"What... are you talking about? Are you saying you want to turn
+      other unwilling people into animals too?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380386
+    m_Localized: '"This side effect isn''t a disaster, it''s a ''salvation''. It
+      cured us who were just waiting for the day to die, and can make everyone pure
+      without lies..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380387
+    m_Localized: '"If this side effect is salvation, does that make me, the creator,
+      a savior? That makes no sense."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380388
+    m_Localized: '"Savior...?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380389
+    m_Localized: The sheep showed a surprised expression, stumbled, and then stared
+      blankly at me on her knees as if realizing something.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380390
+    m_Localized: '"Right. Maybe... it might be possible? It could be like that."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380391
+    m_Localized: The sheep sat with a blank expression, then abruptly stood back
+      up as if nothing had happened.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380392
+    m_Localized: '"I''ve searched everywhere here. Shall we go outside now? (Sheep
+      Affinity +10)"""'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380393
+    m_Localized: It was the space where patients stayed before the accident. Personal
+      items of the patients remained beside the beds.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380394
+    m_Localized: Nearby, the rabbit seemed lost in thought while looking at the items.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380395
+    m_Localized: On a nearby sketchbook, several short texts were written along with
+      drawings that looked like they were drawn by a young child.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380396
+    m_Localized: '"Be healthy and come back to school!!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380397
+    m_Localized: '"What are you looking at there?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380398
+    m_Localized: '"I... went to school before coming to the hospital. Playing with
+      friends, celebrating birthdays at home, I was healthy..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380399
+    m_Localized: '"Then one day, I suddenly became short of breath and collapsed.
+      All the doctors shook their heads... Mom and Dad cried every day."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380400
+    m_Localized: '"Then a man said: if I went to this research center, my illness
+      would be completely cured, but I couldn''t leave until I got better..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380401
+    m_Localized: '"So Mom and Dad sent me here with tears in their eyes..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380402
+    m_Localized: '"It really stopped hurting. I stopped growing tall... my ears grew
+      long... even though I really turned into a rabbit..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380403
+    m_Localized: '"..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380404
+    m_Localized: '"I miss Mom and Dad. I miss them so much I feel like I''m going
+      to die... But if I go back like this, will Mom even recognize me?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380405
+    m_Localized: Can I... go back home? The big sisters said the researcher might
+      know.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380406
+    m_Localized: How to reply to the rabbit's words?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380407
+    m_Localized: '"There is a cure, but... there are only 2. One of us will have
+      to live as an animal until a cure can be made again."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380408
+    m_Localized: '"2... Then if I get greedy, other people will have to keep living
+      as animals.."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380409
+    m_Localized: '"I''m sure the big sisters want to return to being humans like
+      me too."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380410
+    m_Localized: The rabbit thought for a moment, then clenched her small fists and
+      looked at me bravely.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380411
+    m_Localized: '"It''s okay. I can wait! When I last contacted Mom and Dad, I promised
+      to stay brave too. (Rabbit Affinity +10)"""'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380412
+    m_Localized: '"Of course, all of us can return to how we were. We''ll be able
+      to get out soon."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380413
+    m_Localized: '"Really...? Can everyone become human and go outside?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380414
+    m_Localized: '"... Of course, we''ll find a way soon and be able to leave. Don''t
+      worry."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380415
+    m_Localized: '"... Lie."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380416
+    m_Localized: The rabbit's eyes turned coldly distant.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380417
+    m_Localized: '"I heard it all from the big sisters. They said that even if we
+      leave, being in animal form might make it dangerous for us..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380418
+    m_Localized: '"Why are you lying? I''m not a kid. Are you... coveting the cure
+      too? (Rabbit Affinity -10)"""'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380419
+    m_Localized: '"I''ll... go first. I''ve looked around here. I want to pack some
+      of the big sisters'' things and hand them over."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380420
+    m_Localized: The rabbit brushed past me and walked out the door of the waiting
+      room.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380421
+    m_Localized: After the search on the 3rd floor was completed, we gathered at
+      the designated meeting spot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380422
+    m_Localized: '"There were no survivors... It seems everyone evacuated."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380423
+    m_Localized: '"There wasn''t much in the waiting room... Ah, there were snacks
+      and the big sisters'' belongings here too."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380424
+    m_Localized: The rabbit took out snacks, a pen, and a brooch from her bag and
+      handed them over.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380425
+    m_Localized: '"In the security room, all the CCTV data was wiped. But I found
+      the security code for the research support room."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380426
+    m_Localized: '"The place we haven''t visited... then there''s only the research
+      support room left."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380427
+    m_Localized: Everyone nodded, heading to the research support room in hopes of
+      finding a clue to escape.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380428
+    m_Localized: In the research support room, records used right up until the accident
+      remained. However, most data was damaged, and only one file could be opened.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380429
+    m_Localized: '"---------------
+
+      Cure Development Progress Status
+
+      Body
+      Transformation Recovery: Impossible (Maintains animal appearance)
+
+      Rationality
+      Recovery: Possible (Preserves human intelligence and self-awareness)
+
+      Special
+      Note: Low probability of additional body transformation occurring.
+
+      Further
+      verification required
+
+      ---------------"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380430
+    m_Localized: '"...This cure isn''t perfect, is it? Besides... body transformation
+      recovery is impossible?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380431
+    m_Localized: '"Did you know about this?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380432
+    m_Localized: I couldn't answer. I had no memory, but I felt as though I already
+      knew this fact.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380433
+    m_Localized: '"Huh...? What''s this blue thing on the floor?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380434
+    m_Localized: The rabbit picked up something from the floor.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380435
+    m_Localized: '"This is... a keycard used in the lab! Maybe because she''s short,
+      she found it in a corner like this."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380436
+    m_Localized: '"I''m not short... In school, I was the tallest."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380437
+    m_Localized: The rabbit stood on her tiptoes to make herself look taller.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380438
+    m_Localized: At that moment, the sheep approached and spoke to me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380439
+    m_Localized: '"This is the last security deactivation code. Actually, I found
+      it in the security room. How about just the two of us taking the cure?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380440
+    m_Localized: Accept the sheep's proposal?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380441
+    m_Localized: I tell her that the two of us cannot monopolize the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380442
+    m_Localized: '"How interesting... Maybe you''re not greedy after all."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380443
+    m_Localized: '"I changed my mind. If you tell other people that I have the code,
+      it''ll be troublesome... Here, I''ll give this to you."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380444
+    m_Localized: (Obtained Last Security Deactivation Code)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380445
+    m_Localized: '"How you use it is up to you. I''ll look forward to it."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380446
+    m_Localized: '"Is that so? That''s a very satisfying answer."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380447
+    m_Localized: The sheep smiled contentedly and tucked the security code into her
+      pocket.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380448
+    m_Localized: '"I''ll keep holding onto this code. Let''s look for a chance and
+      run away just the two of us."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380449
+    m_Localized: '"Alright... then we can go to the basement with this keycard. Let''s
+      go."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380450
+    m_Localized: The people around moved toward the emergency stairs leading to the
+      basement without noticing the conversation with the sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380451
+    m_Localized: Now we reached the basement where the cure was. However, the rare
+      side effects of the cure, the possibility of escape..
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380452
+    m_Localized: Even with several possibilities weighing on my mind, I couldn't
+      stop my steps. The end of the incident would be waiting there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380453
+    m_Localized: And... my changes were progressing rapidly beyond control. As if
+      I myself... was turning into another entity.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380454
+    m_Localized: When we went down to the basement, a massive generator was roaring.
+      Damp, cold air wrapped around my skin, and the smell of metal stung my nose.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380455
+    m_Localized: This was the heart of the facility, and seemed to be the place where
+      all secrets lay asleep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380456
+    m_Localized: '"...Finally. We''ve made it here. My savior."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380457
+    m_Localized: The sheep looked at me with a smile. Her eyes were no longer innocent.
+      There was only conviction and madness filled within them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380458
+    m_Localized: '"Savior? What is that supposed to mean?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380459
+    m_Localized: '"We were all dying from incurable diseases... but we survived thanks
+      to the drug the protagonist created."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380460
+    m_Localized: '"And... it seems your memory hasn''t fully returned yet."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380461
+    m_Localized: '"This facility, I built it."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380462
+    m_Localized: '"The facility?? ...How is that possible? Money, time... it would
+      take more than just a thing or two?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380463
+    m_Localized: '"After my parents passed away in an accident... an inheritance
+      came to me."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380464
+    m_Localized: '"At first, I just wanted to protect the ranch and property my parents
+      left behind well. Creating a facility like this... I had no intention at all."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380465
+    m_Localized: '"But once I was left alone... people around me started showing
+      interest in me one by one."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380466
+    m_Localized: '"At first, I thought everyone was genuinely worried about me. But...
+      before the funeral was even over, they showed their true colors."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380467
+    m_Localized: '"''Who will manage the ranch?''
+
+      ''What do you plan to do
+      with the inheritance?''
+
+      ''I''ll manage it for you.'' Lies like those..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380468
+    m_Localized: '"Everyone looked at me with pity... but in the end, what they wanted
+      was my money and land."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380469
+    m_Localized: '"Watching people swarm around me one by one, I realized. People
+      only lie. No one was interested in ''me'' as a person. They were only looking
+      at what I had..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380470
+    m_Localized: '"Too cruel..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380471
+    m_Localized: '"On top of that, not long after, an incurable disease... it really
+      felt like the whole world was collapsing."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380472
+    m_Localized: '"With the sole desire to live, I built this facility and became
+      the first VIP patient myself."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380473
+    m_Localized: The sheep stared at me and began to speak with an unfathomable expression.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380474
+    m_Localized: '"However... the children at the ranch were different."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380475
+    m_Localized: '"When I cried, the dog stayed by my side in silence, and the rabbit
+      was as happy as if she had the whole world with just a single carrot."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380476
+    m_Localized: '"The fox... had a lot of playfulness so it was hard to approach
+      easily, but just watching her was enjoyable, and the sheep... believed in me
+      and followed me without any conditions."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380477
+    m_Localized: '"There was no greed, nor betrayal there."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380478
+    m_Localized: '"...So you''re going to turn people into animals?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380479
+    m_Localized: '"How is everyone right now? Isn''t it harder to lie than before?
+      Everyone is becoming pure, aren''t they?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380480
+    m_Localized: '"...That''s because of the side effect."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380481
+    m_Localized: '"It''s not a side effect. We are evolving."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380482
+    m_Localized: '"...You''re crazy."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380483
+    m_Localized: '"Maybe so... But I''ve made up my mind. If everyone becomes an
+      animal... no one else will be hurt because of lies."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380484
+    m_Localized: '"Big sister... is weird..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380485
+    m_Localized: '"Hehe... There''s nothing to fear. Soon, you too will gain true
+      freedom. Now, my savior."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380486
+    m_Localized: '"It''s time to make the final choice. Inside that safe are the
+      cure and the emergency system deactivation code, right?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380487
+    m_Localized: '"Together, we will evolve humanity. As you choose, a new world
+      will open up."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380488
+    m_Localized: The sheep pointed to a massive safe. The safe door was firmly locked,
+      and a complex cryptographic device was attached above it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380489
+    m_Localized: I looked at my hands. My beastification had now reached almost the
+      final stage.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380490
+    m_Localized: 'The animal instinct inside me was trying to erode my reason. I
+      had to choose: protect my humanity, or become the creator of a new world?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380491
+    m_Localized: 'Final Choice: Agree to the sheep''s proposal?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380492
+    m_Localized: Under the sheep's sweet temptation, I eventually fell to my knees.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380493
+    m_Localized: '"Right, humans are hideous. It''s better to live as a beast instead."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380494
+    m_Localized: I picked up the vaccine inside the safe. The eyes of my companions
+      had already lost their reason. I dropped the drug on the floor and smashed
+      it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380495
+    m_Localized: At that moment, along with excruciating pain, the last thread of
+      reason snapped. We completely lost human language and crawled on the floor,
+      emitting only beastly roars.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380496
+    m_Localized: The sheep looked down at this scene with a smile.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380497
+    m_Localized: '"Look, how peaceful and pure..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380498
+    m_Localized: '"Don''t worry. In this perfect paradise... I''ll love and take
+      care of you for the rest of my life."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380499
+    m_Localized: The facility doors were permanently locked, and it became a perfect
+      cradle of beasts devoid of human reason.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380500
+    m_Localized: I flatly rejected the sheep's sweet proposal. However, the emergency
+      system deactivation code to open the safe was nowhere to be seen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380501
+    m_Localized: '"Fine, Research Director... Then should I discard this emergency
+      system deactivation code?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380502
+    m_Localized: The sheep slipped away from us before we knew it and ate the paper
+      with the code written on it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380503
+    m_Localized: And with a smile, she swallowed the paper with the code written
+      on it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380504
+    m_Localized: There was no other way left. There was no way to escape either.
+      I had to gamble.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380505
+    m_Localized: With trembling hands, I divided the remaining reagent into four
+      parts and injected it little by little into the veins of myself and my companions.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380506
+    m_Localized: It was an incomplete and severely lacking amount. But amid that
+      hellish pain...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380507
+    m_Localized: Taking a very long time, we barely escaped after deactivating the
+      emergency system without losing 'human reason'.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380508
+    m_Localized: We went down to the dazzling surface, the village of humans we missed.
+      But what greeted us was not salvation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380509
+    m_Localized: People threw stones at us while screaming, and soon police responded
+      with sirens and began arresting us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380510
+    m_Localized: In the chaotic scene, the rabbit and the fox were dragged away somewhere.
+      The retriever and I barely managed to escape into the dark, deep mountains.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380511
+    m_Localized: The sheep was right. The false human society did not accept us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380512
+    m_Localized: I wailed like a beast as I looked at my hands covered in beast fur.
+      We were banished from human society forever and had to live the lives of beasts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380513
+    m_Localized: '"You''re wrong. This isn''t salvation, it''s destruction. It''s
+      nothing more than denying everything we built as humans and running away."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380514
+    m_Localized: '"How foolish... In the end, you''re no different from those ignorant
+      people. Living as a true animal is far better than living as a false human!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380515
+    m_Localized: Unlocking the safe's code, I found the vaccine inside. There were
+      only 2 vaccines. However, as the Research Director, I knew a way to produce
+      additional vaccines.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380516
+    m_Localized: At that moment, the sheep lunged at me in rage, and 1 vaccine shattered.
+      She was restrained by the fox and retriever.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380517
+    m_Localized: '"Now... what are you going to do? There''s only 1 of that important
+      drug left, right? Naturally, it''d be best if you took it before losing your
+      reason, wouldn''t it?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380518
+    m_Localized: '"I will... take this drug and turn everyone back to normal."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380519
+    m_Localized: '"If only there was just one more vaccine, I would have kept watch,
+      what a shame."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380520
+    m_Localized: '"Because you''re a trustworthy person. You''ll definitely turn
+      us back, right?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380521
+    m_Localized: '"I''m not a kid anymore... I''ll be waiting bravely."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380522
+    m_Localized: I injected the vaccine into myself. My mind cleared up and felt
+      like my consciousness was returning...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380523
+    m_Localized: After that, through the USB containing research data, I produced
+      additional incomplete cures.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380524
+    m_Localized: I administered the vaccine to everyone... and lastly, administered
+      the cure to the sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380525
+    m_Localized: '"Sheep, you said what you wished for was to live as a ''true animal''.
+      But a beast that lost its reason is not salvation, but merely destruction.
+      Negotiate with me."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380526
+    m_Localized: '"Support me with your influence and resources. I will produce a
+      beastification drug where people don''t lose their reason, and ultimately develop
+      a real cure that turns beastmen back into complete humans."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380527
+    m_Localized: The sheep looked at me coldly, then accepted my proposal with a
+      twisted smile.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380528
+    m_Localized: '"Fine, Research Director... Let''s see how far you can reach. Instead,
+      you must keep your promise."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380529
+    m_Localized: Under the sheep's support, our research facility conducted research
+      even more secretly, completely blocked off from the outside.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380530
+    m_Localized: With the addition of the sheep's formidable financial power, resources,
+      and everyone's cooperation, the stalled research rapidly began making progress.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380531
+    m_Localized: We haven't yet found a way to completely return transformed bodies
+      back into full human form. We are still living in animal forms.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380532
+    m_Localized: However... we will definitely find a way. Until we reclaim our lost
+      appearance and our stolen lives as humans.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380533
+    m_Localized: With trembling hands, I used the single remaining vaccine on the
+      retriever. As the vaccine was injected, a clear light of reason began returning
+      to her murky eyes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380534
+    m_Localized: '"...Huh? My mind... feels like it''s coming back. But... why? Why
+      give the only drug to me...?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380535
+    m_Localized: '"Because I was the one in charge. It''s my fault for failing to
+      protect everyone. Even if it''s just you... survive and keep your reason."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380536
+    m_Localized: I wrote down an address where an abandoned house and a cave far
+      from the research facility were located and handed it to her.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380537
+    m_Localized: '"In the worst case, if you go here... you''ll be able to resolve
+      food and shelter issues."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380538
+    m_Localized: The eyes of the retriever who regained reason shook violently. The
+      extreme fear she felt while turning into a beast,
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380539
+    m_Localized: and her feelings toward the protagonist who surrendered a drug as
+      precious as life for her began twisting strangely inside her brain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380540
+    m_Localized: To her, who was turning into a beast, this man with no particular
+      close relation willingly handed over a vaccine that was no different from his
+      own life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380541
+    m_Localized: That fact left a strange 'imprint' in her shattered heart.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380542
+    m_Localized: "\"Why...? You could have lived alone, so why to me... Why sacrifice
+      yourself so easily for others? \u2026\""
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380543
+    m_Localized: The retriever muttered softly, then firmly grabbed my wrist with
+      eyes that had deepened further. It was a strong force that couldn't be rejected.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380544
+    m_Localized: '"Ah... I see... A person like you... is too kind and soft, that''s
+      the problem."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380545
+    m_Localized: '"I won''t leave you alone in this painful world. And... I won''t
+      let a good person like you sacrifice yourself for others either."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380546
+    m_Localized: '"Now no one can use you as a test subject. Nor can they exploit
+      you. I know a deep cave that no one knows about... Live there with me, safely
+      forever."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380547
+    m_Localized: Possessing the sophistication of human intelligence regained, combined
+      with an obsession rooted in a dog's blind loyalty. I was dragged by her hand
+      into the darkness where no one could find us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380548
+    m_Localized: She began completely confining and raising me. That was the only
+      'requital' and 'protection' she thought of.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380549
+    m_Localized: The drug cured her cold body, but it could not fix the blind imprint
+      engraved onto the protagonist at the moment of losing reason and her broken
+      mind.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380550
+    m_Localized: I was led by the retriever's hand into the deep cave. She completely
+      confined me. I came to live continuously in this safe prison.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380551
+    m_Localized: With trembling hands, I used the single remaining vaccine on the
+      fox. As the vaccine was injected, a sharp light of reason began returning to
+      his murky eyes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380552
+    m_Localized: '"This is... why are you giving me... the only remaining vaccine?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380553
+    m_Localized: '"As the Research Director, I have the responsibility for making
+      everyone like this... At least you keep your reason and get out of here."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380554
+    m_Localized: However, the emotion was brief; the fox suddenly clutched his head
+      and collapsed onto the floor with a gasp.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380555
+    m_Localized: '"Argh...! My head... feels like my body is breaking apart...!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380556
+    m_Localized: '"Fox-san! Are you okay?! It must be a side effect occurring as
+      reason returns, please hold on a bit!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380557
+    m_Localized: Regaining reason amid extreme pain, the fox's eyes twisted cold
+      and frosty. The pain of the hellish side effect set fire to his distrust.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380558
+    m_Localized: '"Something is strange... My head... still hurts... Is this really
+      a vaccine?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380559
+    m_Localized: '"You... once I leave, you''re planning to secretly escape somewhere
+      else, aren''t you? Or are you acting like nothing''s wrong?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380560
+    m_Localized: '"No! I really did it to help you regain reason...!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380561
+    m_Localized: '"Shut up! While I was tied down because of this pain, you were
+      thinking of getting the real hidden cure and escaping alone, right?! Isn''t
+      that so?!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380562
+    m_Localized: '"I can''t take this because I''m anxious... If I leave you alone
+      and go, I don''t know what you''ll do. I''m going to tie you up before I go."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380563
+    m_Localized: Swept by madness from the pain of the side effect, the fox didn't
+      even listen to my words and forcefully bound me tightly to a pillar, then disappeared
+      toward the exit with staggering steps.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380564
+    m_Localized: ...How much time had passed? Waking up barely after losing consciousness,
+      the low voice of the sheep reached my ears.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380565
+    m_Localized: '"Hehehe... Did you see? How the ''human'' you tried to save at
+      the risk of your life abandoned you?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380566
+    m_Localized: '"In the end, humans lie and betray..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380567
+    m_Localized: '"Don''t worry, Savior-nim. I will take good care of you. Let''s...
+      get along well from now on."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380568
+    m_Localized: With my body beastified and even my reason paralyzed, I was taken
+      in by the sheep. Like that, I remained forever as a collectible item of this
+      bizarre facility.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380569
+    m_Localized: With trembling hands, I used the single remaining vaccine on the
+      rabbit. As the vaccine was injected, a calm light of reason began returning
+      to her anxiously shaking eyes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380570
+    m_Localized: '"...Huh? My head... I couldn''t think of anything at all..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380571
+    m_Localized: '"What a relief... It seems the cure is effective. Now you can keep
+      your reason."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380572
+    m_Localized: However, as soon as her full human intelligence returned, the rabbit's
+      face began to turn pale.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380573
+    m_Localized: Even the cure she desperately wanted failed to return her body's
+      transformation in the end. Looking at the surrounding people who lost their
+      reason and were becoming beasts, she was feeling despair.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380574
+    m_Localized: '"My body... didn''t turn back into a human. The big sisters definitely
+      said it''d be dangerous if I wasn''t human..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380575
+    m_Localized: '"Out there is dangerous... I''m so scared! Leaving here will be
+      dangerous too... They might experiment on me somewhere. They''ll lock me up
+      again!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380576
+    m_Localized: '"Rabbit-san, calm down! It will be difficult, but I will be able
+      to seek help."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380577
+    m_Localized: '"And... if help cannot be found, try going to the location written
+      on this note. As a last resort, you''ll be able to live on a secluded island."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380578
+    m_Localized: The rabbit grabbed the protagonist's clothes as if about to break
+      them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380579
+    m_Localized: '"No! Out there won''t work! I need a person I can trust... Because
+      you''re the person who gave me the only vaccine... I can trust you, right?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380580
+    m_Localized: '"Come with me. Let''s hide, avoiding our world."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380581
+    m_Localized: Regaining reason and intelligence, the rabbit's judgment began focusing
+      solely on 'calculations for hiding perfectly'. She forcefully dragged me and
+      ran like crazy toward the emergency escape route.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380582
+    m_Localized: ...After that, the rabbit dragged me into an abandoned house on
+      a secluded island where no one could find us.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380583
+    m_Localized: She blocked every door and window leading to the outside world in
+      layers, and confined me so that I couldn't go out the door.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380584
+    m_Localized: '"Thank goodness... It''s safe here. No one can come. You and I...
+      will never leave here for the rest of our lives."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380585
+    m_Localized: The vaccine stopped the physical beastification and brought back
+      reason, but it could not fix the massive fear and broken mind that returned
+      alongside intelligence.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380586
+    m_Localized: We came to live together like that in the closed darkness for the
+      rest of our lives, but the deep fear settled inside the rabbit's eyes never
+      vanished forever.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380587
+    m_Localized: Under the sheep's sweet temptation, I eventually fell to my knees.
+      "Right, humans are hideous. It's better to live as a beast instead."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380588
+    m_Localized: '"What? What are you talking about now? You want a world where everyone
+      becomes animals? Are you crazy?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380589
+    m_Localized: '"I felt a sense of incongruity right from the beginning... You''re
+      not in your right mind..."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380590
+    m_Localized: '"U-Uh, big sisters... I''m scared... What on earth is happening...?"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380591
+    m_Localized: '"Talking any further is useless. We''re taking this vaccine! If
+      the three of us divide and administer it, we''ll manage somehow!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380592
+    m_Localized: The personnel excluding me and the sheep packed up the vaccine and
+      hurriedly left.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380593
+    m_Localized: Everyone abandoned me. They left, calling me a traitor. As I fell
+      into despair, the sheep approached and held out her hand.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380594
+    m_Localized: '"Look... I''m the only one who understands you. You''re the only
+      person who can change this world."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380595
+    m_Localized: '"You''re my savior. The only person who can reset this hideous
+      world."'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380596
+    m_Localized: I took that hand. Yes, this virus I created wasn't a failure, but
+      the key to evolution.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380597
+    m_Localized: We captured the companions who had abandoned me and used them as
+      test subjects. Their screams became beautiful data.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380598
+    m_Localized: Several years later. We boarded a large helicopter equipped with
+      a completely refined evolution virus.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380599
+    m_Localized: Below the helicopter window, a dense forest of distant skyscrapers
+      filled with humans living busily like machines came into view. Holding each
+      other's hands tightly, the sheep and I smiled.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380600
+    m_Localized: Fingers moved above the dispersal switch. In just a few minutes,
+      I will become the new creator who flips this primitive world upside down and
+      builds a cradle of beasts.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421147475968
+    m_Localized: Bad Ending 1. Paradise of Beasts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419008
+    m_Localized: Bad Ending 2. Outcasts of a False Society
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419009
+    m_Localized: True Ending. Reborn Human
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419010
+    m_Localized: Normal Ending. Blind Confinement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419011
+    m_Localized: Normal Ending. End of Suspicion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419012
+    m_Localized: Normal Ending. Perfect Hideout
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419013
+    m_Localized: Hidden Ending. New Creator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419014
+    m_Localized: Chose a peaceful paradise. However, at the cost of losing everything
+      as a human.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419015
+    m_Localized: Kept our humanity, but humans did not view us as human. In the end,
+      we became beings who belonged nowhere.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419016
+    m_Localized: Having regained everyone's reason, we chose to cooperate with the
+      sheep. Though we haven't returned to human form yet, someday we will turn everything
+      back.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419017
+    m_Localized: Gave up freedom to save her. In the safe prison created by the retriever,
+      I came to be protected forever.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419018
+    m_Localized: Surrendered the last vaccine to help the fox regain reason. However,
+      her distrust abandoned me, and I was left forever with the sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419019
+    m_Localized: Regaining reason, the rabbit feared the outside world. To hide together
+      with me, the only one she could trust, she severed all connections with the
+      world.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 458421189419020
+    m_Localized: Abandoned by my companions, I chose a new world together with the
+      sheep.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170857422848
+    m_Localized: Frankly reveal amnesia and request an explanation of the situation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171584
+    m_Localized: Remain silent and grasp the situation.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171585
+    m_Localized: Explain to everyone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171586
+    m_Localized: Do not explain.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171587
+    m_Localized: Tell the truth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171588
+    m_Localized: Lie that there is no cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171589
+    m_Localized: Search Laboratory - Retriever
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171590
+    m_Localized: Search Break Room - Fox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171591
+    m_Localized: Frankly state that you do not remember.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171592
+    m_Localized: Try to hide the piece of lab coat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171593
+    m_Localized: It might be true that I created it, but I have no memory.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171594
+    m_Localized: Try to snatch the fox's tablet.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171595
+    m_Localized: Tell what you know.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171596
+    m_Localized: Say you do not know.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171597
+    m_Localized: Search Retriever's Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171598
+    m_Localized: Search Rabbit's Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171599
+    m_Localized: Search Fox's Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171600
+    m_Localized: Search Sheep's Room
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171601
+    m_Localized: Apologize and comfort.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171602
+    m_Localized: Try to snatch the photo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171603
+    m_Localized: Speak gently.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171604
+    m_Localized: Open the door to check the condition.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171605
+    m_Localized: Acknowledge it as your own voice and agonize.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171606
+    m_Localized: Try to break the voice recorder.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171607
+    m_Localized: Ask about the diary.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171608
+    m_Localized: Pretend not to have seen anything.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171609
+    m_Localized: Search Security Management Room - Sheep
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171610
+    m_Localized: Search Patient Waiting Room - Rabbit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171611
+    m_Localized: Say you want to return to being human.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171612
+    m_Localized: An animal form is also good.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171613
+    m_Localized: Tell the truth.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171614
+    m_Localized: Lie.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171615
+    m_Localized: Say that the two of us cannot monopolize the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171616
+    m_Localized: Accept the sheep's proposal to monopolize the cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171617
+    m_Localized: Reject the sheep's proposal.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171618
+    m_Localized: Give up on becoming human.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171619
+    m_Localized: The sheep is right. Everyone should become animals.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171620
+    m_Localized: Take it yourself and promise to develop a cure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171621
+    m_Localized: Give it to the retriever.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171622
+    m_Localized: Give it to the fox.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171623
+    m_Localized: Give it to the rabbit.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193938079744
+    m_Localized: Piece of Lab Coat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022784
+    m_Localized: Tablet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022785
+    m_Localized: Access Code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022786
+    m_Localized: It is a piece of a lab coat.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022787
+    m_Localized: A tablet that still powers on. Inside the file, my name is written
+      as the person in charge.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1102193980022788
+    m_Localized: Paper with characters that look like some kind of code written on
+      it. It seems usable for security devices.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 860170895171627
+    m_Localized: Affinity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1591015842979840
+    m_Localized: 'The progress information of the current chapter will be lost,
+
+      and
+      you will proceed from the currently selected chapter.
+
+      Do you wish to
+      continue?'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2146731674771456
+    m_Localized: 'ITEM EARNED !! '
     m_Metadata:
       m_Items: []
   references:

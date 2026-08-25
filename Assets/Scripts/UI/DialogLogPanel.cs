@@ -36,9 +36,9 @@ public class DialogLogPanel : MonoBehaviour
         Canvas.ForceUpdateCanvases();
     }
 
-    public void AddLog(string speaker , string text)
+    public void AddLog(string spekerId, string speaker , string text)
     {
-        CharacterDataSO imageData = ResourceManager.Instance.GetCharacterData(speaker);
+        CharacterDataSO imageData = ResourceManager.Instance.GetCharacterData(spekerId);
         Sprite portrait = imageData.Portrait;
         DialogLogUI log = DialogLogSpawner.Instance.GetPrefabByPool();
         dialogList.Add(log);

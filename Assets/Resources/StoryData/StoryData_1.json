@@ -2113,7 +2113,7 @@
         },
         {
             "id": 93,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_010",
             "EndingKey": "",
             "cg": [],
@@ -4320,7 +4320,7 @@
         },
         {
             "id": 198,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH02_115",
             "EndingKey": "",
             "cg": [],
@@ -6211,7 +6211,7 @@
         },
         {
             "id": 285,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_004",
             "EndingKey": "",
             "cg": [],
@@ -6363,7 +6363,7 @@
         },
         {
             "id": 293,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_012",
             "EndingKey": "",
             "cg": [],
@@ -6496,7 +6496,7 @@
         },
         {
             "id": 300,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH03_019",
             "EndingKey": "",
             "cg": [],
@@ -9894,7 +9894,7 @@
         },
         {
             "id": 463,
-            "speaker": "사막CHAR_FOX",
+            "speaker": "CHAR_FOX",
             "textKey": "CH04_066",
             "EndingKey": "",
             "cg": [],
