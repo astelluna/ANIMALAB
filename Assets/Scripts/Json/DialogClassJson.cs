@@ -12,7 +12,7 @@ public enum eDialogItemType
 public enum eExpression
 {
     //기본, 행복, 분노, 슬픔, 놀람, 두려움, 혐오
-    none, normal , happy, angry, sad, surprize, fear, aversion, care
+    none, normal , happy, angry, sad, surprise, fear, aversion, care
 }
 public enum eCommandType
 {

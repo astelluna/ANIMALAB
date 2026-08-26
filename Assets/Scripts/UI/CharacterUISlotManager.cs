@@ -105,8 +105,15 @@ public class CharacterUISlotManager : MonoBehaviour
         //반환하기 전에, 만약 Left 계열로 호출되었다면 반전, 아니라면 그대로 돌려주자
         FlipImage(image.CurImage, isLeft);
         image.CurImage.sprite = spriteImg;
-        characterIdToPosDict.Add(id, (position, image));
 
+        if(characterIdToPosDict.ContainsKey(id))
+        {
+            characterIdToPosDict[id] = (position, image);
+        }
+        else
+        {
+            characterIdToPosDict.Add(id, (position, image));
+        }
         return true;
     }
     public void ShowEffect(string id, eSpriteEffect spriteEffect)

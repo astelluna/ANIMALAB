@@ -132,10 +132,10 @@
             "spriteDatas": [],
             "dialogSounds": [],
             "chapterData": {
-                "chapterId": 2,
-                "title": "A Moment of Peace",
-                "startNodeId": 5,
-                "thumbnailKey": "thumbnail_Chapter2"
+                "chapterId": 0,
+                "title": "",
+                "startNodeId": 0,
+                "thumbnailKey": ""
             }
         },
         {
@@ -331,6 +331,15 @@
             "spriteDatas": [
                 {
                     "nodeId": 13,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 13,
                     "command": "Effect",
                     "characterId": "CHAR_RETRIEVER",
                     "expression": "",
@@ -357,7 +366,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 14,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -376,7 +395,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 15,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "sad",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -452,7 +481,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 19,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -471,7 +510,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 20,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -623,7 +672,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 27,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -642,7 +701,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 28,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "angry",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -720,7 +789,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 31,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -739,7 +818,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 32,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -893,7 +982,44 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 38,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 38,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 38,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 38,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -920,7 +1046,7 @@
                     "expression": "",
                     "position": "",
                     "effect": "Question",
-                    "form": ""
+                    "form": "Beast1"
                 }
             ],
             "dialogSounds": [],
@@ -1009,6 +1135,15 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [
+                {
+                    "nodeId": 43,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                },
                 {
                     "nodeId": 43,
                     "command": "Effect",
@@ -1115,7 +1250,44 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 47,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 47,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 47,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 47,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1191,7 +1363,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 51,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "angry",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 51,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1218,7 +1409,7 @@
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
-                    "form": ""
+                    "form": "Beast1"
                 }
             ],
             "dialogSounds": [],
@@ -1247,7 +1438,7 @@
                     "expression": "",
                     "position": "",
                     "effect": "Question",
-                    "form": ""
+                    "form": "Beast1"
                 }
             ],
             "dialogSounds": [],
@@ -1394,7 +1585,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 59,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 59,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1413,7 +1623,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 60,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1527,7 +1747,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 65,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 65,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1587,12 +1826,21 @@
             "spriteDatas": [
                 {
                     "nodeId": 68,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 68,
                     "command": "Effect",
                     "characterId": "CHAR_RABBIT",
                     "expression": "",
                     "position": "",
                     "effect": "Cheer",
-                    "form": ""
+                    "form": "Beast1"
                 }
             ],
             "dialogSounds": [],
@@ -1634,7 +1882,26 @@
             ],
             "nextnodeId": 78,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 69,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "happy",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 69,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1653,7 +1920,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 70,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1672,7 +1949,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 71,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1729,7 +2016,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 74,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "fear",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1767,7 +2064,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 76,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1807,7 +2114,17 @@
             ],
             "nextnodeId": 78,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 77,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "fear",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1826,7 +2143,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 78,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 78,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1864,7 +2200,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 80,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1883,7 +2229,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 81,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1902,7 +2258,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 82,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1978,7 +2344,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 86,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "sad",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -1997,7 +2373,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 87,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2019,12 +2405,21 @@
             "spriteDatas": [
                 {
                     "nodeId": 88,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "fear",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 88,
                     "command": "Effect",
                     "characterId": "CHAR_RETRIEVER",
                     "expression": "",
                     "position": "",
                     "effect": "Exclamation",
-                    "form": ""
+                    "form": "Beast1"
                 }
             ],
             "dialogSounds": [],
@@ -2045,7 +2440,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 89,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2140,7 +2545,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 94,
+                    "command": "Hide",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 94,
+                    "command": "Hide",
+                    "characterId": "CHAR_FOX",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2178,7 +2602,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 96,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2197,7 +2631,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 97,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "happy",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2216,7 +2660,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 98,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2356,7 +2810,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 104,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2394,7 +2858,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 106,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2527,7 +3001,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 113,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2622,7 +3106,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 117,
+                    "command": "Hide",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2711,7 +3205,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 121,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2730,7 +3234,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 122,
+                    "command": "Hide",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2864,7 +3378,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 128,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -2947,7 +3471,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 132,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3004,7 +3538,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 135,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3137,7 +3681,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 142,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3308,7 +3862,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 151,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3422,7 +3986,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 156,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3740,7 +4314,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 171,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3759,7 +4343,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 172,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3778,7 +4372,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 173,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3797,7 +4401,35 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 174,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "sad",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 174,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                },
+                {
+                    "nodeId": 174,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "fear",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -3911,7 +4543,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 179,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4046,7 +4688,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 185,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4065,7 +4717,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 186,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4084,7 +4746,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 187,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4124,7 +4796,17 @@
             ],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 188,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4162,7 +4844,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 190,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4200,7 +4892,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 192,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4264,7 +4966,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 195,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast1"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4312,10 +5024,10 @@
             "spriteDatas": [],
             "dialogSounds": [],
             "chapterData": {
-                "chapterId": 0,
-                "title": "",
-                "startNodeId": 0,
-                "thumbnailKey": ""
+                "chapterId": 2,
+                "title": "A Moment of Peace",
+                "startNodeId": 197,
+                "thumbnailKey": "thumbnail_Chapter2"
             }
         },
         {
@@ -4328,7 +5040,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 198,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "sad",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4347,7 +5069,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 199,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4366,7 +5098,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 200,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4385,7 +5127,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 201,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4423,7 +5175,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 203,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4562,7 +5324,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 208,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4657,7 +5429,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 212,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "sad",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4702,7 +5484,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 214,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4803,7 +5595,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 219,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4841,7 +5643,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 221,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4911,7 +5723,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 224,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "sad",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -4987,7 +5809,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 227,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5051,7 +5883,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 230,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5152,7 +5994,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 235,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5298,7 +6150,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 242,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5355,7 +6217,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 244,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5374,7 +6246,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 245,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5438,7 +6320,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 248,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5501,7 +6393,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 251,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5558,7 +6460,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 254,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5704,7 +6616,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 261,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -5856,7 +6778,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 268,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6027,7 +6959,17 @@
             ],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 276,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6091,7 +7033,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 279,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "Beast2"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6219,7 +7171,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 285,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6238,7 +7200,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 286,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6295,7 +7267,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 289,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "normal",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6352,7 +7334,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 292,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6371,7 +7363,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 293,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "fear",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6390,7 +7392,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 294,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                },
+                {
+                    "nodeId": 294,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "happy",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6428,7 +7449,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 296,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6447,7 +7478,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 297,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6485,7 +7526,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 299,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6504,7 +7555,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 300,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6523,7 +7584,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 301,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6663,7 +7734,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 307,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6739,7 +7820,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 311,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6758,7 +7849,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 312,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6834,7 +7935,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 315,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6872,7 +7983,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 317,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6910,7 +8031,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 319,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -6986,7 +8117,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 323,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7024,7 +8165,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 325,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7062,7 +8213,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 327,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "care",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7119,7 +8280,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 330,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7164,7 +8335,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 332,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7374,7 +8555,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 342,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "sad",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7571,7 +8762,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 351,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7628,7 +8829,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 354,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7672,7 +8883,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 356,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7729,7 +8950,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 359,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7811,7 +9042,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 363,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7875,7 +9116,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 366,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "normal",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7894,7 +9145,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 367,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "normal",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7932,7 +9193,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 369,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7951,7 +9222,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 370,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "normal",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -7970,7 +9251,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 371,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8034,7 +9325,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 374,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8053,7 +9354,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 375,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8091,7 +9402,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 377,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                },
+                {
+                    "nodeId": 377,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "surprise",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8129,7 +9459,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 379,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8148,7 +9488,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 380,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "angry",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8186,7 +9536,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 382,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8205,7 +9565,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 383,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8281,7 +9651,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 386,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8382,7 +9762,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 391,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8420,7 +9810,26 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 393,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                },
+                {
+                    "nodeId": 393,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "happy",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8465,7 +9874,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 395,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8567,7 +9986,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 400,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8605,7 +10034,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 402,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8681,7 +10120,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 406,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8700,7 +10149,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 407,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "sad",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8776,7 +10235,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 411,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8833,7 +10302,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 414,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "sad",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8852,7 +10331,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 415,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8890,7 +10379,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 417,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "normal",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -8985,7 +10484,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 422,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "angry",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9004,7 +10513,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 423,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9023,7 +10542,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 424,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9099,7 +10628,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 428,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9118,7 +10657,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 429,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "care",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9290,7 +10839,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 435,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9487,7 +11046,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 445,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "aversion",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9525,7 +11094,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 447,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9729,7 +11308,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 457,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9748,7 +11337,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 458,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "angry",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9864,7 +11463,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 461,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9902,7 +11511,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 463,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "happy",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9921,7 +11540,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 464,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "happy",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9940,7 +11569,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 465,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "happy",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -9978,7 +11617,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 467,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10087,7 +11736,14 @@
             "speaker": "CHAR_DIALOG",
             "textKey": "CH04_076",
             "EndingKey": "",
-            "cg": [],
+            "cg": [
+                {
+                    "nodeId": 473,
+                    "type": "CG",
+                    "key": "Ending_True",
+                    "category": "Ending"
+                }
+            ],
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
@@ -10144,14 +11800,7 @@
             "speaker": "CHAR_DIALOG",
             "textKey": "CH04_079",
             "EndingKey": "Ending_True",
-            "cg": [
-                {
-                    "nodeId": 476,
-                    "type": "CG",
-                    "key": "Ending_True",
-                    "category": "Ending"
-                }
-            ],
+            "cg": [],
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
@@ -10194,7 +11843,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 478,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10270,7 +11929,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 482,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10384,7 +12053,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 488,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "care",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10448,7 +12127,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 491,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10524,7 +12213,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 495,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10581,7 +12280,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 498,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "care",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10645,7 +12354,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 501,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10887,7 +12606,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 513,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "surprise",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -10944,7 +12673,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 516,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11058,7 +12797,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 522,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "care",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11141,7 +12890,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 526,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11255,7 +13014,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 532,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "aversion",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11274,7 +13043,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 533,
+                    "command": "Show",
+                    "characterId": "CHAR_RETRIEVER",
+                    "expression": "aversion",
+                    "position": "Left",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11293,7 +13072,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 534,
+                    "command": "Show",
+                    "characterId": "CHAR_RABBIT",
+                    "expression": "fear",
+                    "position": "CenterRight",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11312,7 +13101,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 535,
+                    "command": "Show",
+                    "characterId": "CHAR_FOX",
+                    "expression": "angry",
+                    "position": "CenterLeft",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11357,7 +13156,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 537,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11376,7 +13185,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 538,
+                    "command": "Show",
+                    "characterId": "CHAR_SHEEP",
+                    "expression": "happy",
+                    "position": "Right",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,
@@ -11433,7 +13252,17 @@
             "reward": [],
             "nextnodeId": 0,
             "OnEvent": "",
-            "spriteDatas": [],
+            "spriteDatas": [
+                {
+                    "nodeId": 541,
+                    "command": "ClearAll",
+                    "characterId": "",
+                    "expression": "",
+                    "position": "",
+                    "effect": "",
+                    "form": "BeastFinal"
+                }
+            ],
             "dialogSounds": [],
             "chapterData": {
                 "chapterId": 0,

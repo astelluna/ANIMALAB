@@ -53,21 +53,21 @@ MonoBehaviour:
   - <Form>k__BackingField: 4
     <FullBodyExpressions>k__BackingField:
     - emotion: 1
-      sprite: {fileID: 21300000, guid: 9ad5c78c6516c4e4ea0e8b383adb6ea2, type: 3}
+      sprite: {fileID: 21300000, guid: 15fecad21d5d7364b833fffa65c44ae6, type: 3}
     - emotion: 2
-      sprite: {fileID: 21300000, guid: 97fb91d0eae734b489097361bf257376, type: 3}
+      sprite: {fileID: 21300000, guid: 1372bbe39272c8a449d89f485df2e964, type: 3}
     - emotion: 3
-      sprite: {fileID: 21300000, guid: 0c0ec68a15c9c734e935f8b2a0173d9a, type: 3}
+      sprite: {fileID: 21300000, guid: c4de5e421ba793843acd3294c5ef2dab, type: 3}
     - emotion: 4
-      sprite: {fileID: 21300000, guid: de38fc029263015408bd26c77c929a98, type: 3}
+      sprite: {fileID: 21300000, guid: 6184bb9c50b9a6c4fb008cfee4d15582, type: 3}
     - emotion: 5
-      sprite: {fileID: 21300000, guid: be0933a0aad3e1c4a907bd6f60d7a20a, type: 3}
+      sprite: {fileID: 21300000, guid: 7c1e912fdc215c14eabfcac6eab9fddb, type: 3}
     - emotion: 6
-      sprite: {fileID: 21300000, guid: 0e0e4cd964353f14fa4625d03481741d, type: 3}
+      sprite: {fileID: 21300000, guid: c299ac89bae4326439f89ea829cd4ae5, type: 3}
     - emotion: 7
-      sprite: {fileID: 21300000, guid: 82318700563e9bb44ab574846c1779c7, type: 3}
+      sprite: {fileID: 21300000, guid: f0e2c1fa359d2024c969193c1224221a, type: 3}
     - emotion: 8
-      sprite: {fileID: 21300000, guid: aecfeeef7cd535841a716e748387658d, type: 3}
+      sprite: {fileID: 21300000, guid: 74850f429c6010349b16269a878a9d31, type: 3}
   <NameColor>k__BackingField: {r: 0.745283, g: 0.6977709, b: 0.20038268, a: 0}
   <InitialAffinity>k__BackingField: 0
   <MaxAffinity>k__BackingField: 100

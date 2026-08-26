@@ -8875,6 +8875,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 202072543}
     m_Modifications:
+    - target: {fileID: 798088284338806568, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 798088284338806568, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7f923d97d409d344827b5f418bb01cc, type: 3}
     - target: {fileID: 2590967982776232043, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
       propertyPath: m_Name
       value: Panel_Warning
@@ -8882,6 +8890,50 @@ PrefabInstance:
     - target: {fileID: 2590967982776232043, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826477323332849832, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2826477323332849832, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394661129370287310, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394661129370287310, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921134221868223306, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5921134221868223306, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c7f923d97d409d344827b5f418bb01cc, type: 3}
+    - target: {fileID: 7062720589695438343, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062720589695438343, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 957a66440ad3a3545a1526e376161a8d, type: 3}
+    - target: {fileID: 7062720589695438343, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062720589695438343, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 7062720589695438343, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5471698
       objectReference: {fileID: 0}
     - target: {fileID: 7601194302363274070, guid: 7c3edd35df933214ba4430ee0822923c, type: 3}
       propertyPath: m_SizeDelta.x

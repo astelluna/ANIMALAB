@@ -1359,8 +1359,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380314
-    m_Localized: It contained content where her despair about her incurable disease
-      and hope for the protagonist's research intertwined.
+    m_Localized: It was an intersection of her despair over her incurable illness
+      and hope for your research.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380315
@@ -2079,8 +2079,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380459
-    m_Localized: '"We were all dying from incurable diseases... but we survived thanks
-      to the drug the protagonist created."'
+    m_Localized: We were all dying from an incurable disease, but... thanks to the
+      medicine you created, we survived.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380460
@@ -2473,8 +2473,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380539
-    m_Localized: and her feelings toward the protagonist who surrendered a drug as
-      precious as life for her began twisting strangely inside her brain.
+    m_Localized: "And her feelings toward you\u2014the one who had given up a life-saving
+      medicine for her sake\u2014began to twist inside her mind in a strange way."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380540
@@ -2525,9 +2525,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380549
-    m_Localized: The drug cured her cold body, but it could not fix the blind imprint
-      engraved onto the protagonist at the moment of losing reason and her broken
-      mind.
+    m_Localized: The medicine cured her cold body, but it could not heal her shattered
+      heart or the blind obsession imprinted on you when she was losing her sanity.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380550
@@ -2673,8 +2672,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380578
-    m_Localized: The rabbit grabbed the protagonist's clothes as if about to break
-      them.
+    m_Localized: The rabbit clutched the hem of your clothes so tightly it felt as
+      though it would break.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380579
