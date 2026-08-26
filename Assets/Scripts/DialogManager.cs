@@ -38,7 +38,7 @@ public class DialogManager : MonoBehaviour
     bool isTyping = false;
     Coroutine printSlowTextCor;
 
-    [SerializeField] CharacterUISlotManager characterPosManager;
+    //[SerializeField] CharacterUISlotManager characterPosManager;
     [SerializeField] RewardCanvas rewardCanvas;
 
     [SerializeField] ChapterShowPanel chapterShowPanel;
@@ -96,7 +96,11 @@ public class DialogManager : MonoBehaviour
     {
         saveButton.onClick.RemoveAllListeners();
         skipButton.onClick.RemoveAllListeners();
-        openDialogLogButton.onClick.RemoveAllListeners();
+        openDialogLogButton.onClick.RemoveAllListeners(); 
+        if (clickAction != null)
+        {
+            clickAction.performed -= MouseLButtonClick;
+        }
     }
 
     
@@ -188,6 +192,8 @@ public class DialogManager : MonoBehaviour
         {
             backgroundScript.SetBackgroundImage(SaveManager.Instance.GetCurBackgroundSprite());
         }
+        List<CharacterSprite> characterSpriteList =  SaveManager.Instance.GetSpriteDataList();
+        CharacterUISlotManager.Instance.SetCharacterShowData(characterSpriteList);
         
     }
     public void CreateSaveData(bool isChapterEnd = false)
@@ -286,7 +292,7 @@ public class DialogManager : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         mainActionMap = playerInput.actions.FindActionMap("Player");
         clickAction = mainActionMap.FindAction("Click");
-        clickAction.performed += (ctx) => MouseLButtonClick(ctx);
+        clickAction.performed += MouseLButtonClick;
 
         allNodes = JsonDataManager.Instance.GetDialogData();
         itemDataJson = JsonDataManager.Instance.GetItemDataJson();
@@ -419,7 +425,7 @@ public class DialogManager : MonoBehaviour
         //캐릭터 이미지 띄우기
         if (curNode.spriteDatas.Length > 0)
         {
-            foreach (var spriteData in curNode.spriteDatas)
+            foreach (CharacterSprite spriteData in curNode.spriteDatas)
             {
                 CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(spriteData.characterId);
                 switch (spriteData.Command)
@@ -428,26 +434,20 @@ public class DialogManager : MonoBehaviour
                         //이제 해당 이미지에 표시를 해버리자.
                         Sprite curSprite = charData.GetExpression(spriteData.Form, spriteData.Expression);
                         if (curSprite == null) continue;
-                        //말하고 있는 사람이면 투명도 1, 아니면 -1로 한다.
-                        //float alpha = 1;
-                        //if (spriteData.characterId != curNode.speaker)
-                        //{
-                        //    alpha = 0.5f;
-                        //}
-                        characterPosManager.ShowImage(charData.CharacterId, curSprite, spriteData.Position, charData.BodyHeight);
+                        CharacterUISlotManager.Instance.ShowImage(charData.CharacterId, curSprite, charData.BodyHeight,spriteData);
                         break;
                     case eCommandType.Hide:
-                        if (!characterPosManager.HideImage(spriteData.characterId))
+                        if (!CharacterUISlotManager.Instance.HideImage(spriteData.characterId))
                         {
                             Debug.LogError("Sprite Hide 실패. 아이디가 없었습니다");
                         }
                         break;
                     case eCommandType.ClearAll:
                         //현재 존재하는 화면의 스프라이트 들을 전부 지우자
-                        characterPosManager.HideImageAll();
+                        CharacterUISlotManager.Instance.HideImageAll();
                         break;
                     case eCommandType.Effect:
-                        characterPosManager.ShowEffect(charData.CharacterId, spriteData.Effect);
+                        CharacterUISlotManager.Instance.ShowEffect(charData.CharacterId, spriteData.Effect);
                         break;
                     default:
                         Debug.LogError("스프라이트 처리할때 이상한 커맨드가 들어옴. 확인 필요" + spriteData.nodeId);
@@ -456,7 +456,7 @@ public class DialogManager : MonoBehaviour
             }
         }
         //만약 말하고있는 사람의 이미지가 현재 화면에 존재한다면 투명도 조절 하기
-        characterPosManager.UpdateAllSpeakerAlpha(curNode.speaker);
+        CharacterUISlotManager.Instance.UpdateAllSpeakerAlpha(curNode.speaker);
 
         //다이얼로그 로그창 띄우기
         string speakerText = ResourceManager.Instance.GetLocalizationText(curNode.speaker);

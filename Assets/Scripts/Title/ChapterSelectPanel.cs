@@ -64,6 +64,7 @@ public class ChapterSelectPanel : MonoBehaviour
     void OnSelected()
     {
         //1. 최신 챕터를 선택했다면? 최근 세이브 데이터의 노드를 참조하여 거기부터 시작하도록 해야함.
+        SaveManager.Instance.LoadSaveDataToJsonFile(); //무조건 다시 불러와야한다. 런타임 데이터 삭제를 위해
         SaveData data = SaveManager.Instance.LoadSaveFile();
         int selChapterIndex = currentIndex + 1;
 
@@ -71,6 +72,7 @@ public class ChapterSelectPanel : MonoBehaviour
         {
             if (data != null)
             {
+                
                 GameManager.Instance.GameStart(data);
             }
         }

@@ -130,10 +130,6 @@ public class SaveData
 
     //스킵기능을 위해 읽었던 노드id 기록
     public List<int> readNodeIds;
-
-    
-    
-
     //챕터 데이터 (n번째 챕터에서부터 다시하기를 위해서 사용한다)
     public List<ChapterSaveData> ChapterSaveDataList = new List<ChapterSaveData>();
     private Dictionary<int, ChapterSaveData> chapterSaveDataDict = new Dictionary<int, ChapterSaveData>();
@@ -152,6 +148,17 @@ public class SaveData
     //보상을 받으면 보상을 받은 노드에 대해 중복 받지 않도록 해당 노드 ID 기록한다.
     public List<int> getRewardNodeList = new List<int>();
     private HashSet<int> getRewardNodeHash = new HashSet<int>();
+    //현재 화면에 어떤 캐릭터가 표시되어있는지
+    public List<CharacterSprite> characterSpriteList;
+
+    public void SetCharacterSpriteData(List<CharacterSprite> data)
+    {
+        characterSpriteList = data;
+    }
+    public List<CharacterSprite> GetCharacterSpriteData()
+    {
+        return characterSpriteList;
+    }
 
     public void Init()
     {

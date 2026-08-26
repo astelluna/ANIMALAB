@@ -21,18 +21,23 @@ public class RewardCanvas : MonoBehaviour
     }
     public void Show(DialogReward[] dialogRewards)
     {
-        rewardPanel.gameObject.SetActive(true);
+        bool isHaveItem = false;
         foreach(DialogReward item in dialogRewards)
         {
             if (item.Type == eDialogItemType.Item)
             {
+                isHaveItem = true;
                 Sprite itemSprite = ResourceManager.Instance.GetItemData(item.key).Icon;
                 string itemDesc = ResourceManager.Instance.GetLocalizationText(item.key);
                 rewardPanel.AddDataArray(itemSprite, itemDesc);
             }
         }
-        rewardPanel.ShowPanel();
-        IsRewardPanelShow = true;
+        if(isHaveItem)
+        {
+            rewardPanel.gameObject.SetActive(true);
+            rewardPanel.ShowPanel();
+            IsRewardPanelShow = true;
+        }
     }
     public void Close()
     {

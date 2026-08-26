@@ -71,6 +71,11 @@
                     "type": "Item",
                     "key": "ITEM_NAME_CLOTHFRAGMENT",
                     "amount": 1
+                },
+                {
+                    "type": "Item",
+                    "key": "ITEM_NAME_CLOTHFRAGMENT",
+                    "amount": 1
                 }
             ],
             "nextnodeId": 0,

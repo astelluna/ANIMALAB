@@ -43,10 +43,6 @@ public class SaveManager : Singleton<SaveManager>
     public void CheckAndFixAffinityData(SaveData saveData)
     {
         //Affinity가 save파일에 정보가 있으면 딕셔너리를 채워줌. 없다면 리소스 매니저에서 리스트와 딕셔너리 채운다
-        //if(saveData.saveAffinitieList.Count != 0 && saveData.AffinityDict.Count == 0)
-        //{
-        //    saveData.SetAffinityDict();
-        //}
         saveData.Init();
         if(saveData.AffinityDict.Count == 0)
         {
@@ -71,6 +67,12 @@ public class SaveManager : Singleton<SaveManager>
         }
         //현재 가지고있는 아이템도 넣어줘야함
         data.saveItemList = new List<SaveItem>(data.saveItemList);
+        //현재 화면에 캐릭터 누가 표시되고있는지도 넣기
+        if(CharacterUISlotManager.Instance != null)
+        {
+            List<CharacterSprite> list =  CharacterUISlotManager.Instance.GetCharacterShowData();
+            data.SetCharacterSpriteData(new List<CharacterSprite>(list));
+        }
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(savePath, json);
         CurrentSaveData = data;
@@ -125,6 +127,10 @@ public class SaveManager : Singleton<SaveManager>
     public Sprite GetCurBackgroundSprite()
     {
         return CurrentSaveData.GetBackground();
+    }
+    public List<CharacterSprite> GetSpriteDataList()
+    {
+        return CurrentSaveData.GetCharacterSpriteData();
     }
     public bool TryAddReward(int node)
     {

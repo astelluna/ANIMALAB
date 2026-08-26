@@ -1,9 +1,12 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CharacterUISlotManager : MonoBehaviour
 {
+    public static CharacterUISlotManager Instance { get; private set; }
+
     [SerializeField] private ImageSlot slotLeft;
     [SerializeField] private ImageSlot slotCenterLeft;
     [SerializeField] private ImageSlot slotCenterRight;
@@ -17,9 +20,44 @@ public class CharacterUISlotManager : MonoBehaviour
     float darkAlpha = 0.5f;
 
 
+    public List<CharacterSprite> GetCharacterShowData()
+    {
+        List<CharacterSprite> characterSpriteList = new List<CharacterSprite>();
+        foreach(var item in characterIdToPosDict.Values)
+        {
+            ImageSlot imageSlot = item.Item2;
+            characterSpriteList.Add(imageSlot.characterSpriteData);
+        }
+        return characterSpriteList;
+    }
+    public void SetCharacterShowData(List<CharacterSprite> spriteDataList)
+    {
+        if (spriteDataList == null) return;
+        foreach(CharacterSprite item in spriteDataList)
+        {
+            CharacterDataSO charData = ResourceManager.Instance.GetCharacterData(item.characterId);
+            Sprite curSprite = charData.GetExpression(item.Form, item.Expression);
+            ShowImage(item.characterId, curSprite, charData.BodyHeight, item);
+        }
+    }
+
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         imageCharacterEffect = GetComponent<ImageCharacterEffect>();
+
+
+    }
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 
     private Image GetImageToCharacterId(string id)
@@ -73,10 +111,11 @@ public class CharacterUISlotManager : MonoBehaviour
             }
         }
     }
-    public bool ShowImage(string id, Sprite spriteImg, eSpritePosition position, int height)
+    public bool ShowImage(string id, Sprite spriteImg, int height, CharacterSprite characterData)
     {
         ImageSlot image = null;
         bool isLeft = false;
+        eSpritePosition position = characterData.Position;
         switch(position)
         {
             case eSpritePosition.Left:
@@ -114,6 +153,9 @@ public class CharacterUISlotManager : MonoBehaviour
         {
             characterIdToPosDict.Add(id, (position, image));
         }
+        //사용한 스프라이트 데이터 넣기
+        image.SetCharacterData(characterData);
+
         return true;
     }
     public void ShowEffect(string id, eSpriteEffect spriteEffect)
