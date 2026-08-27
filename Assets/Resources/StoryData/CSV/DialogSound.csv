@@ -1,6 +1,19 @@
 nodeId,key,,,,,,,,,,,sound key 종류
-1,BackgroundSound,,,,,,,,,,,BackgroundSound
-1,ButtonClick,,,,,,,,,,,ButtonClick
-2,ButtonClick,,,,,,,,,,,FootStep
-3,FootStep,,,,,,,,,,,DoorOpenClose
-4,DoorOpenClose,,,,,,,,,,,
+1,Background_Floor1,,,,,,,,,,,BackgroundSound
+102,DoorOpenClose,,,,,,,,,,,ButtonClick
+113,FootStep,,,,,,,,,,,FootStep
+130,DoorOpenClose,,,,,,,,,,,DoorOpenClose
+133,FootStep,,,,,,,,,,,
+169,FootStep,,,,,,,,,,,
+2,Background_Floor2,197,,,,,,,,,,
+197,FootStep,,,,,,,,,,,
+206,DoorOpenClose,,,,,,,,,,,
+223,FootStep,,,,,,,,,,,
+238,DoorOpenClose,,,,,,,,,,,
+256,DoorOpenClose,,,,,,,,,,,
+3,Background_Floor3,282,,,,,,,,,,
+283,FootStep,,,,,,,,,,,
+303,FootStep,,,,,,,,,,,
+337,FootStep,,,,,,,,,,,
+372,FootStep,,,,,,,,,,,
+4,Background_Floor4,398,,,,,,,,,,

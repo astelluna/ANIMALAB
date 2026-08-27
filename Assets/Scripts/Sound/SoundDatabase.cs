@@ -5,10 +5,13 @@ using UnityEngine;
 public enum eSoundID
 {
     none,
-    BackgroundSound,
     ButtonClick,
     FootStep,
     DoorOpenClose,
+    Background_Floor1,
+    Background_Floor2,
+    Background_Floor3,
+    Background_Floor4
 }
 
 [CreateAssetMenu(menuName = "Sound/SoundDatabase")]

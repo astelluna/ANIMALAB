@@ -59,12 +59,18 @@ public class SoundManager : Singleton<SoundManager>
     }
     public void Play(eSoundID id)
     {
+        //런타임 도중 ID값으로 소리를 재생시킬떄만 사용
         SoundData soundData = soundDatabase.Get(id);
         
         if (soundData == null)
         {
             Debug.LogError("SoundData가 null");
             return;
+        }
+        //세이브 매니저에 현재 BGM 저장
+        if(soundData.category == SoundCategory.BGM)
+        {
+            SaveManager.Instance.SetBackgroundMusicId(id);
         }
 
         AudioSource source = GetSource(soundData.category);
@@ -82,6 +88,25 @@ public class SoundManager : Singleton<SoundManager>
             source.PlayOneShot(source.clip);
         }
     }
+    public void Play(SoundData soundData, SoundCategory category)
+    {
+        //게임내에서 특정 BGM이나 소리를 재생시킬때 사용
+        AudioSource source = GetSource(category);
+        source.outputAudioMixerGroup = GetMixerGroup(soundData.category);
+        source.clip = soundData.clips[Random.Range(0, soundData.clips.Length)];
+        source.volume = soundData.volume;
+        source.pitch = Random.Range(soundData.pitchRange.x, soundData.pitchRange.y);
+        source.loop = soundData.loop;
+        if (soundData.loop)
+        {
+            source.Play();
+        }
+        else
+        {
+            source.PlayOneShot(source.clip);
+        }
+    }
+
     //볼륨 설정
     public void SetBGMVolume(float value) => SetVolume(PathManager.BGM_KEY, PathManager.BGM_PARAM, value);
     public void SetSFXVolume(float value) => SetVolume(PathManager.SFX_KEY, PathManager.SFX_PARAM, value);

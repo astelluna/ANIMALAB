@@ -21,11 +21,7 @@
             "dialogSounds": [
                 {
                     "nodeId": 1,
-                    "key": "BackgroundSound"
-                },
-                {
-                    "nodeId": 1,
-                    "key": "ButtonClick"
+                    "key": "Background_Floor1"
                 }
             ],
             "chapterData": {
@@ -49,7 +45,7 @@
             "dialogSounds": [
                 {
                     "nodeId": 2,
-                    "key": "ButtonClick"
+                    "key": "Background_Floor2"
                 }
             ],
             "chapterData": {
@@ -84,7 +80,7 @@
             "dialogSounds": [
                 {
                     "nodeId": 3,
-                    "key": "FootStep"
+                    "key": "Background_Floor3"
                 }
             ],
             "chapterData": {
@@ -114,7 +110,7 @@
             "dialogSounds": [
                 {
                     "nodeId": 4,
-                    "key": "DoorOpenClose"
+                    "key": "Background_Floor4"
                 }
             ],
             "chapterData": {
@@ -313,7 +309,7 @@
             "choices": [],
             "reward": [],
             "nextnodeId": 0,
-            "OnEvent": "Prolog_Start",
+            "OnEvent": "",
             "spriteDatas": [],
             "dialogSounds": [],
             "chapterData": {
@@ -2778,7 +2774,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 102,
+                    "key": "DoorOpenClose"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -3017,7 +3018,12 @@
                     "form": "Beast1"
                 }
             ],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 113,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -3439,7 +3445,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 130,
+                    "key": "DoorOpenClose"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -3506,7 +3517,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 133,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -4282,7 +4298,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 169,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -5027,7 +5048,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 197,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 2,
                 "title": "A Moment of Peace",
@@ -5292,7 +5318,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 206,
+                    "key": "DoorOpenClose"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -5710,7 +5741,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 223,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -6080,7 +6116,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 238,
+                    "key": "DoorOpenClose"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -6527,7 +6568,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 256,
+                    "key": "DoorOpenClose"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -7139,7 +7185,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 283,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -7664,7 +7715,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 303,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -8459,7 +8515,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 337,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",
@@ -9293,7 +9354,12 @@
             "nextnodeId": 0,
             "OnEvent": "",
             "spriteDatas": [],
-            "dialogSounds": [],
+            "dialogSounds": [
+                {
+                    "nodeId": 372,
+                    "key": "FootStep"
+                }
+            ],
             "chapterData": {
                 "chapterId": 0,
                 "title": "",

@@ -150,7 +150,17 @@ public class SaveData
     private HashSet<int> getRewardNodeHash = new HashSet<int>();
     //현재 화면에 어떤 캐릭터가 표시되어있는지
     public List<CharacterSprite> characterSpriteList;
+    //현재 배경음악을 표시하자.
+    public eSoundID backgroundId;
 
+    public void SetBackgroundMusicID(eSoundID id)
+    {
+        backgroundId = id;
+    }
+    public eSoundID GetBackgroundMusicId()
+    {
+        return backgroundId;
+    }
     public void SetCharacterSpriteData(List<CharacterSprite> data)
     {
         characterSpriteList = data;

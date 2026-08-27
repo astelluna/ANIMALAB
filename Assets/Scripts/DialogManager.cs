@@ -194,7 +194,9 @@ public class DialogManager : MonoBehaviour
         }
         List<CharacterSprite> characterSpriteList =  SaveManager.Instance.GetSpriteDataList();
         CharacterUISlotManager.Instance.SetCharacterShowData(characterSpriteList);
-        
+        //배경 소리 가져오기
+        eSoundID soundId = SaveManager.Instance.GetBackgroundMusicId();
+        PlaySound(soundId);
     }
     public void CreateSaveData(bool isChapterEnd = false)
     {
@@ -382,7 +384,10 @@ public class DialogManager : MonoBehaviour
         CreateSaveData(true);
         ClearDialogLog();
     }
-
+    void PlaySound(eSoundID id)
+    {
+        SoundManager.Instance.Play(id);
+    }
     void ShowNodeContent()
     {
         characterText.text = ResourceManager.Instance.GetLocalizationText(curNode.speaker);
@@ -501,7 +506,9 @@ public class DialogManager : MonoBehaviour
             {
                 Debug.LogError($"SoundID가 none입니다. CSV 데이터를 확인해주세요 nodeId = {curNode.id}");
             }
-            SoundManager.Instance.Play(sound.Key);
+            PlaySound(sound.Key);
+            //SoundManager.Instance.Play(sound.Key);
+            
         }
         //배경이 있다면? 표시시킨다
         if(curNode.cg.Length > 0)

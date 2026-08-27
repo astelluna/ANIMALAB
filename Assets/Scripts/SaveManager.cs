@@ -132,6 +132,14 @@ public class SaveManager : Singleton<SaveManager>
     {
         return CurrentSaveData.GetCharacterSpriteData();
     }
+    public void SetBackgroundMusicId(eSoundID id)
+    {
+        CurrentSaveData.SetBackgroundMusicID(id);
+    }
+    public eSoundID GetBackgroundMusicId()
+    {
+        return CurrentSaveData.GetBackgroundMusicId();
+    }
     public bool TryAddReward(int node)
     {
         return CurrentSaveData.TryAddRewardNode(node);
