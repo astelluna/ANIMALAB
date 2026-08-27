@@ -22,7 +22,7 @@ NodeId,type,Key,Category,,,,,,,Category 종류
 281,Background,background_black,,,,,,,,
 283,Background,background_floor3_lobby,,,,,,,,
 303,Background,background_floor3_sequrity,,,,,,,,
-332,CG,CG_Sheep2,Cg,,,,,,,
+334,CG,CG_Sheep2,Cg,,,,,,,
 337,Background,background_floor3_wait,,,,,,,,
 342,CG,CG_Rabbit2,Cg,,,,,,,
 347,Background,background_floor3_wait,,,,,,,,

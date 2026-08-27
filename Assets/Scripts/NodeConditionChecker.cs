@@ -90,7 +90,9 @@ public static class NodeConditionChecker
                 }
                 else
                 {
-                    Debug.LogError("세이브에 아이템 데이터없음");
+                    //아이템 존재하지않는다면 조건 false임
+                    Debug.Log("세이브에 아이템 데이터없음");
+                    return false;
                 }
                 break;
             default:

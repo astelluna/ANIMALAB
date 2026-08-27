@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: SoundData_floor2
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: abc09cffc657cfd40b60d33b413ee3dd, type: 3}
+  - {fileID: 8300000, guid: fa859359d5f51bb478083c5c633c9ab3, type: 3}
+  - {fileID: 8300000, guid: 8a7250b1a58059440aea33e48808b791, type: 3}
   volume: 1
   pitchRange: {x: 0.95, y: 1.05}
   loop: 1

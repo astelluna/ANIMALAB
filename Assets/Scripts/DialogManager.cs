@@ -54,7 +54,7 @@ public class DialogManager : MonoBehaviour
     HashSet<int> readNodeHash = new HashSet<int>();
 
     //스킵
-    float skipDelayTime = 0.2f;
+    float skipDelayTime = 0.15f;
     WaitForSeconds skipDelay;
     Coroutine skipCoroutine;
 
@@ -206,7 +206,7 @@ public class DialogManager : MonoBehaviour
     public void CreateSaveData(bool isChapterEnd = false)
     {
         SaveData saveData = SaveManager.Instance.LoadSaveFile() ?? new SaveData();
-        saveData.curChapterId = curChapterNo;
+        saveData.curChapterId = (curChapterNo == 0) ? saveData.curChapterId : curChapterNo;
         saveData.nodeId = curNode.id;
         saveData.readNodeIds = readNodeHash.ToList();
 
@@ -321,18 +321,19 @@ public class DialogManager : MonoBehaviour
     private bool IsPointerOverUI()
     {
         if (EventSystem.current == null) return false;
+        if (Pointer.current == null) return false; // 방어 코드 추가
 
         PointerEventData pointerData = new PointerEventData(EventSystem.current)
         {
-            position = Mouse.current.position.ReadValue()
+            position = Pointer.current.position.ReadValue()
         };
 
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(pointerData, results);
 
-        foreach(var result in results)
+        foreach (var result in results)
         {
-            if(result.gameObject.GetComponent<Button>() != null)
+            if (result.gameObject.GetComponent<Button>() != null)
             {
                 return true;
             }
@@ -371,7 +372,7 @@ public class DialogManager : MonoBehaviour
         {
             curEndingData = null;
         }
-        //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다.
+        //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다, 그리고 2챕터부터 광고를 띄우자
         if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
             AdsManager.Instance.ShowInterstitial(StartNewChapter);

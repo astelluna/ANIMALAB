@@ -51,6 +51,7 @@ public static class CSVToJsonWindow
             DialogChoice choice = new DialogChoice();
             choice.choiceTextId = cols[2];
             choice.goTo = int.Parse(cols[3]);
+            choice.goToFail = (cols[4] == "") ? 0 : int.Parse(cols[4]);
             if (!choiceMap.ContainsKey(nodeId))
             {
                 choiceMap[nodeId] = new List<DialogChoice>();

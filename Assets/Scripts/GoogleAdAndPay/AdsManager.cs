@@ -8,7 +8,7 @@ public class AdsManager : Singleton<AdsManager>
 
     // 처음에는 테스트 광고 ID 사용
     private string adUnitId =
-        "ca-app-pub-3940256099942544/1033173712";
+        "ca-app-pub-1407745203471016/9025885840";
     protected override void Awake()
     {
         base.Awake();

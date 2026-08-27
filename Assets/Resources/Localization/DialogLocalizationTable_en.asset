@@ -19,27 +19,21 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 147044159660032
-    m_Localized: Consciousness surfaced from the darkness. The first thing I felt
-      was pain. My head was throbbing as if it were about to split open. Through
-      a headache so intense it made even breathing difficult, I slowly opened my
-      eyes.
+    m_Localized: Ugh... my head... Where am I?
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408768
-    m_Localized: A red light filled my field of vision. The emergency light on the
-      ceiling... Its rhythmically blinking red glow illuminated the empty laboratory.
-      The unfamiliar hum of machinery, the pungent smell of disinfectant, and the
-      cold, lifeless floor beneath me.
+    m_Localized: The red emergency light flickered around me, casting a dim glow.
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408769
-    m_Localized: I slowly pushed myself up. I searched my mind, but nothing came
-      to me. However, a single memory remained crystal clear.
+    m_Localized: I can't... think. What was I doing here?
     m_Metadata:
       m_Items: []
   - m_Id: 147044197408770
-    m_Localized: I was fighting someone. And... the cure ampoule in my hand shattered.
-      In that exact moment, something exploded. Beyond that point, no memories existed.
+    m_Localized: "Then, a memory suddenly flashed through my mind. I was fighting
+      fiercely with someone... \nand the cure ampoule in my hand shattered. After
+      that, everything went blank"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797376
@@ -62,8 +56,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797380
-    m_Localized: I slowly turned around. On one side of the lab, four women were
-      staring at me. But... their appearance was different from ordinary humans.
+    m_Localized: "I slowly turned around. On one side of the lab, four women were
+      staring at me. \nBut... their appearance was different from ordinary humans."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797381
@@ -81,9 +75,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797383
-    m_Localized: Without realizing it, I looked down at my hands. My fingertips tingled.
-      Filled with anxiety, I looked into a nearby broken mirror. And... on top of
-      my head, too... something was growing.
+    m_Localized: "Without realizing it, I looked down at my hands. My fingertips
+      tingled. Filled with anxiety, I looked into a nearby broken mirror. \nAnd...
+      on top of my head, too... something was growing."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797384
@@ -92,9 +86,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797385
-    m_Localized: There is something I definitely remember. That we gathered in this
-      room for an experiment. But when I opened my eyes, the facility was shut down...
-      and our bodies were changed like this. Explain it, researcher.
+    m_Localized: "There is something I definitely remember. That we gathered in this
+      room for an experiment. \nBut when I opened my eyes, the facility was shut
+      down... and our bodies were changed like this. Explain it, researcher."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797386
@@ -106,15 +100,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797388
-    m_Localized: I looked at them. Clearly, I was connected to them. But no matter
+    m_Localized: "I looked at them. Clearly, I was connected to them. \nBut no matter
       how hard I tried to remember, nothing came to mind. None of their voices felt
-      unfamiliar.
+      unfamiliar."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797389
-    m_Localized: Did the virus ampoule shatter while fighting one of them? But I
-      couldn't remember who it was, or why none of them felt unfamiliar. My head
-      was still in confusion.
+    m_Localized: "Did the virus ampoule shatter while fighting one of them? \nBut
+      I couldn't remember who it was, or why none of them felt unfamiliar. My head
+      was still in confusion."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797396
@@ -122,13 +116,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797397
-    m_Localized: ...I have no memory. My last memory is the moment the cure ampoule
-      shattered. I don't know what happened in this facility either.
+    m_Localized: "...I have no memory. My last memory is the moment the cure ampoule
+      shattered. \nI don't know what happened in this facility either."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797398
-    m_Localized: Amnesia? Hmph... convenient excuse. The shattered ampoule is suspicious
-      too. You're a researcher and you don't know?
+    m_Localized: "Amnesia? Hmph... convenient excuse. The shattered ampoule is suspicious
+      too. \nYou're a researcher and you don't know?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797399
@@ -137,11 +131,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797400
-    m_Localized: 'Fox still didn''t drop his suspicious gaze, but Retriever looked
-      at me with a slightly softened expression. Sheep and Rabbit looked back and
-      forth at us with anxious eyes.
-
-      (Affection for all characters +20)'
+    m_Localized: "Fox still didn't drop his suspicious gaze, but Retriever looked
+      at me with a slightly softened expression. \nSheep and Rabbit looked back and
+      forth at us with anxious eyes.\n(Affection for all characters +20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797401
@@ -159,26 +151,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797404
-    m_Localized: 'At my silence, Fox''s eyes grew sharper, and a look of disappointment
-      crossed Retriever''s face. Rabbit shrank back even more, while Sheep wore an
-      unreadable smile.
-
-      (Affection for all characters -20)'
+    m_Localized: "At my silence, Fox's eyes grew sharper, and a look of disappointment
+      crossed Retriever's face.\n Rabbit shrank back even more, while Sheep wore
+      an unreadable smile.\n(Affection for all characters -20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797405
-    m_Localized: I looked back at the computer screen. Emergency system. Survivors.
-      Infected. And vaccine. The pieces of memory were slowly coming together.
+    m_Localized: "I looked back at the computer screen. Emergency system. Survivors.
+      Infected. And vaccine. \nThe pieces of memory were slowly coming together."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797406
-    m_Localized: 'This was no simple research facility. It was a facility for treating
-      incurable diseases. But an unexpected side effect was discovered during the
-      treatment process.
-
-      A mutation where the human body changes to manifest
-      animal traits. Beastification. Likely when the cure ampoule shattered... this
-      transformation began.'
+    m_Localized: "This was no simple research facility. It was a facility for treating
+      incurable diseases. \nBut an unexpected side effect was discovered during the
+      treatment process.\nA mutation where the human body changes to manifest animal
+      traits. Beastification. Likely when the cure ampoule shattered... this transformation
+      began."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797407
@@ -220,11 +208,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797416
-    m_Localized: 'The treatment may have been successful. However, to reverse this
-      transformation... a different cure is needed.
-
-      (Affection for all characters
-      +20)'
+    m_Localized: "The treatment may have been successful. \nHowever, to reverse this
+      transformation... a different cure is needed.\n(Affection for all characters
+      +20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797417
@@ -289,7 +275,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797429
-    m_Localized: "At the same time, however, suspicion was growing toward me\u2014the
+    m_Localized: "At the same time, however, suspicion was growing toward me\u2014\nthe
       researcher and the only person who might have known that fact."
     m_Metadata:
       m_Items: []
@@ -302,8 +288,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797432
-    m_Localized: In the direction Retriever pointed, there was a computer. I slowly
-      checked the screen. And... I found numbers.
+    m_Localized: "In the direction Retriever pointed, there was a computer. \nI slowly
+      checked the screen. And... I found numbers."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797433
@@ -346,8 +332,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797440
-    m_Localized: Rabbit handed Fox a candy, and Fox looked at her with a dumbfounded
-      expression. (Affection for all characters +20)
+    m_Localized: "Rabbit handed Fox a candy, and Fox looked at her with a dumbfounded
+      expression. \n(Affection for all characters +20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797441
@@ -364,7 +350,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797444
-    m_Localized: What is this...? "Was I this strong?"... I'm sorry.
+    m_Localized: What is this...? Was I this strong?... I'm sorry.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797445
@@ -434,7 +420,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 862505776128003
-    m_Localized: Narration
+    m_Localized: ' '
     m_Metadata:
       m_Items: []
   - m_Id: 864038278340608
@@ -482,9 +468,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797390
-    m_Localized: Well... seems like we're trapped here, so shall we introduce ourselves?
-      I'm Seojin Yoon. Well... no need to memorize my name, you can just call me
-      Fox.
+    m_Localized: "Well... seems like we're trapped here, so shall we introduce ourselves?
+      I'm Seojin Yoon. \nWell... no need to memorize my name, you can just call me
+      Fox."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797391
@@ -506,13 +492,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797395
-    m_Localized: "Yeah, so how about you? What's your name? You look like a researcher\u2014do
+    m_Localized: "Yeah, so how about you? What's your name? \nYou look like a researcher\u2014do
       you know why the lab was shut down?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797455
-    m_Localized: To escape, we needed to find clues to the emergency system override
-      code hidden throughout the facility. But that wasn't the only problem.
+    m_Localized: "To escape, we needed to find clues to the emergency system override
+      code hidden throughout the facility. \nBut that wasn't the only problem."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797456
@@ -535,8 +521,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797460
-    m_Localized: No one could answer. Everyone's eyes turned to me. The researcher.
-      The only person who might know this facility. But I shook my head.
+    m_Localized: "No one could answer. Everyone's eyes turned to me. The researcher.
+      \nThe only person who might know this facility. But I shook my head."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797461
@@ -544,15 +530,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797462
-    m_Localized: Silence fell for a moment at my answer. Expressions of disbelief.
+    m_Localized: "Silence fell for a moment at my answer. Expressions of disbelief.\n
       Expressions of anxiety. And suspicion. Rabbit touched her changed ears and
-      trembled slightly.
+      trembled slightly."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797463
-    m_Localized: Time was running out. If beastification continued, there was no
-      telling what changes would happen next. We decided to split up and investigate
-      the 1st floor of the lab first.
+    m_Localized: "Time was running out. If beastification continued, there was no
+      telling what changes would happen next. \nWe decided to split up and investigate
+      the 1st floor of the lab first."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797464
@@ -561,9 +547,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797465
-    m_Localized: 'There were various facilities on the 1st floor: research lab, testing
-      room, break room, storage, and archive. Retriever decided to investigate the
-      testing room. Fox headed to the break room.'
+    m_Localized: "There were various facilities on the 1st floor: research lab, testing
+      room, break room, storage, and archive. \nRetriever decided to investigate
+      the testing room. Fox headed to the break room."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797466
@@ -584,14 +570,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797470
-    m_Localized: Inside the storage room were only old equipment and unused items.
-      Broken chairs. Worn-out boxes. Research tools scheduled for disposal. Nothing
-      special.
+    m_Localized: Nothing special...
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797471
-    m_Localized: There was still time before everyone was supposed to gather. I had
-      to investigate another place.
+    m_Localized: "There was still time before everyone was supposed to gather. \nI
+      had to investigate another place."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797472
@@ -599,9 +583,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797473
-    m_Localized: When I opened the door to the testing room, the interior was in
-      a terrible state. Broken culture vessels. Glass fragments scattered on the
-      floor. And unidentified liquid spilled everywhere.
+    m_Localized: "When I opened the door to the testing room, the interior was in
+      a terrible state. \nBroken culture vessels. Glass fragments scattered on the
+      floor. And unidentified liquid spilled everywhere."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797474
@@ -614,23 +598,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797476
-    m_Localized: It was a natural reaction. We were in a situation where we couldn't
-      trust each other. Especially since I was a researcher here and had even lost
-      my memory. Retriever slowly circled around me.
+    m_Localized: "It was a natural reaction. We were in a situation where we couldn't
+      trust each other. \nEspecially since I was a researcher here and had even lost
+      my memory. Retriever slowly circled around me."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797477
-    m_Localized: Wait... don't move. Something is strange.
+    m_Localized: Wait... something smells weird.
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797478
-    m_Localized: She grimaced as if holding her nose. As beastification progressed,
-      human senses were changing.
+    m_Localized: She took shallow breaths, trying to trace the smell
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797479
-    m_Localized: In her case, with canine traits... her sense of smell would be abnormally
-      developed.
+    m_Localized: "However, nothing could be smelled around here except a faint scent
+      of dust. \nWas her sense of smell sharpening as she turned into an animal?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797480
@@ -639,20 +622,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797481
-    m_Localized: I was flustered for a second. Checking my body, there were faint
-      wounds and hardened bloodstains left below my wrist. I couldn't remember when
-      the wound was made.
+    m_Localized: "I was flustered for a second. Checking my body, there were faint
+      wounds and hardened bloodstains left below my wrist.\n I couldn't remember
+      when the wound was made."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797482
-    m_Localized: You said you didn't remember, right? But isn't it strange? You were
-      at the site of the accident... and the smell of your blood remains in this
-      lab.
+    m_Localized: "You said you didn't remember, right? But isn't it strange? \nYou
+      were at the site of the accident... and the smell of your blood remains in
+      this lab."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797483
-    m_Localized: She looked around the floor. And she found something beside the
-      broken lab bench. A piece of a torn lab coat. My name tag was attached to it.
+    m_Localized: "She looked around the floor. And she found something beside the
+      broken lab bench. \nA piece of a torn lab coat. My name tag was attached to
+      it."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797484
@@ -660,9 +644,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797485
-    m_Localized: Her expression wavered. It was closer to confusion than anger. She
-      wanted to trust me, but the evidence in front of her kept making her suspect
-      me.
+    m_Localized: "Her expression wavered. It was closer to confusion than anger.
+      \nShe wanted to trust me, but the evidence in front of her kept making her
+      suspect me."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797486
@@ -674,19 +658,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797488
-    m_Localized: I don't know. But if I were lying, I wouldn't have tried to explain
-      like this to you. I also want to know what happened.
+    m_Localized: "I don't know. But if I were lying, I wouldn't have tried to explain
+      like this to you. \nI also want to know what happened."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797489
-    m_Localized: Doesn't seem like you're lying... Then again, even if it were a
-      lie, there's no way to know. (Retriever Affection +10)
+    m_Localized: "Doesn't seem like you're lying... Then again, even if it were a
+      lie, there's no way to know. \n(Retriever Affection +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797490
-    m_Localized: Retriever still couldn't completely drop her suspicious gaze, but
-      she seemed to accept my sincerity to some extent. She held the piece of the
-      lab coat and fell into thought for a moment.
+    m_Localized: "Retriever still couldn't completely drop her suspicious gaze, but
+      she seemed to accept my sincerity to some extent. \nShe held the piece of the
+      lab coat and fell into thought for a moment."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797491
@@ -723,14 +707,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797498
-    m_Localized: However, a deeper distrust than before remained in her eyes. (Retriever
-      Affection -10)
+    m_Localized: "However, a deeper distrust than before remained in her eyes. \n(Retriever
+      Affection -10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797499
-    m_Localized: Inside the lab coat she was holding, a faintly written serial number
-      caught my eye. And strangely... the moment I saw those numbers, something flashed
-      in my mind.
+    m_Localized: "Inside the lab coat she was holding, a faintly written serial number
+      caught my eye. \nAnd strangely... the moment I saw those numbers, something
+      flashed in my mind."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797500
@@ -738,9 +722,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797501
-    m_Localized: When I opened the door to the break room, I heard the sound of someone
-      rummaging through things inside. Someone was opening drawers, checking the
-      walls, and looking for something. It was Fox.
+    m_Localized: "When I opened the door to the break room, I heard the sound of
+      someone rummaging through things inside. \nSomeone was opening drawers, checking
+      the walls, and looking for something. It was Fox."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797502
@@ -813,9 +797,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797517
-    m_Localized: In the corner of the break room sat an old research bag covered
-      in dust. It looked like an abandoned item on the outside, but as I got closer,
-      a faint alert sound came from inside.
+    m_Localized: "In the corner of the break room sat an old research bag covered
+      in dust. \nIt looked like an abandoned item on the outside, but as I got closer,
+      a faint alert sound came from inside."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797518
@@ -823,8 +807,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797519
-    m_Localized: When I opened the bag, inside was an old tablet and several research
-      documents. An encrypted file was displayed on the tablet screen.
+    m_Localized: "When I opened the bag, inside was an old tablet and several research
+      documents. \nAn encrypted file was displayed on the tablet screen."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797520
@@ -870,8 +854,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797528
-    m_Localized: I also... want to know how this happened. But if I get my memory
-      back, I'm going to urgently fix this phenomenon of turning into animals first.
+    m_Localized: "I also... want to know how this happened. \nBut if I get my memory
+      back, I'm going to urgently fix this phenomenon of turning into animals first."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797529
@@ -888,14 +872,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797532
-    m_Localized: Holding the tablet, the fox left the break room while keeping her
-      guard up against me. (Fox Affinity +10)
+    m_Localized: "Holding the tablet, the fox left the break room while keeping her
+      guard up against me. \n(Fox Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797533
-    m_Localized: I momentarily read her movements and lunged to snatch the tablet.
-      My strength and reaction speed had increased due to beastification, but she,
-      not yet fully transformed, couldn't react.
+    m_Localized: "I momentarily read her movements and lunged to snatch the tablet.
+      \nMy strength and reaction speed had increased due to beastification, but she,
+      not yet fully transformed, couldn't react."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797534
@@ -920,14 +904,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797539
-    m_Localized: Holding the shattered tablet, the fox glared at me and left the
-      break room. Her eyes were filled with deep distrust. (Fox Affinity -10)
+    m_Localized: "Holding the shattered tablet, the fox glared at me and left the
+      break room. \nHer eyes were filled with deep distrust. \n(Fox Affinity -10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797540
-    m_Localized: Having finished our individual searches, we gathered back at the
-      central laboratory. However, the atmosphere had changed from when we first
-      assembled.
+    m_Localized: "Having finished our individual searches, we gathered back at the
+      central laboratory. \nHowever, the atmosphere had changed from when we first
+      assembled."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797541
@@ -978,9 +962,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797551
-    m_Localized: I checked the marks on the lab coat piece and the structure of the
-      tablet file. And I explained, forcing myself to recall even the parts I couldn't
-      remember.
+    m_Localized: "I checked the marks on the lab coat piece and the structure of
+      the tablet file. \nAnd I explained, forcing myself to recall even the parts
+      I couldn't remember."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797552
@@ -989,13 +973,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797553
-    m_Localized: Recalling the combination of the code from the lab coat piece, I
-      entered several serial numbers, and the file inside the tablet was decrypted.
-      The following text appeared on the screen.
+    m_Localized: Recalling the combination derived from the lab coat fragment, I
+      entered a series of serial numbers
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797554
-    m_Localized: (All Characters Affinity +20)
+    m_Localized: "By combining the information I had, I was able to unlock the tablet.
+      \n(All characters' Affection +20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797555
@@ -1016,14 +1000,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797559
-    m_Localized: If we keep changing like this... do I have to live like this for
-      the rest of my life? (All Characters Affinity -20)
+    m_Localized: "If we keep changing like this... do I have to live like this for
+      the rest of my life? \n(All Characters Affinity -20)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797560
-    m_Localized: Under continuous interrogation, I eventually couldn't hide it any
-      longer. Excluding the parts I couldn't remember, I explained all the information
-      I knew.
+    m_Localized: "Under continuous interrogation, I eventually couldn't hide it any
+      longer. \nExcluding the parts I couldn't remember, I explained all the information
+      I knew."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797561
@@ -1054,9 +1038,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797564
-    m_Localized: We gathered all the information we could get from the 1st floor.
-      However, the exit remained firmly closed. And there were only two doses of
-      the cure.
+    m_Localized: "We gathered all the information we could get from the 1st floor.
+      \nHowever, the exit remained firmly closed. And there were only two doses of
+      the cure."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797565
@@ -1074,9 +1058,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797568
-    m_Localized: As soon as we reached the 2nd floor, everyone's pace noticeably
-      slowed. With every breath, my chest felt tight, and an unfamiliar instinct
-      writhed somewhere inside my body.
+    m_Localized: "As soon as we reached the 2nd floor, everyone's pace noticeably
+      slowed. \nWith every breath, my chest felt tight, and an unfamiliar instinct
+      writhed somewhere inside my body."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797569
@@ -1103,13 +1087,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797574
-    m_Localized: We grabbed the remaining canned food and water from the cafeteria,
-      then headed to our respective sickrooms. A brief rest.
+    m_Localized: "After gathering the remaining canned food and water from the cafeteria,
+      \nwe headed to our respective rooms for a brief rest."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797575
-    m_Localized: But no one could rest comfortably. My mind was complicated. I wanted
-      to at least have a conversation with someone.
+    m_Localized: "Yet, I doubt anyone could truly rest. My mind was in turmoil, \nand
+      I desperately wanted someone to talk to."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797576
@@ -1117,8 +1101,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797577
-    m_Localized: The door was slightly open. The inside was surprisingly tidy. On
-      the desk next to the bed, there was an old family photo.
+    m_Localized: "The door was slightly open. The inside was surprisingly tidy.\n
+      On the desk next to the bed, there was an old family photo."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797578
@@ -1144,14 +1128,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797583
-    m_Localized: ...I'm sorry. ...It's hard to hold back my emotions these days.
-      ...This photo is of my parents. ...They both... passed away from the same illness
-      as me.
+    m_Localized: "...I'm sorry. ...It's hard to hold back my emotions these days.
+      \n...This photo is of my parents. ...They both... passed away from the same
+      illness as me."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797584
-    m_Localized: ...So... ...I came to this facility thinking it was my last hope.
-      ...I survived, but. ...I didn't expect to end up looking like this.
+    m_Localized: "...So... ...I came to this facility thinking it was my last hope.
+      \n...I survived, but. ...I didn't expect to end up looking like this."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797585
@@ -1174,8 +1158,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797589
-    m_Localized: The retriever tried to smile, but her eyes were full of sadness.
-      I quietly patted her shoulder. (Retriever Affinity +10)
+    m_Localized: "The retriever tried to smile, but her eyes were full of sadness.
+      \nI quietly patted her shoulder. \n(Retriever Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797590
@@ -1183,18 +1167,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797591
-    m_Localized: When I tried to take the photo, the retriever resisted violently.
-      I ultimately couldn't take the photo and stepped back.
+    m_Localized: "When I tried to take the photo, the retriever resisted violently.
+      \nI ultimately couldn't take the photo and stepped back."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797592
-    m_Localized: ...You came all the way to where I'm resting to do this? ...Please
-      leave. ...Right now... I don't want to see anyone.
+    m_Localized: "...You came all the way to where I'm resting to do this? ...Please
+      leave. \n...Right now... I don't want to see anyone."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797593
-    m_Localized: The retriever glared at me and slammed the door shut. A low growl
-      could be heard from beyond the door. (Retriever Affinity -10)
+    m_Localized: "The retriever glared at me and slammed the door shut. \nA low growl
+      could be heard from beyond the door. \n(Retriever Affinity -10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797594
@@ -1227,8 +1211,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797601
-    m_Localized: A moment later, the door opened, and the rabbit's body was covered
-      in fur. Her large ears were trembling continuously.
+    m_Localized: "A moment later, the door opened, and the rabbit's body was covered
+      in fur.\n Her large ears were trembling continuously."
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797602
@@ -1241,7 +1225,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380289
-    m_Localized: Thank you. I feel a little better. (Rabbit Affinity +10)
+    m_Localized: "Thank you. I feel a little better. \n(Rabbit Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380290
@@ -1257,23 +1241,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380293
-    m_Localized: .. I moved to another place before anyone came. (Rabbit Affinity
-      -10)
+    m_Localized: ".. I moved to another place before anyone came. \n(Rabbit Affinity
+      -10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380294
-    m_Localized: The fox's room was filled with documents and research materials.
-      A clinical trial consent form lay on the desk.
+    m_Localized: "The fox's room was filled with documents and research materials.
+      \nA clinical trial consent form lay on the desk."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380295
-    m_Localized: And. A battered old voice recorder. When I pressed the play button,
-      a familiar voice flowed out.
+    m_Localized: "And. A battered old voice recorder. When I pressed the play button,
+      \na familiar voice flowed out."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380296
-    m_Localized: '"(Recording): "" ...This is not a cure. ...It''s a virus that turns
-      humans into beastmen. ...The research must be stopped immediately. "" "'
+    m_Localized: "(Recording): 'This cure has a fatal side effect that turns humans
+      into therianthropes... \nWe must stop the research immediately.'"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380297
@@ -1294,13 +1278,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380301
-    m_Localized: ...Responsibility? ...Is that it? ...If there were side effects.
-      ...You could just fix them. ...Why did you try to destroy everything?
+    m_Localized: "...Responsibility? ...Is that it? ...If there were side effects.
+      ...You could just fix them. \n...Why did you try to destroy everything?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380302
-    m_Localized: Without a cure... whether we turn into animals or not, we'll die
-      anyway. Does it not matter to you because you don't have an incurable disease?
+    m_Localized: "Without a cure... whether we turn into animals or not, we'll die
+      anyway. \nDoes it not matter to you because you don't have an incurable disease?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380303
@@ -1308,9 +1292,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380304
-    m_Localized: Still... thanks for telling me honestly. I suppose... if you tried
-      to discard it when all you had to do was fix the side effects... there must
-      have been some kind of problem, right?
+    m_Localized: "Still... thanks for telling me honestly. I suppose... \nif you
+      tried to discard it when all you had to do was fix the side effects... there
+      must have been some kind of problem, right?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380305
@@ -1319,14 +1303,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380306
-    m_Localized: The fox hugged the voice recorder and left the room. Disbelief still
-      lingered in her eyes, but her desire for the cure seemed stronger. (Fox Affinity
-      +10)
+    m_Localized: "The fox hugged the voice recorder and left the room. Disbelief
+      still lingered in her eyes, \nbut her desire for the cure seemed stronger.
+      \n(Fox Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380307
-    m_Localized: I momentarily snatched the voice recorder and smashed it on the
-      floor. The voice recorder was broken and could no longer be used.
+    m_Localized: "I momentarily snatched the voice recorder and smashed it on the
+      floor. \nThe voice recorder was broken and could no longer be used."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380308
@@ -1344,8 +1328,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380311
-    m_Localized: The fox pushed me away and turned her back. The tail on her back
-      wagged violently. Her anger was palpable. (Fox Affinity -10)
+    m_Localized: "The fox pushed me away and turned her back. \nThe tail on her back
+      wagged violently. Her anger was palpable. \n(Fox Affinity -10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380312
@@ -1428,7 +1412,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380329
-    m_Localized: ...Please don't... tell the others. (Sheep Affinity +10)
+    m_Localized: "...Please don't... tell the others. \n(Sheep Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380330
@@ -1441,8 +1425,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380332
-    m_Localized: ...Hehe. That's a relief. ...I'm just... an ordinary patient, you
-      see. (Sheep Affinity +10)
+    m_Localized: "...Hehe. That's a relief. ...I'm just... an ordinary patient, you
+      see. \n(Sheep Affinity +10)"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380333
@@ -1451,13 +1435,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380334
-    m_Localized: I left her room. Through the crack in the door, the sheep was watching
-      me. Her dual nature confused me.
+    m_Localized: "I left her room. Through the crack in the door, \nthe sheep was
+      watching me. Her dual nature confused me."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380335
-    m_Localized: The short rest was over. My body had recovered a bit, but the beastification
-      was deepening, and sometimes animal cries mixed in while I was speaking.
+    m_Localized: "The short rest was over. My body had recovered a bit, \nbut the
+      beastification was deepening, and sometimes animal cries mixed in while I was
+      speaking."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380336
@@ -1470,19 +1455,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380338
-    m_Localized: To escape, we needed clues to open the locked entrance on the 1st
-      floor, the keycard in the basement, and the safe's password. We headed to the
-      3rd floor.
-    m_Metadata:
-      m_Items: []
-  - m_Id: 147044218380339
     m_Localized: Strangely, the door to the 3rd floor was not locked. But the moment
       we opened the door, cold air flowed out.
     m_Metadata:
       m_Items: []
-  - m_Id: 147044218380340
+  - m_Id: 147044218380339
     m_Localized: While the 1st floor was a somewhat organized research space, the
       3rd floor looked like a place someone had hastily abandoned.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 147044218380340
+    m_Localized: We had now completely turned into animals.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380341
@@ -1528,8 +1511,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380348
-    m_Localized: I felt my physical condition worsening. To save time, we decided
-      to scatter and search the 3rd floor individually as well.
+    m_Localized: "I felt my physical condition worsening. \nTo save time, we decided
+      to scatter and search the 3rd floor individually as well."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380349
@@ -1563,8 +1546,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380356
-    m_Localized: Alright. Looking at the map, the retriever and I will have to search
-      from a bit further away. We should also check if anyone else is left around.
+    m_Localized: "Alright. Looking at the map, the retriever and I will have to search
+      from a bit further away. \nWe should also check if anyone else is left around."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380357
@@ -1609,9 +1592,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380362
-    m_Localized: The record from the time of the incident documented the process
+    m_Localized: "The record from the time of the incident documented the process
       of a virus ampoule breaking on the floor while the sheep and I were conversing,
-      putting the facility into a state of emergency.
+      \nputting the facility into a state of emergency."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380363
@@ -1651,8 +1634,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380371
-    m_Localized: We are human. And... since the others became animals against their
-      will, I have a responsibility to turn everyone back into humans.
+    m_Localized: "We are human. And... since the others became animals against their
+      will, \nI have a responsibility to turn everyone back into humans."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380372
@@ -1664,9 +1647,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380374
-    m_Localized: '"But what if... there is someone who doesn''t want to return to
-      being human? If there''s someone who says they are happier as they are now,
-      what will you do?"'
+    m_Localized: "\"But what if... there is someone who doesn't want to return to
+      being human?\n If there's someone who says they are happier as they are now,
+      what will you do?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380375
@@ -1708,14 +1691,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380383
-    m_Localized: '"That''s right, exactly that! You feel it too, don''t you? Our
-      bodies have become healthy, and wouldn''t it actually be better if everyone
-      turned into animals?"'
+    m_Localized: "\"That's right, exactly that! You feel it too, don't you? Our bodies
+      have become healthy, \nand wouldn't it actually be better if everyone turned
+      into animals?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380384
-    m_Localized: "\"Looking for a way to cure it\u2014that's not adaptation, it's
-      'degeneration'. You've already evolved into a presence that is one step superior.\""
+    m_Localized: "Looking for a way to cure it\u2014that's not adaptation, \nit's
+      'degeneration'. You've already evolved into a presence that is one step superior."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380385
@@ -1724,9 +1707,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380386
-    m_Localized: '"This side effect isn''t a disaster, it''s a ''salvation''. It
-      cured us who were just waiting for the day to die, and can make everyone pure
-      without lies..."'
+    m_Localized: "This side effect isn't a disaster, it's a 'salvation'. It cured
+      us who were just waiting for the day to die, \nand can make everyone pure without
+      lies\u2026"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380387
@@ -1744,7 +1727,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380390
-    m_Localized: '"Right. Maybe... it might be possible? It could be like that."'
+    m_Localized: Right... Maybe... you? It could very well be you.
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380391
@@ -1822,8 +1805,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380407
-    m_Localized: '"There is a cure, but... there are only 2. One of us will have
-      to live as an animal until a cure can be made again."'
+    m_Localized: "\"There is a cure, but... there are only 2. \nOne of us will have
+      to live as an animal until a cure can be made again.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380408
@@ -1842,8 +1825,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380411
-    m_Localized: '"It''s okay. I can wait! When I last contacted Mom and Dad, I promised
-      to stay brave too. (Rabbit Affinity +10)"""'
+    m_Localized: "\"It's okay. \nI can wait! When I last contacted Mom and Dad, I
+      promised to stay brave too. \n(Rabbit Affinity +10)\"\"\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380412
@@ -1874,8 +1857,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380418
-    m_Localized: '"Why are you lying? I''m not a kid. Are you... coveting the cure
-      too? (Rabbit Affinity -10)"""'
+    m_Localized: "\"Why are you lying? I'm not a kid. Are you... coveting the cure
+      too? \n(Rabbit Affinity -10)\"\"\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380419
@@ -1923,8 +1906,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380428
-    m_Localized: In the research support room, records used right up until the accident
-      remained. However, most data was damaged, and only one file could be opened.
+    m_Localized: "In the research support room, records used right up until the accident
+      remained. \nHowever, most data was damaged, and only one file could be opened."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380429
@@ -1987,8 +1970,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380439
-    m_Localized: '"This is the last security deactivation code. Actually, I found
-      it in the security room. How about just the two of us taking the cure?"'
+    m_Localized: "\"This is the last security deactivation code. Actually, I found
+      it in the security room. \nHow about just the two of us taking the cure?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380440
@@ -2004,8 +1987,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380443
-    m_Localized: '"I changed my mind. If you tell other people that I have the code,
-      it''ll be troublesome... Here, I''ll give this to you."'
+    m_Localized: "\"I changed my mind. If you tell other people that I have the code,
+      it'll be troublesome... \nHere, I'll give this to you.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380444
@@ -2026,8 +2009,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380448
-    m_Localized: '"I''ll keep holding onto this code. Let''s look for a chance and
-      run away just the two of us."'
+    m_Localized: "\"I'll keep holding onto this code. \nLet's look for a chance and
+      run away just the two of us.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380449
@@ -2041,8 +2024,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380451
-    m_Localized: Now we reached the basement where the cure was. However, the rare
-      side effects of the cure, the possibility of escape..
+    m_Localized: "Now we reached the basement where the cure was. \nHowever, the
+      rare side effects of the cure, the possibility of escape.."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380452
@@ -2056,8 +2039,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380454
-    m_Localized: When we went down to the basement, a massive generator was roaring.
-      Damp, cold air wrapped around my skin, and the smell of metal stung my nose.
+    m_Localized: "When we went down to the basement, a massive generator was roaring.
+      Damp, cold air wrapped around my skin, \nand the smell of metal stung my nose."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380455
@@ -2070,8 +2053,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380457
-    m_Localized: The sheep looked at me with a smile. Her eyes were no longer innocent.
-      There was only conviction and madness filled within them.
+    m_Localized: "The sheep looked at me with a smile. \nHer eyes were no longer
+      innocent. \nThere was only conviction and madness filled within them."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380458
@@ -2092,8 +2075,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380462
-    m_Localized: '"The facility?? ...How is that possible? Money, time... it would
-      take more than just a thing or two?"'
+    m_Localized: "\"The facility?? ...How is that possible? \nMoney, time... it would
+      take more than just a thing or two?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380463
@@ -2112,8 +2095,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380466
-    m_Localized: '"At first, I thought everyone was genuinely worried about me. But...
-      before the funeral was even over, they showed their true colors."'
+    m_Localized: "\"At first, I thought everyone was genuinely worried about me.
+      \nBut... before the funeral was even over, they showed their true colors.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380467
@@ -2164,9 +2147,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380476
-    m_Localized: '"The fox... had a lot of playfulness so it was hard to approach
-      easily, but just watching her was enjoyable, and the sheep... believed in me
-      and followed me without any conditions."'
+    m_Localized: "\"The fox... had a lot of playfulness so it was hard to approach
+      easily, \nbut just watching her was enjoyable, and the sheep... believed in
+      me and followed me without any conditions.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380477
@@ -2195,8 +2178,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380483
-    m_Localized: '"Maybe so... But I''ve made up my mind. If everyone becomes an
-      animal... no one else will be hurt because of lies."'
+    m_Localized: "\"Maybe so... But I've made up my mind. If everyone becomes an
+      animal... \nno one else will be hurt because of lies.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380484
@@ -2204,13 +2187,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380485
-    m_Localized: '"Hehe... There''s nothing to fear. Soon, you too will gain true
-      freedom. Now, my savior."'
+    m_Localized: "\"Hehe... There's nothing to fear. Soon, you too will gain true
+      freedom. \nNow, my savior.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380486
-    m_Localized: '"It''s time to make the final choice. Inside that safe are the
-      cure and the emergency system deactivation code, right?"'
+    m_Localized: "\"It's time to make the final choice. \nInside that safe are the
+      cure and the emergency system deactivation code, right?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380487
@@ -2219,8 +2202,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380488
-    m_Localized: The sheep pointed to a massive safe. The safe door was firmly locked,
-      and a complex cryptographic device was attached above it.
+    m_Localized: "The sheep pointed to a massive safe. The safe door was firmly locked,
+      \nand a complex cryptographic device was attached above it."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380489
@@ -2229,8 +2212,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380490
-    m_Localized: 'The animal instinct inside me was trying to erode my reason. I
-      had to choose: protect my humanity, or become the creator of a new world?'
+    m_Localized: "The animal instinct inside me was trying to erode my reason. I
+      had to choose: \nprotect my humanity, or become the creator of a new world?"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380491
@@ -2246,15 +2229,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380494
-    m_Localized: I picked up the vaccine inside the safe. The eyes of my companions
-      had already lost their reason. I dropped the drug on the floor and smashed
-      it.
+    m_Localized: "I picked up the vaccine inside the safe. The eyes of my companions
+      had already lost their reason. \nI dropped the drug on the floor and smashed
+      it."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380495
-    m_Localized: At that moment, along with excruciating pain, the last thread of
-      reason snapped. We completely lost human language and crawled on the floor,
-      emitting only beastly roars.
+    m_Localized: "At that moment, along with excruciating pain, the last thread of
+      reason snapped. \nWe completely lost human language and crawled on the floor,
+      emitting only beastly roars."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380496
@@ -2276,8 +2259,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380500
-    m_Localized: I flatly rejected the sheep's sweet proposal. However, the emergency
-      system deactivation code to open the safe was nowhere to be seen.
+    m_Localized: "I flatly rejected the Sheep's sweet proposal. \nHowever, the Sheep
+      was the one who held the emergency override code to unlock the safe."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380501
@@ -2311,23 +2294,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380507
-    m_Localized: Taking a very long time, we barely escaped after deactivating the
-      emergency system without losing 'human reason'.
+    m_Localized: "Taking a very long time, \nwe barely escaped after deactivating
+      the emergency system without losing 'human reason'."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380508
-    m_Localized: We went down to the dazzling surface, the village of humans we missed.
-      But what greeted us was not salvation.
+    m_Localized: "We went down to the dazzling surface, \nthe village of humans we
+      missed. But what greeted us was not salvation."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380509
-    m_Localized: People threw stones at us while screaming, and soon police responded
-      with sirens and began arresting us.
+    m_Localized: "People threw stones at us while screaming, \nand soon police responded
+      with sirens and began arresting us."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380510
-    m_Localized: In the chaotic scene, the rabbit and the fox were dragged away somewhere.
-      The retriever and I barely managed to escape into the dark, deep mountains.
+    m_Localized: "In the chaotic scene, the rabbit and the fox were dragged away
+      somewhere. \nThe retriever and I barely managed to escape into the dark, deep
+      mountains."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380511
@@ -2335,13 +2319,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380512
-    m_Localized: I wailed like a beast as I looked at my hands covered in beast fur.
-      We were banished from human society forever and had to live the lives of beasts.
+    m_Localized: "I wailed like a beast as I looked at my hands covered in beast
+      fur. \nWe were banished from human society forever and had to live the lives
+      of beasts."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380513
-    m_Localized: '"You''re wrong. This isn''t salvation, it''s destruction. It''s
-      nothing more than denying everything we built as humans and running away."'
+    m_Localized: "\"You're wrong. This isn't salvation, it's destruction. \nIt's
+      nothing more than denying everything we built as humans and running away.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380514
@@ -2350,20 +2335,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380515
-    m_Localized: Unlocking the safe's code, I found the vaccine inside. There were
-      only 2 vaccines. However, as the Research Director, I knew a way to produce
-      additional vaccines.
+    m_Localized: "Unlocking the safe's code, I found the vaccine inside. \nThere
+      were only 2 vaccines. However, as the Research Director, I knew a way to produce
+      additional vaccines."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380516
-    m_Localized: At that moment, the sheep lunged at me in rage, and 1 vaccine shattered.
-      She was restrained by the fox and retriever.
+    m_Localized: "At that moment, the sheep lunged at me in rage, and 1 vaccine shattered.
+      \nShe was restrained by the fox and retriever."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380517
-    m_Localized: '"Now... what are you going to do? There''s only 1 of that important
-      drug left, right? Naturally, it''d be best if you took it before losing your
-      reason, wouldn''t it?"'
+    m_Localized: "\"Now... what are you going to do? There's only 1 of that important
+      drug left, right? \nNaturally, it'd be best if you took it before losing your
+      reason, wouldn't it?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380518
@@ -2400,15 +2385,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380525
-    m_Localized: '"Sheep, you said what you wished for was to live as a ''true animal''.
-      But a beast that lost its reason is not salvation, but merely destruction.
-      Negotiate with me."'
+    m_Localized: "\"Sheep, you said what you wished for was to live as a 'true animal'.
+      \nBut a beast that lost its reason is not salvation, but merely destruction.
+      \nNegotiate with me.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380526
-    m_Localized: '"Support me with your influence and resources. I will produce a
-      beastification drug where people don''t lose their reason, and ultimately develop
-      a real cure that turns beastmen back into complete humans."'
+    m_Localized: "\"Support me with your influence and resources. \nI will produce
+      a beastification drug where people don't lose their reason, and ultimately
+      develop a real cure that turns beastmen back into complete humans.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380527
@@ -2417,8 +2402,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380528
-    m_Localized: '"Fine, Research Director... Let''s see how far you can reach. Instead,
-      you must keep your promise."'
+    m_Localized: "\"Fine, Research Director... Let's see how far you can reach. \nInstead,
+      you must keep your promise.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380529
@@ -2427,24 +2412,24 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380530
-    m_Localized: With the addition of the sheep's formidable financial power, resources,
-      and everyone's cooperation, the stalled research rapidly began making progress.
+    m_Localized: "With the addition of the sheep's formidable financial power, \nresources,
+      and everyone's cooperation, the stalled research rapidly began making progress."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380531
-    m_Localized: We haven't yet found a way to completely return transformed bodies
-      back into full human form. We are still living in animal forms.
+    m_Localized: "We haven't yet found a way to completely return transformed bodies
+      back into full human form. \nWe are still living in animal forms."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380532
-    m_Localized: However... we will definitely find a way. Until we reclaim our lost
-      appearance and our stolen lives as humans.
+    m_Localized: "However... we will definitely find a way. \nUntil we reclaim our
+      lost appearance and our stolen lives as humans."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380533
-    m_Localized: With trembling hands, I used the single remaining vaccine on the
-      retriever. As the vaccine was injected, a clear light of reason began returning
-      to her murky eyes.
+    m_Localized: "With trembling hands, I used the single remaining vaccine on the
+      retriever. \nAs the vaccine was injected, a clear light of reason began returning
+      to her murky eyes."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380534
@@ -2453,8 +2438,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380535
-    m_Localized: '"Because I was the one in charge. It''s my fault for failing to
-      protect everyone. Even if it''s just you... survive and keep your reason."'
+    m_Localized: "\"Because I was the one in charge. It's my fault for failing to
+      protect everyone. \nEven if it's just you... survive and keep your reason.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380536
@@ -2468,19 +2453,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380538
-    m_Localized: The eyes of the retriever who regained reason shook violently. The
-      extreme fear she felt while turning into a beast,
+    m_Localized: "The eyes of the retriever who regained reason shook violently.
+      \nThe extreme fear she felt while turning into a beast,"
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380539
     m_Localized: "And her feelings toward you\u2014the one who had given up a life-saving
-      medicine for her sake\u2014began to twist inside her mind in a strange way."
+      medicine for her sake\u2014\nbegan to twist inside her mind in a strange way."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380540
-    m_Localized: To her, who was turning into a beast, this man with no particular
+    m_Localized: "To her, who was turning into a beast, this people \nwith no particular
       close relation willingly handed over a vaccine that was no different from his
-      own life.
+      own life."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380541
@@ -2488,13 +2473,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380542
-    m_Localized: "\"Why...? You could have lived alone, so why to me... Why sacrifice
+    m_Localized: "\"Why...? You could have lived alone, so why to me... \nWhy sacrifice
       yourself so easily for others? \u2026\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380543
-    m_Localized: The retriever muttered softly, then firmly grabbed my wrist with
-      eyes that had deepened further. It was a strong force that couldn't be rejected.
+    m_Localized: "The retriever muttered softly, then firmly grabbed my wrist with
+      eyes that had deepened further. \nIt was a strong force that couldn't be rejected."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380544
@@ -2503,41 +2488,40 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380545
-    m_Localized: '"I won''t leave you alone in this painful world. And... I won''t
-      let a good person like you sacrifice yourself for others either."'
+    m_Localized: "\"I won't leave you alone in this painful world. \nAnd... I won't
+      let a good person like you sacrifice yourself for others either.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380546
-    m_Localized: '"Now no one can use you as a test subject. Nor can they exploit
-      you. I know a deep cave that no one knows about... Live there with me, safely
-      forever."'
+    m_Localized: "No one can use you as a test subject anymore. No one can take advantage
+      of you. \nRight here, where you led me... we can stay safe together forever."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380547
-    m_Localized: Possessing the sophistication of human intelligence regained, combined
+    m_Localized: "Possessing the sophistication of human intelligence regained, \ncombined
       with an obsession rooted in a dog's blind loyalty. I was dragged by her hand
-      into the darkness where no one could find us.
+      into the darkness where no one could find us."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380548
-    m_Localized: She began completely confining and raising me. That was the only
-      'requital' and 'protection' she thought of.
+    m_Localized: "She began completely confining and raising me. \nThat was the only
+      'requital' and 'protection' she thought of."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380549
-    m_Localized: The medicine cured her cold body, but it could not heal her shattered
-      heart or the blind obsession imprinted on you when she was losing her sanity.
+    m_Localized: "The medicine cured her cold body, \nbut it could not heal her shattered
+      heart or the blind obsession imprinted on you when she was losing her sanity."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380550
-    m_Localized: I was led by the retriever's hand into the deep cave. She completely
-      confined me. I came to live continuously in this safe prison.
+    m_Localized: "I was led by the retriever's hand into the deep cave. She completely
+      confined me. \nI came to live continuously in this safe prison."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380551
-    m_Localized: With trembling hands, I used the single remaining vaccine on the
-      fox. As the vaccine was injected, a sharp light of reason began returning to
-      his murky eyes.
+    m_Localized: "With trembling hands, I used the single remaining vaccine on the
+      fox. \nAs the vaccine was injected, a sharp light of reason began returning
+      to his murky eyes."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380552
@@ -2545,8 +2529,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380553
-    m_Localized: '"As the Research Director, I have the responsibility for making
-      everyone like this... At least you keep your reason and get out of here."'
+    m_Localized: "\"As the Research Director, I have the responsibility for making
+      everyone like this... \nAt least you keep your reason and get out of here.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380554
@@ -2564,8 +2548,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380557
-    m_Localized: Regaining reason amid extreme pain, the fox's eyes twisted cold
-      and frosty. The pain of the hellish side effect set fire to his distrust.
+    m_Localized: "Regaining reason amid extreme pain, the fox's eyes twisted cold
+      and frosty. \nThe pain of the hellish side effect set fire to his distrust."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380558
@@ -2583,9 +2567,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380561
-    m_Localized: '"Shut up! While I was tied down because of this pain, you were
-      thinking of getting the real hidden cure and escaping alone, right?! Isn''t
-      that so?!"'
+    m_Localized: "\"Shut up! While I was tied down because of this pain, \nyou were
+      thinking of getting the real hidden cure and escaping alone, right?! Isn't
+      that so?!\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380562
@@ -2594,14 +2578,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380563
-    m_Localized: Swept by madness from the pain of the side effect, the fox didn't
-      even listen to my words and forcefully bound me tightly to a pillar, then disappeared
-      toward the exit with staggering steps.
+    m_Localized: "Swept by madness from the pain of the side effect, the fox didn't
+      even listen to my words and forcefully bound me tightly to a pillar, \nthen
+      disappeared toward the exit with staggering steps."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380564
-    m_Localized: ...How much time had passed? Waking up barely after losing consciousness,
-      the low voice of the sheep reached my ears.
+    m_Localized: "...How much time had passed? \nWaking up barely after losing consciousness,
+      the low voice of the sheep reached my ears."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380565
@@ -2614,20 +2598,20 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380567
-    m_Localized: '"Don''t worry, Savior-nim. I will take good care of you. Let''s...
-      get along well from now on."'
+    m_Localized: "\"Don't worry, Savior-nim. I will take good care of you. \nLet's...
+      get along well from now on.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380568
-    m_Localized: With my body beastified and even my reason paralyzed, I was taken
+    m_Localized: "With my body beastified and even my reason paralyzed, \nI was taken
       in by the sheep. Like that, I remained forever as a collectible item of this
-      bizarre facility.
+      bizarre facility."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380569
-    m_Localized: With trembling hands, I used the single remaining vaccine on the
-      rabbit. As the vaccine was injected, a calm light of reason began returning
-      to her anxiously shaking eyes.
+    m_Localized: "With trembling hands, I used the single remaining vaccine on the
+      rabbit. \nAs the vaccine was injected, a calm light of reason began returning
+      to her anxiously shaking eyes."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380570
@@ -2645,9 +2629,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380573
-    m_Localized: Even the cure she desperately wanted failed to return her body's
-      transformation in the end. Looking at the surrounding people who lost their
-      reason and were becoming beasts, she was feeling despair.
+    m_Localized: "Even the cure she desperately wanted failed to return her body's
+      transformation in the end. \nLooking at the surrounding people who lost their
+      reason and were becoming beasts, she was feeling despair."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380574
@@ -2656,9 +2640,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380575
-    m_Localized: '"Out there is dangerous... I''m so scared! Leaving here will be
-      dangerous too... They might experiment on me somewhere. They''ll lock me up
-      again!"'
+    m_Localized: "\"Out there is dangerous... I'm so scared! Leaving here will be
+      dangerous too... \nThey might experiment on me somewhere. They'll lock me up
+      again!\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380576
@@ -2667,8 +2651,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380577
-    m_Localized: '"And... if help cannot be found, try going to the location written
-      on this note. As a last resort, you''ll be able to live on a secluded island."'
+    m_Localized: "\"And... if help cannot be found, try going to the location written
+      on this note. \nAs a last resort, you'll be able to live on a secluded island.\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380578
@@ -2677,8 +2661,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380579
-    m_Localized: '"No! Out there won''t work! I need a person I can trust... Because
-      you''re the person who gave me the only vaccine... I can trust you, right?"'
+    m_Localized: "\"No! Out there won't work! I need a person I can trust... \nBecause
+      you're the person who gave me the only vaccine... I can trust you, right?\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380580
@@ -2686,9 +2670,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380581
-    m_Localized: Regaining reason and intelligence, the rabbit's judgment began focusing
-      solely on 'calculations for hiding perfectly'. She forcefully dragged me and
-      ran like crazy toward the emergency escape route.
+    m_Localized: "Regaining reason and intelligence, the rabbit's judgment began
+      focusing solely on 'calculations for hiding perfectly'. \nShe forcefully dragged
+      me and ran like crazy toward the emergency escape route."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380582
@@ -2697,8 +2681,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380583
-    m_Localized: She blocked every door and window leading to the outside world in
-      layers, and confined me so that I couldn't go out the door.
+    m_Localized: "She blocked every door and window leading to the outside world
+      in layers, \nand confined me so that I couldn't go out the door."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380584
@@ -2707,15 +2691,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380585
-    m_Localized: The vaccine stopped the physical beastification and brought back
-      reason, but it could not fix the massive fear and broken mind that returned
-      alongside intelligence.
+    m_Localized: "The vaccine stopped the physical beastification and brought back
+      reason, \nbut it could not fix the massive fear and broken mind that returned
+      alongside intelligence."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380586
-    m_Localized: We came to live together like that in the closed darkness for the
-      rest of our lives, but the deep fear settled inside the rabbit's eyes never
-      vanished forever.
+    m_Localized: "We came to live together like that in the closed darkness for the
+      rest of our lives, \nbut the deep fear settled inside the rabbit's eyes never
+      vanished forever."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380587
@@ -2738,8 +2722,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380591
-    m_Localized: '"Talking any further is useless. We''re taking this vaccine! If
-      the three of us divide and administer it, we''ll manage somehow!"'
+    m_Localized: "\"Talking any further is useless. We're taking this vaccine! \nIf
+      the three of us divide and administer it, we'll manage somehow!\""
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380592
@@ -2748,8 +2732,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380593
-    m_Localized: Everyone abandoned me. They left, calling me a traitor. As I fell
-      into despair, the sheep approached and held out her hand.
+    m_Localized: "Everyone abandoned me. They left, calling me a traitor. \nAs I
+      fell into despair, the sheep approached and held out her hand."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380594
@@ -2768,8 +2752,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380597
-    m_Localized: We captured the companions who had abandoned me and used them as
-      test subjects. Their screams became beautiful data.
+    m_Localized: "We captured the companions who had abandoned me and used them as
+      test subjects. \nTheir screams became beautiful data."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380598
@@ -2778,9 +2762,9 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380599
-    m_Localized: Below the helicopter window, a dense forest of distant skyscrapers
-      filled with humans living busily like machines came into view. Holding each
-      other's hands tightly, the sheep and I smiled.
+    m_Localized: "Below the helicopter window, a dense forest of distant skyscrapers
+      filled with humans living busily like machines came into view. \nHolding each
+      other's hands tightly, the sheep and I smiled."
     m_Metadata:
       m_Items: []
   - m_Id: 147044218380600
@@ -2999,11 +2983,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 860170895171619
-    m_Localized: The sheep is right. Everyone should become animals.
+    m_Localized: The sheep is right. Everyone should become animals. (All Characters'
+      Affection 40 or lower, excluding Sheep)
     m_Metadata:
       m_Items: []
   - m_Id: 860170895171620
-    m_Localized: Take it yourself and promise to develop a cure.
+    m_Localized: Take it yourself and promise to develop a cure. (All Characters'
+      Affection 50 or higher, excluding Sheep)
     m_Metadata:
       m_Items: []
   - m_Id: 860170895171621
