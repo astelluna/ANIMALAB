@@ -2511,6 +2511,10 @@ MonoBehaviour:
     m_Key: PANEL_WARNINGTEXT
     m_Metadata:
       m_Items: []
+  - m_Id: 2666628603387904
+    m_Key: PANEL_SAVECOMPLETE
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

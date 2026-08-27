@@ -66,6 +66,8 @@ public class DialogManager : MonoBehaviour
 
     //메인메뉴 창
     [SerializeField] MenuPanel menuPanel;
+    //세이브 완료 창
+    [SerializeField] SaveCompletePanel saveCompletePanel;
 
     //다국어(로컬라이제이션)
     private string curLocalizedText = ""; // 가져온 실제 텍스트를 저장
@@ -196,7 +198,10 @@ public class DialogManager : MonoBehaviour
         CharacterUISlotManager.Instance.SetCharacterShowData(characterSpriteList);
         //배경 소리 가져오기
         eSoundID soundId = SaveManager.Instance.GetBackgroundMusicId();
-        PlaySound(soundId);
+        if(soundId != eSoundID.none)
+        {
+            PlaySound(soundId);
+        }
     }
     public void CreateSaveData(bool isChapterEnd = false)
     {
@@ -205,8 +210,13 @@ public class DialogManager : MonoBehaviour
         saveData.nodeId = curNode.id;
         saveData.readNodeIds = readNodeHash.ToList();
 
-        //TODO,   호감도 및 아이템은 아직 모르겠다. 
         SaveManager.Instance.CreateSaveData(saveData, isChapterEnd);
+
+        //저장 완료되었다는 패널 하나 띄우자. (챕터 끝나면 자동저장, 처음시작할때도 띄우면 안되기때문에 이렇게 하자)
+        if(isChapterEnd == false)
+        {
+            saveCompletePanel.OnPanelShow();
+        }
     }
 
     private void Start()
@@ -341,6 +351,7 @@ public class DialogManager : MonoBehaviour
         if (dialogLogCanvas.IsCanvasShow) { return; }
         if (endingPanel.IsPanelShow) { return; }
         if (menuPanel.IsPanelShow) { return; }
+        if (saveCompletePanel.IsPanelShow) { return; }
         StopSkipCor();
         HandleNext();
     }

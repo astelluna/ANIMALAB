@@ -749,7 +749,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797503
-    m_Localized: ...It's you. Looking at me, she slowly widened the distance."
+    m_Localized: '...It''s you. '
     m_Metadata:
       m_Items: []
   - m_Id: 147044205797504
@@ -3060,6 +3060,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 2146731674771456
     m_Localized: 'ITEM EARNED !! '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2666628603387904
+    m_Localized: Save Complete
     m_Metadata:
       m_Items: []
   references:
