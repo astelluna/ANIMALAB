@@ -1795,7 +1795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -749, y: 386}
+  m_AnchoredPosition: {x: -693, y: 383}
   m_SizeDelta: {x: 579.2302, y: 111.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491087242
@@ -2560,7 +2560,7 @@ GameObject:
   - component: {fileID: 710500910}
   - component: {fileID: 710500909}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button_buyAdRemove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3856,7 +3856,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 779, y: 416}
+  m_AnchoredPosition: {x: 779, y: 383}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &865906797
@@ -5239,8 +5239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 150, y: -75}
-  m_SizeDelta: {x: -300, y: -150}
+  m_AnchoredPosition: {x: 223.79, y: -75}
+  m_SizeDelta: {x: -447.58, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1139784472
 MonoBehaviour:
@@ -5310,7 +5310,7 @@ GameObject:
   - component: {fileID: 1196009471}
   - component: {fileID: 1196009470}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_main
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6934,6 +6934,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   closeButton: {fileID: 48946673}
+  buyAdRemoveButton: {fileID: 710500909}
+  buyAdRemoveButtonText: {fileID: 775477751}
+  removeAdsDefaultText:
+    m_TableReference:
+      m_TableCollectionName: GUID:555e031b6ab57ea47a26da4db4a1ebac
+    m_TableEntryReference:
+      m_KeyId: 3011873513873410
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  removeAdsWithPriceText:
+    m_TableReference:
+      m_TableCollectionName: GUID:555e031b6ab57ea47a26da4db4a1ebac
+    m_TableEntryReference:
+      m_KeyId: 3331661876371456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  removeAdsPurchasedText:
+    m_TableReference:
+      m_TableCollectionName: GUID:555e031b6ab57ea47a26da4db4a1ebac
+    m_TableEntryReference:
+      m_KeyId: 3331661876371457
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1541748804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7882,7 +7914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7527188825474705987, guid: 6cab446609c9b524dbae00e38eb8defe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 463
+      value: 426
       objectReference: {fileID: 0}
     - target: {fileID: 7527188825474705987, guid: 6cab446609c9b524dbae00e38eb8defe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

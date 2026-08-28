@@ -2535,6 +2535,18 @@ MonoBehaviour:
     m_Key: TEXT_PRIVACYPOLICY
     m_Metadata:
       m_Items: []
+  - m_Id: 3331661834428416
+    m_Key: shop.remove_ads.default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3331661876371456
+    m_Key: shop.remove_ads.with_price
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3331661876371457
+    m_Key: shop.remove_ads.purchased
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

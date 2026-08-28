@@ -3081,6 +3081,18 @@ MonoBehaviour:
     m_Localized: Privacy Policy
     m_Metadata:
       m_Items: []
+  - m_Id: 3331661834428416
+    m_Localized: Remove Ads
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3331661876371456
+    m_Localized: Remove Ads ({0})
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3331661876371457
+    m_Localized: Purchased
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

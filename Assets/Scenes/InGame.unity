@@ -4094,6 +4094,8 @@ MonoBehaviour:
   menuPanel: {fileID: 476226289}
   saveCompletePanel: {fileID: 1706439776}
   endingPanel: {fileID: 1863889939}
+  clickCooldown: 0.3
+  minAdInterval: 180
 --- !u!4 &825571070
 Transform:
   m_ObjectHideFlags: 0
@@ -8841,7 +8843,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1764809816
 RectTransform:

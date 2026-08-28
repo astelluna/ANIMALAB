@@ -73,6 +73,13 @@ public class DialogManager : MonoBehaviour
     private string curLocalizedText = ""; // 가져온 실제 텍스트를 저장
     private EndingData curEndingData = null; // 엔딩 데이터 존재하면 넣고, 게임 끝냄
     [SerializeField] EndingPanel endingPanel;
+
+    //클릭해서 대사 넘기기 쿨타임
+    [SerializeField] float clickCooldown = 0.2f;
+    float lastClickTime = -999f;
+    //광고 쿨타임
+    [SerializeField] float minAdInterval = 180f; // 3분 = 180초
+    float lastAdShowTime = -999f; // 초기값을 충분히 작게 둬서 첫 광고는 바로 뜨도록
     private void Awake()
     {
         skipDelay = new WaitForSeconds(skipDelayTime);
@@ -117,7 +124,16 @@ public class DialogManager : MonoBehaviour
             dialogCanvas.gameObject.SetActive(false);
         }
     }
-    
+    // 공통 체크 함수
+    private bool TryConsumeClickCooldown()
+    {
+        if (Time.unscaledTime - lastClickTime < clickCooldown)
+        {
+            return false; // 아직 쿨타임 중
+        }
+        lastClickTime = Time.unscaledTime;
+        return true;
+    }
     private void MenuButtonClick()
     {
         menuPanel.OpenPanel();
@@ -353,6 +369,7 @@ public class DialogManager : MonoBehaviour
         if (endingPanel.IsPanelShow) { return; }
         if (menuPanel.IsPanelShow) { return; }
         if (saveCompletePanel.IsPanelShow) { return; }
+        if (!TryConsumeClickCooldown()) { return; }
         StopSkipCor();
         HandleNext();
     }
@@ -375,7 +392,16 @@ public class DialogManager : MonoBehaviour
         //만약 챕터 정보가 있다면? 챕터 패널부터 실행을 시켜준다, 그리고 2챕터부터 광고를 띄우자
         if (curNode.chapterData != null && curNode.chapterData.chapterId > 0)
         {
-            AdsManager.Instance.ShowInterstitial(StartNewChapter);
+            if (Time.unscaledTime - lastAdShowTime >= minAdInterval)
+            {
+                lastAdShowTime = Time.unscaledTime;
+                AdsManager.Instance.ShowInterstitial(StartNewChapter);
+            }
+            else
+            {
+                // 쿨타임 중이면 광고 없이 바로 챕터 진행
+                StartNewChapter();
+            }
         }
         else
         {
