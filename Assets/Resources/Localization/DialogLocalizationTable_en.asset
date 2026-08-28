@@ -3052,6 +3052,31 @@ MonoBehaviour:
     m_Localized: Save Complete
     m_Metadata:
       m_Items: []
+  - m_Id: 3011873505484800
+    m_Localized: CREDIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873408
+    m_Localized: "This is my very first game that I created and published on the
+      Google Play Store from start to finish.\n\nI went through much more trial and
+      error than expected while making it, and at times, I honestly wondered if I
+      would ever be able to finish it.\n\nIt is still a game with many flaws, but
+      I believe that you discovering and playing it is a truly rare, one-in-a-million
+      coincidence.\n\nIt's just a small choice-based story game, but I hope you enjoy
+      it even a little bit.\n\nAnd... so that I can keep making my next game, \nplease
+      don't hate the ads too much when they pop up!\n\nHoping that one day I can
+      earn enough from making games to buy something delicious...\nThank you so much
+      from the bottom of my heart for playing!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873409
+    m_Localized: Remove Ads
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873410
+    m_Localized: "Enjoy the game ad-free \nand buy the developer a coffee!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

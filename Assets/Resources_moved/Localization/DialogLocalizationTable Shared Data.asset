@@ -2515,6 +2515,22 @@ MonoBehaviour:
     m_Key: PANEL_SAVECOMPLETE
     m_Metadata:
       m_Items: []
+  - m_Id: 3011873505484800
+    m_Key: PANEL_CREDIT_TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873408
+    m_Key: PANEL_CREDIT_DESC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873409
+    m_Key: PANEL_SHOP_TITLE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3011873513873410
+    m_Key: PANEL_SHOP_DESC
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
