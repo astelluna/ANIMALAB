@@ -3053,7 +3053,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3011873505484800
-    m_Localized: CREDIT
+    m_Localized: CREDIT & Privacy Policy
     m_Metadata:
       m_Items: []
   - m_Id: 3011873513873408
@@ -3075,6 +3075,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 3011873513873410
     m_Localized: "Enjoy the game ad-free \nand buy the developer a coffee!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3082335417737216
+    m_Localized: Privacy Policy
     m_Metadata:
       m_Items: []
   references:

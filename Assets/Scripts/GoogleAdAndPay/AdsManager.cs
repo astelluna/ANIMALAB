@@ -1,78 +1,66 @@
 using GoogleMobileAds.Api;
-using System;
+using GoogleMobileAds.Common; // MobileAdsEventExecutor 사용
 using UnityEngine;
 
 public class AdsManager : Singleton<AdsManager>
 {
     private InterstitialAd interstitialAd;
 
-    // 처음에는 테스트 광고 ID 사용
-    private string adUnitId =
-        "ca-app-pub-1407745203471016/9025885840";
+    private string adUnitId = "ca-app-pub-1407745203471016/9025885840";
+
     protected override void Awake()
     {
         base.Awake();
-
-        MobileAds.Initialize(initStatus =>
-        {
-            LoadInterstitial();
-        });
+        MobileAds.Initialize(initStatus => LoadInterstitial());
     }
-
-    //광고 미리 로드
 
     public void LoadInterstitial()
     {
+        // 기존 광고가 남아있다면 콜백 중복 구독 방지를 위해 정리
+        if (interstitialAd != null)
+        {
+            interstitialAd.Destroy();
+            interstitialAd = null;
+        }
+
         AdRequest request = new AdRequest();
-
-        InterstitialAd.Load(
-            adUnitId,
-            request,
-            (InterstitialAd ad, LoadAdError error) =>
+        InterstitialAd.Load(adUnitId, request, (InterstitialAd ad, LoadAdError error) =>
+        {
+            if (error != null || ad == null)
             {
-                if (error != null || ad == null)
-                {
-                    Debug.LogError(
-                        $"광고 로드 실패: {error}"
-                    );
-
-                    return;
-                }
-
-                interstitialAd = ad;
-
-                Debug.Log("전면 광고 로드 완료");
-            });
+                Debug.LogError($"광고 로드 실패: {error}");
+                return;
+            }
+            interstitialAd = ad;
+            Debug.Log("전면 광고 로드 완료");
+        });
     }
 
-    //광고 띄우기
     public void ShowInterstitial(System.Action onClosed)
     {
-        //광고제거 패키지 구매했으면 광고 안띄움
         if (IAPManager.Instance.IsAdRemoved)
         {
             onClosed?.Invoke();
             return;
         }
 
-        //광고 띄우기
-        if (interstitialAd != null &&
-        interstitialAd.CanShowAd())
+        if (interstitialAd != null && interstitialAd.CanShowAd())
         {
+            // 핵심 수정: 콜백 내용을 메인 스레드 Update 루프로 넘겨서 실행
             interstitialAd.OnAdFullScreenContentClosed += () =>
             {
-                LoadInterstitial();
-
-                onClosed?.Invoke();
+                MobileAdsEventExecutor.ExecuteInUpdate(() =>
+                {
+                    LoadInterstitial();
+                    onClosed?.Invoke();
+                });
             };
 
             interstitialAd.Show();
         }
         else
         {
-            // 광고가 없으면 그냥 진행
             onClosed?.Invoke();
-
             LoadInterstitial();
         }
     }

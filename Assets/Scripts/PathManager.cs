@@ -39,4 +39,7 @@ public static class PathManager
     public const string AMBIENT_KEY = "Volume_Ambient";
     public const string UI_KEY = "Volume_UI";
     #endregion
+
+    //privacy Policy (개인정보처리방침 링크)
+    public const string PrivacyPolicyWebUrl = "https://animalab-privacy.catdream8787.workers.dev/";
 }
