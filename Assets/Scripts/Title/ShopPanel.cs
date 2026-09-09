@@ -84,6 +84,7 @@ public class ShopPanel : MonoBehaviour
 
     private void OnBuyAdRemoveButtonClick()
     {
+        return; //구매 버튼 비활성화
         IAPManager.Instance.BuyRemoveAds();
     }
 }
