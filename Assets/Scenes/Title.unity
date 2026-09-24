@@ -7202,6 +7202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titleSound: {fileID: 11400000, guid: a68c17638a4e68d4ebd7eb3bdd37e4c6, type: 2}
+  settingPanel: {fileID: 1385850032}
 --- !u!4 &1606014513
 Transform:
   m_ObjectHideFlags: 0

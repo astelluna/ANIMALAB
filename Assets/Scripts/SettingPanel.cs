@@ -72,6 +72,23 @@ public class SettingPanel : MonoBehaviour
         SetLocale("en");
         UpdateLanguageButtons();
     }
+    public void InitializeLanguage()
+    {
+        // 이미 언어를 선택한 적이 있다면 저장된 언어 사용
+        if (PlayerPrefs.HasKey("SelectedLocale"))
+        {
+            SetLocale(PlayerPrefs.GetString("SelectedLocale"));
+            return;
+        }
+
+        // 처음 실행한 경우 기기 언어 확인
+        string localeCode =
+            Application.systemLanguage == SystemLanguage.Korean
+            ? "ko"
+            : "en";
+
+        SetLocale(localeCode);
+    }
 
     private void SetLocale(string localeCode)
     {
