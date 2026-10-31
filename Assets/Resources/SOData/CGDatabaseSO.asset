@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 324b2a6aa4c92784fb8c1634b1dfba28, type: 3}
+  m_Name: CGDatabaseSO
+  m_EditorClassIdentifier: 
+  backgroundDatas:
+  - key: background_floor1_lobby
+    image: {fileID: 21300000, guid: 055a66388741c654b8b1b1828fdb46a8, type: 3}
+    category: 0
+  - key: background_floor1_lab
+    image: {fileID: 21300000, guid: 53777e7b8fc70154c845a6595f2388a9, type: 3}
+    category: 0
+  - key: CG_ritriver1
+    image: {fileID: 21300000, guid: 76103aa21ba61c243a463859c1ea6c08, type: 3}
+    category: 1
+  - key: CG_ritriver2
+    image: {fileID: 21300000, guid: 2ea4166cf54e34f408195e6e38de6a8e, type: 3}
+    category: 1
+  - key: background_floor1_foyer
+    image: {fileID: 21300000, guid: db08fec9895ee2f4f8be27533de69528, type: 3}
+    category: 0
+  - key: CG_Fox1
+    image: {fileID: 21300000, guid: d2eefa93cabe3b74c928b3667850e3db, type: 3}
+    category: 1
+  - key: CG_Fox2
+    image: {fileID: 21300000, guid: e65f7caec22f8cb4e9902b3dbc542831, type: 3}
+    category: 1
+  - key: background_black
+    image: {fileID: 21300000, guid: cac0cf3977898a04490395387303049e, type: 3}
+    category: 0
+  - key: background_floor2_lobby
+    image: {fileID: 21300000, guid: 35460f5b20ca1c64c8968684d28c39e9, type: 3}
+    category: 0
+  - key: background_floor2_retriever
+    image: {fileID: 21300000, guid: 0929f475f8ab3b24883083857115ce9d, type: 3}
+    category: 0
+  - key: CG_ritriver3
+    image: {fileID: 21300000, guid: e51c8eb140d689542a6b85b0869e5329, type: 3}
+    category: 1
+  - key: background_floor2_rabbit
+    image: {fileID: 21300000, guid: b40d6e3a536e54b4c9417d41efc62d10, type: 3}
+    category: 0
+  - key: CG_Rabbit1
+    image: {fileID: 21300000, guid: ce7266c4d984b884db97ebb90061ea0e, type: 3}
+    category: 1
+  - key: background_floor2_fox
+    image: {fileID: 21300000, guid: 7626c12f01bdc8f4fb3da95a8d378097, type: 3}
+    category: 0
+  - key: CG_Fox3
+    image: {fileID: 21300000, guid: dfb692a8fb6eab84ba5dc361b5c01a79, type: 3}
+    category: 1
+  - key: background_floor2_sheep
+    image: {fileID: 21300000, guid: f4545a16effb3a349b0045317d857a16, type: 3}
+    category: 0
+  - key: CG_Sheep1
+    image: {fileID: 21300000, guid: 83489c66156ed794892cfe07815f51f2, type: 3}
+    category: 1
+  - key: background_floor3_lobby
+    image: {fileID: 21300000, guid: 1bb30a79d70a7234c8ff8c61e83ecf40, type: 3}
+    category: 0
+  - key: background_floor3_sequrity
+    image: {fileID: 21300000, guid: 6ad46d15e7f1d6c4a95a3a3e3f572c3e, type: 3}
+    category: 0
+  - key: CG_Sheep2
+    image: {fileID: 21300000, guid: 88c3437415f31d04bbd92a59f4460feb, type: 3}
+    category: 1
+  - key: background_floor3_wait
+    image: {fileID: 21300000, guid: 19903ae1ab8945f44824203d7505cbf7, type: 3}
+    category: 0
+  - key: CG_Rabbit2
+    image: {fileID: 21300000, guid: cd565977159b9ec438e32ff92021e411, type: 3}
+    category: 1
+  - key: background_floor3_researchsupportroom
+    image: {fileID: 21300000, guid: 0de9339f8083ddb4993fdd7ac4b03a3b, type: 3}
+    category: 0
+  - key: background_basement
+    image: {fileID: 21300000, guid: 9d0aba1485ea59441a32c7cde4edee13, type: 3}
+    category: 0
+  - key: Ending_Bad1
+    image: {fileID: 21300000, guid: d260dba207b362645aab3059cb347bb5, type: 3}
+    category: 2
+  - key: Ending_Bad2
+    image: {fileID: 21300000, guid: 456de0bff0305854fa7b6102bba8cfd4, type: 3}
+    category: 2
+  - key: Ending_ritriver
+    image: {fileID: 21300000, guid: f4212024d137975449fb38784f299a7d, type: 3}
+    category: 2
+  - key: Ending_Fox
+    image: {fileID: 21300000, guid: 782749d0c24de134dbcfd3bd7bcca283, type: 3}
+    category: 2
+  - key: CG_Sheep3
+    image: {fileID: 21300000, guid: 0f16f1f62621c1243a1c3526c150174d, type: 3}
+    category: 1
+  - key: Ending_Rabbit
+    image: {fileID: 21300000, guid: 709d6a4f29a0b284385c923d5ff0ed10, type: 3}
+    category: 2
+  - key: Ending_Sheep
+    image: {fileID: 21300000, guid: 1e551892f211e1743a407aa05492b351, type: 3}
+    category: 2
+  - key: Ending_True
+    image: {fileID: 21300000, guid: 9d239d011024d1e43b0a89838ccdf636, type: 3}
+    category: 2

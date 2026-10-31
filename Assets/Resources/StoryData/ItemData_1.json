@@ -1,0 +1,16 @@
+{
+    "itemClassList": [
+        {
+            "key": "ITEM_NAME_CLOTHFRAGMENT",
+            "explain": "ITEM_EXPLAIN_CLOTHFRAGMENT"
+        },
+        {
+            "key": "ITEM_NAME_TABLET",
+            "explain": "ITEM_EXPLAIN_TABLET"
+        },
+        {
+            "key": "ITEM_NAME_ACCESSCODE",
+            "explain": "ITEM_EXPLAIN_ACCESSCODE"
+        }
+    ]
+}

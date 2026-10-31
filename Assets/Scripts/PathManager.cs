@@ -1,0 +1,45 @@
+public static class PathManager
+{
+    #region FilePath
+    //Json
+    public const string storyJsonFilePath = "Assets/Resources/StoryData/StoryData_1.json";
+    public const string itemJsonFilePath = "Assets/Resources/StoryData/ItemData_1.json";
+    
+    //CSV
+    public const string csvPath = "Assets/Resources/StoryData/CSV/";
+    public const string nodeFileName = csvPath + "Node.csv";
+    public const string choiceFileName = csvPath + "Choice.csv";
+    public const string choiceConditionFileName = csvPath + "Choicecondition.csv";
+    public const string rewardFileName = csvPath + "Reward.csv";
+    public const string cgFileName = csvPath + "Cg.csv";
+    public const string characterSpriteFileName = csvPath + "CharacterSprite.csv";
+    public const string dialogSoundFileName = csvPath + "DialogSound.csv";
+    public const string chapterDataFileName = csvPath + "ChapterData.csv";
+    public const string itemDataFileName = csvPath + "ItemData.csv";
+    //Save
+    public const string saveFileName = "saveFile.json";
+    public const string endingSaveFileName = "endingSaveFile.json";
+    #endregion
+
+    #region SceneName
+    public const string TitleSceneName = "Title";
+    public const string InGameSceneName = "InGame";
+    #endregion
+    #region Localization
+    public const string dialogTableName = "DialogLocalizationTable";
+    public const string affinityTextName = "TEXT_AFFINITY";
+    #endregion
+    #region Volume
+    public const string BGM_PARAM = "BGMVolume";
+    public const string SFX_PARAM = "SFXVolume";
+    public const string AMBIENT_PARAM = "AmbientVolume";
+    public const string UI_PARAM = "UIVolume";
+    public const string BGM_KEY = "Volume_BGM";
+    public const string SFX_KEY = "Volume_SFX";
+    public const string AMBIENT_KEY = "Volume_Ambient";
+    public const string UI_KEY = "Volume_UI";
+    #endregion
+
+    //privacy Policy (개인정보처리방침 링크)
+    public const string PrivacyPolicyWebUrl = "https://animalab-privacy.catdream8787.workers.dev/";
+}

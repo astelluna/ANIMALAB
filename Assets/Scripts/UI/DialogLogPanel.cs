@@ -1,0 +1,55 @@
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class DialogLogPanel : MonoBehaviour
+{
+    [SerializeField] Button closeButton;
+    [SerializeField] ScrollRect scrollRect;
+    [field: SerializeField] public Transform DialogSpawnPositon { get; private set; }
+
+    public bool IsCanvasShow => this.gameObject.activeInHierarchy;
+
+    List<DialogLogUI> dialogList = new List<DialogLogUI>();
+
+    private void Awake()
+    {
+        closeButton.onClick.AddListener(CloseButtonClick);
+    }
+    private void OnDestroy()
+    {
+        closeButton.onClick.RemoveAllListeners();
+    }
+    private void CloseButtonClick()
+    {
+        this.gameObject.SetActive(false);
+    }
+
+    public void OpenPanel()
+    {
+        gameObject.SetActive(true);
+        ScrollToBottom();
+    }
+    void ScrollToBottom()
+    {
+        scrollRect.verticalNormalizedPosition = 0f;
+        Canvas.ForceUpdateCanvases();
+    }
+
+    public void AddLog(string spekerId, string speaker , string text)
+    {
+        CharacterDataSO imageData = ResourceManager.Instance.GetCharacterData(spekerId);
+        Sprite portrait = imageData.Portrait;
+        DialogLogUI log = DialogLogSpawner.Instance.GetPrefabByPool();
+        dialogList.Add(log);
+        log.SetLogImage(portrait, speaker, text);
+        log.transform.SetParent(DialogSpawnPositon, false);
+    }
+    public void ClearLog()
+    {
+        foreach(var item in dialogList)
+        {
+            DialogLogSpawner.Instance.ReturnPrefabToPool(item);
+        }
+    }
+}

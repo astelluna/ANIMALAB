@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8de58cc9c41b4d949f58a088a361b, type: 3}
+  m_Name: CharacterData_Rabbit
+  m_EditorClassIdentifier: 
+  <CharacterId>k__BackingField: CHAR_RABBIT
+  <characterFormSpriteList>k__BackingField:
+  - <Form>k__BackingField: 1
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: e8ee239306f597445b1b00baa8e29935, type: 3}
+  - <Form>k__BackingField: 2
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: c85978decd91e6f4788c88cae0212707, type: 3}
+    - emotion: 2
+      sprite: {fileID: 21300000, guid: 98ef78d61e4c6f64da2645ce3bbbf3c4, type: 3}
+    - emotion: 3
+      sprite: {fileID: 21300000, guid: 48a872932d9e78a4c910f8c668558df5, type: 3}
+    - emotion: 4
+      sprite: {fileID: 21300000, guid: 601db3f4ac66fc54a9cda74b227e6234, type: 3}
+    - emotion: 5
+      sprite: {fileID: 21300000, guid: dec11c2633ec29240a4c6298e7602cfb, type: 3}
+    - emotion: 6
+      sprite: {fileID: 21300000, guid: 7585d2647e760824fad3991f623feee4, type: 3}
+    - emotion: 7
+      sprite: {fileID: 21300000, guid: a9970c2b2bd91c348b8360f14448be68, type: 3}
+  - <Form>k__BackingField: 3
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: e664149b7c618e5498d41fc2d2c14389, type: 3}
+    - emotion: 2
+      sprite: {fileID: 21300000, guid: 3da5ee9350f811d488eb2b3af7906739, type: 3}
+    - emotion: 3
+      sprite: {fileID: 21300000, guid: 073f5315efdf3d6489286efcdc43071b, type: 3}
+    - emotion: 4
+      sprite: {fileID: 21300000, guid: c8053ddee328fbb46b49de8a9b8fdd12, type: 3}
+    - emotion: 5
+      sprite: {fileID: 21300000, guid: 9c78d04cdcc04e5498fc08c195b86913, type: 3}
+    - emotion: 6
+      sprite: {fileID: 21300000, guid: 5723ac4696c6f074c8cdc54be1709670, type: 3}
+    - emotion: 7
+      sprite: {fileID: 21300000, guid: e1fc94fed86c99c4c8d60a1194901631, type: 3}
+  - <Form>k__BackingField: 4
+    <FullBodyExpressions>k__BackingField:
+    - emotion: 1
+      sprite: {fileID: 21300000, guid: 5bc9efecc0dd478429cd1b91c4cf4489, type: 3}
+    - emotion: 2
+      sprite: {fileID: 21300000, guid: b90327a0a5692414faadc833baf315a9, type: 3}
+    - emotion: 3
+      sprite: {fileID: 21300000, guid: 5f329c1d1f223de4a81d1756439e0eb2, type: 3}
+    - emotion: 4
+      sprite: {fileID: 21300000, guid: 4d1c5745a53f560409f75244fc10a679, type: 3}
+    - emotion: 5
+      sprite: {fileID: 21300000, guid: af1475fe3ecd4c849abe11de05be5fa9, type: 3}
+    - emotion: 6
+      sprite: {fileID: 21300000, guid: 993da4b0358c13c41821c1ccf1f815e5, type: 3}
+    - emotion: 7
+      sprite: {fileID: 21300000, guid: e274ac2d65d9bea4c98693e8e91c7cbb, type: 3}
+    - emotion: 8
+      sprite: {fileID: 21300000, guid: 16e711459b21c0245a0721c610a94c8f, type: 3}
+  <NameColor>k__BackingField: {r: 1, g: 0.8204169, b: 0.7971698, a: 0}
+  <InitialAffinity>k__BackingField: 0
+  <MaxAffinity>k__BackingField: 100
+  <BodyHeight>k__BackingField: 650
+  <Portrait>k__BackingField: {fileID: 21300000, guid: 9cfde248efd1b4b449be29387dd4d055, type: 3}

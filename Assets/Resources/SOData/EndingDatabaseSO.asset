@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43084eb717794f54788743ea19ca6a54, type: 3}
+  m_Name: EndingDatabaseSO
+  m_EditorClassIdentifier: 
+  <endingDataList>k__BackingField:
+  - key: Ending_Bad1
+    title: ED_TITLE_BAD_001
+    description: ED_DESC_BAD_001
+    endingType: 0
+  - key: Ending_Bad2
+    title: ED_TITLE_BAD_002
+    description: ED_DESC_BAD_002
+    endingType: 0
+  - key: Ending_True
+    title: ED_TITLE_TRUE_001
+    description: ED_DESC_TRUE_001
+    endingType: 0
+  - key: Ending_retriever
+    title: ED_TITLE_NORMAL_RETR
+    description: ED_DESC_NORMAL_RETR
+    endingType: 1
+  - key: Ending_Fox
+    title: ED_TITLE_NORMAL_FOX
+    description: ED_DESC_NORMAL_FOX
+    endingType: 1
+  - key: Ending_Rabbit
+    title: ED_TITLE_NORMAL_RABBIT
+    description: ED_DESC_NORMAL_RABBIT
+    endingType: 1
+  - key: Ending_Hidden
+    title: ED_TITLE_NORMAL_HIDDEN
+    description: ED_DESC_NORMAL_HIDDEN
+    endingType: 3

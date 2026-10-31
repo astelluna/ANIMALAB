@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f8de58cc9c41b4d949f58a088a361b, type: 3}
+  m_Name: CharacterData_basic
+  m_EditorClassIdentifier: 
+  <CharacterId>k__BackingField: "-basic \uC774\uB77C\uC11C \uB9E4\uCE6D \uC548\uD574\uB3C4\uB428- "
+  <characterFormSpriteList>k__BackingField: []
+  <NameColor>k__BackingField: {r: 0.4245283, g: 0.22628158, b: 0.22628158, a: 0}
+  <InitialAffinity>k__BackingField: 0
+  <MaxAffinity>k__BackingField: 100
+  <BodyHeight>k__BackingField: 800
+  <Portrait>k__BackingField: {fileID: 21300000, guid: 5a019b2683b568341884369d400eff01, type: 3}
