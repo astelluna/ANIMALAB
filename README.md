@@ -8,3 +8,4 @@
 장르: 선택지 게임
 
 패키지 링크: https://drive.google.com/file/d/1kCtiEPONoY5wnz8JKYt1aPtdWhaRTq9S/view?usp=sharing
+구글 시트 링크 : https://docs.google.com/spreadsheets/d/1qE7r5AmRDthtMOsAru4YtmnxGdrOfOpFH-iEM1lKf0Y/edit?gid=0#gid=0
